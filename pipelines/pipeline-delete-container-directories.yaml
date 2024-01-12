@@ -1,0 +1,61 @@
+﻿trigger: none
+pr: none
+pool: DEFRA-COMMON-ubuntu2004-SSV3
+
+parameters:
+- name: epd_dev
+  displayName: 'EPD Dev 1'
+  default: true
+  type: boolean
+- name: epd_tst
+  displayName: 'EPD Tst 1'
+  default: false
+  type: boolean
+- name: epd_pre
+  displayName: 'EPD PRE 1'
+  default: false
+  type: boolean
+- name: storagecontainers
+  displayName: 'choose storage container'
+  type: object
+  default:
+    - name: landing
+      spokeSuffix: 401
+    - name: delta
+      spokeSuffix: 401
+    - name: conf
+      spokeSuffix: 401
+    - name: filesystem
+      spokeSuffix: 401
+    - name: england
+      spokeSuffix: 403
+    - name: northernireland
+      spokeSuffix: 403
+    - name: wales
+      spokeSuffix: 403
+    - name: scotland
+      spokeSuffix: 403
+
+
+jobs:
+- deployment: 'DeployContainerDirectories'
+  ${{ each parameter in parameters }}:
+    ${{ if eq(parameter.Value, true) }}:
+      environment: ${{ upper(parameters.Key) }}1
+      variables:
+      - template: vars/${{ parameter.Key }}1.yaml
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+          - ${{ each storagecontainer in parameters.storagecontainers }}: 
+            - template: templates/storage-container-delete-directories.yaml
+              parameters:
+                  azureSubscription: ${{ variables.subscriptionName }}
+                  resourceGroup: ${{ variables.storageResourceGroupName }}
+                  targetResource: ${{ lower(variables.environmentGroup) }}epdinfst${{ variables['environmentSpoke'] }}${{ storagecontainer.spokeSuffix }}
+                  containerName: ${{ storagecontainer.name }}
+
+- job: FinishingJob
+  steps:
+  - script: echo "Container blobs were deleted"

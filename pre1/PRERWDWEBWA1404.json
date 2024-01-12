@@ -1,0 +1,77 @@
+[
+  {
+    "name": "ApiConfig__AccountServiceBaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa1407.azurewebsites.net"
+  },
+  {
+    "name": "ApiConfig__AccountServiceClientId",
+    "slotSetting": false,
+    "value": "fe38b8c5-550b-45e4-9323-f941595f7fa3"
+  },
+  {
+    "name": "ApiConfig__AddressLookupBaseUrl",
+    "slotSetting": false,
+    "value": "https://integration-pre.azure.defra.cloud/ws/rest/DEFRA/v1/address/"
+  },
+  {
+    "name": "ApiConfig__Certificate",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/certificates/boomi-api-certificate/)"
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
+    "slotSetting": false,
+    "value": "https://integration-pre.azure.defra.cloud/ws/rest/DEFRA/v2.1/"
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "82b64a76-5867-4669-814a-c69e6605b654"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "dcidmpreprod.onmicrosoft.com"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "https://dcidmpreprod.b2clogin.com"
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "B2C_1A_EPR_CUI_SignUpSignIn"
+  },
+  {
+    "name": "MessagingConfig__AccountCreationUrl",
+    "slotSetting": false,
+    "value": "https://rwd-pre1.azure.defra.cloud/create-account/invitation/"
+  },
+  {
+    "name": "MessagingConfig__ApiKey",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/MessagingConfigApiKey/)"
+  },
+  {
+    "name": "MessagingConfig__RemovedUserNotificationTemplateId",
+    "slotSetting": false,
+    "value": "PLACEHOLDER"
+  },
+  {
+    "name": "MessagingConfig__MemberDissociationRegulatorsTemplateId",
+    "slotSetting": false,
+    "value": "888b4d56-53f2-4554-b479-5eb88e8b0d74"
+  },
+  {
+    "name": "MessagingConfig__MemberDissociationProducersTemplateId",
+    "slotSetting": false,
+    "value": "591c8026-2ceb-495b-a4f5-ec4326e9fa61"
+  },
+  {
+    "name": "FeatureManagement__SendDissociationNotificationEmail",
+    "slotSetting": false,
+    "value": false
+  }
+]

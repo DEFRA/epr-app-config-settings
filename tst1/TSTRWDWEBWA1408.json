@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Database__AccountKey",
+    "value": "@Microsoft.KeyVault(SecretUri=https://tstrwdinfkv1401.vault.azure.net/secrets/CosmosAccountKey/)",
+    "slotSetting": false
+  },
+  {
+    "name": "Database__ConnectionString",
+    "value": "https://tstrwddbsco1401.documents.azure.com:443/",
+    "slotSetting": false
+  },
+  {
+    "name": "Database__MaxRetryCount",
+    "value": "30",
+    "slotSetting": false
+  },
+  {
+    "name": "Database__MaxRetryDelayInMilliseconds",
+    "value": "1000",
+    "slotSetting": false
+  },
+  {
+    "name": "Database__Name",
+    "value": "SubmissionDB",
+    "slotSetting": false
+  },
+  {
+    "name": "LoggingApi__BaseUrl",
+    "value": "https://devrwdwebwa1403.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "GOOGLE_ANALYTICS__MeasurementId",
+    "value": "XCV3BQ1YKX",
+    "slotSetting": false
+  },
+  {
+    "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
+    "value": "GTM-MV74DN2",
+    "slotSetting": false
+  },
+  {
+    "name": "Validation__MaxIssuesToProcess",
+    "slotSetting": false,
+    "value": "1000"
+  }
+]

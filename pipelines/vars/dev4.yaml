@@ -1,0 +1,29 @@
+variables:
+  environmentSpoke: 4
+
+  infrastructureResourceGroupName: $(environmentGroup)RWDINFRG1401
+  teamName.lower: qa
+  teamName.dot: ''
+  teamName.dash: ''
+
+  b2c.frontend.clientId: af60ad52-d352-4057-a81a-5a865508454d
+  b2c.facade.clientId: b5e37f8d-c24a-457b-80fd-9cb91def269c
+  sharedKeyVault.b2c.frontend.secret.name: AzureAdB2CClientSecretRWDDev4-8
+
+  b2c.regulators.clientId: 150201c3-9190-4bb9-92dd-8fefdc8fadb1
+  b2c.signedOutCallbackPath: /signout/B2C_1A_SignUpSignIn
+  b2c.permissionsService.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
+
+  apiConfig.accountServiceClientId: 1755c3c9-8ecb-4903-a61b-cc5cd81ec320
+  apiConfig.addressLookupBaseUrl: 'https://integration-snd.azure.defra.cloud/ws/rest/DEFRA/v1/address/'
+  apiConfig.companiesHouseLookupBaseUrl: 'https://integration-snd.azure.defra.cloud/ws/rest/DEFRA/v2.1/'
+
+  cosmos.database.connectionString: https://devrwddbsco1401.documents.azure.com:443/
+
+  # EPR Authorization
+  eprAuthorizationConfig.downStreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev-regulators-facade/regulator-service
+
+  # Web API
+  webApi.downstreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-api-web.file-upload/epr-api-web.file-upload
+
+  messaging.regulator.templateid: ed99b2d7-638f-48de-969e-eec4745d067f

@@ -1,0 +1,107 @@
+[
+  {
+    "name": "AccountApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net"
+  },
+  {
+    "name": "AccountApi__ClientId",
+    "slotSetting": false,
+    "value": "#{{ apiConfig.accountServiceClientId }}"
+  },
+  {
+    "name": "AccountApi__Timeout",
+    "slotSetting": false,
+    "value": "30"
+  },
+  {
+    "name": "AntivirusApi__BaseUrl",
+    "slotSetting": false,
+    "value": "#{{ TradeAntivirusApi.url }}"
+  },
+  {
+    "name": "AntivirusApi__ClientId",
+    "slotSetting": false,
+    "value": "020511d9-8c13-4c89-910b-04aaa212e296"
+  },
+  {
+    "name": "AntivirusApi__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/AntivirusApi-ClientSecret-DEV-3-7/)"
+  },
+  {
+    "name": "AntivirusApi__CollectionSuffix",
+    "slotSetting": false,
+    "value": "dev#{{ environmentSpoke }}"
+  },
+  {
+    "name": "AntivirusApi__EnableDirectAccess",
+    "slotSetting": false,
+    "value": #{{ TradeAntivirusApi.enableDirectAccess }}
+  },
+  {
+    "name": "AntivirusApi__Scope",
+    "slotSetting": false,
+    "value": "#{{ TradeAntivirusApi.scope }}"
+  },
+  {
+    "name": "AntivirusApi__SubscriptionKey",
+    "slotSetting": false,
+    "value": "2bbc3ee9c7514c70b1628e766f90582d"
+  },
+  {
+    "name": "AntivirusApi__TenantId",
+    "slotSetting": false,
+    "value": "c9d74090-b4e6-4b04-981d-e6757a160812"
+  },
+  {
+    "name": "AntivirusApi__Timeout",
+    "slotSetting": false,
+    "value": "300"
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "#{{ b2c.wax409.clientId }}"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "#{{ b2c.domain }}"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "#{{ b2c.instance }}"
+  },
+  {
+    "name": "AzureADB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "#{{ b2c.signUpSignInPolicyId }}"
+  },
+  {
+    "name": "LoggingApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}403.azurewebsites.net"
+  },
+  {
+    "name": "Logging__LogLevel__WebApiGateway.Api",
+    "slotSetting": false,
+    "value": "Debug"
+  },
+  {
+    "name": "StorageAccount__PomContainer",
+    "slotSetting": false,
+    "value": "pom-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "StorageAccount__RegistrationContainer",
+    "slotSetting": false,
+    "value": "registration-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "SubmissionStatusApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"
+  }
+]

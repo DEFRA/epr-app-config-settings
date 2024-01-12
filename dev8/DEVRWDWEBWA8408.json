@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Database__AccountKey",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/CosmoAccountKey/)",
+    "slotSetting": false
+  },
+  {
+    "name": "Database__ConnectionString",
+    "value": "https://devrwddbsco1401.documents.azure.com:443/",
+    "slotSetting": false
+  },
+  {
+    "name": "Database__Name",
+    "value": "SubmissionDB",
+    "slotSetting": false
+  },
+  {
+    "name": "Database__MaxRetryCount",
+    "value": 30,
+    "slotSetting": false
+  },
+  {
+    "name": "Database__MaxRetryDelayInMilliseconds",
+    "value": 1000,
+    "slotSetting": false
+  },
+  {
+    "name": "LoggingApi__BaseUrl",
+    "value": "https://devrwdwebwa8403.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "Validation__MaxIssuesToProcess",
+    "slotSetting": false,
+    "value": "1000"
+  }
+]

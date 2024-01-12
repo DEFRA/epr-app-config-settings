@@ -1,0 +1,7 @@
+[
+  {
+    "name": "AccountsDatabase__ConnectionString",
+    "slotSetting": false,
+    "value": "Server=tcp:prerwddbssq1401.database.windows.net;Authentication=Active Directory Default;Database=pre1_accounts;"
+  }
+]

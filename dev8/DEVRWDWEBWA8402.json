@@ -1,0 +1,112 @@
+[
+  {
+    "name": "AzureAdB2C__ClientId",
+    "value": "af60ad52-d352-4057-a81a-5a865508454d",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkv1401.vault.azure.net/secrets/AzureAdB2CClientSecretRWDDev4-8/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "value": "AZDCUSPOC2.onmicrosoft.com",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "value": "https://AZDCUSPOC2.b2clogin.com",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__SignedOutCallbackPath",
+    "value": "/signout/B2C_1A_EPR_SignUpSignIn",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "value": "B2C_1A_EPR_SignUpSignIn",
+    "slotSetting": false
+  },
+  {
+    "name": "ConnectionStrings__REDIS_CONNECTION",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__ExistingUserRedirectUrl",
+    "slotSetting": false,
+    "value": "/report-data"
+  },
+  {
+    "name": "ExternalUrls__ManageAccountRedirectUrl",
+    "value": "/manage-account",
+    "slotSetting": false
+  },
+  {
+    "name": "FacadeAPI__Address",
+    "value": "https://devrwdwebwa8404.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "FacadeAPI__DownstreamScope",
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-producers-account-facade/account-creation",
+    "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__ShowLanguageSwitcher",
+    "value": true,
+    "slotSetting": false
+  },
+  {
+    "name": "ForwardedHeaders__AllowedHosts",
+    "value": "rwd-dev8.azure.defra.cloud",
+    "slotSetting": false
+  },
+  {
+    "name": "GoogleAnalytics__MeasurementId",
+    "slotSetting": false,
+    "value": "VMDE8PW9W7"
+  },
+  {
+    "name": "GoogleAnalytics__TagManagerContainerId",
+    "slotSetting": false,
+    "value": "G-VMDE8PW9W7"
+  },
+  {
+    "name": "MsalOptions__L2SlidingExpiration",
+    "slotSetting": false,
+    "value": 60
+  },
+  {
+    "name": "PhaseBannerOptions__SurveyUrl",
+    "value": "https://defragroup.eu.qualtrics.com/jfe/form/SV_a2Bm7vw3cht5B6C",
+    "slotSetting": false
+  },
+  {
+    "name": "RedisInstanceName",
+    "value": "epr-dev8-producers-",
+    "slotSetting": false
+  },
+  {
+    "name": "SiteDates__AccessibilityStatementPrepared",
+    "slotSetting": false,
+    "value": "2023-05-23"
+  },
+  {
+    "name": "SiteDates__AccessibilityStatementReviewed",
+    "slotSetting": false,
+    "value": "2023-11-03"
+  },
+  {
+    "name": "SiteDates__AccessibilitySiteTested",
+    "slotSetting": false,
+    "value": "2023-08-31"
+  },
+  {
+    "name": "SiteDates__DateFormat",
+    "slotSetting": false,
+    "value": "d MMMM yyyy"
+  }
+]

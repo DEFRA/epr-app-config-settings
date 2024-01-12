@@ -1,0 +1,70 @@
+parameters:
+  - name: azureSubscription
+    type: string
+  - name: resourceGroup
+    type: string
+  - name: databaseId
+    type: string
+  - name: databaseIdTrueFalse
+    type: boolean
+    default: false
+  - name: resourceToCreate
+    type: string
+  - name: targetResource
+    type: string
+  - name: createOrDelete
+    type: string
+  - name: partitionKey
+    type: string
+
+steps:
+- task: AzureCLI@2
+  displayName: 'Creating new DatabaseID'
+  condition: eq( '${{ parameters.databaseIdTrueFalse }}', true )
+  inputs:
+    azureSubscription: '${{ parameters.azureSubscription }}'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      if [[ $(az cosmosdb sql database exists --name ${{ parameters.databaseId }} --account-name ${{ parameters.targetResource }} --resource-group $(infrastructureResourceGroupName)) == true ]]
+      then
+        echo "DatabaseID already exists"
+      else
+        echo "Creating databaseID ${{ parameters.databaseId }}"
+        az cosmosdb sql database create --name ${{ parameters.databaseId }} --account-name ${{ parameters.targetResource }} --resource-group $(infrastructureResourceGroupName)
+      fi
+
+- task: AzureCLI@2
+  condition: eq( '${{ parameters.createOrDelete }}', 'create' )
+  displayName: 'Creating container'
+  inputs:
+    azureSubscription: '${{ parameters.azureSubscription }}'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az cosmosdb sql container create \
+        --name ${{ parameters.resourceToCreate }} \
+        --database-name ${{ parameters.databaseId }} \
+        --partition-key-path ${{ parameters.partitionKey }} \
+        --resource-group ${{ parameters.resourceGroup }} \
+        --account-name ${{ parameters.targetResource }} \
+        --max-throughput 10000
+
+- task: AzureCLI@2
+  condition: eq( '${{ parameters.createOrDelete }}', 'delete' )
+  displayName: 'Deleting container'
+  inputs:
+    azureSubscription: '${{ parameters.azureSubscription }}'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az cosmosdb sql container delete \
+        --name ${{ parameters.resourceToCreate }} \
+        --database-name ${{ parameters.databaseId }} \
+        --resource-group ${{ parameters.resourceGroup }} \
+        --account-name ${{ parameters.targetResource }} \
+        --yes
+
+- bash: |
+    echo "Status completed"
+  displayName: "Show summary"

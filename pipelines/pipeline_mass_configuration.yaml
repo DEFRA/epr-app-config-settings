@@ -1,0 +1,57 @@
+trigger: none
+pr: none
+
+parameters:
+- name: teamName
+  displayName: 'Select Team-Environment:'
+  type: string
+  values:
+  - Team-1_Pi
+  - Team-2_Wastebusters
+  - Team-3_Recyclers
+  - Team-4_QA
+  - Team-5_Phoenix
+  - Team-6_Stig
+  - Team-7_Oscar
+  - Team-8_Pre-TST
+  - Team-9_Ops
+  - tst
+  - preprod
+  - prod
+- name: restartApp
+  displayName: Restart the applications after config change
+  type: boolean
+  default: true
+
+variables:
+- template: templates/env-specific-config.yaml
+  parameters:
+    teamName: ${{ parameters.teamName }}
+- name: settingsDir
+  value: $(Build.SourcesDirectory)/${{ lower(variables.environmentName) }}
+- ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'Team-8_Pre-TST')) }}:
+  - name: useDevConfig
+    value: true
+  - name: configDir
+    value: $(Pipeline.Workspace)/s/dev/config
+- ${{ else }}:
+  - name: useDevConfig
+    value: false
+  - name: configDir
+    value: $(settingsDir)
+
+pool: $(agentPool)
+
+jobs:
+- job: DeploySettings
+  displayName: Deploying settings for ${{ parameters.teamName }}
+  steps:
+  - template: templates/mass-configuration-template.yaml
+    parameters:
+      restartApp: ${{ parameters.restartApp }}
+      subscriptionName: ${{ variables.subscriptionName }}
+      webResourceGroupName: ${{ variables.webResourceGroupName }}
+      useDevConfig: ${{ variables.useDevConfig }}
+      configDirectory: ${{ variables.configDir }}
+      environmentSpoke: $(environmentSpoke)
+      configTemplateInputDirectory: $(Pipeline.Workspace)/s/dev

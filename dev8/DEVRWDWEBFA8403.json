@@ -1,0 +1,47 @@
+[
+  {
+    "name": "ServiceBus__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ServiceBusConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__SplitQueueName",
+    "value": "defra.epr.producer.data.dev8",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__UploadQueueName",
+    "value": "defra.epr.pom.data.uploaded.dev8",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWD8403/)",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__PomBlobContainerName",
+    "value": "pom-upload-container-dev8",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa8408.azurewebsites.net/"
+  },
+  {
+    "name": "ValidationDataApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebfa8407.azurewebsites.net/"
+  },
+  {
+    "name": "ValidationDataApi__IsEnabled",
+    "slotSetting": false,
+    "value": false
+  },
+  {
+    "name": "ValidationDataApi__Timeout",
+    "slotSetting": false,
+    "value": 10
+  }
+]

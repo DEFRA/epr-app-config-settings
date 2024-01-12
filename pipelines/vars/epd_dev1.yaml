@@ -1,0 +1,10 @@
+﻿variables:
+  environmentGroup: DEV
+  environmentSpoke: 1
+  subscriptionPrefix: AZD
+  projectCode: EPD
+  agentPool: DEFRA-COMMON-ubuntu2004-SSV3
+
+  environmentName: ${{ variables.environmentGroup }}${{ variables.environmentSpoke}}
+  subscriptionName: ${{ variables.subscriptionPrefix }}-${{ variables.projectCode }}-${{ variables.environmentName }}
+  storageResourceGroupName: ${{ variables.environmentGroup }}EPDINFRG${{ variables.environmentSpoke}}401

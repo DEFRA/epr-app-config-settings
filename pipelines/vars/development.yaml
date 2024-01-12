@@ -1,0 +1,100 @@
+variables:
+  environmentGroup: DEV
+  subscriptionPrefix: AZD
+  projectCode: RWD
+  agentPool: DEFRA-COMMON-ubuntu2004-SSV3
+
+  environmentName: ${{ variables.environmentGroup }}$(environmentSpoke)
+  subscriptionName: ${{ variables.subscriptionPrefix }}-${{ variables.projectCode }}-${{ variables.environmentName }}
+  webResourceGroupName: ${{ variables.environmentGroup }}RWDWEBRG$(environmentSpoke)401
+
+  teamName.dot: .$(teamName.lower)
+  teamName.dash: -$(teamName.lower)
+
+  sharedInfrastructureSubscriptionName: $(subscriptionPrefix)-$(projectCode)-DEV1
+
+  # Redis
+  redis.producers.instance.name: epr-dev$(environmentSpoke)-producers-
+  redis.regulators.instance.name: epr-dev$(environmentSpoke)-regulators-
+
+  # Shared Key Vault
+  sharedKeyVault.name: DEVRWDINFKV1401
+  sharedKeyVault.secretsUrl: https://$(sharedKeyVault.name).vault.azure.net/secrets
+
+  sharedKeyVault.SCSstorageAccount.secret.name: SubmissionCheckSplitterStorageAccountConnectionStringRWD1403
+  sharedKeyVault.SCSstorageAccount.secret.url: $(sharedKeyVault.secretsUrl)/$(sharedKeyVault.SCSstorageAccount.secret.name)
+
+  sharedKeyVault.b2c.frontend.secret.name: AzureAdB2C-ClientSecret-DEV-3-5-7
+  sharedKeyVault.b2c.frontend.secret.url: $(sharedKeyVault.secretsUrl)/$(sharedKeyVault.b2c.frontend.secret.name)
+
+  sharedKeyVault.b2c.regulators.secret.name: AzureAdB2CClientSecretRWDRegulatorsDev
+  sharedKeyVault.b2c.regulators.secret.url: $(sharedKeyVault.secretsUrl)/$(sharedKeyVault.b2c.regulators.secret.name)
+
+  # AntiVirus
+  TradeAntivirusApi.url: https://dev-gateway.trade.azure.defra.cloud/trade-file-store
+  TradeAntivirusApi.enableDirectAccess: false
+  TradeAntivirusApi.scope: api://dev-futuretrade-ext.defra.gov.uk/.default
+  TradeAntivirus.ServiceBus.subscriptionName: filestore-notify-epr-dev$(environmentSpoke)
+
+  # Facade API
+  facadeAPI.DownstreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev-producers-account-facade/account-creation
+
+  # B2C
+  b2c.frontend.clientId: 595f49c3-f886-4869-a1e4-abb0915801ac
+  b2c.backend.clientId: c9b7618f-fd19-494d-8a92-07a82b96821f
+  b2c.facade.clientId: df2b3ff9-b54a-4ddf-8762-bcf07f61a828
+  b2c.permissionsService.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
+  b2c.wax409.clientId: ec08c5b8-4d11-4d01-a8b2-47bbda6e579b
+  b2c.regulators.clientId: 150201c3-9190-4bb9-92dd-8fefdc8fadb1
+  b2c.domain: AZDCUSPOC2.onmicrosoft.com
+  b2c.instance: https://AZDCUSPOC2.b2clogin.com
+
+  apiConfig.accountServiceClientId: 476e8e0b-f6f6-4ca0-ba1f-b05e60a51afb
+  apiConfig.addressLookupBaseUrl: 'https://integration-snd.azure.defra.cloud/ws/rest/DEFRA/v1/address/'
+  apiConfig.companiesHouseLookupBaseUrl: 'https://integration-snd.azure.defra.cloud/ws/rest/DEFRA/v2.1/'
+
+  # Feature management
+  featureManagement.removeUsers: true
+  featureManagement.showLanguageSwitcher: true
+  featureManagement.manageApprovedUsers: false
+  featureManagement.sendDissociationNotificationEmail: false
+  featureManagement.validtionDataApi: false
+
+  # Databases
+  accountsDatabase.name: dev$(environmentSpoke)_accounts
+  cosmos.database.connectionString: '@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/CosmoConnectionString/)'
+  cosmos.database.name: SubmissionDB
+
+  # Web API
+  webApi.downstreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev-api-web.file-upload/epr-api-web.file-upload
+
+  # EPR Authorization
+  eprAuthorizationConfig.downStreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev-regulators-facade/regulator-service
+
+  # ServiceBus
+  serviceBus.namespace: $(environmentGroup)RWDINFSB1402
+  serviceBus.queue.pomDataUpload.name: defra.epr.pom.data.uploaded$(teamName.dot)
+  serviceBus.queue.producerData.name: defra.epr.producer.data$(teamName.dot)
+  serviceBus.queue.protectiveMonitoringEvents.name: defra.epr.protectivemonitoring.events$(teamName.dot)
+  serviceBus.queue.registrationData.name: defra.epr.registration.data$(teamName.dot)
+
+  # Privacy Policy
+  siteDates.privacyLastUpdated: 2023-11-22
+  siteDates.dateFormat: d MMMM yyyy
+
+  # notification.services.gov.uk configuratinos
+  messaging.producer.apikeysecret: MessagingConfigApiKeyDev
+  messaging.producer.complianceschemeaccountconfirmation.templateid: f8590c80-e925-411c-8434-8c8f794368df
+  messaging.producer.delegatedroleremoved.templateid: c7021f44-052c-45e1-b566-2a0424dc1b94
+  messaging.producer.nominatedelegateduser.templateid: 93a8562e-af72-40ab-8e0e-b18f4ebca8b1
+  messaging.producer.nominationcancelled.templateid: dc403228-666c-4929-840a-b821f6e96d4f
+  messaging.producer.produceraccountconfirmation.templateid: 31cb3e31-fe23-4949-beae-eb3b24182d10
+  messaging.producer.removedusernotification.templateid: ed3adf7f-254c-493d-bcb8-5f57a4c7e2b0
+  messaging.producer.admininvitation.templateid: ee07a46f-61f5-4939-a78d-bef752abaaa1
+  messaging.producer.userinvitation.templateid: 35679fd0-c8ff-4c72-bc97-3ccd843efb94
+  messaging.regulator.templateid: ed99b2d7-638f-48de-969e-eec4745d067f
+  messaging.member.dissociation.regulators.templateid: 7a2190cd-8c13-476c-9d41-383867b5d132
+  messaging.member.dissociation.producers.templateid: e710cc95-419c-462e-a62f-4cc3234b4062
+
+  # Accounts Validation Data API
+  validationDataApi.appRegistration.clientId: ec668afe-3d8e-4242-91d7-910fac38c3b2

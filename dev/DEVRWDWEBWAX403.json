@@ -1,0 +1,37 @@
+[
+  {
+    "name": "ProtectiveMonitoring__Application",
+    "slotSetting": false,
+    "value": "EPR002"
+  },
+  {
+    "name": "ProtectiveMonitoring__Environment",
+    "slotSetting": false,
+    "value": "DEV"
+  },
+  {
+    "name": "ServiceBus__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ServiceBusConnectionString/)"
+  },
+  {
+    "name": "ServiceBus__MaxRetries",
+    "slotSetting": false,
+    "value": "3"
+  },
+  {
+    "name": "ServiceBus__QueueName",
+    "slotSetting": false,
+    "value": "defra.epr.protectivemonitoring.events#{{ teamName.dot }}"
+  },
+  {
+    "name": "ServiceBus__RetryDelaySeconds",
+    "slotSetting": false,
+    "value": "5"
+  },
+  {
+    "name": "ServiceBus__RetryMaxDelaySeconds",
+    "slotSetting": false,
+    "value": "5"
+  }
+]

@@ -1,0 +1,33 @@
+﻿parameters:
+  - name: azureSubscription
+    type: string
+  - name: resourceGroup
+    type: string
+  - name: targetResource
+    type: string
+  - name: containerName
+    type: string
+
+steps:
+
+- task: AzureCLI@2
+  displayName: Creating '${{ parameters.containerName }}'
+  inputs:
+    azureSubscription: '${{ parameters.azureSubscription }}'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    failOnStandardError: true
+    inlineScript: |
+     key=$(az storage account keys list -n ${{ parameters.targetResource }} --query "[0].{value:value}" --output tsv)
+     if [[ $(az storage container list --account-name ${{ parameters.targetResource }} --account-key "$key" --query "[?name == '${{ parameters.containerName }}'].name" --output tsv | wc -l) -eq 0 ]];
+      then
+        echo "Creating Storage Container ${{ parameters.containerName }}"
+          az storage container create \
+            --name ${{ parameters.containerName }} \
+            --account-name ${{ parameters.targetResource }} \
+            --account-key "$key" \
+            --public-access off \
+            --fail-on-exist
+      else
+        echo "The upload container ${{ parameters.containerName }} already exist"
+      fi

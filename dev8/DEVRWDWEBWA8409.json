@@ -1,0 +1,102 @@
+[
+  {
+    "name": "AccountApi__BaseUrl",
+    "value": "https://devrwdwebwa8407.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountApi__ClientId",
+    "value": "a88c5fbb-1bd2-45fc-bd52-61d9b3192e09",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountApi__Timeout",
+    "slotSetting": false,
+    "value": "30"
+  },
+  {
+    "name": "AntivirusApi__BaseUrl",
+    "value": "https://dev-gateway.trade.azure.defra.cloud/trade-file-store",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientId",
+    "value": "020511d9-8c13-4c89-910b-04aaa212e296",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkv1401.vault.azure.net/secrets/AntivirusApi-ClientSecret-DEV-3-7/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__CollectionSuffix",
+    "value": "dev8",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__EnableDirectAccess",
+    "value": "false",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Scope",
+    "value": "api://dev-futuretrade-ext.defra.gov.uk/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__SubscriptionKey",
+    "value": "2bbc3ee9c7514c70b1628e766f90582d",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__TenantId",
+    "value": "c9d74090-b4e6-4b04-981d-e6757a160812",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Timeout",
+    "value": "300",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "ec08c5b8-4d11-4d01-a8b2-47bbda6e579b"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "value": "AZDCUSPOC2.onmicrosoft.com",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "value": "https://AZDCUSPOC2.b2clogin.com",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "value": "B2C_1A_EPR_SignUpSignIn",
+    "slotSetting": false
+  },
+  {
+    "name": "LoggingApi__BaseUrl",
+    "value": "https://devrwdwebwa8403.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionStatusApi__BaseUrl",
+    "value": "https://devrwdwebwa8408.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__PomContainer",
+    "value": "pom-upload-container-dev8",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__RegistrationContainer",
+    "value": "registration-upload-container-dev8",
+    "slotSetting": false
+  }
+]

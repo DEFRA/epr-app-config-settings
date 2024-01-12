@@ -1,0 +1,12 @@
+variables:
+  environmentGroup: PRD
+  environmentSpoke: 1
+  subscriptionPrefix: AZR
+  projectCode: RWD
+  agentPool: DEFRA-COMMON-ubuntu2004-SSV3
+
+  environmentName: ${{ variables.environmentGroup }}${{ variables.environmentSpoke}}
+  subscriptionName: ${{ variables.subscriptionPrefix }}-${{ variables.projectCode }}-${{ variables.environmentName }}
+  sharedInfrastructureSubscriptionName: ${{ variables.subscriptionName }}
+  webResourceGroupName: ${{ variables.environmentGroup }}RWDWEBRG${{ variables.environmentSpoke}}401
+  infrastructureResourceGroupName: ${{ variables.environmentGroup }}RWDINFRG${{ variables.environmentSpoke}}401

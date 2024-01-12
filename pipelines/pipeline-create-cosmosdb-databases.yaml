@@ -1,0 +1,60 @@
+trigger: none
+pr: none
+
+parameters:
+- name: envGroup
+  displayName: 'Target Environment group to deploy to:'
+  default: dev
+  type: string
+  values:
+    - dev
+    - tst
+    - pre
+    - prd
+- name: databaseId
+  displayName: 'CosmosDB DatabaseID (a workspace) to be (optionally) created.
+                (example: SubmissionDB):'
+  type: string
+  default: 'SubmissionDB'
+- name: databaseIdTrueFalse
+  displayName: 'Confirm that DatabaseID is to be created'
+  type: boolean
+  default: false
+- name: resourceToCreate
+  displayName: 'CosmosDB container to create, one at the time,
+                (example: ProducerValidationErrors, SubmissionEvents, Submissions):'
+  type: string
+- name: createOrDelete
+  displayName: 'Choose if you want to create or delete a resource:'
+  default: 'create'
+  type: string
+  values:
+  - create
+  - delete
+- name: partitionKey
+  displayName: 'PartitionKey for new container:
+    Submissions - /SubmissionId;
+    SubmissionEvents - /SubmissionEventId;
+    ProducerValidationErrors - /ProducerValidationErrorId.'
+  default: '/Id'
+  type: string
+
+variables:
+- template: vars/${{ parameters.envGroup }}1.yaml
+
+pool: $(agentPool)
+
+jobs:
+- job: RunningTemplate
+  displayName: Run template to create or remove a ${{ parameters.resourceToCreate }}
+  steps:
+  - template: templates/cosmosdb-containers.yaml
+    parameters:
+      azureSubscription: ${{ variables.subscriptionName }}
+      resourceGroup: ${{ variables.infrastructureResourceGroupName }}
+      resourceToCreate: ${{ parameters.resourceToCreate }}
+      databaseId: ${{ parameters.databaseId }}
+      databaseIdTrueFalse: ${{ parameters.databaseIdTrueFalse }}
+      targetResource: ${{ lower(variables.environmentGroup) }}rwddbsco1401
+      createOrDelete: ${{ parameters.createOrDelete }}
+      partitionKey: ${{ parameters.partitionKey }}

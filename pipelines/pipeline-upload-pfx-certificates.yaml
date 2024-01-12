@@ -1,0 +1,60 @@
+﻿trigger: none
+pr: none
+
+parameters:
+  - name: envGroup
+    displayName: 'Target Environment group to deploy to:'
+    default: dev
+    type: string
+    values:
+      - dev
+      - tst
+      - pre
+  - name: SecureFileName
+    type: string
+    default: ''
+  - name: certificateName
+    type: string
+    default: ''
+
+
+variables:
+- template: vars/${{ parameters.envGroup }}1.yaml
+
+steps:
+
+- task: DownloadSecureFile@1
+  name: pfxCertificate
+  displayName: 'Download pfx certificate'
+  inputs:
+    secureFile: ${{ parameters.SecureFileName }}
+
+- script: |
+    if [ -e "$(Agent.TempDirectory)/${{ parameters.SecureFileName }}" ]; then
+        if file "$(Agent.TempDirectory)/${{ parameters.SecureFileName }}" | grep -q 'PFX'; then
+          echo "File is in PFX format. Continuing with the pipeline."
+        else
+          echo "File is not in PFX format. Stopping the pipeline."
+          exit 1
+        fi
+    else
+      echo "File not found. Stopping the pipeline."
+      exit 1
+    fi
+  displayName: 'Check if Secure File is Downloaded'
+  failOnStderr: true
+  
+
+
+- task: AzureCLI@2
+  displayName: 'Importing PFX to Keyvault'
+  inputs:
+    azureSubscription: ${{ variables.subscriptionName }}
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az keyvault certificate import \
+        --vault-name ${{ variables.environmentGroup}}RWDINFKV1401 \
+        --name ${{ parameters.certificateName }} \
+        --file "$(Agent.TempDirectory)/${{ parameters.SecureFileName }}"
+

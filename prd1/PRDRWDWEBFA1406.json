@@ -1,0 +1,27 @@
+[
+  {
+    "name": "AccountsDatabase__ConnectionString",
+    "slotSetting": false,
+    "value": "Server=tcp:prdrwddbssq1401.database.windows.net;Authentication=Active Directory Default;Database=prd1_accounts;"
+  },
+  {
+    "name": "ScheduleExpression",
+    "slotSetting": false,
+    "value": "0 0 22 * * *"
+  },
+  {
+    "name": "SubmissionsDatabase__AccountKey",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://prdrwdinfkv1401.vault.azure.net/secrets/CosmosAccountKey/)"
+  },
+  {
+    "name": "SubmissionsDatabase__ConnectionString",
+    "slotSetting": false,
+    "value": "https://prdrwddbsco1401.documents.azure.com:443/"
+  },
+  {
+    "name": "SubmissionsDatabase__Name",
+    "slotSetting": false,
+    "value": "SubmissionDB"
+  }
+]

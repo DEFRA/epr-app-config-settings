@@ -1,0 +1,27 @@
+[
+  {
+    "name": "AzureWebJobsStorage",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/ProtectiveMonitoringEventDispatcherStorageAccountConnectionStringRWD1401/)",
+    "slotSetting": false
+  },
+  {
+    "name": "EventDispatcher__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://prerwdinfkv1401.vault.azure.net/secrets/ProtectiveMonitoringEventHubConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "EventDispatcher__EventHubName",
+    "value": "insights-application-logs",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/ServiceBusConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__QueueName",
+    "value": "defra.epr.protectivemonitoring.events",
+    "slotSetting": false
+  }
+]

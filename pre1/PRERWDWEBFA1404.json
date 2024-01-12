@@ -1,0 +1,32 @@
+[
+  {
+    "name": "AzureWebJobsStorage",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/RegistrationContentValidationStorageAccountConnectionStringRWD1404/)",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/ServiceBusConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__UploadQueueName",
+    "value": "defra.epr.registration.data",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__BlobContainerName",
+    "value": "registration-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWD1403/)",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionApi__BaseUrl",
+    "value": "https://prerwdwebwa1408.azurewebsites.net/",
+    "slotSetting": false
+  }
+]

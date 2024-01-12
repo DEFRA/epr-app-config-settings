@@ -1,0 +1,153 @@
+trigger: none
+pr: none
+
+parameters:
+- name: teamName
+  displayName: 'Select Team-Environment:'
+  type: string
+  values:
+  - Team-1_Pi
+  - Team-2_Wastebusters
+  - Team-3_Recyclers
+  - Team-4_QA
+  - Team-5_Phoenix
+  - Team-6_Stig
+  - Team-7_Oscar
+  - Team-8_Pre-TST
+  - Team-9_Ops
+  - tst
+  - preprod
+  - prod
+- name: serviceName
+  displayName: 'Provide the service name'
+  type: string
+- name: restartApp
+  displayName: Restart the application after config change
+  type: boolean
+  default: true
+
+variables:
+- template: templates/env-specific-config.yaml
+  parameters:
+    teamName: ${{ parameters.teamName }}
+
+- name: settingsDir
+  value: $(Build.SourcesDirectory)/${{ lower(variables.environmentName) }}
+
+- name: uppercaseServiceName
+  value: ${{ parameters.serviceName }}
+
+pool: $(agentPool)
+
+jobs:
+- job: DeploySettings
+  displayName: Deploying settings for ${{ variables.uppercaseServiceName }}
+  steps:
+    - ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'Team-8_Pre-TST')) }}:
+      - task: qetza.replacetokens.replacetokens-task.replacetokens@3
+        displayName: 'Replace tokens'
+        inputs:
+          tokenPattern: custom
+          tokenPrefix: '#{{'
+          tokenSuffix: '}}'
+          actionOnMissing: fail
+          useLegacyPattern: false
+          enableTransforms: true
+          useLegacyEmptyFeature: false
+          targetFiles: |
+            dev/DEVRWDWEBFAX401.json => config/DEVRWDWEBFA$(environmentSpoke)401.json
+            dev/DEVRWDWEBFAX402.json => config/DEVRWDWEBFA$(environmentSpoke)402.json
+            dev/DEVRWDWEBFAX403.json => config/DEVRWDWEBFA$(environmentSpoke)403.json
+            dev/DEVRWDWEBFAX404.json => config/DEVRWDWEBFA$(environmentSpoke)404.json
+            dev/DEVRWDWEBFAX405.json => config/DEVRWDWEBFA$(environmentSpoke)405.json
+            dev/DEVRWDWEBFAX406.json => config/DEVRWDWEBFA$(environmentSpoke)406.json
+            dev/DEVRWDWEBFAX407.json => config/DEVRWDWEBFA$(environmentSpoke)407.json
+            dev/DEVRWDWEBWAX401.json => config/DEVRWDWEBWA$(environmentSpoke)401.json
+            dev/DEVRWDWEBWAX402.json => config/DEVRWDWEBWA$(environmentSpoke)402.json
+            dev/DEVRWDWEBWAX403.json => config/DEVRWDWEBWA$(environmentSpoke)403.json
+            dev/DEVRWDWEBWAX404.json => config/DEVRWDWEBWA$(environmentSpoke)404.json
+            dev/DEVRWDWEBWAX405.json => config/DEVRWDWEBWA$(environmentSpoke)405.json
+            dev/DEVRWDWEBWAX406.json => config/DEVRWDWEBWA$(environmentSpoke)406.json
+            dev/DEVRWDWEBWAX407.json => config/DEVRWDWEBWA$(environmentSpoke)407.json
+            dev/DEVRWDWEBWAX408.json => config/DEVRWDWEBWA$(environmentSpoke)408.json
+            dev/DEVRWDWEBWAX409.json => config/DEVRWDWEBWA$(environmentSpoke)409.json
+            dev/DEVRWDWEBWAX410.json => config/DEVRWDWEBWA$(environmentSpoke)410.json
+            dev/DEVRWDWEBWAX411.json => config/DEVRWDWEBWA$(environmentSpoke)411.json
+            dev/DEVRWDWEBWAX412.json => config/DEVRWDWEBWA$(environmentSpoke)412.json
+            dev/DEVRWDWEBWAX413.json => config/DEVRWDWEBWA$(environmentSpoke)413.json
+            dev/DEVRWDWEBWAX414.json => config/DEVRWDWEBWA$(environmentSpoke)414.json
+            dev/DEVRWDWEBWAX415.json => config/DEVRWDWEBWA$(environmentSpoke)415.json
+
+    - task: AzureCLI@2
+      displayName: Cleaning app settings
+      inputs:
+        azureSubscription: ${{ variables.subscriptionName }}
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        failOnStandardError: true
+        inlineScript: |
+          service=${{ variables.uppercaseServiceName }}
+          echo -e "\033[0;32m Cleaning AppSettings on "$service
+
+          ACTIVEAPPSETTINGLIST=$(az webapp config appsettings list -g ${{ variables.webResourceGroupName }} -n $service --query "[].name" -o tsv)
+          DELETELIST=" "
+
+          for appsetting in $ACTIVEAPPSETTINGLIST
+            do
+              case $appsetting in
+                APPINSIGHTS_INSTRUMENTATIONKEY|APPLICATIONINSIGHTS_CONNECTION_STRING|ApplicationInsightsAgent_EXTENSION_VERSION )                         echo "$appsetting found in group 1";;
+                AzureWbeJobStorage|ConnectionStrings__REDIS_CONNECTION|DOCKER_CUSTOM_IMAGE_NAME|DOCKER_REGISTRY_SERVER_URL )                              echo "$appsetting found in group 2";;
+                FUNCTIONS_EXTENSION_VERSION|FUNCTIONS_WORKER_RUNTIME|AzureWebJobsStorage )                                                                echo "$appsetting found in group 3";;
+                WEBSITE_CONTENTAZUREFILECONNECTIONSTRING|WEBSITE_CONTENTOVERVNET|WEBSITES_ENABLE_APP_SERVICE_STORAGE )                                    echo "$appsetting found in group 4";;
+                WEBSITE_ENABLE_SYNC_UPDATE_SITE|WEBSITE_PULL_IMAGE_OVER_VNET|WEBSITE_CONTENTSHARE|XDT_MicrosoftApplicationInsights_Mode )                 echo "$appsetting found in group 5";;
+                *)
+                    echo "$appsetting not found, adding to the delete list"
+                    DELETELIST=$DELETELIST$appsetting' ';;
+              esac
+          done
+          if [[ "$DELETELIST" != " " ]]
+          then
+            az webapp config appsettings delete \
+              --subscription ${{ variables.subscriptionName }} \
+              --name $service \
+              --resource-group ${{ variables.webResourceGroupName }} \
+              --setting-names {$DELETELIST}
+          else
+            echo "Nothing to remove for $service"
+          fi
+
+        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'Team-8_Pre-TST')) }}:
+          workingDirectory: $(Pipeline.Workspace)/s/dev/config
+        ${{ else }}:
+          workingDirectory: $(settingsDir)
+
+    - task: AzureCLI@2
+      displayName: Updating ${{ variables.uppercaseServiceName }}
+      inputs:
+        azureSubscription: ${{ variables.subscriptionName }}
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: |
+          az webapp config appsettings set \
+            --subscription ${{ variables.subscriptionName }} \
+            -g ${{ variables.webResourceGroupName }} \
+            -n ${{ variables.uppercaseServiceName }} \
+            --settings @./${{ variables.uppercaseServiceName }}.json
+        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'Team-8_Pre-TST')) }}:
+          workingDirectory: $(Pipeline.Workspace)/s/dev/config
+        ${{ else }}:
+          workingDirectory: $(settingsDir)
+
+    - ${{ if eq( parameters.restartApp, 'true') }}:
+      - task: AzureCLI@2
+        displayName: Restarting ${{ variables.uppercaseServiceName }}
+        inputs:
+          azureSubscription: ${{ variables.subscriptionName }}
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            cat ./${{ variables.uppercaseServiceName }}.json
+            az webapp restart \
+              --name ${{ variables.uppercaseServiceName }} \
+              --resource-group ${{ variables.webResourceGroupName }} \
+              --subscription ${{ variables.subscriptionName }}

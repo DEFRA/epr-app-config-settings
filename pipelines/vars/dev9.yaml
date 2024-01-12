@@ -1,0 +1,6 @@
+variables:
+  environmentSpoke: 9
+  infrastructureResourceGroupName: $(environmentGroup)RWDINFRG1401
+  teamName.lower: ops
+
+  b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671

@@ -1,0 +1,32 @@
+﻿parameters:
+  - name: azureSubscription
+    type: string
+  - name: resourceGroup
+    type: string
+  - name: targetResource
+    type: string
+  - name: containerName
+    type: string
+
+steps:
+
+- task: AzureCLI@2
+  displayName: Deleting blobs in '${{ parameters.containerName }}'
+  inputs:
+    azureSubscription: '${{ parameters.azureSubscription }}'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    failOnStandardError: true
+    inlineScript: |
+     key=$(az storage account keys list -n ${{ parameters.targetResource }} --query "[0].{value:value}" --output tsv)
+     if [[ $(az storage container list --account-name ${{ parameters.targetResource }} --account-key "$key" --query "[?name == '${{ parameters.containerName }}'].name" --output tsv | wc -l) -gt 0 ]];
+      then
+        echo "Deleting blobs in ${{ parameters.containerName }}"
+        az storage blob delete-batch \
+          --source ${{ parameters.containerName }} \
+          --account-name ${{ parameters.targetResource }} \
+          --pattern * \
+          --account-key "$key"
+     else
+        echo "The ${{ parameters.containerName }} does not exist"
+     fi

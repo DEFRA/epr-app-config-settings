@@ -1,0 +1,15 @@
+variables:
+  b2c.signUpSignInPolicyId: B2C_1A_EPR_SignUpSignIn
+  b2c.signedOutCallbackPath: /signout/$(b2c.signUpSignInPolicyId)
+
+  # notification.services.gov.uk configuratinos
+  messaging.producer.apikeysecret: MessagingConfigApiKey
+  messaging.producer.complianceschemeaccountconfirmation.templateid: ec9d5b43-2a48-48a6-be84-056bc7b064a3
+  messaging.producer.delegatedroleremoved.templateid: 56ee1f66-d5cf-4680-b8f5-a4499a1f2b10
+  messaging.producer.nominatedelegateduser.templateid: 1d8f5206-e93d-4c2d-b6f8-fb881227ae14
+  messaging.producer.nominationcancelled.templateid: 678755fe-7f7d-4bfa-8a2c-f5c571c9c51d
+  messaging.producer.produceraccountconfirmation.templateid: d18ba513-9fdb-41ef-8549-4ccb223a2d4d
+  messaging.producer.removedusernotification.templateid: PLACEHOLDER
+  messaging.producer.admininvitation.templateid: 958280bf-e77e-4940-ba37-74340c02e44d
+  messaging.producer.userinvitation.templateid: 8a27f8b7-7022-489c-ac9e-208435ad1fac
+  messaging.regulator.templateid: f2363374-9f0c-420e-a91d-b4af16ff9333

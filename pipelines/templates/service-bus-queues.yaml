@@ -1,0 +1,66 @@
+parameters:
+  - name: azureSubscription
+    type: string
+  - name: resourceGroup
+    type: string
+  - name: resourceToCreate
+    type: string
+  - name: targetResource
+    type: string
+  - name: createOrDelete
+    type: string
+    default: create
+    values:
+    - create
+    - delete
+  - name: lockDuration
+    type: number
+    default: 5
+  - name: maxSizeinMB
+    type: number
+    default: 1024
+  - name: maxMessageSizeinKB
+    type: number
+    default: 1024
+
+steps:
+- ${{ if eq(parameters.createOrDelete, 'create') }}:
+  - task: AzureCLI@2
+    displayName: Creating Queue ${{ parameters.resourceToCreate }}
+    inputs:
+      azureSubscription: '${{ parameters.azureSubscription }}'
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        az servicebus queue create \
+          --name ${{ parameters.resourceToCreate }} \
+          --resource-group ${{ parameters.resourceGroup }} \
+          --namespace-name ${{ parameters.targetResource }}
+
+  - task: AzureCLI@2
+    displayName: Updating Queue ${{ parameters.resourceToCreate }}
+    inputs:
+      azureSubscription: '${{ parameters.azureSubscription }}'
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        az servicebus queue update \
+          --name ${{ parameters.resourceToCreate }} \
+          --resource-group ${{ parameters.resourceGroup }} \
+          --namespace-name ${{ parameters.targetResource }} \
+          --lock-duration "00h0${{ parameters.lockDuration }}m00s" \
+          --max-message-size ${{ parameters.maxMessageSizeinKB }} \
+          --max-size ${{ parameters.maxSizeinMB }}
+
+- ${{ if eq(parameters.createOrDelete, 'delete') }}:
+  - task: AzureCLI@2
+    displayName: Deleting Queue ${{ parameters.resourceToCreate }}
+    inputs:
+      azureSubscription: '${{ parameters.azureSubscription }}'
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        az servicebus queue delete \
+          --name ${{ parameters.resourceToCreate }} \
+          --resource-group ${{ parameters.resourceGroup }} \
+          --namespace-name ${{ parameters.targetResource }}

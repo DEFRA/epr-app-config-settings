@@ -1,0 +1,11 @@
+variables:
+  environmentSpoke: 5
+  infrastructureResourceGroupName: $(environmentGroup)RWDINFRG1401
+  teamName.lower: phoenix
+
+  b2c.permissionsService.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
+  b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671
+
+  apiConfig.accountServiceClientId: e3428065-aa0b-44f8-954b-b809e35985b7
+
+  featureManagement.validtionDataApi: true

@@ -1,0 +1,117 @@
+[
+  {
+    "name": "AccountApi__BaseUrl",
+    "value": "https://tstrwdwebwa1407.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountApi__ClientId",
+    "value": "6d65d29d-fbeb-41ed-b001-f98e37d05079",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountApi__Timeout",
+    "value": "30",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__BaseUrl",
+    "value": "https://tst-gateway.trade.azure.defra.cloud/trade-file-store",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientId",
+    "value": "8c979e08-142a-4ef7-ba60-475470c8cf96",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientSecret",
+    "value": "lRh8Q~ahXFjOLZYL2FrqBEhsfb8p17J.5YYw6cDF",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__EnableDirectAccess",
+    "value": false,
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Scope",
+    "value": "api://tst-futuretrade-ext.defra.gov.uk/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__SubscriptionKey",
+    "value": "e2b96e9ffdcf4a80a73dacbeb67e6234",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__TenantId",
+    "value": "c9d74090-b4e6-4b04-981d-e6757a160812",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Timeout",
+    "value": "300",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureADB2C__SignUpSignInPolicyId",
+    "value": "B2C_1A_EPR_SignUpSignIn",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "value": "3b9668d3-b442-49ff-8c58-d86f0635227c",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "value": "AZDCUSPOC2.onmicrosoft.com",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "value": "https://AZDCUSPOC2.b2clogin.com",
+    "slotSetting": false
+  },
+  {
+    "name": "ComplianceSchemeEndpoints__GetUserOrganisations",
+    "value": "api/users/user-organisations",
+    "slotSetting": false
+  },
+  {
+    "name": "HealthCheckPath",
+    "value": "/admin/health",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionPeriod",
+    "value": "2020",
+    "slotSetting": false
+  },
+  {
+    "name": "Logging__LogLevel__WebApiGateway.Api",
+    "value": "Debug",
+    "slotSetting": false
+  },
+  {
+    "name": "LoggingApi__BaseUrl",
+    "value": "https://tstrwdwebwa1403.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__PomContainer",
+    "value": "pom-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__RegistrationContainer",
+    "value": "registration-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionStatusApi__BaseUrl",
+    "value": "https://tstrwdwebwa1408.azurewebsites.net",
+    "slotSetting": false
+  }
+]

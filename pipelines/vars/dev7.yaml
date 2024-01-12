@@ -1,0 +1,9 @@
+variables:
+  environmentSpoke: 7
+
+  infrastructureResourceGroupName: $(environmentGroup)RWDINFRG1401
+  teamName.lower: oscar
+
+  b2c.permissionsService.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
+  b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671
+  apiConfig.accountServiceClientId: fe0a0ce7-8b54-4cef-a559-7e192b4118a3

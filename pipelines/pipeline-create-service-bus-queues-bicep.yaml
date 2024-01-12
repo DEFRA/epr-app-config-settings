@@ -1,0 +1,122 @@
+trigger: none
+pr: none
+
+parameters:
+- name: teamName
+  displayName: 'Select Team-Environment:'
+  type: string
+  values:
+  - Pi
+  - Wastebusters
+  - Recyclers
+  - QA
+  - Phoenix
+  - Stig
+  - Oscar
+  - Pre-TST
+  - Ops
+  - TST1
+  - PRE1
+  - PRD1
+- name: apply
+  displayName: 'Apply changes? If unchecked the pipeline will only show what would change after the deployment without doing any changes'
+  type: boolean
+  default: false
+
+variables:
+- template: vars/common.yaml
+- ${{ if eq(parameters.teamName, 'Pi') }}:
+  - template: vars/development.yaml
+  - template: vars/dev1.yaml
+- ${{ elseif eq(parameters.teamName, 'Wastebusters') }}:
+  - template: vars/development.yaml
+  - template: vars/dev2.yaml
+- ${{ elseif eq(parameters.teamName, 'Recyclers') }}:
+  - template: vars/development.yaml
+  - template: vars/dev3.yaml
+- ${{ elseif eq(parameters.teamName, 'QA') }}:
+  - template: vars/development.yaml
+  - template: vars/dev4.yaml
+- ${{ elseif eq(parameters.teamName, 'Phoenix') }}:
+  - template: vars/development.yaml
+  - template: vars/dev5.yaml
+- ${{ elseif eq(parameters.teamName, 'Stig') }}:
+  - template: vars/development.yaml
+  - template: vars/dev6.yaml
+- ${{ elseif eq(parameters.teamName, 'Oscar') }}:
+  - template: vars/development.yaml
+  - template: vars/dev7.yaml
+- ${{ elseif eq(parameters.teamName, 'Pre-TST') }}:
+  - template: vars/development.yaml
+  - template: vars/dev8.yaml
+- ${{ elseif eq(parameters.teamName, 'TST1') }}:
+  - template: vars/tst1.yaml
+- ${{ elseif eq(parameters.teamName, 'PRE1') }}:
+  - template: vars/pre1.yaml
+- ${{ elseif eq(parameters.teamName, 'PRD1') }}:
+  - template: vars/prd1.yaml
+- ${{ else }}:
+  - template: vars/development.yaml
+  - template: vars/dev9.yaml
+
+pool: $(agentPool)
+
+jobs:
+- job: RunningTemplate
+  displayName: Create/Update ServiceBus Queues for ${{ parameters.teamName }}
+  steps:
+  - ${{ if and( ne(parameters.teamName, 'TST1'), ne(parameters.teamName, 'PRE1'), ne(parameters.teamName, 'PRD1'), ne(parameters.teamName, 'Pre-TST')) }}:
+    - task: qetza.replacetokens.replacetokens-task.replacetokens@3
+      displayName: 'Replace tokens'
+      inputs:
+        tokenPattern: custom
+        tokenPrefix: '#{{'
+        tokenSuffix: '}}'
+        actionOnMissing: fail
+        useLegacyPattern: false
+        enableTransforms: true
+        useLegacyEmptyFeature: false
+        targetFiles: |
+          bicep/queue/configs/queues.devX.bicepparam => queues.dev$(environmentSpoke).bicepparam
+
+  - task: AzureCLI@2
+    displayName: Validate deployment
+    inputs:
+      azureSubscription: '${{ variables.sharedInfrastructureSubscriptionName }}'
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        az deployment group validate \
+          --name QueueDeployment \
+          --resource-group $(infrastructureResourceGroupName) \
+          --template-file bicep/queue/queue.bicep \
+          --parameters bicep/queue/configs/queues.${{ lower(variables.environmentName) }}.bicepparam
+
+  - task: AzureCLI@2
+    displayName: Dry run (What-if)
+    inputs:
+      azureSubscription: '${{ variables.sharedInfrastructureSubscriptionName }}'
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        az deployment group create \
+          --name QueueDeployment \
+          --resource-group $(infrastructureResourceGroupName) \
+          --template-file bicep/queue/queue.bicep \
+          --parameters bicep/queue/configs/queues.${{ lower(variables.environmentName) }}.bicepparam \
+          --what-if
+
+  - ${{ if eq(parameters.apply, true) }}:
+    - task: AzureCLI@2
+      condition:
+      displayName: Run deployment
+      inputs:
+        azureSubscription: '${{ variables.sharedInfrastructureSubscriptionName }}'
+        scriptType: 'bash'
+        scriptLocation: 'inlineScript'
+        inlineScript: |
+          az deployment group create \
+            --name QueueDeployment \
+            --resource-group $(infrastructureResourceGroupName) \
+            --template-file bicep/queue/queue.bicep \
+            --parameters bicep/queue/configs/queues.${{ lower(variables.environmentName) }}.bicepparam

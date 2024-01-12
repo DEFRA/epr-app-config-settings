@@ -1,0 +1,66 @@
+trigger: none
+pr: none
+
+parameters:
+- name: envGroup
+  displayName: 'Target Environment group to deploy to:'
+  default: dev
+  type: string
+  values:
+    - dev
+    - tst
+    - pre
+    - prd
+- name: resourceToCreate
+  displayName: 'Service Bus Queue to create (example: defra.epr.pom.data.uploaded, defra.epr.producer.data, defra.epr.registration.data, defra.epr.protectivemonitoring.events):'
+  type: string
+- name: targetResource
+  displayName: 'Service Bus to be used for queue to create (example: DEVRWDINFSB1402):'
+  type: string
+  default: 'DEVRWDINFSB1402'
+- name: createOrDelete
+  displayName: 'Choose if you want to create or delete a resource'
+  default: 'create'
+  type: string
+  values:
+  - create
+  - delete
+- name: lockDuration
+  displayName: 'The amount of time that the message is locked for other receivers (1-5 min).'
+  type: number
+  default: 5
+  values:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+- name: maxSizeinMB
+  displayName: 'Maximum size of the topic (in MB)'
+  type: number
+  default: 1024
+- name: maxMessageSizeinKB
+  displayName: 'Maximum size (in KB) of the message payload that can be accepted by the topic'
+  type: number
+  default: 1024
+
+variables:
+- template: vars/${{ parameters.envGroup }}1.yaml
+
+pool: $(agentPool)
+
+jobs:
+- job: RunningTemplate
+  displayName: Run template to create or remove a ${{ parameters.resourceToCreate }}
+  steps:
+  - template: templates/service-bus-queues.yaml
+    parameters:
+      azureSubscription: ${{ variables.subscriptionName }}
+      resourceGroup: ${{ variables.infrastructureResourceGroupName }}
+      resourceToCreate: ${{ parameters.resourceToCreate }}
+      targetResource: ${{ parameters.targetResource }}
+      createOrDelete: ${{ parameters.createOrDelete }}
+      ${{ if eq(parameters.createOrDelete,'create') }}:
+        lockDuration: ${{ parameters.lockDuration }}
+        maxSizeinMB: ${{ parameters.maxSizeinMB }}
+        maxMessageSizeinKB: ${{ parameters.maxMessageSizeinKB }}

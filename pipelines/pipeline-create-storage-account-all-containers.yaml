@@ -1,0 +1,70 @@
+﻿trigger: none
+pr: none
+pool: DEFRA-COMMON-ubuntu2004-SSV3
+
+parameters:
+- name: dev1
+  displayName: 'Team-1_Pi'
+  default: false
+  type: boolean
+- name: dev2
+  displayName: 'Team-2_Wastebusters'
+  default: false
+  type: boolean
+- name: dev3
+  displayName: 'Team-3_Recyclers'
+  default: false
+  type: boolean
+- name: dev4
+  displayName: 'Team-4_QA'
+  default: false
+  type: boolean
+- name: dev5
+  displayName: 'Team-5_Phoenix'
+  default: false
+  type: boolean
+- name: dev6
+  displayName: 'Team-6_Stig'
+  default: false
+  type: boolean
+- name: dev7
+  displayName: 'Team-7_Oscar'
+  default: false
+  type: boolean
+- name: dev8
+  displayName: 'Team-8_Pre-TST'
+  default: false
+  type: boolean
+- name: dev9
+  displayName: 'Team-9_OPS'
+  default: true
+  type: boolean
+- name: tst1
+  displayName: 'TST1'
+  default: false
+  type: boolean
+
+jobs:
+- job: EntryJob
+  steps:
+  - script: echo "This is the entry job"
+
+- ${{ each parameter in parameters }}:
+  - ${{ if eq(parameter.Value, true) }}:
+    - job: RunningTemplate
+      displayName: 'Run template to create strorage containers'
+      variables:
+        - template: vars/${{ parameter.Key }}.yaml
+      steps:
+      - template: templates/storage-account-all-containers.yaml
+        parameters:
+            azureSubscription: ${{variables['subscriptionName']}}
+            resourceGroup: $(webResourceGroupName)
+            targetResource: ${{ lower(variables.environmentGroup) }}rwdwebsa${{ variables['environmentSpoke'] }}403
+            containerName: pom-upload-container
+      - template: templates/storage-account-all-containers.yaml
+        parameters:
+            azureSubscription: ${{variables['subscriptionName']}}
+            resourceGroup: $(webResourceGroupName)
+            targetResource: ${{ lower(variables.environmentGroup) }}rwdwebsa${{ variables['environmentSpoke'] }}403
+            containerName: registration-upload-container

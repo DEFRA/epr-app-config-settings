@@ -1,0 +1,135 @@
+parameters:
+  - name: subscriptionName
+    type: string
+  - name: webResourceGroupName
+    type: string
+  - name: restartApp
+    type: boolean
+    default: true
+  - name: useDevConfig
+    type: boolean
+    default: false
+  - name: environmentSpoke
+    type: string
+  - name: configDirectory
+    type: string
+  - name: configTemplateInputDirectory
+    type: string
+
+
+steps:
+  - ${{ if eq(parameters.useDevConfig, 'true') }}:
+      - task: qetza.replacetokens.replacetokens-task.replacetokens@3
+        displayName: 'Replace tokens'
+        inputs:
+          tokenPattern: custom
+          tokenPrefix: '#{{'
+          tokenSuffix: '}}'
+          actionOnMissing: fail
+          useLegacyPattern: false
+          enableTransforms: true
+          useLegacyEmptyFeature: false
+          targetFiles: |
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX401.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}401.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX402.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}402.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX403.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}403.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX404.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}404.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX405.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}405.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX406.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}406.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX407.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}407.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX401.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}401.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX402.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}402.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX403.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}403.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX404.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}404.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX405.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}405.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX406.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}406.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX407.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}407.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX408.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}408.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX409.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}409.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX410.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}410.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX411.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}411.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX412.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}412.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX413.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}413.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX414.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}414.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX415.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}415.json
+
+  - task: AzureCLI@2
+    displayName: Cleaning app settings
+    inputs:
+      azureSubscription: '${{ parameters.subscriptionName }}'
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      failOnStandardError: true
+      inlineScript: |
+        for filename in `ls`
+        do
+          service=`basename -s .json $filename`
+          echo -e "\033[0;32m Cleaning AppSettings on "$service
+
+          ACTIVEAPPSETTINGLIST=$(az webapp config appsettings list -g ${{ parameters.webResourceGroupName }} -n $service --query "[].name" -o tsv)
+          DELETELIST=" "
+
+          for appsetting in $ACTIVEAPPSETTINGLIST
+            do
+              case $appsetting in
+                APPINSIGHTS_INSTRUMENTATIONKEY|APPLICATIONINSIGHTS_CONNECTION_STRING|ApplicationInsightsAgent_EXTENSION_VERSION )                         echo "$appsetting found in group 1";;
+                AzureWbeJobStorage|ConnectionStrings__REDIS_CONNECTION|DOCKER_CUSTOM_IMAGE_NAME|DOCKER_REGISTRY_SERVER_URL )                              echo "$appsetting found in group 2";;
+                FUNCTIONS_EXTENSION_VERSION|FUNCTIONS_WORKER_RUNTIME|AzureWebJobsStorage )                                                                echo "$appsetting found in group 3";;
+                WEBSITE_CONTENTAZUREFILECONNECTIONSTRING|WEBSITE_CONTENTOVERVNET|WEBSITES_ENABLE_APP_SERVICE_STORAGE )                                    echo "$appsetting found in group 4";;
+                WEBSITE_ENABLE_SYNC_UPDATE_SITE|WEBSITE_PULL_IMAGE_OVER_VNET|WEBSITE_CONTENTSHARE|XDT_MicrosoftApplicationInsights_Mode )                 echo "$appsetting found in group 5";;
+                *)
+                    echo "$appsetting not found, adding to the delete list"
+                    DELETELIST=$DELETELIST$appsetting' ';;
+              esac
+          done
+          if [[ "$DELETELIST" != " " ]]
+          then
+            az webapp config appsettings delete \
+              --subscription ${{ parameters.subscriptionName }} \
+              --name $service \
+              --resource-group ${{ parameters.webResourceGroupName }} \
+              --setting-names {$DELETELIST}
+          else
+            echo "Nothing to remove for $service"
+          fi
+        done
+      workingDirectory: ${{ parameters.configDirectory }}
+
+  - task: AzureCLI@2
+    displayName: Update settings
+    inputs:
+      azureSubscription: ${{ parameters.subscriptionName }}
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        for filename in `ls`
+        do
+          service=`basename -s .json $filename`
+          echo "Deploying AppSettings to "$service
+          az webapp config appsettings set \
+            --subscription ${{ parameters.subscriptionName }} \
+            -g ${{ parameters.webResourceGroupName }} \
+            -n $service \
+            --settings @./$service.json
+        done
+      workingDirectory: ${{ parameters.configDirectory }}
+
+
+  - ${{ if eq( parameters.restartApp, 'true') }}:
+      - task: AzureCLI@2
+        displayName: Restart services
+        inputs:
+          azureSubscription: ${{ parameters.subscriptionName }}
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            for filename in `ls`
+            do
+              service=`basename -s .json $filename`
+              echo "Restarting " $service
+              az webapp restart \
+                --name $service \
+                --resource-group ${{ parameters.webResourceGroupName }} \
+                --subscription ${{ parameters.subscriptionName }}
+            done
+          workingDirectory: ${{ parameters.configDirectory }}

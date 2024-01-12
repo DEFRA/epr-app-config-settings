@@ -1,0 +1,77 @@
+trigger: none
+pr: none
+
+parameters:
+- name: teamName
+  displayName: 'Select Team-Environment:'
+  type: string
+  values:
+  - Pi
+  - Wastebusters
+  - Recyclers
+  - QA
+  - Phoenix
+  - Stig
+  - Oscar
+  - Pre-TST
+  - Ops
+  - TST1
+  - PRE1
+
+variables:
+- ${{ if eq(parameters.teamName, 'Pi') }}:
+  - template: vars/dev1.yaml
+- ${{ elseif eq(parameters.teamName, 'Wastebusters') }}:
+  - template: vars/dev2.yaml
+- ${{ elseif eq(parameters.teamName, 'Recyclers') }}:
+  - template: vars/dev3.yaml
+- ${{ elseif eq(parameters.teamName, 'QA') }}:
+  - template: vars/dev4.yaml
+- ${{ elseif eq(parameters.teamName, 'Phoenix') }}:
+  - template: vars/dev5.yaml
+- ${{ elseif eq(parameters.teamName, 'Stig') }}:
+  - template: vars/dev6.yaml
+- ${{ elseif eq(parameters.teamName, 'Oscar') }}:
+  - template: vars/dev7.yaml
+- ${{ elseif eq(parameters.teamName, 'Pre-TST') }}:
+  - template: vars/dev8.yaml
+- ${{ elseif eq(parameters.teamName, 'TST1') }}:
+  - template: vars/tst1.yaml
+- ${{ elseif eq(parameters.teamName, 'PRE1') }}:
+  - template: vars/pre1.yaml
+- ${{ elseif eq(parameters.teamName, 'PRD1') }}:
+  - template: vars/prd1.yaml
+- ${{ else }}:
+  - template: vars/dev9.yaml
+
+- name: settingsDir
+  value: $(Build.SourcesDirectory)/${{ lower(variables.environmentName) }}
+
+pool: $(agentPool)
+
+jobs:
+- job: GetSettings
+  displayName: Getting settings for ${{ variables.subscriptionName }}
+  steps:
+  - task: AzureCLI@2
+    inputs:
+      azureSubscription: ${{ variables.subscriptionName }}
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        cd $(settingsDir)
+        for filename in `ls *RWDWEBFA*`
+        do
+          service=`basename -s .json $filename`
+          echo "AppSettings for " $service
+          az functionapp config show --subscription ${{ variables.subscriptionName }} -g ${{ variables.webResourceGroupName }} -n $service | grep -i linuxFxVersion
+          echo -e "\n"
+        done
+        for filename in `ls *RWDWEBWA*`
+        do
+          service=`basename -s .json $filename`
+          echo "AppSettings for " $service
+          az webapp config show --subscription ${{ variables.subscriptionName }} -g ${{ variables.webResourceGroupName }} -n $service | grep -i linuxFxVersion
+          echo -e "\n"
+        done
+    displayName: "Get settings"

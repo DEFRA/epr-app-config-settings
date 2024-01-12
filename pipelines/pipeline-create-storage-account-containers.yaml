@@ -1,0 +1,47 @@
+trigger: none
+pr: none
+
+parameters:
+- name: envGroup
+  displayName: 'Target Environment group to deploy to:'
+  default: dev
+  type: string
+  values:
+    - dev
+    - tst
+    - pre
+    - prd
+- name: resourceToCreate
+  displayName: 'Storage Account container to create (example: pom-upload-container, registration-upload-container):'
+  type: string
+- name: targetResource
+  displayName: 'Storage Account to be used for container to create (example: devrwdwebsa1401):'
+  type: string
+- name: createOrDelete
+  displayName: 'Choose if you want to create or delete a resource'
+  default: 'create'
+  values:
+    - create
+    - delete
+- name: authMethod
+  displayName: 'Only if you want to delete a resource'
+  default: 'copy_SA_account_key_here'
+  type: string
+
+variables:
+- template: vars/${{ parameters.envGroup }}1.yaml
+
+pool: $(agentPool)
+
+jobs:
+- job: RunningTemplate
+  displayName: Run template to create or remove a ${{ parameters.resourceToCreate }}
+  steps:
+  - template: templates/storage-account-containers.yaml
+    parameters:
+      azureSubscription: ${{ variables.subscriptionName }}
+      resourceGroup: ${{ variables.infrastructureResourceGroupName }}
+      resourceToCreate: ${{ parameters.resourceToCreate }}
+      targetResource: ${{ parameters.targetResource }}
+      createOrDelete: ${{ parameters.createOrDelete }}
+      authMethod: ${{ parameters.authMethod }}

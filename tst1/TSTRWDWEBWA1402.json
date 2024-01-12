@@ -1,0 +1,107 @@
+[
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "ab29ed47-ac03-4d99-b7c9-5ab99c2c4c7e"
+  },
+  {
+    "name": "AzureAdB2C__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://tstrwdinfkv1401.vault.azure.net/secrets/AzureAdB2CClientSecretRWD1402/)"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "AZDCUSPOC2.onmicrosoft.com"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "https://AZDCUSPOC2.b2clogin.com"
+  },
+  {
+    "name": "AzureAdB2C__SignedOutCallbackPath",
+    "slotSetting": false,
+    "value": "/signout/B2C_1A_EPR_SignUpSignIn"
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "B2C_1A_EPR_SignUpSignIn"
+  },
+  {
+    "name": "ExternalUrls__ExistingUserRedirectUrl",
+    "slotSetting": false,
+    "value": "/report-data"
+  },
+  {
+    "name": "FacadeAPI__Address",
+    "slotSetting": false,
+    "value": "https://tstrwdwebwa1404.azurewebsites.net"
+  },
+  {
+    "name": "FacadeAPI__DownstreamScope",
+    "slotSetting": false,
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-tst1-producers-account-facade/account-creation"
+  },
+  {
+    "name": "FeatureManagement__ShowLanguageSwitcher",
+    "value": true,
+    "slotSetting": false
+  },
+  {
+    "name": "ForwardedHeaders__AllowedHosts",
+    "slotSetting": false,
+    "value": "rwd-tst1.azure.defra.cloud"
+  },
+  {
+    "name": "GoogleAnalytics__MeasurementId",
+    "slotSetting": false,
+    "value": "VMDE8PW9W7"
+  },
+  {
+    "name": "GoogleAnalytics__TagManagerContainerId",
+    "slotSetting": false,
+    "value": "G-VMDE8PW9W7"
+  },
+  {
+    "name": "MsalOptions__L2SlidingExpiration",
+    "slotSetting": false,
+    "value": 60
+  },
+  {
+    "name": "PhaseBannerOptions__SurveyUrl",
+    "slotSetting": false,
+    "value": "https://defragroup.eu.qualtrics.com/jfe/form/SV_a2Bm7vw3cht5B6C"
+  },
+  {
+    "name": "RedisInstanceName",
+    "slotSetting": false,
+    "value": "epr-tst1-producers-"
+  },
+  {
+    "name": "SiteDates__AccessibilityStatementPrepared",
+    "slotSetting": false,
+    "value": "2023-05-23"
+  },
+  {
+    "name": "SiteDates__AccessibilityStatementReviewed",
+    "slotSetting": false,
+    "value": "2023-11-03"
+  },
+  {
+    "name": "SiteDates__AccessibilitySiteTested",
+    "slotSetting": false,
+    "value": "2023-08-31"
+  },
+  {
+    "name": "SiteDates__DateFormat",
+    "slotSetting": false,
+    "value": "d MMMM yyyy"
+  },
+  {
+    "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
+    "slotSetting": false,
+    "value": false
+  }
+]

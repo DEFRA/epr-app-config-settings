@@ -1,0 +1,27 @@
+[
+  {
+    "name": "AccountsDatabase__ConnectionString",
+    "slotSetting": false,
+    "value": "Server=tcp:devrwddbssq1401.database.windows.net,1433;Initial Catalog=#{{ accountsDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;"
+  },
+  {
+    "name": "ScheduleExpression",
+    "slotSetting": false,
+    "value": "0 0 22 * * *"
+  },
+  {
+    "name": "SubmissionsDatabase__AccountKey",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/CosmoAccountKey/)"
+  },
+  {
+    "name": "SubmissionsDatabase__ConnectionString",
+    "slotSetting": false,
+    "value": "#{{ cosmos.database.connectionString }}"
+  },
+  {
+    "name": "SubmissionsDatabase__Name",
+    "slotSetting": false,
+    "value": "#{{ cosmos.database.name }}"
+  }
+]

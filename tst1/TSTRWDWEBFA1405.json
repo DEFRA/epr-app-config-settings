@@ -1,0 +1,102 @@
+[
+  {
+    "name": "AzureWebJobsStorage",
+    "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/AntiVirusStorageAccountConnectionStringRWD1405/)",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWD1403/)",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__PomContainerName",
+    "value": "pom-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__RegistrationContainerName",
+    "value": "registration-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "LoggingApi__BaseUrl",
+    "value": "https://tstrwdwebwa1403.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/ServiceBusConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__PomUploadQueueName",
+    "value": "defra.epr.pom.data.uploaded",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__RegistrationDataQueueName",
+    "value": "defra.epr.registration.data",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionApi__BaseUrl",
+    "value": "https://tstrwdwebwa1408.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "TradeAntivirusApi__BaseUrl",
+    "value": "https://tst-gateway.trade.azure.defra.cloud/trade-file-store",
+    "slotSetting": false
+  },
+  {
+    "name": "TradeAntivirusApi__ClientId",
+    "value": "8c979e08-142a-4ef7-ba60-475470c8cf96",
+    "slotSetting": false
+  },
+  {
+    "name": "TradeAntivirusApi__ClientSecret",
+    "value": "lRh8Q~ahXFjOLZYL2FrqBEhsfb8p17J.5YYw6cDF",
+    "slotSetting": false
+  },
+  {
+    "name": "TradeAntivirusApi__EnableDirectAccess",
+    "value": false,
+    "slotSetting": false
+  },
+  {
+    "name": "TradeAntivirusApi__Scope",
+    "value": "api://tst-futuretrade-ext.defra.gov.uk/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "TradeAntivirusApi__SubscriptionKey",
+    "value": "e2b96e9ffdcf4a80a73dacbeb67e6234",
+    "slotSetting": false
+  },
+  {
+    "name": "TradeAntivirusApi__TenantId",
+    "value": "c9d74090-b4e6-4b04-981d-e6757a160812",
+    "slotSetting": false
+  },
+  {
+    "name": "TradeAntivirusApi__Timeout",
+    "value": "600",
+    "slotSetting": false
+  },
+  {
+    "name": "TradeAntivirusServiceBus__AntivirusTopicName",
+    "value": "defra.trade.filestore.notify",
+    "slotSetting": false
+  },
+  {
+    "name": "TradeAntivirusServiceBus__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://tstrwdinfkv1401.vault.azure.net/secrets/TradeAntivirusServiceBus-ConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "TradeAntivirusServiceBus__SubscriptionName",
+    "value": "filestore-notify-epr",
+    "slotSetting": false
+  }
+]

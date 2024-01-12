@@ -1,0 +1,39 @@
+parameters:
+  - name: azureSubscription
+    type: string
+  - name: resourceGroup
+    type: string
+  - name: resourceToCreate
+    type: string
+  - name: targetResource
+    type: string
+  - name: createOrDelete
+    type: string
+  - name: authMethod
+    type: string
+
+steps:
+
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: '${{ parameters.azureSubscription }}'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      if [ ${{ parameters.createOrDelete }} = 'create' ]
+      then
+        az storage container create \
+          --name ${{ parameters.resourceToCreate }} \
+          --resource-group ${{ parameters.resourceGroup }} \
+          --account-name ${{ parameters.targetResource }} \
+          --public-access off \
+          --fail-on-exist
+      elif [ ${{ parameters.createOrDelete }} = 'delete' ]
+      then
+        az storage container delete \
+          --name ${{ parameters.resourceToCreate }} \
+          --account-key ${{ parameters.authMethod }} \
+          --account-name ${{ parameters.targetResource }}
+      else
+        echo "Neither create nor delete was selected"
+      fi

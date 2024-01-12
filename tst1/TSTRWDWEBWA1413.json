@@ -1,0 +1,77 @@
+[
+  {
+    "name": "ApiConfig__AccountServiceBaseUrl",
+    "slotSetting": false,
+    "value": "https://tstrwdwebwa1407.azurewebsites.net"
+  },
+  {
+    "name": "ApiConfig__AccountServiceClientId",
+    "slotSetting": false,
+    "value": "6d65d29d-fbeb-41ed-b001-f98e37d05079"
+  },
+  {
+    "name": "ApiConfig__AddressLookupBaseUrl",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://tstrwdinfkv1401.vault.azure.net/secrets/ApiConfigAddressLookupBaseUrl/)"
+  },
+  {
+    "name": "ApiConfig__Certificate",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://tstrwdinfkv1401.vault.azure.net/certificates/boomi-api-certificate/)"
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://tstrwdinfkv1401.vault.azure.net/secrets/ApiConfigCompaniesHouseLookupBaseUrl/)"
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "1dd24ade-b957-4897-9466-c49ea9191306"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "AZDCUSPOC2.onmicrosoft.com"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "https://AZDCUSPOC2.b2clogin.com"
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "B2C_1A_EPR_SignUpSignIn"
+  },
+  {
+    "name": "FacadeAPI__Address",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa1413.azurewebsites.net"
+  },
+  {
+    "name": "MessagingConfig__AccountCreationUrl",
+    "slotSetting": false,
+    "value": "https://rwd-tst1.azure.defra.cloud/regulators/full-name?token="
+  },
+  {
+    "name": "MessagingConfig__ApiKey",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://tstrwdinfkv1401.vault.azure.net/secrets/MessagingConfigApiKey/)"
+  },
+  {
+    "name": "RedisInstanceName",
+    "slotSetting": false,
+    "value": "epr-tst1-regulators-"
+  },
+  {
+    "name": "rolesConfig__roles__4__InvitationTemplateId",
+    "slotSetting": false,
+    "value": "ed99b2d7-638f-48de-969e-eec4745d067f"
+  },
+  {
+    "name": "rolesConfig__roles__5__InvitationTemplateId",
+    "slotSetting": false,
+    "value": "ed99b2d7-638f-48de-969e-eec4745d067f"
+  }
+]
