@@ -307,7 +307,7 @@
   {
     "name": "MSAL__L2SlidingExpiration",
     "slotSetting": false,
-    "value": 20
+    "value": 60
   },
   {
     "name": "WebAPI__DownstreamScope",

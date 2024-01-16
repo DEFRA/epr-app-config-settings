@@ -65,6 +65,11 @@
     "value": "G-VMDE8PW9W7"
   },
   {
+    "name": "MsalOptions__L2SlidingExpiration",
+    "slotSetting": false,
+    "value": 60
+  },
+  {
     "name": "PhaseBannerOptions__SurveyUrl",
     "slotSetting": false,
     "value": "https://defragroup.eu.qualtrics.com/jfe/form/SV_a2Bm7vw3cht5B6C"

@@ -221,6 +221,11 @@
     "value": 12
   },
   {
+    "name": "MsalOptions__L2SlidingExpiration",
+    "slotSetting": false,
+    "value": 60
+  },
+  {
     "name": "PATH_BASE",
     "slotSetting": false,
     "value": "/regulators"
