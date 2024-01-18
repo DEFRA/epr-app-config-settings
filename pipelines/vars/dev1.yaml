@@ -10,7 +10,6 @@ variables:
   webResourceGroupName: ${{ variables.environmentGroup }}RWDWEBRG${{ variables.environmentSpoke}}401
   infrastructureResourceGroupName: ${{ variables.environmentGroup }}RWDINFRG${{ variables.environmentSpoke}}401
   teamName.lower: pi
-  facadeAPI.DownstreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev-producers-account-facade/account-creation
 
   b2c.permissionsService.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
   b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671

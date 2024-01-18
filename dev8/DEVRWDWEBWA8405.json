@@ -206,7 +206,7 @@
   },
   {
     "name": "SESSION_IDLE_TIMEOUT_MINUTES",
-    "value": "10",
+    "value": "20",
     "slotSetting": false
   },
   {

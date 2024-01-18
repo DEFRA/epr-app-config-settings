@@ -21,9 +21,11 @@ variables:
   cosmos.database.connectionString: https://devrwddbsco1401.documents.azure.com:443/
 
   # EPR Authorization
-  eprAuthorizationConfig.downStreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev-regulators-facade/regulator-service
+  eprAuthorizationConfig.downStreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-dev8-regulators-facade/regulator-service
 
   # Web API
   webApi.downstreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-api-web.file-upload/epr-api-web.file-upload
 
   messaging.regulator.templateid: ed99b2d7-638f-48de-969e-eec4745d067f
+  
+  facadeAPI.DownstreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-producers-account-facade/account-creation

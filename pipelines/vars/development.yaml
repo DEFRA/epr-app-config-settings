@@ -24,7 +24,7 @@ variables:
   sharedKeyVault.SCSstorageAccount.secret.name: SubmissionCheckSplitterStorageAccountConnectionStringRWD1403
   sharedKeyVault.SCSstorageAccount.secret.url: $(sharedKeyVault.secretsUrl)/$(sharedKeyVault.SCSstorageAccount.secret.name)
 
-  sharedKeyVault.b2c.frontend.secret.name: AzureAdB2C-ClientSecret-DEV-3-5-7
+  sharedKeyVault.b2c.frontend.secret.name: AzureAdB2CClientSecretRWDDev
   sharedKeyVault.b2c.frontend.secret.url: $(sharedKeyVault.secretsUrl)/$(sharedKeyVault.b2c.frontend.secret.name)
 
   sharedKeyVault.b2c.regulators.secret.name: AzureAdB2CClientSecretRWDRegulatorsDev

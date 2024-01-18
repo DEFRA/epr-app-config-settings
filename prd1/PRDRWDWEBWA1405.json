@@ -202,7 +202,7 @@
   {
     "name": "SESSION_IDLE_TIMEOUT_MINUTES",
     "slotSetting": false,
-    "value": "10"
+    "value": "20"
   },
   {
     "name": "SiteDates__AccessibilityStatementPrepared",

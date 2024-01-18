@@ -53,5 +53,15 @@
     "name": "ValidationDataApi__ClientId",
     "slotSetting": false,
     "value": "#{{ validationDataApi.appRegistration.clientId }}"
-  }  
+  },
+  {
+    "name": "Validation__MaxIssuesToProcess",
+    "slotSetting": false,
+    "value": 1000
+  },
+  {
+    "name": "Redis__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+  }
 ]
