@@ -75,23 +75,33 @@
     "value": true
   },
   {
-    "name": "RegulatorEmailConfig__England",
-    "slotSetting": false,
-    "value": "packaging@environment-agency.gov.uk"
+    "name": "RegulatorEmailConfig__NorthernIreland",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/NorthernIrelandRegulatorInbox/)",
+    "slotSetting": false
   },
   {
-    "name": "RegulatorEmailConfig__Wales",
-    "slotSetting": false,
-    "value": "packaging@naturalresourceswales.gov.uk"
+    "name": "RegulatorEmailConfig__England",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/EnglandRegulatorInbox/)",
+    "slotSetting": false
   },
   {
     "name": "RegulatorEmailConfig__Scotland",
-    "slotSetting": false,
-    "value": "producer.responsibility@sepa.org.uk"
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/ScotlandRegulatorInbox/)",
+    "slotSetting": false
   },
   {
-    "name": "RegulatorEmailConfig__NorthernIreland",
-    "slotSetting": false,
-    "value": "packaging@daera-ni.gov.uk"
+    "name": "RegulatorEmailConfig__Wales",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/WalesRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ComplianceSchemeResubmissionTemplateId",
+    "value": "158fed45-5f3b-4110-a699-00305c9c11db",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ProducerResubmissionTemplateId",
+    "value": "09a4c59c-f4ac-40f5-a76c-947405ca3364",
+    "slotSetting": false
   }
 ]

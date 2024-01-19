@@ -80,6 +80,36 @@
     "value": "#{{ messaging.producer.complianceschemeaccountconfirmation.templateid }}"
   },
   {
+    "name": "MessagingConfig__ComplianceSchemeResubmissionTemplateId",
+    "value": "messaging.producer.complianceschemeresubmissionnotification.templateid",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ProducerResubmissionTemplateId",
+    "value": "messaging.producer.producerresubmissionnotification.templateid",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__NorthernIreland",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/NorthernIrelandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__England",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/EnglandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__Scotland",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ScotlandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__Wales",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/WalesRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
     "name": "MessagingConfig__DelegatedRoleRemovedTemplateId",
     "slotSetting": false,
     "value": "#{{ messaging.producer.delegatedroleremoved.templateid }}"

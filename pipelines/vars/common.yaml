@@ -13,3 +13,5 @@ variables:
   messaging.producer.admininvitation.templateid: 958280bf-e77e-4940-ba37-74340c02e44d
   messaging.producer.userinvitation.templateid: 8a27f8b7-7022-489c-ac9e-208435ad1fac
   messaging.regulator.templateid: f2363374-9f0c-420e-a91d-b4af16ff9333
+  messaging.producer.producerresubmissionnotification.templateid: 316f111a-6e96-496f-8514-e6213b96da96
+  messaging.producer.complianceschemeresubmissionnotification.templateid: 253892da-55b2-4c8f-b97a-9feb20b85709

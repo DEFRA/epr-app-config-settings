@@ -73,5 +73,35 @@
     "name": "FeatureManagement__SendDissociationNotificationEmail",
     "slotSetting": false,
     "value": false
+  },
+  {
+    "name": "MessagingConfig__ComplianceSchemeResubmissionTemplateId",
+    "value": "253892da-55b2-4c8f-b97a-9feb20b85709",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ProducerResubmissionTemplateId",
+    "value": "316f111a-6e96-496f-8514-e6213b96da96",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__NorthernIreland",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/NorthernIrelandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__England",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/EnglandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__Scotland",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ScotlandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__Wales",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/WalesRegulatorInbox/)",
+    "slotSetting": false
   }
 ]

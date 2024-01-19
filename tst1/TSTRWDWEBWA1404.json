@@ -58,32 +58,32 @@
     "name": "MessagingConfig__ProducerAccountConfirmationTemplateId",
     "slotSetting": false,
     "value": "31cb3e31-fe23-4949-beae-eb3b24182d10"
-   },
-   {
+  },
+  {
     "name": "MessagingConfig__ComplianceSchemeAccountConfirmationTemplateId",
     "slotSetting": false,
     "value": "f8590c80-e925-411c-8434-8c8f794368df"
-   },
-   {
+  },
+  {
     "name": "MessagingConfig__NominateDelegatedUserTemplateId",
     "slotSetting": false,
     "value": "93a8562e-af72-40ab-8e0e-b18f4ebca8b1"
-   },
-   {
+  },
+  {
     "name": "MessagingConfig__DelegatedRoleRemovedTemplateId",
     "slotSetting": false,
     "value": "c7021f44-052c-45e1-b566-2a0424dc1b94"
-   },
-   {
+  },
+  {
     "name": "MessagingConfig__NominationCancelledTemplateId",
     "slotSetting": false,
     "value": "dc403228-666c-4929-840a-b821f6e96d4f"
-   },
-   {
+  },
+  {
     "name": "MessagingConfig__RemovedUserNotificationTemplateId",
     "slotSetting": false,
     "value": "ed3adf7f-254c-493d-bcb8-5f57a4c7e2b0"
-   },
+  },
   {
     "name": "MessagingConfig__MemberDissociationRegulatorsTemplateId",
     "slotSetting": false,
@@ -94,29 +94,59 @@
     "slotSetting": false,
     "value": "e710cc95-419c-462e-a62f-4cc3234b4062"
   },
-   {
-     "name": "rolesConfig__roles__2__InvitationTemplateId",
-     "value": "ee07a46f-61f5-4939-a78d-bef752abaaa1",
-     "slotSetting": false
-   },
-   {
-     "name": "rolesConfig__roles__3__InvitationTemplateId",
-     "value": "35679fd0-c8ff-4c72-bc97-3ccd843efb94",
-     "slotSetting": false
-   },
-   {
-     "name": "rolesConfig__roles__4__InvitationTemplateId",
-     "value": "ed99b2d7-638f-48de-969e-eec4745d067f",
-     "slotSetting": false
-   },
-   {
-     "name": "rolesConfig__roles__5__InvitationTemplateId",
-     "value": "ed99b2d7-638f-48de-969e-eec4745d067f",
-     "slotSetting": false
-   },
-   {
+  {
+    "name": "rolesConfig__roles__2__InvitationTemplateId",
+    "value": "ee07a46f-61f5-4939-a78d-bef752abaaa1",
+    "slotSetting": false
+  },
+  {
+    "name": "rolesConfig__roles__3__InvitationTemplateId",
+    "value": "35679fd0-c8ff-4c72-bc97-3ccd843efb94",
+    "slotSetting": false
+  },
+  {
+    "name": "rolesConfig__roles__4__InvitationTemplateId",
+    "value": "ed99b2d7-638f-48de-969e-eec4745d067f",
+    "slotSetting": false
+  },
+  {
+    "name": "rolesConfig__roles__5__InvitationTemplateId",
+    "value": "ed99b2d7-638f-48de-969e-eec4745d067f",
+    "slotSetting": false
+  },
+  {
     "name": "FeatureManagement__SendDissociationNotificationEmail",
     "slotSetting": false,
     "value": false
+  },
+  {
+    "name": "MessagingConfig__ComplianceSchemeResubmissionTemplateId",
+    "value": "253892da-55b2-4c8f-b97a-9feb20b85709",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ProducerResubmissionTemplateId",
+    "value": "316f111a-6e96-496f-8514-e6213b96da96",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__NorthernIreland",
+    "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/NorthernIrelandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__England",
+    "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/EnglandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__Scotland",
+    "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/ScotlandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__Wales",
+    "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/WalesRegulatorInbox/)",
+    "slotSetting": false
   }
- ]
+]
