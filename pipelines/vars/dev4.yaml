@@ -14,6 +14,8 @@ variables:
   b2c.signedOutCallbackPath: /signout/B2C_1A_SignUpSignIn
   b2c.permissionsService.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
 
+  sharedKeyVault.b2c.regulators.secret.name: AzureAdB2CClientSecretRWDRegulatorsDev4-8
+
   apiConfig.accountServiceClientId: 1755c3c9-8ecb-4903-a61b-cc5cd81ec320
   apiConfig.addressLookupBaseUrl: 'https://integration-snd.azure.defra.cloud/ws/rest/DEFRA/v1/address/'
   apiConfig.companiesHouseLookupBaseUrl: 'https://integration-snd.azure.defra.cloud/ws/rest/DEFRA/v2.1/'

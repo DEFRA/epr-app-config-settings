@@ -9,6 +9,7 @@ variables:
   # B2C
   b2c.frontend.clientId: af60ad52-d352-4057-a81a-5a865508454d
   sharedKeyVault.b2c.frontend.secret.name: AzureAdB2CClientSecretRWDDev4-8
+  sharedKeyVault.b2c.regulators.secret.name: AzureAdB2CClientSecretRWDRegulatorsDev4-8
 
   b2c.wax409.clientId: ec08c5b8-4d11-4d01-a8b2-47bbda6e579b
 
