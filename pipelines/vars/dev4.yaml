@@ -22,6 +22,8 @@ variables:
 
   cosmos.database.connectionString: https://devrwddbsco1401.documents.azure.com:443/
 
+  featureManagement.validtionDataApi: true
+
   # EPR Authorization
   eprAuthorizationConfig.downStreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-dev8-regulators-facade/regulator-service
 

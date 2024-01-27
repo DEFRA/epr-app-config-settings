@@ -37,7 +37,7 @@
   {
     "name": "ValidationDataApi__IsEnabled",
     "slotSetting": false,
-    "value": false
+    "value": true
   },
   {
     "name": "ValidationDataApi__Timeout",

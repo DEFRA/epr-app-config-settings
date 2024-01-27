@@ -157,7 +157,7 @@
     {
         "name": "FeatureManagement__ShowComplianceSchemeMemberManagement",
         "slotSetting": false,
-        "value": false
+        "value": true
     },
     {
         "name": "ForwardedHeaders__AllowedHosts",
