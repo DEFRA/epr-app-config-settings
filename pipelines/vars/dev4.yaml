@@ -10,9 +10,9 @@ variables:
   b2c.facade.clientId: b5e37f8d-c24a-457b-80fd-9cb91def269c
   sharedKeyVault.b2c.frontend.secret.name: AzureAdB2CClientSecretRWDDev4-8
 
-  b2c.regulators.clientId: 150201c3-9190-4bb9-92dd-8fefdc8fadb1
+  b2c.regulators.clientId: c7adc58b-7cc6-45e9-a3f8-72af71238575
   b2c.signedOutCallbackPath: /signout/B2C_1A_SignUpSignIn
-  b2c.permissionsService.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
+  b2c.permissionsService.clientId: 2629c076-3a06-4e01-aa59-cc38ba667f60
 
   sharedKeyVault.b2c.regulators.secret.name: AzureAdB2CClientSecretRWDRegulatorsDev4-8
 

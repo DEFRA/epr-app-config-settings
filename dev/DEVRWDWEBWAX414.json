@@ -125,11 +125,6 @@
     "value": "/regulator-enrolment"
   },
   {
-    "name": "PATH_BASE",
-    "slotSetting": false,
-    "value": "/regulator-enrolment"
-  },
-  {
     "name": "PhaseBannerOptions__ApplicationStatus",
     "slotSetting": false,
     "value": "Alpha"
