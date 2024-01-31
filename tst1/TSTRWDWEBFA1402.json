@@ -28,11 +28,6 @@
     "name": "SubmissionApi__BaseUrl",
     "value": "https://tstrwdwebwa1408.azurewebsites.net",
     "slotSetting": false
-  },  
-  {
-    "name": "Validation__DisableValidation",
-    "slotSetting": false,
-    "value": false
   },
   {
     "name": "Validation__Disabled",

@@ -117,7 +117,7 @@
   {
     "name": "FeatureManagement__SendDissociationNotificationEmail",
     "slotSetting": false,
-    "value": false
+    "value": true
   },
   {
     "name": "MessagingConfig__ComplianceSchemeResubmissionTemplateId",
