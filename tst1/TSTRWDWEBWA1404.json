@@ -45,6 +45,11 @@
     "value": "B2C_1A_EPR_SignUpSignIn"
   },
   {
+    "name": "LoggingApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://tstrwdwebwa1403.azurewebsites.net"
+  },
+  {
     "name": "MessagingConfig__AccountCreationUrl",
     "slotSetting": false,
     "value": "https://rwd-tst1.azure.defra.cloud/create-account/invitation/"

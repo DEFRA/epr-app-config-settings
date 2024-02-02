@@ -9,3 +9,5 @@ variables:
   apiConfig.accountServiceClientId: e3428065-aa0b-44f8-954b-b809e35985b7
 
   featureManagement.validtionDataApi: true
+
+  validationDataApi.appRegistration.clientId: ec668afe-3d8e-4242-91d7-910fac38c3b2

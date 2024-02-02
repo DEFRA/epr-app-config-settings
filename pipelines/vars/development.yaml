@@ -97,6 +97,3 @@ variables:
   messaging.member.dissociation.producers.templateid: e710cc95-419c-462e-a62f-4cc3234b4062
   messaging.producer.producerresubmissionnotification.templateid: 316f111a-6e96-496f-8514-e6213b96da96
   messaging.producer.complianceschemeresubmissionnotification.templateid: 253892da-55b2-4c8f-b97a-9feb20b85709
-
-  # Accounts Validation Data API
-  validationDataApi.appRegistration.clientId: ec668afe-3d8e-4242-91d7-910fac38c3b2

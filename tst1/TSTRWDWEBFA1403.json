@@ -35,6 +35,11 @@
     "slotSetting": false
   },
   {
+    "name": "ValidationDataApi__ClientId",
+    "slotSetting": false,
+    "value": "b27a86fa-a22b-402d-9618-e4ce8ff99e18"
+  },
+  {
     "name": "ValidationDataApi__BaseUrl",
     "slotSetting": false,
     "value": "https://tstrwdwebfa1407.azurewebsites.net/"
