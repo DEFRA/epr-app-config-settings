@@ -56,6 +56,8 @@ variables:
   # Feature management
   featureManagement.removeUsers: true
   featureManagement.showLanguageSwitcher: true
+  featureManagement.managePomSubmissions: true
+  featureManagement.manageRegistrations: true
   featureManagement.manageApprovedUsers: false
   featureManagement.sendDissociationNotificationEmail: false
   featureManagement.validtionDataApi: false

@@ -165,6 +165,16 @@
     "value": "#{{ featureManagement.showLanguageSwitcher }}"
   },
   {
+    "name": "FeatureManagement__ManagePoMSubmissions",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.managePomSubmissions }}"
+  },
+  {
+    "name": "FeatureManagement__ManageRegistrations",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.manageRegistrations }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke }}.azure.defra.cloud"
