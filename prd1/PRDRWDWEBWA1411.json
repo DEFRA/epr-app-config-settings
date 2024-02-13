@@ -60,6 +60,11 @@
     "value": "/regulators/home"
   },
   {
+    "name": "ExternalUrls__CompaniesHouseRegisterBaseUrl",
+    "slotSetting": false,
+    "value": "https://find-and-update.company-information.service.gov.uk/company"
+  },
+  {
     "name": "ExternalUrls__ManageAccountRedirectUrl",
     "slotSetting": false,
     "value": "https://rwd-dev3.azure.defra.cloud/manage-account"

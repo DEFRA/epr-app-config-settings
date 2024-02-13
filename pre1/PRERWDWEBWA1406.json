@@ -185,6 +185,21 @@
     "slotSetting": false
   },
   {
+    "name": "MessagingConfig__RegulatorSubmissionAccepted",
+    "value": "dd736a3c-22fa-4def-b414-14e280653033",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorSubmissionRejectedResubmissionRequired",
+    "value": "2182ab10-b88c-4a1d-a069-a9c1b13b300f",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorSubmissionRejectedResubmissionNotRequired",
+    "value": "889a8b8a-ca42-4384-b7bf-ac38a7b2ad3b",
+    "slotSetting": false
+  },
+  {
     "name": "MessagingConfig__AccountCreationUrl",
     "value": "https://rwd-pre1.azure.defra.cloud/create-account/invitation/",
     "slotSetting": false
