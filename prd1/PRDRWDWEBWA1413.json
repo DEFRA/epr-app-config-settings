@@ -68,5 +68,15 @@
     "name": "RedisInstanceName",
     "slotSetting": false,
     "value": "epr-prd1-regulators-"
+  },
+  {
+    "name": "rolesConfig__roles__4__InvitationTemplateId",
+    "slotSetting": false,
+    "value": "f2363374-9f0c-420e-a91d-b4af16ff9333"
+  },
+  {
+    "name": "rolesConfig__roles__5__InvitationTemplateId",
+    "slotSetting": false,
+    "value": "f2363374-9f0c-420e-a91d-b4af16ff9333"
   }
 ]

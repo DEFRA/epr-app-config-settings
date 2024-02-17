@@ -17,7 +17,7 @@
   {
     "name": "AzureAdB2C__Domain",
     "slotSetting": false,
-    "value": "dcidm.onmicrosoft.com"
+    "value": "DCIDM.onmicrosoft.com"
   },
   {
     "name": "AzureAdB2C__Instance",
@@ -27,12 +27,12 @@
   {
     "name": "AzureAdB2C__SignUpSignInPolicyId",
     "slotSetting": false,
-    "value": "B2C_1A_EPR_SignUpSignIn"
+    "value": "B2C_1A_EPR_CUI_SignUpSignIn"
   },
   {
     "name": "AzureAdB2C__SignedOutCallbackPath",
     "slotSetting": false,
-    "value": "/signout/B2C_1A_EPR_SignUpSignIn"
+    "value": "/signout/B2C_1A_EPR_CUI_SignUpSignIn"
   },
   {
     "name": "ExternalUrls__LandingPageUrl",
