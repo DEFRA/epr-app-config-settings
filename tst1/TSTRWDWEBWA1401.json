@@ -205,28 +205,53 @@
     "slotSetting": false
   },
   {
-    "name": "LargeProducerReportFileNames__All",
-    "value": "large-producers-rpd-all-regulators-2023.csv",
+    "name": "LargeProducerReportFileNames__AllNationsReportFileName",
+    "value": "large-producers-all-regulators-2023.csv",
     "slotSetting": false
   },
   {
-    "name": "LargeProducerReportFileNames__En",
-    "value": "large-producers-rpd-ea-2023.csv",
+    "name": "LargeProducerReportFileNames__EnglishReportFileName",
+    "value": "large-producers-ea-2023.csv",
     "slotSetting": false
   },
   {
-    "name": "LargeProducerReportFileNames__Ni",
-    "value": "large-producers-rpd-niea-2023.csv",
+    "name": "LargeProducerReportFileNames__NorthernIrelandReportFileName",
+    "value": "large-producers-niea-2023.csv",
     "slotSetting": false
   },
   {
-    "name": "LargeProducerReportFileNames__Sc",
-    "value": "large-producers-rpd-sepa-2023.csv",
+    "name": "LargeProducerReportFileNames__ScottishReportFileName",
+    "value": "large-producers-sepa-2023.csv",
     "slotSetting": false
   },
   {
-    "name": "LargeProducerReportFileNames__Wl",
-    "value": "large-producers-rpd-nrw-2023.csv",
+    "name": "LargeProducerReportFileNames__WalesReportFileName",
+    "value": "large-producers-nrw-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__AllNationsReportFileNameInWelsh",
+    "value": "cynhyrchwyr-mawr-pob-rheolydd-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__EnglishReportFileNameInWelsh",
+    "value": "cynhyrchwyr-mawr-ea-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__NorthernIrelandReportFileNameInWelsh",
+    "value": "cynhyrchwyr-mawr-niea-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__ScottishReportFileNameInWelsh",
+    "value": "cynhyrchwyr-mawr-sepa-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__WalesReportFileNameInWelsh",
+    "value": "cynhyrchwyr-mawr-nrw-2023.csv",
     "slotSetting": false
   },
   {

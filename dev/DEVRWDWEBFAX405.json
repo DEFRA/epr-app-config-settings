@@ -93,5 +93,10 @@
     "name": "TradeAntivirusServiceBus__SubscriptionName",
     "slotSetting": false,
     "value": "#{{ TradeAntivirus.ServiceBus.subscriptionName }}"
+  },
+  {
+    "name": "FeatureManagement__EnableRegistrationRowValidation",
+    "slotSetting": false,
+    "value": true
   }
 ]
