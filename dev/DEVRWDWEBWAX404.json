@@ -163,5 +163,10 @@
     "name": "FeatureManagement__SendDissociationNotificationEmail",
     "slotSetting": false,
     "value": true
+  },
+  {
+    "name": "MessagingConfig__ApprovedUserAccountConfirmationTemplateId",
+    "slotSetting": false,
+    "value": "#{{ messaging.producer.approveduseraccountconfirmation.templateid }}"
   }
 ]

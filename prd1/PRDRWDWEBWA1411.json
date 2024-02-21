@@ -244,5 +244,10 @@
     "name": "FeatureManagement__ShowLanguageSwitcher",
     "value": true,
     "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__ManageRegistrations",
+    "value": "False",
+    "slotSetting": false
   }
 ]

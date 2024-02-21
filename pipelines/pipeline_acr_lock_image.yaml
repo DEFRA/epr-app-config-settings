@@ -1,0 +1,74 @@
+﻿trigger: none
+pr: none
+pool: DEFRA-COMMON-ubuntu2004-SSV3
+
+parameters:
+- name: dev
+  displayName: 'Lock release images in DEV ACR?'
+  default: false
+  type: boolean
+- name: tst
+  displayName: 'Lock release images in TST ACR?'
+  default: false
+  type: boolean
+- name: pre
+  displayName: 'Lock release images in PREPRD ACR?'
+  default: false
+  type: boolean
+- name: prd
+  displayName: 'Lock release images in PROD ACR?'
+  default: false
+  type: boolean
+
+jobs:
+- job: EntryJob
+  steps:
+  - script: echo "This is the entry job"
+
+- ${{ each acrenv in parameters }}:
+  - ${{ if eq(acrenv.Value, true) }}:
+    - job: RunningTemplate
+      displayName: 'Locking release images in ${{ acrenv.Key }}'
+      variables:
+        - ${{ if eq(acrenv.key, 'dev') }}:
+            - template: vars/dev1.yaml
+            - template: image-tags/Team-8_Pre-TST-development.yaml
+        - ${{ elseif eq(acrenv.key, 'pre') }}:
+            - template: vars/pre1.yaml
+            - template: image-tags/preprod.yaml
+        - ${{ elseif eq(acrenv.key, 'prd') }}:
+            - template: vars/prd1.yaml
+            - template: image-tags/prod.yaml
+        - ${{ else }}:
+            - template: vars/tst1.yaml
+            - template: image-tags/tst.yaml
+        - name: imageList
+          value: |-
+            "obligationregistry:${{ variables['DEVRWDWEBWAx401'] }}",\
+            "frontendaccountcreationregistry:${{ variables['DEVRWDWEBWAx402'] }}"",\
+            "protectivemonitoringapirepository:${{ variables['DEVRWDWEBWAx403'] }}"",\
+            "facadeaccountcreationrepository:${{ variables['DEVRWDWEBWAx404'] }}",\
+            "frontendaccountmanagementregistry:${{ variables['DEVRWDWEBWAx405'] }}",\
+            "eprregulatorfacadeendregistry:${{ variables['DEVRWDWEBWAx406'] }}",\
+            "backendaccountserviceregistry:${{ variables['DEVRWDWEBWAx407'] }}",\
+            "submissionstatusrepository:${{ variables['DEVRWDWEBWAx408'] }}",\
+            "apiwebrepository:${{ variables['DEVRWDWEBWAx409'] }}",\
+            "eprpackagingfrontendrepository:${{ variables['DEVRWDWEBWAx410'] }}",\
+            "eprregulatorfrontendregistry:${{ variables['DEVRWDWEBWAx411'] }}",\
+            "frontendaccountmanagementregistry:${{ variables['DEVRWDWEBWAx412'] }}",\
+            "facadeaccountcreationrepository:${{ variables['DEVRWDWEBWAx413'] }}",\
+            "frontendregulatoraccountenrollment:${{ variables['DEVRWDWEBWAx414'] }}",\
+            "eprcommondataregistry:${{ variables['DEVRWDWEBWAx415'] }}",\
+            "eventdispatcherrepository:${{ variables['DEVRWDWEBFAx401'] }}",\
+            "producervalidationrepository:${{ variables['DEVRWDWEBFAx402'] }}",\
+            "submissionchecksplitterrepository:${{ variables['DEVRWDWEBFAx403'] }}",\
+            "registrationvalidationrepository:${{ variables['DEVRWDWEBFAx404'] }}",\
+            "antivirusrepository:${{ variables['DEVRWDWEBFAx405'] }}",\
+            "documentschemajobrunnerrepository:${{ variables['DEVRWDWEBFAx406'] }}",\
+            "validationdataapiregistry:${{ variables['DEVRWDWEBFAx407'] }}"
+      steps:
+      - template: templates/acr-lock-image.yaml
+        parameters:
+          azureSubscription: ${{ variables.subscriptionName }}
+          environmentName: ${{ lower(variables.environmentGroup) }}
+          imageTag: ${{ variables['imageList'] }}

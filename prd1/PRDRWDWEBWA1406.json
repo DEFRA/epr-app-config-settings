@@ -211,7 +211,57 @@
   },
   {
     "name": "RedisInstanceName",
-    "value": "TBC - Prod",
+    "value": "rwd-prd1-regulators-",
     "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__DemotedDelegatedUserTemplateId",
+    "value": "ea8906ac-e489-46dc-be00-4174fa26560d",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RemovedApprovedUserTemplateId",
+    "value": "08f82eee-2dfc-4e77-950f-cc3e0a4a411b",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__PromotedApprovedUserTemplateId",
+    "value": "de7af06a-2a6d-40f9-beb3-920261990080",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__ApiVersion",
+    "slotSetting": false,
+    "value": "1"
+  },
+  {
+    "name": "SubmissionsApiConfig__BaseUrl",
+    "slotSetting": false,
+    "value": "https://prdrwdwebwa1408.azurewebsites.net/"
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__CreateSubmissionEvent",
+    "slotSetting": false,
+    "value": "v{0}/submissions/{1}/events"
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__GetPoMSubmissions",
+    "slotSetting": false,
+    "value": "v{0}/submissions/events/get-regulator-pom-decision"
+  },
+  {
+    "name": "SubmissionsApiConfig__ServiceRetryCount",
+    "slotSetting": false,
+    "value": "6"
+  },
+  {
+    "name": "SubmissionsApiConfig__Timeout",
+    "slotSetting": false,
+    "value": "30"
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__GetRegistrationSubmissions",
+    "slotSetting": false,
+    "value": "v{0}/submissions/events/get-regulator-registration-decision"
   }
 ]

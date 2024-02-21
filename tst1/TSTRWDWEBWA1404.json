@@ -153,5 +153,10 @@
     "name": "RegulatorEmailConfig__Wales",
     "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/WalesRegulatorInbox/)",
     "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ApprovedUserAccountConfirmationTemplateId",
+    "value": "4be9716b-ab73-47be-a915-287325446aab",
+    "slotSetting": false    
   }
 ]

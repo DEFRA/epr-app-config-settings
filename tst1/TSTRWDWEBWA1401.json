@@ -1,7 +1,7 @@
 [
   {
     "name": "BANNER_OPTIONS__ApplicationStatus",
-    "value": "Beta",
+    "value": "Alpha",
     "slotSetting": false
   },
   {
@@ -155,33 +155,8 @@
     "slotSetting": false
   },
   {
-    "name": "FeatureManagement__AllNationsDownloadLink",
-    "value": true,
-    "slotSetting": false
-  },
-  {
-    "name": "FeatureManagement__EnglandNationDownloadLink",
-    "value": true,
-    "slotSetting": false
-  },
-  {
-    "name": "FeatureManagement__NorthernIrelandNationDownloadLink",
-    "value": true,
-    "slotSetting": false
-  },
-  {
     "name": "FeatureManagement__ObligationCheckerEnabled",
     "value": false,
-    "slotSetting": false
-  },
-  {
-    "name": "FeatureManagement__ScotlandNationDownloadLink",
-    "value": true,
-    "slotSetting": false
-  },
-  {
-    "name": "FeatureManagement__WalesNationDownloadLink",
-    "value": true,
     "slotSetting": false
   },
   {

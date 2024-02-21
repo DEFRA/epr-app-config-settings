@@ -62,7 +62,7 @@
   {
     "name": "MessagingConfig__RemovedUserNotificationTemplateId",
     "slotSetting": false,
-    "value": "PLACEHOLDER"
+    "value": "892c4a5e-ed9e-467c-9935-42e33c21013c"
   },
   {
     "name": "MessagingConfig__MemberDissociationRegulatorsTemplateId",
@@ -108,5 +108,10 @@
     "name": "RegulatorEmailConfig__Wales",
     "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/WalesRegulatorInbox/)",
     "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ApprovedUserAccountConfirmationTemplateId",
+    "value": "70eb6162-7c12-4951-bc65-46e223225da7",
+    "slotSetting": false    
   }
 ]

@@ -213,5 +213,20 @@
     "name": "RedisInstanceName",
     "value": "rwd-pre1-regulators-",
     "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__DemotedDelegatedUserTemplateId",
+    "value": "ea8906ac-e489-46dc-be00-4174fa26560d",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RemovedApprovedUserTemplateId",
+    "value": "08f82eee-2dfc-4e77-950f-cc3e0a4a411b",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__PromotedApprovedUserTemplateId",
+    "value": "de7af06a-2a6d-40f9-beb3-920261990080",
+    "slotSetting": false
   }
 ]
