@@ -25,19 +25,39 @@
     "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net/"
   },
   {
+    "name": "CompanyDetailsApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebfa#{{ environmentSpoke }}407.azurewebsites.net/"
+  },
+  {
+    "name": "CompanyDetailsApi__Timeout",
+    "slotSetting": false,
+    "value": 10
+  },
+  {
+    "name": "CompanyDetailsApi__ClientId",
+    "slotSetting": false,
+    "value": "#{{ validationDataApi.appRegistration.clientId }}"
+  },
+  {
     "name": "FeatureManagement__EnableRowValidation",
     "slotSetting": false,
-    "value": true
+    "value": "#{{ featureManagement.enableRowValidation }}"
   },
   {
     "name": "FeatureManagement__EnableOrganisationDataRowValidation",
     "slotSetting": false,
-    "value": true
+    "value": "#{{ featureManagement.enableOrganisationDataRowValidation }}"
   },
   {
     "name": "FeatureManagement__EnableBrandPartnerDataRowValidation",
     "slotSetting": false,
-    "value": true
+    "value": "#{{ featureManagement.enableBrandPartnerDataRowValidation }}"
+  },
+  {
+    "name": "FeatureManagement__EnableCompanyDetailsValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableCompanyDetailsValidation }}"
   },
   {
     "name": "ValidationSettings__ErrorLimit",

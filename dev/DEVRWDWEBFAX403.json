@@ -42,7 +42,7 @@
   {
     "name": "ValidationDataApi__IsEnabled",
     "slotSetting": false,
-    "value": "#{{ featureManagement.validtionDataApi }}"
+    "value": "#{{ featureManagement.validationDataApi }}"
   },
   {
     "name": "ValidationDataApi__Timeout",

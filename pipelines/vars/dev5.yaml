@@ -8,7 +8,7 @@ variables:
 
   apiConfig.accountServiceClientId: e3428065-aa0b-44f8-954b-b809e35985b7
 
-  featureManagement.validtionDataApi: true
+  featureManagement.validationDataApi: true
   featureManagement.managePomSubmissions: false
   featureManagement.manageRegistrations: false
 

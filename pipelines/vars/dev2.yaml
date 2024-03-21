@@ -10,14 +10,16 @@ variables:
   TradeAntivirusApi.scope: api://dev-futuretrade-int.defra.gov.uk/.default
 
   # B2C
-  b2c.frontend.clientId: 44e74269-2b90-4f74-aa1d-000d26bd66c4
-  sharedKeyVault.b2c.frontend.secret.name: AzureAdB2C-ClientSecret
-
-  b2c.permissionsService.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
-  b2c.wax409.clientId: 94025947-7b33-4d0a-87cc-904631908867
+  b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671
 
   apiConfig.accountServiceClientId: abb69391-f412-464d-a771-2d302550dd60
+  validationDataApi.appRegistration.clientId: d9f74f90-38ff-401f-90bb-611c9a3177ac
 
   # Feature management
+  featureManagement.enableBrandPartnerDataRowValidation: true
+  featureManagement.enableCompanyDetailsValidation: true
+  featureManagement.enableOrganisationDataRowValidation: true
+  featureManagement.enableRegistrationRowValidation: true
+  featureManagement.enableRowValidation: true
   featureManagement.removeUsers: false
   featureManagement.sendDissociationNotificationEmail: true

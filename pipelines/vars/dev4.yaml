@@ -20,9 +20,16 @@ variables:
   apiConfig.addressLookupBaseUrl: 'https://integration-snd.azure.defra.cloud/ws/rest/DEFRA/v1/address/'
   apiConfig.companiesHouseLookupBaseUrl: 'https://integration-snd.azure.defra.cloud/ws/rest/DEFRA/v2.1/'
 
+  validationDataApi.appRegistration.clientId: c96a50e5-f28d-4e83-8001-652cb53d7c76
+
   cosmos.database.connectionString: https://devrwddbsco1401.documents.azure.com:443/
 
-  featureManagement.validtionDataApi: true
+  # Feature management
+  featureManagement.enableBrandPartnerDataRowValidation: true
+  featureManagement.enableCompanyDetailsValidation: true
+  featureManagement.enableOrganisationDataRowValidation: true
+  featureManagement.enableRegistrationRowValidation: true
+  featureManagement.validationDataApi: true
 
   # EPR Authorization
   eprAuthorizationConfig.downStreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-dev8-regulators-facade/regulator-service

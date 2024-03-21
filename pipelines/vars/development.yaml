@@ -54,13 +54,18 @@ variables:
   apiConfig.companiesHouseLookupBaseUrl: 'https://integration-snd.azure.defra.cloud/ws/rest/DEFRA/v2.1/'
 
   # Feature management
+  featureManagement.enableBrandPartnerDataRowValidation: false
+  featureManagement.enableCompanyDetailsValidation: false
+  featureManagement.enableOrganisationDataRowValidation: false
+  featureManagement.enableRegistrationRowValidation: false
+  featureManagement.enableRowValidation: false
   featureManagement.removeUsers: true
   featureManagement.showLanguageSwitcher: true
   featureManagement.managePomSubmissions: true
   featureManagement.manageRegistrations: true
   featureManagement.manageApprovedUsers: false
   featureManagement.sendDissociationNotificationEmail: false
-  featureManagement.validtionDataApi: false
+  featureManagement.validationDataApi: false
 
   # Databases
   accountsDatabase.name: dev$(environmentSpoke)_accounts
@@ -101,5 +106,5 @@ variables:
   messaging.producer.complianceschemeresubmissionnotification.templateid: 253892da-55b2-4c8f-b97a-9feb20b85709
   messaging.producer.approveduseraccountconfirmation.templateid: 4be9716b-ab73-47be-a915-287325446aab
 
-  # This is the default client ID for Dev5 it should be replaced with specific client Id's when moved to other environments
-  validationDataApi.appRegistration.clientId: ec668afe-3d8e-4242-91d7-910fac38c3b2
+  # This should be replaced with specific client Id's when moved to other environments
+  validationDataApi.appRegistration.clientId: 
