@@ -29,6 +29,7 @@ variables:
   featureManagement.enableCompanyDetailsValidation: true
   featureManagement.enableOrganisationDataRowValidation: true
   featureManagement.enableRegistrationRowValidation: true
+  featureManagement.enableRowValidation: true
   featureManagement.validationDataApi: true
 
   # EPR Authorization
