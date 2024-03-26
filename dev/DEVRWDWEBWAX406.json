@@ -155,6 +155,11 @@
     "value": "/admin/health"
   },
   {
+    "name": "MessagingConfig__AccountSignInUrl",
+    "slotSetting": false,
+    "value": "https://rwd-dev#{{ environmentSpoke }}.azure.defra.cloud/report-data"
+  },
+  {
     "name": "MessagingConfig__AccountCreationUrl",
     "slotSetting": false,
     "value": "https://rwd-dev#{{ environmentSpoke }}.azure.defra.cloud/create-account/invitation/"

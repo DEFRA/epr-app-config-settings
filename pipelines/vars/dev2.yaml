@@ -21,5 +21,4 @@ variables:
   featureManagement.enableOrganisationDataRowValidation: true
   featureManagement.enableRegistrationRowValidation: true
   featureManagement.enableRowValidation: true
-  featureManagement.removeUsers: false
   featureManagement.sendDissociationNotificationEmail: true
