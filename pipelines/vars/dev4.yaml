@@ -26,7 +26,7 @@ variables:
 
   # Feature management
   featureManagement.enableBrandPartnerDataRowValidation: true
-  featureManagement.enableCompanyDetailsValidation: true
+  featureManagement.enableCompanyDetailsValidation: false
   featureManagement.enableOrganisationDataRowValidation: true
   featureManagement.enableRegistrationRowValidation: true
   featureManagement.enableRowValidation: true

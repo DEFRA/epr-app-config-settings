@@ -28,5 +28,25 @@
     "name": "SubmissionApi__BaseUrl",
     "value": "https://tstrwdwebwa1408.azurewebsites.net/",
     "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__EnableRowValidation",
+    "slotSetting": false,
+    "value": false
+  },
+  {
+    "name": "FeatureManagement__EnableOrganisationDataRowValidation",
+    "slotSetting": false,
+    "value": false
+  },
+  {
+    "name": "FeatureManagement__EnableBrandPartnerDataRowValidation",
+    "slotSetting": false,
+    "value": false
+  },
+  {
+    "name": "ValidationSettings__ErrorLimit",
+    "slotSetting": false,
+    "value": 200
   }
 ]

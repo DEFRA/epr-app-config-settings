@@ -98,5 +98,10 @@
     "name": "TradeAntivirusServiceBus__SubscriptionName",
     "value": "filestore-notify-epr",
     "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__EnableRegistrationRowValidation",
+    "slotSetting": false,
+    "value": false
   }
 ]
