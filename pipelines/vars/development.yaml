@@ -66,7 +66,8 @@ variables:
   featureManagement.manageApprovedUsers: false
   featureManagement.sendDissociationNotificationEmail: false
   featureManagement.validationDataApi: false
-
+  featureManagement.pomDataPeriodAndTime: false
+  
   # Databases
   accountsDatabase.name: dev$(environmentSpoke)_accounts
   cosmos.database.connectionString: '@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/CosmoConnectionString/)'

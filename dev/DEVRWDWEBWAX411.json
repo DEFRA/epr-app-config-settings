@@ -180,6 +180,11 @@
     "value": "#{{ featureManagement.manageRegistrations }}"
   },
   {
+    "name": "FeatureManagement__PomDataPeriodAndTime",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.pomDataPeriodAndTime }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke }}.azure.defra.cloud"

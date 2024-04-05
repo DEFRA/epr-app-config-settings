@@ -11,3 +11,6 @@ variables:
   b2c.wax413.accountServiceclientId: 92ede5ee-1d6e-44f7-a232-c039e666a3ca
   b2c.wax413.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
   b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671
+
+    # Feature management
+  featureManagement.pomDataPeriodAndTime: true
