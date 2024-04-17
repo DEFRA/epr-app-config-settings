@@ -111,7 +111,8 @@ jobs:
               --subscription ${{ variables.subscriptionName }} \
               --name $service \
               --resource-group ${{ variables.webResourceGroupName }} \
-              --setting-names {$DELETELIST}
+              --setting-names {$DELETELIST} \
+              --only-show-errors
           else
             echo "Nothing to remove for $service"
           fi

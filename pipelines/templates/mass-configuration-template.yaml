@@ -89,6 +89,7 @@ steps:
               --name $service \
               --resource-group ${{ parameters.webResourceGroupName }} \
               --setting-names {$DELETELIST}
+              --only-show-errors
           else
             echo "Nothing to remove for $service"
           fi
