@@ -3,18 +3,20 @@ pr: none
 
 parameters:
 - name: teamName
-  displayName: 'Select Team-Environment:'
+  displayName: 'Select Environment:'
   type: string
   values:
-  - Team-1_Pi
-  - Team-2_Wastebusters
-  - Team-3_Recyclers
-  - Team-4_QA
-  - Team-5_Phoenix
-  - Team-6_Stig
-  - Team-7_Oscar
-  - Team-8_Pre-TST
-  - Team-9_Ops
+  - DEV1
+  - DEV2
+  - DEV3
+  - DEV4
+  - DEV5
+  - DEV6
+  - DEV7
+  - DEV8
+  - DEV9
+  - DEV10
+  - DEV11
   - tst
   - preprod
   - prod
@@ -29,7 +31,7 @@ variables:
     teamName: ${{ parameters.teamName }}
 - name: settingsDir
   value: $(Build.SourcesDirectory)/${{ lower(variables.environmentName) }}
-- ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'Team-8_Pre-TST')) }}:
+- ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
   - name: useDevConfig
     value: true
   - name: configDir

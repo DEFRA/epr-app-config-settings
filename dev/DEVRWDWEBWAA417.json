@@ -1,0 +1,67 @@
+[
+  {
+    "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
+    "value": "fb7d3853-5354-4dc9-9c64-4ea560448bff",
+    "slotSetting": false
+  },
+  {
+    "name": "ApplicationInsightsAgent_EXTENSION_VERSION",
+    "value": "~3",
+    "slotSetting": false
+  },
+  {
+    "name": "ASPNETCORE_ENVIRONMENT",
+    "value": "Development",
+    "slotSetting": true
+  },
+  {
+    "name": "ASPNETCORE_URLS",
+    "value": "http://+:3000",
+    "slotSetting": true
+  },
+  {
+    "name": "ConnectionStrings__REDIS_CONNECTION",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "DOCKER_CUSTOM_IMAGE_NAME",
+    "value": "devrwdinfac1401.azurecr.io/epraccreditationfacaderepository:feature_config-20240419.7",
+    "slotSetting": false
+  },
+  {
+    "name": "DOCKER_REGISTRY_SERVER_URL",
+    "value": "devrwdinfac1401.azurecr.io",
+    "slotSetting": false
+  },
+  {
+    "name": "Services__AccreditationAPI__Url",
+    "value": "https://devrwdwebwaa418.azurewebsites.net/api",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITE_ENABLE_SYNC_UPDATE_SITE",
+    "value": "true",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITE_PULL_IMAGE_OVER_VNET",
+    "value": "true",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
+    "value": "false",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITES_PORT",
+    "value": "3000",
+    "slotSetting": true
+  },
+  {
+    "name": "XDT_MicrosoftApplicationInsights_Mode",
+    "value": "default",
+    "slotSetting": false
+  }
+]

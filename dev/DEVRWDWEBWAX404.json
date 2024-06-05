@@ -65,6 +65,11 @@
     "value": "https://rwd-dev#{{ environmentSpoke }}.azure.defra.cloud/create-account/invitation/"
   },
   {
+    "name": "MessagingConfig__AccountLoginUrl",
+    "slotSetting": false,
+    "value": "https://rwd-dev#{{ environmentSpoke }}.azure.defra.cloud/report-data"
+  },
+  {
     "name": "MessagingConfig__ApiKey",
     "slotSetting": false,
     "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/#{{ messaging.producer.apikeysecret }}/)"

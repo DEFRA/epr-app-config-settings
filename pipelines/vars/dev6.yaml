@@ -15,4 +15,4 @@ variables:
   externalUrls.manageAccountRedirectUrl: /regulators/manage-account
 
   # Feature management
-  featureManagement.manageApprovedUsers: true
+  featureManagement.manageApprovedUsers: false

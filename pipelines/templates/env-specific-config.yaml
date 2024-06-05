@@ -4,30 +4,36 @@ parameters:
 
 variables:
   - template: ../vars/common.yaml
-  - ${{ if eq(parameters.teamName, 'Team-1_Pi') }}:
+  - ${{ if eq(parameters.teamName, 'DEV1') }}:
     - template: ../vars/development.yaml
     - template: ../vars/dev1.yaml
-  - ${{ elseif eq(parameters.teamName, 'Team-2_Wastebusters') }}:
+  - ${{ elseif eq(parameters.teamName, 'DEV2') }}:
     - template: ../vars/development.yaml
     - template: ../vars/dev2.yaml
-  - ${{ elseif eq(parameters.teamName, 'Team-3_Recyclers') }}:
+  - ${{ elseif eq(parameters.teamName, 'DEV3') }}:
     - template: ../vars/development.yaml
     - template: ../vars/dev3.yaml
-  - ${{ elseif eq(parameters.teamName, 'Team-4_QA') }}:
+  - ${{ elseif eq(parameters.teamName, 'DEV4') }}:
     - template: ../vars/development.yaml
     - template: ../vars/dev4.yaml
-  - ${{ elseif eq(parameters.teamName, 'Team-5_Phoenix') }}:
+  - ${{ elseif eq(parameters.teamName, 'DEV5') }}:
     - template: ../vars/development.yaml
     - template: ../vars/dev5.yaml
-  - ${{ elseif eq(parameters.teamName, 'Team-6_Stig') }}:
+  - ${{ elseif eq(parameters.teamName, 'DEV6') }}:
     - template: ../vars/development.yaml
     - template: ../vars/dev6.yaml
-  - ${{ elseif eq(parameters.teamName, 'Team-7_Oscar') }}:
+  - ${{ elseif eq(parameters.teamName, 'DEV7') }}:
     - template: ../vars/development.yaml
     - template: ../vars/dev7.yaml
-  - ${{ elseif eq(parameters.teamName, 'Team-8_Pre-TST') }}:
+  - ${{ elseif eq(parameters.teamName, 'DEV8') }}:
     - template: ../vars/development.yaml
     - template: ../vars/dev8.yaml
+  - ${{ elseif eq(parameters.teamName, 'DEV10') }}:
+    - template: ../vars/development.yaml
+    - template: ../vars/dev10.yaml
+  - ${{ elseif eq(parameters.teamName, 'DEV11') }}:
+    - template: ../vars/development.yaml
+    - template: ../vars/dev11.yaml
   - ${{ elseif eq(parameters.teamName, 'tst') }}:
     - template: ../vars/tst1.yaml
   - ${{ elseif eq(parameters.teamName, 'preprod') }}:

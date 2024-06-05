@@ -55,6 +55,7 @@ variables:
 
   # Feature management
   featureManagement.enableBrandPartnerDataRowValidation: false
+  featureManagement.enableBrandPartnerCrossFileValidation: false
   featureManagement.enableCompanyDetailsValidation: false
   featureManagement.enableOrganisationDataRowValidation: false
   featureManagement.enableRegistrationRowValidation: false
@@ -109,3 +110,7 @@ variables:
 
   # This should be replaced with specific client Id's when moved to other environments
   validationDataApi.appRegistration.clientId: 
+
+  # Submission periods
+  submissionPeriod.2024.1.activeFrom: "1 Jul 2024 12:00:00 AM"
+  submissionPeriod.2024.2.activeFrom: "1 Jan 2025 12:00:00 AM"

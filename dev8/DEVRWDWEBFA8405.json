@@ -97,6 +97,6 @@
   {
     "name": "FeatureManagement__EnableRegistrationRowValidation",
     "slotSetting": false,
-    "value": false
+    "value": true
   }
 ]

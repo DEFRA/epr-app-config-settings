@@ -1,0 +1,14 @@
+variables:
+  environmentGroup: DEV
+  environmentSpoke1: 10
+  environmentSpoke: A
+  subscriptionPrefix: AZD
+  projectCode: RWD
+  agentPool: DEFRA-COMMON-ubuntu2004-SSV3
+
+  environmentName: ${{ variables.environmentGroup }}${{ variables.environmentSpoke1}}
+  subscriptionName: ${{ variables.subscriptionPrefix }}-${{ variables.projectCode }}-${{ variables.environmentName }}
+  webResourceGroupName: ${{ variables.environmentGroup }}RWDWEBRG${{ variables.environmentSpoke}}401
+  infrastructureResourceGroupName: ${{ variables.environmentGroup }}RWDWEBWA${{ variables.environmentSpoke}}419
+
+  validationDataApi.appRegistration.clientId: ec668afe-3d8e-4242-91d7-910fac38c3b2

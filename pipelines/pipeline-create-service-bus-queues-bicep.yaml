@@ -3,18 +3,18 @@ pr: none
 
 parameters:
 - name: teamName
-  displayName: 'Select Team-Environment:'
+  displayName: 'Select Environment:'
   type: string
   values:
-  - Pi
-  - Wastebusters
-  - Recyclers
-  - QA
-  - Phoenix
-  - Stig
-  - Oscar
-  - Pre-TST
-  - Ops
+  - DEV1
+  - DEV2
+  - DEV3
+  - DEV4
+  - DEV5
+  - DEV6
+  - DEV7
+  - DEV8
+  - DEV9
   - TST1
   - PRE1
   - PRD1
@@ -25,28 +25,28 @@ parameters:
 
 variables:
 - template: vars/common.yaml
-- ${{ if eq(parameters.teamName, 'Pi') }}:
+- ${{ if eq(parameters.teamName, 'DEV1') }}:
   - template: vars/development.yaml
   - template: vars/dev1.yaml
-- ${{ elseif eq(parameters.teamName, 'Wastebusters') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV2') }}:
   - template: vars/development.yaml
   - template: vars/dev2.yaml
-- ${{ elseif eq(parameters.teamName, 'Recyclers') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV3') }}:
   - template: vars/development.yaml
   - template: vars/dev3.yaml
-- ${{ elseif eq(parameters.teamName, 'QA') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV4') }}:
   - template: vars/development.yaml
   - template: vars/dev4.yaml
-- ${{ elseif eq(parameters.teamName, 'Phoenix') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV5') }}:
   - template: vars/development.yaml
   - template: vars/dev5.yaml
-- ${{ elseif eq(parameters.teamName, 'Stig') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV6') }}:
   - template: vars/development.yaml
   - template: vars/dev6.yaml
-- ${{ elseif eq(parameters.teamName, 'Oscar') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV7') }}:
   - template: vars/development.yaml
   - template: vars/dev7.yaml
-- ${{ elseif eq(parameters.teamName, 'Pre-TST') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV8') }}:
   - template: vars/development.yaml
   - template: vars/dev8.yaml
 - ${{ elseif eq(parameters.teamName, 'TST1') }}:
@@ -65,7 +65,7 @@ jobs:
 - job: RunningTemplate
   displayName: Create/Update ServiceBus Queues for ${{ parameters.teamName }}
   steps:
-  - ${{ if and( ne(parameters.teamName, 'TST1'), ne(parameters.teamName, 'PRE1'), ne(parameters.teamName, 'PRD1'), ne(parameters.teamName, 'Pre-TST')) }}:
+  - ${{ if and( ne(parameters.teamName, 'TST1'), ne(parameters.teamName, 'PRE1'), ne(parameters.teamName, 'PRD1'), ne(parameters.teamName, 'DEV8')) }}:
     - task: qetza.replacetokens.replacetokens-task.replacetokens@3
       displayName: 'Replace tokens'
       inputs:

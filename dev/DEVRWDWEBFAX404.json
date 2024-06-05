@@ -55,6 +55,11 @@
     "value": "#{{ featureManagement.enableBrandPartnerDataRowValidation }}"
   },
   {
+    "name": "FeatureManagement__EnableBrandPartnerCrossFileValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableBrandPartnerCrossFileValidation }}"
+  },
+  {
     "name": "FeatureManagement__EnableCompanyDetailsValidation",
     "slotSetting": false,
     "value": "#{{ featureManagement.enableCompanyDetailsValidation }}"

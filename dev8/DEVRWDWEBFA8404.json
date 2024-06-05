@@ -25,17 +25,47 @@
     "slotSetting": false
   },
   {
+    "name": "CompanyDetailsApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://tstrwdwebwa1407.azurewebsites.net/"
+  },
+  {
+    "name": "CompanyDetailsApi__Timeout",
+    "slotSetting": false,
+    "value": 10
+  },
+  {
+    "name": "CompanyDetailsApi__ClientId",
+    "slotSetting": false,
+    "value": ""
+  },
+  {
     "name": "FeatureManagement__EnableRowValidation",
     "slotSetting": false,
-    "value": false
+    "value": true
   },
   {
     "name": "FeatureManagement__EnableOrganisationDataRowValidation",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableCompanyDetailsValidation",
     "slotSetting": false,
     "value": false
   },
   {
     "name": "FeatureManagement__EnableBrandPartnerDataRowValidation",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableBrandPartnerCrossFileValidation",
+    "slotSetting": false,
+    "value": false
+  },
+  {
+    "name": "FeatureManagement__EnableBrandPartnerCrossFileValidation",
     "slotSetting": false,
     "value": false
   },

@@ -3,18 +3,20 @@ pr: none
 
 parameters:
 - name: teamName
-  displayName: 'Select Team-Environment:'
+  displayName: 'Select Environment:'
   type: string
   values:
-  - Team-1_Pi
-  - Team-2_Wastebusters
-  - Team-3_Recyclers
-  - Team-4_QA
-  - Team-5_Phoenix
-  - Team-6_Stig
-  - Team-7_Oscar
-  - Team-8_Pre-TST
-  - Team-9_Ops
+  - DEV1
+  - DEV2
+  - DEV3
+  - DEV4
+  - DEV5
+  - DEV6
+  - DEV7
+  - DEV8
+  - DEV9
+  - DEV10
+  - DEV11
   - tst
   - preprod
   - prod
@@ -35,7 +37,7 @@ variables:
   value: $(Build.SourcesDirectory)/${{ lower(variables.environmentName) }}
 
 - name: uppercaseServiceName
-  value: ${{ parameters.serviceName }}
+  value: ${{ upper(parameters.serviceName) }}
 
 pool: $(agentPool)
 
@@ -43,7 +45,7 @@ jobs:
 - job: DeploySettings
   displayName: Deploying settings for ${{ variables.uppercaseServiceName }}
   steps:
-    - ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'Team-8_Pre-TST')) }}:
+    - ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
       - task: qetza.replacetokens.replacetokens-task.replacetokens@3
         displayName: 'Replace tokens'
         inputs:
@@ -77,6 +79,14 @@ jobs:
             dev/DEVRWDWEBWAX413.json => config/DEVRWDWEBWA$(environmentSpoke)413.json
             dev/DEVRWDWEBWAX414.json => config/DEVRWDWEBWA$(environmentSpoke)414.json
             dev/DEVRWDWEBWAX415.json => config/DEVRWDWEBWA$(environmentSpoke)415.json
+            dev/DEVRWDWEBWAA417.json => config/DEVRWDWEBWA$(environmentSpoke)417.json
+            dev/DEVRWDWEBWAA418.json => config/DEVRWDWEBWA$(environmentSpoke)418.json
+            dev/DEVRWDWEBWAA419.json => config/DEVRWDWEBWA$(environmentSpoke)419.json
+            dev/DEVRWDWEBWAA420.json => config/DEVRWDWEBWA$(environmentSpoke)420.json
+            dev/DEVRWDWEBWAB417.json => config/DEVRWDWEBWA$(environmentSpoke)417.json
+            dev/DEVRWDWEBWAB418.json => config/DEVRWDWEBWA$(environmentSpoke)418.json
+            dev/DEVRWDWEBWAB419.json => config/DEVRWDWEBWA$(environmentSpoke)419.json
+            dev/DEVRWDWEBWAB420.json => config/DEVRWDWEBWA$(environmentSpoke)420.json
 
     - task: AzureCLI@2
       displayName: Cleaning app settings
@@ -117,7 +127,7 @@ jobs:
             echo "Nothing to remove for $service"
           fi
 
-        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'Team-8_Pre-TST')) }}:
+        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
           workingDirectory: $(Pipeline.Workspace)/s/dev/config
         ${{ else }}:
           workingDirectory: $(settingsDir)
@@ -133,8 +143,9 @@ jobs:
             --subscription ${{ variables.subscriptionName }} \
             -g ${{ variables.webResourceGroupName }} \
             -n ${{ variables.uppercaseServiceName }} \
-            --settings @./${{ variables.uppercaseServiceName }}.json
-        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'Team-8_Pre-TST')) }}:
+            --settings @./${{ variables.uppercaseServiceName }}.json \
+            --debug 
+        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
           workingDirectory: $(Pipeline.Workspace)/s/dev/config
         ${{ else }}:
           workingDirectory: $(settingsDir)

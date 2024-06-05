@@ -4,11 +4,6 @@ variables:
   infrastructureResourceGroupName: $(environmentGroup)RWDINFRG1401
   teamName.lower: wastebusters
 
-  # AntiVirus
-  TradeAntivirusApi.url: https://devtrswebaw1038.azurewebsites.net
-  TradeAntivirusApi.enableDirectAccess: true
-  TradeAntivirusApi.scope: api://dev-futuretrade-int.defra.gov.uk/.default
-
   # B2C
   b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671
 
@@ -17,8 +12,14 @@ variables:
 
   # Feature management
   featureManagement.enableBrandPartnerDataRowValidation: true
+  featureManagement.enableBrandPartnerCrossFileValidation: true
   featureManagement.enableCompanyDetailsValidation: true
   featureManagement.enableOrganisationDataRowValidation: true
   featureManagement.enableRegistrationRowValidation: true
   featureManagement.enableRowValidation: true
   featureManagement.sendDissociationNotificationEmail: true
+  featureManagement.validationDataApi: true
+
+  # Submission periods
+  submissionPeriod.2024.1.activeFrom: "1 May 2024 12:00:00 AM"
+  submissionPeriod.2024.2.activeFrom: "1 May 2024 12:00:00 AM"

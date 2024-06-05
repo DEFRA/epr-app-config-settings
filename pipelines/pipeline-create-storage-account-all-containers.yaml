@@ -4,39 +4,39 @@ pool: DEFRA-COMMON-ubuntu2004-SSV3
 
 parameters:
 - name: dev1
-  displayName: 'Team-1_Pi'
+  displayName: 'DEV1'
   default: false
   type: boolean
 - name: dev2
-  displayName: 'Team-2_Wastebusters'
+  displayName: 'DEV2'
   default: false
   type: boolean
 - name: dev3
-  displayName: 'Team-3_Recyclers'
+  displayName: 'DEV3'
   default: false
   type: boolean
 - name: dev4
-  displayName: 'Team-4_QA'
+  displayName: 'DEV4'
   default: false
   type: boolean
 - name: dev5
-  displayName: 'Team-5_Phoenix'
+  displayName: 'DEV5'
   default: false
   type: boolean
 - name: dev6
-  displayName: 'Team-6_Stig'
+  displayName: 'DEV6'
   default: false
   type: boolean
 - name: dev7
-  displayName: 'Team-7_Oscar'
+  displayName: 'DEV7'
   default: false
   type: boolean
 - name: dev8
-  displayName: 'Team-8_Pre-TST'
+  displayName: 'DEV8'
   default: false
   type: boolean
 - name: dev9
-  displayName: 'Team-9_OPS'
+  displayName: 'DEV9'
   default: true
   type: boolean
 - name: tst1

@@ -3,38 +3,44 @@ pr: none
 
 parameters:
 - name: teamName
-  displayName: 'Select Team-Environment:'
+  displayName: 'Select Environment:'
   type: string
   values:
-  - Pi
-  - Wastebusters
-  - Recyclers
-  - QA
-  - Phoenix
-  - Stig
-  - Oscar
-  - Pre-TST
-  - Ops
+  - DEV1
+  - DEV2
+  - DEV3
+  - DEV4
+  - DEV5
+  - DEV6
+  - DEV7
+  - DEV8
+  - DEV9
+  - DEV10
+  - DEV11
   - TST1
   - PRE1
 
 variables:
-- ${{ if eq(parameters.teamName, 'Pi') }}:
+- ${{ if eq(parameters.teamName, 'DEV1') }}:
   - template: vars/dev1.yaml
-- ${{ elseif eq(parameters.teamName, 'Wastebusters') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV2') }}:
   - template: vars/dev2.yaml
-- ${{ elseif eq(parameters.teamName, 'Recyclers') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV3') }}:
   - template: vars/dev3.yaml
-- ${{ elseif eq(parameters.teamName, 'QA') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV4') }}:
   - template: vars/dev4.yaml
-- ${{ elseif eq(parameters.teamName, 'Phoenix') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV5') }}:
   - template: vars/dev5.yaml
-- ${{ elseif eq(parameters.teamName, 'Stig') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV6') }}:
   - template: vars/dev6.yaml
-- ${{ elseif eq(parameters.teamName, 'Oscar') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV7') }}:
   - template: vars/dev7.yaml
-- ${{ elseif eq(parameters.teamName, 'Pre-TST') }}:
+- ${{ elseif eq(parameters.teamName, 'DEV8') }}:
   - template: vars/dev8.yaml
+- ${{ elseif eq(parameters.teamName, 'DEV10') }}:
+  - template: vars/dev10.yaml
+- ${{ elseif eq(parameters.teamName, 'DEV11') }}:
+  - template: vars/dev11.yaml 
 - ${{ elseif eq(parameters.teamName, 'TST1') }}:
   - template: vars/tst1.yaml
 - ${{ elseif eq(parameters.teamName, 'PRE1') }}:

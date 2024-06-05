@@ -32,7 +32,7 @@ jobs:
       variables:
         - ${{ if eq(acrenv.key, 'dev') }}:
             - template: vars/dev1.yaml
-            - template: image-tags/Team-8_Pre-TST-development.yaml
+            - template: image-tags/DEV8-development.yaml
         - ${{ elseif eq(acrenv.key, 'pre') }}:
             - template: vars/pre1.yaml
             - template: image-tags/preprod.yaml

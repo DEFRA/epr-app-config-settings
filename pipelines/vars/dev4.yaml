@@ -26,11 +26,13 @@ variables:
 
   # Feature management
   featureManagement.enableBrandPartnerDataRowValidation: true
-  featureManagement.enableCompanyDetailsValidation: false
+  featureManagement.enableBrandPartnerCrossFileValidation: true
+  featureManagement.enableCompanyDetailsValidation: true
   featureManagement.enableOrganisationDataRowValidation: true
   featureManagement.enableRegistrationRowValidation: true
   featureManagement.enableRowValidation: true
   featureManagement.validationDataApi: true
+  featureManagement.manageApprovedUsers: true
 
   # EPR Authorization
   eprAuthorizationConfig.downStreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-dev8-regulators-facade/regulator-service
