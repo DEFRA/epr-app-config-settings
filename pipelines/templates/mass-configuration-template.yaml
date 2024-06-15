@@ -50,7 +50,6 @@ steps:
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX411.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}411.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX412.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}412.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX413.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}413.json
-            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX414.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}414.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX415.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}415.json
 
   - task: AzureCLI@2
