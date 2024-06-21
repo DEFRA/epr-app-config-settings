@@ -7,7 +7,7 @@ variables:
   sharedKeyVault.b2c.frontend.secret.name: AzureAdB2CClientSecretRWDDev
   b2c.backend.clientId: df2b3ff9-b54a-4ddf-8762-bcf07f61a828
   b2c.permissionsService.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
-  b2c.wax409.clientId: 1755c3c9-8ecb-4903-a61b-cc5cd81ec320
+  b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671
   b2c.wax413.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
 
   apiConfig.accountServiceClientId: c0500f7b-8b3f-46d5-85b0-f242fc13ff3e
