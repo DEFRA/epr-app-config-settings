@@ -170,6 +170,11 @@
     "value": true
   },
   {
+    "name": "FeatureManagement__ShowRegistrationResubmission",
+    "slotSetting": false,
+    "value": true
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke }}.azure.defra.cloud"
