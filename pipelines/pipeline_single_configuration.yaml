@@ -77,7 +77,6 @@ jobs:
             dev/DEVRWDWEBWAX411.json => config/DEVRWDWEBWA$(environmentSpoke)411.json
             dev/DEVRWDWEBWAX412.json => config/DEVRWDWEBWA$(environmentSpoke)412.json
             dev/DEVRWDWEBWAX413.json => config/DEVRWDWEBWA$(environmentSpoke)413.json
-            dev/DEVRWDWEBWAX414.json => config/DEVRWDWEBWA$(environmentSpoke)414.json
             dev/DEVRWDWEBWAX415.json => config/DEVRWDWEBWA$(environmentSpoke)415.json
             dev/DEVRWDWEBWAA417.json => config/DEVRWDWEBWA$(environmentSpoke)417.json
             dev/DEVRWDWEBWAA418.json => config/DEVRWDWEBWA$(environmentSpoke)418.json

@@ -12,7 +12,6 @@ variables:
   DEVRWDWEBWAx411: 'releases_public-beta-rc2.9-rpd'
   DEVRWDWEBWAx412: 'releases_public-beta-rc2.9-rpd'
   DEVRWDWEBWAx413: 'releases_public-beta-rc2.9-rpd'
-  DEVRWDWEBWAx414: 'releases_public-beta-rc2.8-rpd-20231106.2'
   DEVRWDWEBWAx415: 'releases_public-beta-rc2.9-rpd'
   DEVRWDWEBFAx401: 'releases_public-beta-rc2.8-rpd-20231107.1'
   DEVRWDWEBFAx402: 'releases_public-beta-rc2.9-rpd'
