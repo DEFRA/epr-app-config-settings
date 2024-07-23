@@ -234,5 +234,15 @@
     "name": "FeatureManagement__ManageApprovedUsers",
     "value": false,
     "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__ManagePoMSubmissions",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__ManageRegistrations",
+    "slotSetting": false,
+    "value": true
   }
 ]

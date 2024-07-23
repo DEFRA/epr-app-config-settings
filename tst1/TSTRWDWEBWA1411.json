@@ -243,5 +243,15 @@
     "name": "SubmissionApi__PostEvent",
     "slotSetting": false,
     "value": "events/"
+  },
+  {
+    "name": "FeatureManagement__ManagePoMSubmissions",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__ManageRegistrations",
+    "slotSetting": false,
+    "value": true
   }
 ]

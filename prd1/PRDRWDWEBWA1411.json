@@ -246,8 +246,13 @@
     "slotSetting": false
   },
   {
+    "name": "FeatureManagement__ManagePoMSubmissions",
+    "slotSetting": false,
+    "value": true
+  },
+  {
     "name": "FeatureManagement__ManageRegistrations",
-    "value": "False",
-    "slotSetting": false
+    "slotSetting": false,
+    "value": true
   }
 ]

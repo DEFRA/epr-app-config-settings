@@ -5,6 +5,46 @@
     "slotSetting": false
   },
   {
+    "name": "AntivirusApi__BaseUrl",
+    "value": "https://pre-gateway.trade.azure.defra.cloud/trade-file-store",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientId",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/EPR-APIM1002-OAuth-ClientId/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/EPR-APIM1002-OAuth-ClientSecret/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__EnableDirectAccess",
+    "value": false,
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Scope",
+    "value": "api://pre-futuretrade-ext.defra.gov.uk/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__SubscriptionKey",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/EPR-APIM1002-SUBSCRIPTION-KEY/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__TenantId",
+    "value": "9e1ba897-3a49-4461-b406-377db4ec2959",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Timeout",
+    "value": "300",
+    "slotSetting": false
+  },
+  {
     "name": "AzureAdB2C__ClientId",
     "value": "50644e63-76d0-4d66-894e-e693bdb46b52",
     "slotSetting": false
@@ -115,6 +155,21 @@
     "slotSetting": false
   },
   {
+    "name": "BlobStorage__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWD1403/)",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__PomContainerName",
+    "value": "pom-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__RegistrationContainerName",
+    "value": "registration-upload-container",
+    "slotSetting": false
+  },
+  {
     "name": "CommonDataApiConfig__ApiVersion",
     "value": 1,
     "slotSetting": false
@@ -142,6 +197,41 @@
   {
     "name": "CommonDataApiConfig__Timeout",
     "value": 30,
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__BaseUrl",
+    "value": "https://prerwdwebwa1408.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Timeout",
+    "value": "30",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__ServiceRetryCount",
+    "value": "6",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__ApiVersion",
+    "value": "1",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__CreateSubmissionEvent",
+    "value": "v{0}/submissions/{1}/events",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__GetPoMSubmissions",
+    "value": "v{0}/submissions/events/get-regulator-pom-decision",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__GetRegistrationSubmissions",
+    "value": "v{0}/submissions/events/get-regulator-registration-decision",
     "slotSetting": false
   },
   {

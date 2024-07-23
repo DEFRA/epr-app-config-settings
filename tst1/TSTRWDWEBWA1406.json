@@ -5,6 +5,46 @@
     "slotSetting": false
   },
   {
+    "name": "AntivirusApi__BaseUrl",
+    "value": "https://tst-gateway.trade.azure.defra.cloud/trade-file-store",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientId",
+    "value": "8c979e08-142a-4ef7-ba60-475470c8cf96",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/AntivirusApi-ClientSecret-TST/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__EnableDirectAccess",
+    "value": false,
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Scope",
+    "value": "api://tst-futuretrade-ext.defra.gov.uk/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__SubscriptionKey",
+    "value": "e2b96e9ffdcf4a80a73dacbeb67e6234",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__TenantId",
+    "value": "c9d74090-b4e6-4b04-981d-e6757a160812",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Timeout",
+    "value": "300",
+    "slotSetting": false
+  },
+  {
     "name": "AzureAdB2C__ClientId",
     "value": "1dd24ade-b957-4897-9466-c49ea9191306",
     "slotSetting": false
@@ -115,6 +155,21 @@
     "slotSetting": false
   },
   {
+    "name": "BlobStorage__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWD1403/)",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__PomContainerName",
+    "value": "pom-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__RegistrationContainerName",
+    "value": "registration-upload-container",
+    "slotSetting": false
+  },
+  {
     "name": "CommonDataApiConfig__ApiVersion",
     "value": 1,
     "slotSetting": false
@@ -217,6 +272,41 @@
   {
     "name": "RedisInstanceName",
     "value": "rwd-tst1-regulators-",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__BaseUrl",
+    "value": "https://tstrwdwebwa1408.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Timeout",
+    "value": "30",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__ServiceRetryCount",
+    "value": "6",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__ApiVersion",
+    "value": "1",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__CreateSubmissionEvent",
+    "value": "v{0}/submissions/{1}/events",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__GetPoMSubmissions",
+    "value": "v{0}/submissions/events/get-regulator-pom-decision",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__GetRegistrationSubmissions",
+    "value": "v{0}/submissions/events/get-regulator-registration-decision",
     "slotSetting": false
   },
   {

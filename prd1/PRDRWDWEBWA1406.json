@@ -5,6 +5,46 @@
     "slotSetting": false
   },
   {
+    "name": "AntivirusApi__BaseUrl",
+    "value": "https://gateway.trade.defra.gov.uk/trade-file-store",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientId",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/EPR-APIM1002-OAuth-ClientId/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/EPR-APIM1002-OAuth-ClientSecret/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__EnableDirectAccess",
+    "value": false,
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Scope",
+    "value": "api://prd-futuretrade-ext.defra.gov.uk/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__SubscriptionKey",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/EPR-APIM1002-SUBSCRIPTION-KEY/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__TenantId",
+    "value": "bce3d7d1-cbbd-481e-8c81-eaecfc38b551",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Timeout",
+    "value": "300",
+    "slotSetting": false
+  },
+  {
     "name": "AzureAdB2C__ClientId",
     "value": "b73d20cf-464c-43a8-83e2-fa3b360f33aa",
     "slotSetting": false
@@ -112,6 +152,21 @@
   {
     "name": "AccountsServiceApiConfig__Endpoints__GetRegulatorUsers",
     "value": "regulators/organisations/users",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWD1403/)",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__PomContainerName",
+    "value": "pom-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__RegistrationContainerName",
+    "value": "registration-upload-container",
     "slotSetting": false
   },
   {
