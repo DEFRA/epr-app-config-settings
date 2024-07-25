@@ -230,6 +230,11 @@
     "slotSetting": false
   },
   {
+    "name": "CommonDataApiConfig__Endpoints__GetRegistrationSubmissions",
+    "value": "submissions/registrations/summary",
+    "slotSetting": false
+  },
+  {
     "name": "SubmissionsApiConfig__Endpoints__GetPoMSubmissions",
     "value": "v{0}/submissions/events/get-regulator-pom-decision",
     "slotSetting": false

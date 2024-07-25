@@ -180,6 +180,11 @@
     "slotSetting": false
   },
   {
+    "name": "CommonDataApiConfig__Endpoints__GetRegistrationSubmissions",
+    "value": "submissions/registrations/summary",
+    "slotSetting": false
+  },
+  {
     "name": "CommonDataApiConfig__Endpoints__GetPoMSubmissions",
     "value": "submissions/pom/summary",
     "slotSetting": false
