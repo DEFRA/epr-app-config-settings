@@ -26,7 +26,7 @@
   },
   {
     "name": "DOCKER_CUSTOM_IMAGE_NAME",
-    "value": "devrwdinfac1401.azurecr.io/epraccreditationbackendrepository:dev-20240418.5",
+    "value": "devrwdinfac1401.azurecr.io/eprprncommonbackendrepository:feature_add-backend-services-init-20240724.3",
     "slotSetting": false
   },
   {

@@ -140,6 +140,11 @@
     "value": "https://ico.org.uk/make-a-complaint"
   },
   {
+    "name": "ExternalUrls__FindAndUpdateCompanyInformation",
+    "slotSetting": false,
+    "value": "https://find-and-update.company-information.service.gov.uk"
+  },
+  {
     "name": "FileUploadLimitInBytes",
     "slotSetting": false,
     "value": "268435456"
@@ -151,6 +156,16 @@
   },
   {
     "name": "AccountsFacadeAPI__BaseEndpoint",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}404.azurewebsites.net/api/"
+  },
+  {
+    "name": "IntegrationFacadeAPI__DownstreamScope",
+    "slotSetting": false,
+    "value": "#{{ facadeAPI.DownstreamScope }}"
+  },
+  {
+    "name": "IntegrationFacadeAPI__BaseEndpoint",
     "slotSetting": false,
     "value": "https://devrwdwebwa#{{ environmentSpoke }}404.azurewebsites.net/api/"
   },
@@ -172,7 +187,12 @@
   {
     "name": "FeatureManagement__ShowRegistrationResubmission",
     "slotSetting": false,
-    "value": true
+    "value": "#{{ featureManagement.showRegistrationResubmission }}"
+  },
+  {
+    "name": "FeatureManagement__ShowDirectProducerSubsidiaries",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.showDirectProducerSubsidiaries }}"
   },
   {
     "name": "ForwardedHeaders__AllowedHosts",

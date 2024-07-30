@@ -68,6 +68,8 @@ variables:
   featureManagement.sendDissociationNotificationEmail: false
   featureManagement.validationDataApi: false
   featureManagement.pomDataPeriodAndTime: false
+  featureManagement.showDirectProducerSubsidiaries: false
+  featureManagement.showRegistrationResubmission: true
   
   # Databases
   accountsDatabase.name: dev$(environmentSpoke)_accounts

@@ -103,5 +103,10 @@
     "name": "SubmissionStatusApi__BaseUrl",
     "slotSetting": false,
     "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"
+  },
+  {
+    "name": "PrnServiceApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}418.azurewebsites.net"
   }
 ]

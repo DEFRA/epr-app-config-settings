@@ -18,6 +18,7 @@ variables:
   featureManagement.enableRegistrationRowValidation: true
   featureManagement.enableRowValidation: true
   featureManagement.sendDissociationNotificationEmail: true
+  featureManagement.showDirectProducerSubsidiaries: true
   featureManagement.validationDataApi: true
 
   # Submission periods
