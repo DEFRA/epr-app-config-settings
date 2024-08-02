@@ -86,6 +86,9 @@ jobs:
             dev/DEVRWDWEBWAB418.json => config/DEVRWDWEBWA$(environmentSpoke)418.json
             dev/DEVRWDWEBWAB419.json => config/DEVRWDWEBWA$(environmentSpoke)419.json
             dev/DEVRWDWEBWAB420.json => config/DEVRWDWEBWA$(environmentSpoke)420.json
+            dev/DEVRWDWEBWAX423.json => config/DEVRWDWEBWA$(environmentSpoke)423.json
+            dev/DEVRWDWEBWAX424.json => config/DEVRWDWEBWA$(environmentSpoke)424.json
+            dev/DEVRWDWEBWAX425.json => config/DEVRWDWEBWA$(environmentSpoke)425.json
 
     - task: AzureCLI@2
       displayName: Cleaning app settings
