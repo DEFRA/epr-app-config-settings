@@ -23,6 +23,7 @@ variables:
   featureManagement.sendDissociationNotificationEmail: true
   featureManagement.validationDataApi: true
   featureManagement.manageApprovedUsers: true
+  featureManagement.ShowSubsidiaries: true
     
   # Submission periods
   submissionPeriod.2024.1.activeFrom: "28 May 2024 12:00:00 AM"

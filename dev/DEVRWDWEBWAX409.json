@@ -2,10 +2,7 @@
   {
     "name": "AccountApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{
-  }
-  }
-  407.azurewebsites.net"
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net"
   },
   {
     "name": "AccountApi__ClientId",

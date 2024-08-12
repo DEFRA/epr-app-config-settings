@@ -70,6 +70,7 @@ variables:
   featureManagement.pomDataPeriodAndTime: false
   featureManagement.showDirectProducerSubsidiaries: false
   featureManagement.showRegistrationResubmission: true
+  featureManagement.ShowSubsidiaries: false
   
   # Databases
   accountsDatabase.name: dev$(environmentSpoke)_accounts

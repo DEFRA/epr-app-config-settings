@@ -195,6 +195,11 @@
     "value": "#{{ featureManagement.showDirectProducerSubsidiaries }}"
   },
   {
+    "name": "FeatureManagement__ShowSubsidiaries",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.ShowSubsidiaries }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke }}.azure.defra.cloud"

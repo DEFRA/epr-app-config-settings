@@ -81,7 +81,7 @@
   },
   {
     "name": "PaymentServiceOptions__Description",
-    "value": "Static payment description",
+    "value": "Registration fee",
     "slotSetting": true
   },
   {
