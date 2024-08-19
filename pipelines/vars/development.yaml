@@ -71,7 +71,8 @@ variables:
   featureManagement.showDirectProducerSubsidiaries: false
   featureManagement.showRegistrationResubmission: true
   featureManagement.ShowSubsidiaries: false
-  
+  featureManagement.ShowSubsidiariesFileUploadExportRemoveFeature: false
+
   # Databases
   accountsDatabase.name: dev$(environmentSpoke)_accounts
   cosmos.database.connectionString: '@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/CosmoConnectionString/)'

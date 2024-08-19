@@ -200,6 +200,11 @@
     "value": "#{{ featureManagement.ShowSubsidiaries }}"
   },
   {
+    "name": "FeatureManagement__ShowSubsidiariesFileUploadExportRemoveFeature",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.ShowSubsidiariesFileUploadExportRemoveFeature }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke }}.azure.defra.cloud"

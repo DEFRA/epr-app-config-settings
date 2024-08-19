@@ -185,6 +185,11 @@
     "value": false
   },
   {
+    "name": "FeatureManagement__ShowSubsidiariesFileUploadExportRemoveFeature",
+    "slotSetting": false,
+    "value": false
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "value": "rwd-dev8.azure.defra.cloud",
     "slotSetting": false

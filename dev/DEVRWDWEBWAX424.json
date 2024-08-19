@@ -75,6 +75,11 @@
     "slotSetting": true
   },
   {
+    "name": "Services__GovPayService__Retries",
+    "value": "3",
+    "slotSetting": true
+  },
+  {
     "name": "PaymentServiceOptions__ReturnUrl",
     "value": "https://devrwdwebwa#{{ environmentSpoke }}423.azurewebsites.net/GovPayCallback",
     "slotSetting": true
