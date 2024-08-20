@@ -15,6 +15,8 @@ parameters:
   - DEV7
   - DEV8
   - DEV9
+  - DEV10
+  - DEV11
   - TST1
   - PRE1
   - PRD1
@@ -49,6 +51,12 @@ variables:
 - ${{ elseif eq(parameters.teamName, 'DEV8') }}:
   - template: vars/development.yaml
   - template: vars/dev8.yaml
+- ${{ elseif eq(parameters.teamName, 'DEV10') }}:
+  - template: vars/development.yaml
+  - template: vars/dev10.yaml
+- ${{ elseif eq(parameters.teamName, 'DEV11') }}:
+  - template: vars/development.yaml
+  - template: vars/dev11.yaml
 - ${{ elseif eq(parameters.teamName, 'TST1') }}:
   - template: vars/tst1.yaml
 - ${{ elseif eq(parameters.teamName, 'PRE1') }}:
