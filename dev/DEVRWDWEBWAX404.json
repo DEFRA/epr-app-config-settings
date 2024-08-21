@@ -86,12 +86,17 @@
   },
   {
     "name": "MessagingConfig__ComplianceSchemeResubmissionTemplateId",
-    "value": "messaging.producer.complianceschemeresubmissionnotification.templateid",
+    "value": "#{{messaging.producer.complianceschemeresubmissionnotification.templateid }}",
     "slotSetting": false
   },
   {
     "name": "MessagingConfig__ProducerResubmissionTemplateId",
-    "value": "messaging.producer.producerresubmissionnotification.templateid",
+    "value": "#{{messaging.producer.producerresubmissionnotification.templateid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__UserDetailChangeRequestTemplateId",
+    "value": "#{{ messaging.producer.userdetailchangerequestnotification.templateid }}",
     "slotSetting": false
   },
   {
@@ -173,5 +178,25 @@
     "name": "MessagingConfig__ApprovedUserAccountConfirmationTemplateId",
     "slotSetting": false,
     "value": "#{{ messaging.producer.approveduseraccountconfirmation.templateid }}"
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__NorthernIreland",
+    "value": "#{{ regulatoremail.producer.northernireland }}",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__England",
+    "value": "#{{ regulatoremail.producer.england }}",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__Scotland",
+    "value": "#{{ regulatoremail.producer.scotland }}",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__Wales",
+    "value": "#{{ regulatoremail.producer.wales }}",
+    "slotSetting": false
   }
 ]

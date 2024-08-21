@@ -160,6 +160,11 @@
     "slotSetting": false
   },
   {
+    "name": "FeatureManagement__LargeProducerRegisterEnabled",
+    "value": false,
+    "slotSetting": false
+  },
+  {
     "name": "GOOGLE_ANALYTICS__CookiePrefix",
     "value": "_ga",
     "slotSetting": false
@@ -214,7 +219,7 @@
     "value": "cynhyrchwyr-mawr-niea-2023.csv",
     "slotSetting": false
   },
- {
+  {
     "name": "LargeProducerReportFileNames__ScottishReportFileNameInWelsh",
     "value": "cynhyrchwyr-mawr-sepa-2023.csv",
     "slotSetting": false
@@ -222,6 +227,26 @@
   {
     "name": "LargeProducerReportFileNames__WalesReportFileNameInWelsh",
     "value": "cynhyrchwyr-mawr-nrw-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__LatestAllNationsReportFileNamePrefix",
+    "value": "2023/large_producers",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__LatestAllNationsReportFileNamePrefixInWelsh",
+    "value": "2023/cynhyrchwyr_mawr",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__LatestAllNationsReportDownloadFileName",
+    "value": "large_producers_{0:dd}_{0:MMMM}_{0:yyyy}.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__LatestAllNationsReportDownloadFileNameInWelsh",
+    "value": "cynhyrchwyr_mawr_{0:dd}_{0:MMMM}_{0:yyyy}.csv",
     "slotSetting": false
   },
   {

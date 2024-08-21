@@ -90,6 +90,11 @@
     "slotSetting": false
   },
   {
+    "name": "MessagingConfig__UserDetailChangeRequestTemplateId",
+    "value": "#{{ messaging.producer.userdetailchangerequestnotification.templateid }}",
+    "slotSetting": false
+  },
+  {
     "name": "RegulatorEmailConfig__NorthernIreland",
     "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/NorthernIrelandRegulatorInbox/)",
     "slotSetting": false
@@ -107,6 +112,26 @@
   {
     "name": "RegulatorEmailConfig__Wales",
     "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/WalesRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__NorthernIreland",
+    "value": "#{{ regulatoremail.producer.northernireland }}",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__England",
+    "value": "#{{ regulatoremail.producer.england }}",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__Scotland",
+    "value": "#{{ regulatoremail.producer.scotland }}",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__Wales",
+    "value": "#{{ regulatoremail.producer.wales }}",
     "slotSetting": false
   }
 ]

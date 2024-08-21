@@ -135,6 +135,11 @@
     "slotSetting": false
   },
   {
+    "name": "MessagingConfig__UserDetailChangeRequestTemplateId",
+    "slotSetting": false,
+    "value": "PLACEHOLDER"
+  },
+  {
     "name": "RegulatorEmailConfig__NorthernIreland",
     "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/NorthernIrelandRegulatorInbox/)",
     "slotSetting": false
@@ -157,6 +162,26 @@
   {
     "name": "MessagingConfig__ApprovedUserAccountConfirmationTemplateId",
     "value": "4be9716b-ab73-47be-a915-287325446aab",
-    "slotSetting": false    
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__NorthernIreland",
+    "value": "packaging@daera-ni.gov.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__England",
+    "value": "packagingproducers@environment-agency.gov.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__Scotland",
+    "value": "producer.responsibility@sepa.org.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__Wales",
+    "value": "packaging@naturalresourceswales.gov.uk",
+    "slotSetting": false
   }
 ]

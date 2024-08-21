@@ -1,0 +1,102 @@
+[
+  {
+    "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
+    "value": "fb7d3853-5354-4dc9-9c64-4ea560448bff",
+    "slotSetting": false
+  },
+  {
+    "name": "ApplicationInsightsAgent_EXTENSION_VERSION",
+    "value": "~3",
+    "slotSetting": false
+  },
+  {
+    "name": "ASPNETCORE_ENVIRONMENT",
+    "value": "Development",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__MenuUrl__Url",
+    "value": "https://google.com/",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__MenuUrl__Description",
+    "value": "This is url is redirect to main menu.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__BackUrl__Url",
+    "value": "https://google.com/",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__BackUrl__Description",
+    "value": "This is payment dashboard.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__FeedbackUrl__Url",
+    "value": "https://google.com/",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__FeedbackUrl__Description",
+    "value": "This is url is redirect to feedback page.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__OfflinePaymentUrl__Url",
+    "value": "https://google.com/",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__OfflinePaymentUrl__Description",
+    "value": "This is url is redirect to offline payment information page",
+    "slotSetting": true
+  },
+  {
+    "name": "PaymentFacade__FacadeService__Url",
+    "value": "https://tstrwdwebwa#{{ environmentSpoke }}424.azurewebsites.net/",
+    "slotSetting": true
+  },
+  {
+    "name": "PaymentFacade__FacadeService__EndPointName",
+    "value": "api/v1",
+    "slotSetting": true
+  },
+  {
+    "name": "PaymentFacade__FacadeService__HttpClientName",
+    "value": "payment_service_client",
+    "slotSetting": true
+  },
+  {
+    "name": "ConnectionStrings__REDIS_CONNECTION",
+    "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITE_AUTH_AAD_ALLOWED_TENANTS",
+    "value": "6f504113-6b64-43f2-ade9-242e05780007",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITE_ENABLE_SYNC_UPDATE_SITE",
+    "value": "true",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITE_PULL_IMAGE_OVER_VNET",
+    "value": "true",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
+    "value": "false",
+    "slotSetting": false
+  },
+  {
+    "name": "XDT_MicrosoftApplicationInsights_Mode",
+    "value": "default",
+    "slotSetting": false
+  }
+]

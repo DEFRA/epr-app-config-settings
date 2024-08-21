@@ -72,7 +72,9 @@ variables:
   featureManagement.showRegistrationResubmission: true
   featureManagement.ShowSubsidiaries: false
   featureManagement.ShowSubsidiariesFileUploadExportRemoveFeature: false
-
+  featureManagement.obligationCheckerEnabled: false
+  featureManagement.largeProducerRegisterEnabled: false
+  
   # Databases
   accountsDatabase.name: dev$(environmentSpoke)_accounts
   cosmos.database.connectionString: '@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/CosmoConnectionString/)'
@@ -111,6 +113,7 @@ variables:
   messaging.producer.producerresubmissionnotification.templateid: 316f111a-6e96-496f-8514-e6213b96da96
   messaging.producer.complianceschemeresubmissionnotification.templateid: 253892da-55b2-4c8f-b97a-9feb20b85709
   messaging.producer.approveduseraccountconfirmation.templateid: 4be9716b-ab73-47be-a915-287325446aab
+  messaging.producer.userdetailchangerequestnotification.templateid: db0cf9a3-06d6-4c0d-9179-8e2b16ee5fcc
 
   # This should be replaced with specific client Id's when moved to other environments
   validationDataApi.appRegistration.clientId: 
@@ -118,3 +121,9 @@ variables:
   # Submission periods
   submissionPeriod.2024.1.activeFrom: "1 Jul 2024 12:00:00 AM"
   submissionPeriod.2024.2.activeFrom: "1 Jan 2025 12:00:00 AM"
+
+  # EprPackagingRegulatorEmailConfig
+  regulatoremail.producer.northernireland: "dev_packaging@daera-ni.gov.uk"
+  regulatoremail.producer.england: "dev_packagingproducers@environment-agency.gov.uk"
+  regulatoremail.producer.wales: "dev_packaging@naturalresourceswales.gov.uk"
+  regulatoremail.producer.scotland: "dev_producer.responsibility@sepa.org.uk"
