@@ -15,6 +15,16 @@
     "value": "registration-upload-container#{{ teamName.dash }}"
   },
   {
+    "name": "BlobStorage__SubsidiaryContainerName",
+    "slotSetting": false,
+    "value": "subsidiary-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "BlobStorage__SubsidiaryCompaniesHouseContainerName",
+    "slotSetting": false,
+    "value": "subsidiary-companies-house-upload-container#{{ teamName.dash }}"
+  },
+  {
     "name": "LoggingApi__BaseUrl",
     "slotSetting": false,
     "value": "https://devrwdwebwa#{{ environmentSpoke }}403.azurewebsites.net"
@@ -57,7 +67,7 @@
   {
     "name": "TradeAntivirusApi__EnableDirectAccess",
     "slotSetting": false,
-    "value": #{{ TradeAntivirusApi.enableDirectAccess }}
+    "value": "#{{ TradeAntivirusApi.enableDirectAccess }}"
   },
   {
     "name": "TradeAntivirusApi__Scope",

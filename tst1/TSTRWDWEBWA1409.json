@@ -110,6 +110,11 @@
     "slotSetting": false
   },
   {
+    "name": "StorageAccount__SubsidiaryContainer",
+    "slotSetting": false,
+    "value": "subsidiary-upload-container"
+  },
+  {
     "name": "SubmissionStatusApi__BaseUrl",
     "value": "https://tstrwdwebwa1408.azurewebsites.net",
     "slotSetting": false

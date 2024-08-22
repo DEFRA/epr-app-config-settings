@@ -15,6 +15,16 @@
     "slotSetting": false
   },
   {
+    "name": "BlobStorage__SubsidiaryContainerName",
+    "slotSetting": false,
+    "value": "subsidiary-upload-container-dev8"
+  },
+  {
+    "name": "BlobStorage__SubsidiaryCompaniesHouseContainerName",
+    "slotSetting": false,
+    "value": "subsidiary-companies-house-upload-container-dev8"
+  },
+  {
     "name": "LoggingApi__BaseUrl",
     "value": "https://devrwdwebwa8403.azurewebsites.net",
     "slotSetting": false

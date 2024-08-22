@@ -20,6 +20,16 @@
     "slotSetting": false
   },
   {
+    "name": "BlobStorage__SubsidiaryContainerName",
+    "slotSetting": false,
+    "value": "subsidiary-upload-container"
+  },
+  {
+    "name": "BlobStorage__SubsidiaryCompaniesHouseContainerName",
+    "slotSetting": false,
+    "value": "subsidiary-companies-house-upload-container"
+  },
+  {
     "name": "LoggingApi__BaseUrl",
     "value": "https://tstrwdwebwa1403.azurewebsites.net",
     "slotSetting": false

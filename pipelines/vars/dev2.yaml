@@ -19,6 +19,8 @@ variables:
   featureManagement.enableRowValidation: true
   featureManagement.sendDissociationNotificationEmail: true
   featureManagement.showDirectProducerSubsidiaries: true
+  featureManagement.ShowSubsidiaries: true
+  featureManagement.ShowSubsidiariesFileUploadExportRemoveFeature: true
   featureManagement.validationDataApi: true
 
   # Submission periods

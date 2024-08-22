@@ -160,6 +160,16 @@
     "value": "https://tstrwdwebwa1404.azurewebsites.net/api/"
   },
   {
+    "name": "IntegrationFacadeAPI__DownstreamScope",
+    "slotSetting": false,
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-tst1-producers-account-facade/account-creation"
+  },
+  {
+    "name": "IntegrationFacadeAPI__BaseEndpoint",
+    "slotSetting": false,
+    "value": "https://tstrwdwebwa1404.azurewebsites.net/api/"
+  },
+  {
     "name": "FeatureManagement__ShowLanguageSwitcher",
     "value": true,
     "slotSetting": false
@@ -178,6 +188,11 @@
     "name": "FeatureManagement__ShowRegistrationResubmission",
     "slotSetting": false,
     "value": false
+  },
+  {
+    "name": "FeatureManagement__ShowDirectProducerSubsidiaries",
+    "slotSetting": false,
+    "value": "false"
   },
   {
     "name": "FeatureManagement__ShowSubsidiaries",

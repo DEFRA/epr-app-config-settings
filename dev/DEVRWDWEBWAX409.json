@@ -100,6 +100,11 @@
     "value": "registration-upload-container#{{ teamName.dash }}"
   },
   {
+    "name": "StorageAccount__SubsidiaryContainer",
+    "slotSetting": false,
+    "value": "subsidiary-upload-container#{{ teamName.dash }}"
+  },
+  {
     "name": "SubmissionStatusApi__BaseUrl",
     "slotSetting": false,
     "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"

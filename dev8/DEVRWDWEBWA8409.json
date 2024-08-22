@@ -98,5 +98,10 @@
     "name": "StorageAccount__RegistrationContainer",
     "value": "registration-upload-container-dev8",
     "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__SubsidiaryContainer",
+    "slotSetting": false,
+    "value": "subsidiary-upload-container-dev8"
   }
 ]
