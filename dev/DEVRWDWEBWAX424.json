@@ -35,6 +35,16 @@
     "slotSetting": true
   },
   {
+    "name": "FeatureManagement__EnableProducersFeesFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableProducersFeesCalculation",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
     "name": "Services__PaymentServiceHealthCheck__Url",
     "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
     "slotSetting": true

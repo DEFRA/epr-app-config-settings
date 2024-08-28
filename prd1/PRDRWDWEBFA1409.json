@@ -1,0 +1,52 @@
+[
+  {
+    "name": "AzureWebJobsStorage",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/EprPaymentMopUpStorageAccountConnectionStringRWDb1409/)",
+    "slotSetting": false
+  },
+  {
+    "name": "IsEncrypted",
+    "slotSetting": false,
+    "value": "false"
+  },
+  {
+    "name": "FUNCTIONS_INPROC_NET8_ENABLED",
+    "slotSetting": false,
+    "value": "1"
+  },
+  {
+    "name": "FUNCTIONS_TIME_TRIGGER",
+    "slotSetting": false,
+    "value": "0 */90 * * * *"
+  },
+  {
+    "name": "SqlConnectionString",
+    "slotSetting": false,
+    "value": "Server=tcp:prdrwddbssq1401.database.windows.net,1433;Initial Catalog=FeesPayment;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;"
+  },
+  {
+    "name": "TotalMinutesToUpdate",
+    "slotSetting": false,
+    "value": "270"
+  },
+  {
+    "name": "IgnoringMinutesToUpdate",
+    "slotSetting": false,
+    "value": "180"
+  },
+  {
+    "name": "Services__GovPayService__Url",
+    "slotSetting": false,
+    "value": "https://publicapi.payments.service.gov.uk"
+  },
+  {
+    "name": "Services__GovPayService__EndPointName",
+    "slotSetting": false,
+    "value": "v1"
+  },
+  {
+    "name": "Services__GovPayService__BearerToken",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/FeesPaymentGovPayBearerToken/)"
+  }
+]
