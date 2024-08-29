@@ -90,6 +90,21 @@
     "slotSetting": true
   },
   {
+    "name": "Services__RegistrationFeesService__Url",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__RegistrationFeesService__EndPointName",
+    "value": "api/v1",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__RegistrationFeesService__HttpClientName",
+    "value": "registration_fees_service_client",
+    "slotSetting": true
+  },
+  {
     "name": "PaymentServiceOptions__ReturnUrl",
     "value": "https://devrwdwebwa#{{ environmentSpoke }}423.azurewebsites.net/GovPayCallback",
     "slotSetting": true

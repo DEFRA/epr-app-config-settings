@@ -40,6 +40,16 @@
     "slotSetting": true
   },
   {
+    "name": "FeatureManagement__EnableRegistrationFeesFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableProducerResubmissionAmount",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
     "name": "ConnectionStrings__PaymentConnectionString",
     "value": "Server=tcp:tstrwddbssq1401.database.windows.net,1433;Initial Catalog=FeesPayment;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;",
     "slotSetting": false
