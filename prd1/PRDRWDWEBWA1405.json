@@ -115,6 +115,11 @@
     "slotSetting": false
   },
   {
+    "name": "FeatureManagement__ManageUserDetailChanges",
+    "value": false,
+    "slotSetting": false
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "report-packaging-data.defra.gov.uk"

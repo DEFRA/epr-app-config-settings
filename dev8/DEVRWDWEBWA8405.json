@@ -120,6 +120,11 @@
     "slotSetting": false
   },
   {
+    "name": "FeatureManagement__ManageUserDetailChanges",
+    "value": false,
+    "slotSetting": false
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "value": "rwd-dev8.azure.defra.cloud",
     "slotSetting": false

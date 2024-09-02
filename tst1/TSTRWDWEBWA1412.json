@@ -140,6 +140,11 @@
     "value": true
   },
   {
+    "name": "FeatureManagement__ManageUserDetailChanges",
+    "slotSetting": false,
+    "value": false
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-tst1.azure.defra.cloud"

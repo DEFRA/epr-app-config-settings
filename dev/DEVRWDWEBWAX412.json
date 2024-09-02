@@ -140,6 +140,11 @@
     "value": "#{{ featureManagement.showLanguageSwitcher }}"
   },
   {
+    "name": "FeatureManagement__ManageUserDetailChanges",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.manageUserDetailChanges }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke }}.azure.defra.cloud"

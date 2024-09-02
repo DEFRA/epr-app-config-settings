@@ -115,6 +115,11 @@
     "value": true
   },
   {
+    "name": "FeatureManagement__ManageUserDetailChanges",
+    "slotSetting": false,
+    "value": false
+  },
+  {
     "name": "FILE_UPLOAD_LIMIT_IN_BYTES",
     "slotSetting": false,
     "value": "268435456"
