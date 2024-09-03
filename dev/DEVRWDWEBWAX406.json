@@ -275,8 +275,23 @@
     "slotSetting": false
   },
   {
+    "name": "MessagingConfig__InviteNewApprovedPersonTemplateId",
+    "value": "6325cef3-c248-4979-843a-7a23a64d40e9",
+    "slotSetting": false
+  },
+  {
     "name": "MessagingConfig__RegulatorSubmissionRejectedResubmissionNotRequired",
     "value": "acec21ad-c185-42d7-ab2c-1b80b71b796f",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorRegistrationAccepted",
+    "value": "f0bc680e-1175-401e-979b-484fb07f152f",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorRegistrationRejected",
+    "value": "2dde1e54-b3b9-45ea-baeb-437200008a36",
     "slotSetting": false
   },
   {

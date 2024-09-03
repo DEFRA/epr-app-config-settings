@@ -38,5 +38,80 @@
     "name": "Validation__MaxIssuesToProcess",
     "value": "1000",
     "slotSetting": false
+  },
+  {
+    "name": "SubmissionPeriods__0__SubmissionPeriod",
+    "slotSetting": false,
+    "value": "January to June 2023"
+  },
+  {
+    "name": "SubmissionPeriods__0__PeriodCodes__0",
+    "slotSetting": false,
+    "value": "2023-P1"
+  },
+  {
+    "name": "SubmissionPeriods__0__PeriodCodes__1",
+    "slotSetting": false,
+    "value": "2023-P2"
+  },
+  {
+    "name": "SubmissionPeriods__0__ErrorCode",
+    "slotSetting": false,
+    "value": "54"
+  },
+  {
+    "name": "SubmissionPeriods__1__SubmissionPeriod",
+    "slotSetting": false,
+    "value": "July to December 2023"
+  },
+  {
+    "name": "SubmissionPeriods__1__PeriodCodes__0",
+    "slotSetting": false,
+    "value": "2023-P3"
+  },
+  {
+    "name": "SubmissionPeriods__1__ErrorCode",
+    "slotSetting": false,
+    "value": "55"
+  },
+  {
+    "name": "SubmissionPeriods__2__SubmissionPeriod",
+    "slotSetting": false,
+    "value": "January to June 2024"
+  },
+  {
+    "name": "SubmissionPeriods__2__PeriodCodes__0",
+    "slotSetting": false,
+    "value": "2024-P1"
+  },
+  {
+    "name": "SubmissionPeriods__2__PeriodCodes__1",
+    "slotSetting": false,
+    "value": "2024-P2"
+  },
+  {
+    "name": "SubmissionPeriods__2__PeriodCodes__2",
+    "slotSetting": false,
+    "value": "2024-P3"
+  },
+  {
+    "name": "SubmissionPeriods__2__ErrorCode",
+    "slotSetting": false,
+    "value": "65"
+  },
+  {
+    "name": "SubmissionPeriods__3__SubmissionPeriod",
+    "slotSetting": false,
+    "value": "July to December 2024"
+  },
+  {
+    "name": "SubmissionPeriods__3__PeriodCodes__0",
+    "slotSetting": false,
+    "value": "2024-P4"
+  },
+  {
+    "name": "SubmissionPeriods__3__ErrorCode",
+    "slotSetting": false,
+    "value": "66"
   }
 ]

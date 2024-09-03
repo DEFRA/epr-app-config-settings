@@ -245,6 +245,41 @@
     "slotSetting": false
   },
   {
+    "name": "SubmissionsApiConfig__BaseUrl",
+    "value": "https://devrwdwebwa8408.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Timeout",
+    "value": "30",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__ServiceRetryCount",
+    "value": "6",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__ApiVersion",
+    "value": "1",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__CreateSubmissionEvent",
+    "value": "v{0}/submissions/{1}/events",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__GetPoMSubmissions",
+    "value": "v{0}/submissions/events/get-regulator-pom-decision",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__GetRegistrationSubmissions",
+    "value": "v{0}/submissions/events/get-regulator-registration-decision",
+    "slotSetting": false
+  },
+  {
     "name": "MessagingConfig__ApiKey",
     "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/MessagingConfigApiKeyDev/)",
     "slotSetting": false
@@ -265,6 +300,11 @@
     "slotSetting": false
   },
   {
+    "name": "MessagingConfig__InviteNewApprovedPersonTemplateId",
+    "value": "6325cef3-c248-4979-843a-7a23a64d40e9",
+    "slotSetting": false
+  },
+  {
     "name": "MessagingConfig__ToApprovedPersonApprovedPersonRejected",
     "value": "fa902b46-3ef0-4336-86db-cf72863555ca",
     "slotSetting": false
@@ -277,6 +317,16 @@
   {
     "name": "MessagingConfig__ToDelegatedPersonDelegatedPersonRejected",
     "value": "aa534cfd-0480-4c2c-b1d8-6fd70d3db83e",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorRegistrationAccepted",
+    "value": "f0bc680e-1175-401e-979b-484fb07f152f",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorRegistrationRejected",
+    "value": "2dde1e54-b3b9-45ea-baeb-437200008a36",
     "slotSetting": false
   },
   {
@@ -303,6 +353,11 @@
     "name": "MessagingConfig__AccountCreationUrl",
     "value": "https://rwd-dev8.azure.defra.cloud/create-account/invitation/",
     "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__AccountSignInUrl",
+    "slotSetting": false,
+    "value": "https://rwd-dev8.azure.defra.cloud/report-data"
   },
   {
     "name": "rolesConfig__roles",

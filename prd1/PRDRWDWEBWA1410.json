@@ -177,7 +177,7 @@
   {
     "name": "FeatureManagement__ShowRegistrationResubmission",
     "slotSetting": false,
-    "value": false
+    "value": true
   },
   {
     "name": "FeatureManagement__ShowDirectProducerSubsidiaries",
@@ -315,11 +315,6 @@
     "value": "@Microsoft.KeyVault(SecretUri=https://prdrwdinfkv1401.vault.azure.net/secrets/RedisCacheConnectionString/)"
   },
   {
-    "name": "SchemeYear",
-    "slotSetting": false,
-    "value": "2023"
-  },
-  {
     "name": "Session__IdleTimeoutMinutes",
     "slotSetting": false,
     "value": "20"
@@ -375,6 +370,11 @@
     "value": "June"
   },
   {
+    "name": "SubmissionPeriods__0__Year",
+    "slotSetting": false,
+    "value": "2023"
+  },
+  {
     "name": "SubmissionPeriods__0__Deadline",
     "value": "1 Oct 2023 11:59:00 PM",
     "slotSetting": false
@@ -400,6 +400,11 @@
     "value": "December"
   },
   {
+    "name": "SubmissionPeriods__1__Year",
+    "slotSetting": false,
+    "value": "2023"
+  },
+  {
     "name": "SubmissionPeriods__1__Deadline",
     "value": "1 Apr 2024 11:59:00 PM",
     "slotSetting": false
@@ -408,6 +413,66 @@
     "name": "SubmissionPeriods__1__ActiveFrom",
     "value": "1 Jan 2024 12:00:00 AM",
     "slotSetting": false
+  },
+  {
+    "name": "SubmissionPeriods__2__DataPeriod",
+    "slotSetting": false,
+    "value": "January to June 2024"
+  },
+  {
+    "name": "SubmissionPeriods__2__StartMonth",
+    "slotSetting": false,
+    "value": "January"
+  },
+  {
+    "name": "SubmissionPeriods__2__EndMonth",
+    "slotSetting": false,
+    "value": "June"
+  },
+  {
+    "name": "SubmissionPeriods__2__Year",
+    "slotSetting": false,
+    "value": "2024"
+  },
+  {
+    "name": "SubmissionPeriods__2__Deadline",
+    "slotSetting": false,
+    "value": "1 Oct 2024 11:59:00 PM"
+  },
+  {
+    "name": "SubmissionPeriods__2__ActiveFrom",
+    "slotSetting": false,
+    "value": "1 Jul 2024 12:00:00 AM"
+  },
+  {
+    "name": "SubmissionPeriods__3__DataPeriod",
+    "slotSetting": false,
+    "value": "July to December 2024"
+  },
+  {
+    "name": "SubmissionPeriods__3__StartMonth",
+    "slotSetting": false,
+    "value": "July"
+  },
+  {
+    "name": "SubmissionPeriods__3__EndMonth",
+    "slotSetting": false,
+    "value": "December"
+  },
+  {
+    "name": "SubmissionPeriods__3__Year",
+    "slotSetting": false,
+    "value": "2024"
+  },
+  {
+    "name": "SubmissionPeriods__3__Deadline",
+    "slotSetting": false,
+    "value": "1 Apr 2025 11:59:00 PM"
+  },
+  {
+    "name": "SubmissionPeriods__3__ActiveFrom",
+    "slotSetting": false,
+    "value": "1 Jan 2025 12:00:00 AM"
   },
   {
     "name": "Validation__MaxIssuesToProcess",

@@ -211,7 +211,7 @@
   },
   {
     "name": "MessagingConfig__ToApprovedPersonApprovedPersonAccepted",
-    "value": "5df63189-4122-43c0-97d4-d0d60a0a18c6",
+    "value": "ea93d22f-090f-444c-b868-9438faf472c5",
     "slotSetting": false
   },
   {
@@ -226,7 +226,22 @@
   },
   {
     "name": "MessagingConfig__ToApprovedPersonApprovedPersonRejected",
-    "value": "0bf23b7c-973d-41ae-9404-c09795c2fab2",
+    "value": "b6010217-e5b7-4e70-a3f8-4e4628a9805a",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__InviteNewApprovedPersonTemplateId",
+    "value": "c8d5bc5c-580a-4817-9bab-4fd26c0dabee",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorRegistrationAccepted",
+    "value": "99dabb0e-e7b2-4a30-a9c1-9ff8389b8aa5",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorRegistrationRejected",
+    "value": "c9ad4001-02df-40f5-a09b-b98594b12c7c",
     "slotSetting": false
   },
   {
@@ -246,23 +261,28 @@
   },
   {
     "name": "MessagingConfig__RegulatorSubmissionAccepted",
-    "value": "dd736a3c-22fa-4def-b414-14e280653033",
+    "value": "dcab7c30-8b9f-49c0-9d01-86197499d063",
     "slotSetting": false
   },
   {
     "name": "MessagingConfig__RegulatorSubmissionRejectedResubmissionRequired",
-    "value": "2182ab10-b88c-4a1d-a069-a9c1b13b300f",
+    "value": "6b890053-d35d-4dbd-85b5-57a306251902",
     "slotSetting": false
   },
   {
     "name": "MessagingConfig__RegulatorSubmissionRejectedResubmissionNotRequired",
-    "value": "889a8b8a-ca42-4384-b7bf-ac38a7b2ad3b",
+    "value": "381ee65d-dc2c-4dc6-9d45-616e4953f349",
     "slotSetting": false
   },
   {
     "name": "MessagingConfig__AccountCreationUrl",
     "value": "https://report-packaging-data.defra.gov.uk/create-account/invitation/",
     "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__AccountSignInUrl",
+    "slotSetting": false,
+    "value": "https://report-packaging-data.defra.gov.uk/report-data"
   },
   {
     "name": "rolesConfig__roles",
@@ -286,7 +306,7 @@
   },
   {
     "name": "MessagingConfig__PromotedApprovedUserTemplateId",
-    "value": "de7af06a-2a6d-40f9-beb3-920261990080",
+    "value": "12154c47-b082-42bf-adef-e6fcba1e9173",
     "slotSetting": false
   },
   {

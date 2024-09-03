@@ -32,7 +32,7 @@
   {
     "name": "CompanyDetailsApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://prdrwdwebwa1407.azurewebsites.net/"
+    "value": "https://prdrwdwebfa1407.azurewebsites.net/"
   },
   {
     "name": "CompanyDetailsApi__Timeout",
@@ -42,7 +42,7 @@
   {
     "name": "CompanyDetailsApi__ClientId",
     "slotSetting": false,
-    "value": ""
+    "value": "0940b612-85fa-443d-a91e-51007ea47c4e"
   },
   {
     "name": "FeatureManagement__EnableRowValidation",
@@ -57,12 +57,7 @@
   {
     "name": "FeatureManagement__EnableCompanyDetailsValidation",
     "slotSetting": false,
-    "value": false
-  },
-  {
-    "name": "FeatureManagement__EnableCompanyDetailsValidation",
-    "slotSetting": false,
-    "value": false
+    "value": true
   },
   {
     "name": "FeatureManagement__EnableBrandPartnerDataRowValidation",
@@ -72,12 +67,7 @@
   {
     "name": "FeatureManagement__EnableBrandPartnerCrossFileValidation",
     "slotSetting": false,
-    "value": false
-  },
-  {
-    "name": "FeatureManagement__EnableBrandPartnerCrossFileValidation",
-    "slotSetting": false,
-    "value": false
+    "value": true
   },
   {
     "name": "ValidationSettings__ErrorLimit",

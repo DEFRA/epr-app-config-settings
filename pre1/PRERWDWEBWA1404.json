@@ -55,6 +55,11 @@
     "value": "https://rwd-pre1.azure.defra.cloud/create-account/invitation/"
   },
   {
+    "name": "MessagingConfig__AccountLoginUrl",
+    "slotSetting": false,
+    "value": "https://rwd-pre1.azure.defra.cloud/report-data"
+  },
+  {
     "name": "MessagingConfig__ApiKey",
     "slotSetting": false,
     "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/MessagingConfigApiKey/)"

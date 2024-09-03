@@ -161,7 +161,7 @@
   },
   {
     "name": "FeatureManagement__ManageApprovedUsers",
-    "value": false,
+    "value": true,
     "slotSetting": false
   },
   {
@@ -243,6 +243,11 @@
     "name": "SubmissionApi__PostEvent",
     "slotSetting": false,
     "value": "events/"
+  },
+  {
+    "name": "FeatureManagement__PomDataPeriodAndTime",
+    "slotSetting": false,
+    "value": true
   },
   {
     "name": "FeatureManagement__ManagePoMSubmissions",
