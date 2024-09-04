@@ -205,6 +205,16 @@
     "value": "#{{ featureManagement.ShowSubsidiariesFileUploadExportRemoveFeature }}"
   },
   {
+    "name": "FeatureManagement__ShowPrn",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.ShowPrn }}"
+  },
+  {
+    "name": "FeatureManagement__OverridePrnCurrentDateForTestingPurposes",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.OverridePrnCurrentDateForTestingPurposes }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke }}.azure.defra.cloud"

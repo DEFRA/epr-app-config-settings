@@ -12,3 +12,7 @@ variables:
   infrastructureResourceGroupName: ${{ variables.environmentGroup }}RWDWEBWA${{ variables.environmentSpoke}}419
 
   validationDataApi.appRegistration.clientId: ec668afe-3d8e-4242-91d7-910fac38c3b2
+
+  # Feature management
+  featureManagement.ShowPrn: true
+  featureManagement.OverridePrnCurrentDateForTestingPurposes: false

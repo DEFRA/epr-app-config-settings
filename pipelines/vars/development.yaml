@@ -75,6 +75,8 @@ variables:
   featureManagement.obligationCheckerEnabled: false
   featureManagement.largeProducerRegisterEnabled: false
   featureManagement.manageUserDetailChanges: true
+  featureManagement.ShowPrn: false
+  featureManagement.OverridePrnCurrentDateForTestingPurposes: false
   
   # Databases
   accountsDatabase.name: dev$(environmentSpoke)_accounts
