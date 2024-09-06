@@ -126,22 +126,22 @@
   },
   {
     "name": "EprPackagingRegulatorEmailConfig__NorthernIreland",
-    "value": "packaging@daera-ni.gov.uk",
+    "value": "EPRCustomerService@defra.gov.uk",
     "slotSetting": false
   },
   {
     "name": "EprPackagingRegulatorEmailConfig__England",
-    "value": "packagingproducers@environment-agency.gov.uk",
+    "value": "EPRCustomerService@defra.gov.uk",
     "slotSetting": false
   },
   {
     "name": "EprPackagingRegulatorEmailConfig__Scotland",
-    "value": "producer.responsibility@sepa.org.uk",
+    "value": "EPRCustomerService@defra.gov.uk",
     "slotSetting": false
   },
   {
     "name": "EprPackagingRegulatorEmailConfig__Wales",
-    "value": "packaging@naturalresourceswales.gov.uk",
+    "value": "EPRCustomerService@defra.gov.uk",
     "slotSetting": false
   }
 ]

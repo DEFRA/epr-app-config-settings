@@ -45,6 +45,11 @@
     "slotSetting": true
   },
   {
+    "name": "FeatureManagement__EnableProducerResubmissionFee",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
     "name": "Services__PaymentServiceHealthCheck__Url",
     "value": "https://prerwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
     "slotSetting": true
