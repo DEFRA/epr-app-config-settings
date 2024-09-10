@@ -71,7 +71,6 @@ variables:
   featureManagement.showDirectProducerSubsidiaries: false
   featureManagement.showRegistrationResubmission: true
   featureManagement.ShowSubsidiaries: false
-  featureManagement.ShowSubsidiariesFileUploadExportRemoveFeature: false
   featureManagement.obligationCheckerEnabled: false
   featureManagement.largeProducerRegisterEnabled: false
   featureManagement.manageUserDetailChanges: true
