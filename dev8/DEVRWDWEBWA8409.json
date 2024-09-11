@@ -103,5 +103,20 @@
     "name": "StorageAccount__SubsidiaryContainer",
     "slotSetting": false,
     "value": "subsidiary-upload-container-dev8"
+  },
+  {
+    "name": "BlobStorage__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/LargeProducersRegisterStorageAccountConnectionString)"
+  },
+  {
+    "name": "BlobStorage__SubsidiariesContainerName",
+    "slotSetting": false,
+    "value": "subsidiaries-template"
+  },
+  {
+    "name": "BlobStorage__SubsidiariesFileUploadTemplateFileName",
+    "slotSetting": false,
+    "value": "epr_subsidiary_details_template.ods"
   }
 ]
