@@ -95,6 +95,11 @@
     "slotSetting": false
   },
   {
+    "name": "Redis__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)",
+    "slotSetting": false
+  },
+  {
     "name": "StorageAccount__PomContainer",
     "value": "pom-upload-container",
     "slotSetting": false

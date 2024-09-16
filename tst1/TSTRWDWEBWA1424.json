@@ -45,6 +45,21 @@
     "slotSetting": true
   },
   {
+    "name": "FeatureManagement__EnableComplianceSchemeFeesFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableComplianceSchemeBaseFees",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableHomePage",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
     "name": "Services__PaymentServiceHealthCheck__Url",
     "value": "https://tstrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
     "slotSetting": true
@@ -90,18 +105,33 @@
     "slotSetting": true
   },
   {
-    "name": "Services__RegistrationFeesService__Url",
+    "name": "Services__ProducerFeesService__Url",
     "value": "https://tstrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
     "slotSetting": true
   },
   {
-    "name": "Services__RegistrationFeesService__EndPointName",
+    "name": "Services__ProducerFeesService__EndPointName",
     "value": "api/v1",
     "slotSetting": true
   },
   {
-    "name": "Services__RegistrationFeesService__HttpClientName",
-    "value": "registration_fees_service_client",
+    "name": "Services__ProducerFeesService__HttpClientName",
+    "value": "producer_fees_service_client",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ComplianceSchemeFeesService__Url",
+    "value": "https://tstrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ComplianceSchemeFeesService__EndPointName",
+    "value": "api/v1",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ComplianceSchemeFeesService__HttpClientName",
+    "value": "compliance_scheme_fees_service_client",
     "slotSetting": true
   },
   {
