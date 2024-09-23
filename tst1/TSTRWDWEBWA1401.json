@@ -20,6 +20,16 @@
     "slotSetting": false
   },
   {
+    "name": "Caching__LargeProducersFileGeneratedHour",
+    "value": 19,
+    "slotSetting": false
+  },
+  {
+    "name": "Caching__LargeProducersFileGenerationWaitMinutes",
+    "value": 30,
+    "slotSetting": false
+  },
+  {
     "name": "COOKIE_OPTIONS__AntiForgeryCookieName",
     "value": ".epr_oc_anti_forgery",
     "slotSetting": false
@@ -236,22 +246,22 @@
   },
   {
     "name": "LargeProducerReportFileNames__LatestAllNationsReportFileNamePrefix",
-    "value": "2023/large_producers",
+    "value": "large_producers",
     "slotSetting": false
   },
   {
     "name": "LargeProducerReportFileNames__LatestAllNationsReportFileNamePrefixInWelsh",
-    "value": "2023/cynhyrchwyr_mawr",
+    "value": "cynhyrchwyr_mawr",
     "slotSetting": false
   },
   {
     "name": "LargeProducerReportFileNames__LatestAllNationsReportDownloadFileName",
-    "value": "large_producers_{0:dd}_{0:MMMM}_{0:yyyy}.csv",
+    "value": "large_producers_{0}_{1:dd}_{1:MMMM}_{1:yyyy}.csv",
     "slotSetting": false
   },
   {
     "name": "LargeProducerReportFileNames__LatestAllNationsReportDownloadFileNameInWelsh",
-    "value": "cynhyrchwyr_mawr_{0:dd}_{0:MMMM}_{0:yyyy}.csv",
+    "value": "cynhyrchwyr_mawr_{0}_{1:dd}_{1:MMMM}_{1:yyyy}.csv",
     "slotSetting": false
   },
   {
