@@ -34,3 +34,6 @@ variables:
   regulatoremail.producer.england: "masil.puveendran@eviden.com"
   regulatoremail.producer.wales: "nithya.kannan.external@eviden.com"
   regulatoremail.producer.scotland: "venkata-reddy.mandala@eviden.com"
+
+  # Subsidiary bulk upload email configuration
+  bulkUpload.antivirusnotificationEmail: "michael.wild.external@eviden.com"

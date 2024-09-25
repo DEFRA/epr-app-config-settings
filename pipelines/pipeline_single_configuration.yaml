@@ -64,6 +64,7 @@ jobs:
             dev/DEVRWDWEBFAX405.json => config/DEVRWDWEBFA$(environmentSpoke)405.json
             dev/DEVRWDWEBFAX406.json => config/DEVRWDWEBFA$(environmentSpoke)406.json
             dev/DEVRWDWEBFAX407.json => config/DEVRWDWEBFA$(environmentSpoke)407.json
+            dev/DEVRWDWEBFAX408.json => config/DEVRWDWEBFA$(environmentSpoke)408.json
             dev/DEVRWDWEBFAX409.json => config/DEVRWDWEBFA$(environmentSpoke)409.json
             dev/DEVRWDWEBWAX401.json => config/DEVRWDWEBWA$(environmentSpoke)401.json
             dev/DEVRWDWEBWAX402.json => config/DEVRWDWEBWA$(environmentSpoke)402.json

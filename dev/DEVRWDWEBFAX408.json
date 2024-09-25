@@ -1,0 +1,137 @@
+[
+  {
+    "name": "AntivirusApi__BaseUrl",
+    "slotSetting": false,
+    "value": "#{{ TradeAntivirusApi.url }}"
+  },
+  {
+    "name": "AntivirusApi__ClientId",
+    "slotSetting": false,
+    "value": "020511d9-8c13-4c89-910b-04aaa212e296"
+  },
+  {
+    "name": "AntivirusApi__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/AntivirusApi-ClientSecret-DEV-3-7/)"
+  },
+  {
+    "name": "AntivirusApi__CollectionSuffix",
+    "slotSetting": false,
+    "value": "dev#{{ environmentSpoke }}"
+  },
+  {
+    "name": "AntivirusApi__EnableDirectAccess",
+    "slotSetting": false,
+    "value": "#{{ TradeAntivirusApi.enableDirectAccess }}"
+  },
+  {
+    "name": "AntivirusApi__NotificationEmail",
+    "slotSetting": false,
+    "value": "#{{ bulkUpload.antivirusnotificationEmail}}"
+  },
+  {
+    "name": "AntivirusApi__Scope",
+    "slotSetting": false,
+    "value": "#{{ TradeAntivirusApi.scope }}"
+  },
+  {
+    "name": "AntivirusApi__SubscriptionKey",
+    "slotSetting": false,
+    "value": "2bbc3ee9c7514c70b1628e766f90582d"
+  },
+  {
+    "name": "AntivirusApi__TenantId",
+    "slotSetting": false,
+    "value": "c9d74090-b4e6-4b04-981d-e6757a160812"
+  },
+  {
+    "name": "AntivirusApi__Timeout",
+    "slotSetting": false,
+    "value": "300"
+  },
+  {
+    "name": "ApiConfig__Certificate",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/certificates/boomi-api-certificate/)"
+  },
+  {
+    "name": "ApiConfig__SubsidiaryServiceBaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net"
+  },
+  {
+    "name": "ApiConfig__AccountServiceClientId",
+    "slotSetting": false,
+    "value": "#{{ apiConfig.accountServiceClientId }}"
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
+    "slotSetting": false,
+    "value": "#{{ apiConfig.companiesHouseLookupBaseUrl }}"
+  },
+  {
+    "name": "ApiConfig__RetryPolicyMaxRetries",
+    "slotSetting": false,
+    "value": "3"
+  },
+  {
+    "name": "ApiConfig__RetryPolicyIntitalWaitTime",
+    "slotSetting": false,
+    "value": "3"
+  },
+  {
+    "name": "ApiConfig__RetryPolicyTooManyAttemptsWaitTime",
+    "slotSetting": false,
+    "value": "200"
+  },
+  {
+    "name": "ApiConfig__Timeout",
+    "slotSetting": false,
+    "value": "60"
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseDataDownloadUrl",
+    "slotSetting": false,
+    "value": "https://download.companieshouse.gov.uk/"
+  },
+  {
+    "name": "BlobStorage__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})"
+  },
+  {
+    "name": "BlobStorage__SubsidiaryContainerName",
+    "slotSetting": false,
+    "value": "subsidiary-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "BlobStorage__CompaniesHouseContainerName",
+    "slotSetting": false,
+    "value": "subsidiary-companies-house-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "CompaniesHouseDownload__Schedule",
+    "slotSetting": false,
+    "value": "#{{ bulkUpload.companiesHouseDownloadSchedule }}"
+  },
+  {
+    "name": "Redis__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+  },
+  {
+    "name": "SubmissionApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"
+  },
+  {
+    "name": "TableStorage__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.CompaniesHouse.Table.secret.url }})"
+  },
+  {
+    "name": "TableStorage__CompaniesHouseOfflineDataTableName",
+    "slotSetting": false,
+    "value": "CompaniesHouse"
+  }
+]

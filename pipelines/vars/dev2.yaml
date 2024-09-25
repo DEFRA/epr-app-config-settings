@@ -10,6 +10,9 @@ variables:
   apiConfig.accountServiceClientId: abb69391-f412-464d-a771-2d302550dd60
   validationDataApi.appRegistration.clientId: d9f74f90-38ff-401f-90bb-611c9a3177ac
 
+  # Subsidiary bulk upload email configuration
+  bulkUpload.antivirusnotificationEmail: "michael.wild.external@eviden.com"
+
   # Feature management
   featureManagement.enableBrandPartnerDataRowValidation: true
   featureManagement.enableBrandPartnerCrossFileValidation: true

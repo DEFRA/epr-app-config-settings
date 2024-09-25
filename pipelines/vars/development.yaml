@@ -30,6 +30,9 @@ variables:
   sharedKeyVault.b2c.regulators.secret.name: AzureAdB2CClientSecretRWDRegulatorsDev
   sharedKeyVault.b2c.regulators.secret.url: $(sharedKeyVault.secretsUrl)/$(sharedKeyVault.b2c.regulators.secret.name)
 
+  sharedKeyVault.CompaniesHouse.Table.secret.name: SubsidiaryBulkUploadStorageAccountConnectionStringRWD$(environmentSpoke)408
+  sharedKeyVault.CompaniesHouse.Table.secret.url: $(sharedKeyVault.secretsUrl)/$(sharedKeyVault.CompaniesHouse.Table.secret.name)
+
   # AntiVirus
   TradeAntivirusApi.url: https://dev-gateway.trade.azure.defra.cloud/trade-file-store
   TradeAntivirusApi.enableDirectAccess: false
@@ -129,3 +132,7 @@ variables:
   regulatoremail.producer.england: "dev_packagingproducers@environment-agency.gov.uk"
   regulatoremail.producer.wales: "dev_packaging@naturalresourceswales.gov.uk"
   regulatoremail.producer.scotland: "dev_producer.responsibility@sepa.org.uk"
+
+  # Subsidiary bulk upload configuration
+  bulkUpload.antivirusnotificationEmail: "data.protection@defra.gov.uk"
+  bulkUpload.companiesHouseDownloadSchedule: "0 0 9-17 * * *"
