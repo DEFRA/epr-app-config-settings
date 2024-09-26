@@ -35,6 +35,11 @@
     "value": "1000"
   },
   {
+    "name": "Validation__IsLatest",
+    "slotSetting": false,
+    "value": true
+  },
+  {
     "name": "SubmissionPeriods__0__SubmissionPeriod",
     "slotSetting": false,
     "value": "January to June 2023"
