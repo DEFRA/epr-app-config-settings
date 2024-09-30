@@ -80,6 +80,11 @@
     "value": "3"
   },
   {
+    "name": "ApiConfig__RetryPolicyTooManyAttemptsMaxRetries",
+    "slotSetting": false,
+    "value": "3"
+  },
+  {
     "name": "ApiConfig__RetryPolicyTooManyAttemptsWaitTime",
     "slotSetting": false,
     "value": "200"
