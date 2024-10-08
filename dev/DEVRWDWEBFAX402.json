@@ -37,7 +37,7 @@
   {
     "name": "Validation__IsLatest",
     "slotSetting": false,
-    "value": true
+    "value": "#{{ validation.latest }}"
   },
   {
     "name": "SubmissionPeriods__0__SubmissionPeriod",

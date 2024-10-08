@@ -13,6 +13,8 @@ variables:
 
   sharedInfrastructureSubscriptionName: $(subscriptionPrefix)-$(projectCode)-DEV1
 
+  validation.latest: false
+
   # Redis
   redis.producers.instance.name: epr-dev$(environmentSpoke)-producers-
   redis.regulators.instance.name: epr-dev$(environmentSpoke)-regulators-
@@ -67,7 +69,7 @@ variables:
   featureManagement.showLanguageSwitcher: true
   featureManagement.managePomSubmissions: true
   featureManagement.manageRegistrations: true
-  featureManagement.manageApprovedUsers: false
+  featureManagement.manageApprovedUsers: true
   featureManagement.sendDissociationNotificationEmail: false
   featureManagement.validationDataApi: false
   featureManagement.pomDataPeriodAndTime: false
@@ -75,7 +77,7 @@ variables:
   featureManagement.showRegistrationResubmission: true
   featureManagement.ShowSubsidiaries: false
   featureManagement.obligationCheckerEnabled: false
-  featureManagement.largeProducerRegisterEnabled: false
+  featureManagement.largeProducerRegisterEnabled: true
   featureManagement.manageUserDetailChanges: true
   featureManagement.ShowPrn: false
   featureManagement.OverridePrnCurrentDateForTestingPurposes: false
