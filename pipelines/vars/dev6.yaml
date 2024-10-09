@@ -15,7 +15,6 @@ variables:
   externalUrls.manageAccountRedirectUrl: /regulators/manage-account
 
   # Feature management
-  featureManagement.manageApprovedUsers: false
 
   # EprPackagingRegulatorEmailConfig
   regulatoremail.producer.northernireland: "murali.karlapudi.external@eviden.com"
