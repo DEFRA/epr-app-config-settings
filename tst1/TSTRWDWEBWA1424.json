@@ -45,12 +45,12 @@
     "slotSetting": true
   },
   {
-    "name": "FeatureManagement__EnableComplianceSchemeFeesFeature",
+    "name": "FeatureManagement__EnableComplianceSchemeFeature",
     "value": "true",
     "slotSetting": true
   },
   {
-    "name": "FeatureManagement__EnableComplianceSchemeBaseFees",
+    "name": "FeatureManagement__EnableComplianceSchemeFees",
     "value": "true",
     "slotSetting": true
   },
