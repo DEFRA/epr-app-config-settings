@@ -1,12 +1,12 @@
 variables:
-  environmentSpoke: 5
+  environmentSpoke: 3
   infrastructureResourceGroupName: $(environmentGroup)RWDINFRG1401
-  teamName.lower: phoenix
+  teamName.lower: recyclers
 
   b2c.permissionsService.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
   b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671
 
-  apiConfig.accountServiceClientId: e3428065-aa0b-44f8-954b-b809e35985b7
+  apiConfig.accountServiceClientId: 92ede5ee-1d6e-44f7-a232-c039e666a3ca
 
   featureManagement.validationDataApi: true
   featureManagement.managePomSubmissions: false
