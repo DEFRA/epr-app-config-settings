@@ -67,15 +67,20 @@
   {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
-    "value": "rwd-dev#{{ environmentSpoke }}.azure.defra.cloud"
+    "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"
   },
   {
-    "name": "GOOGLE_ANALYTICS__MeasurementId",
+    "name": "GoogleAnalytics__CookiePrefix",
+    "slotSetting": false,
+    "value": "_ga"
+  },
+  {
+    "name": "GoogleAnalytics__MeasurementId",
     "slotSetting": false,
     "value": "VMDE8PW9W7"
   },
   {
-    "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
+    "name": "GoogleAnalytics__TagManagerContainerId",
     "slotSetting": false,
     "value": "G-VMDE8PW9W7"
   },

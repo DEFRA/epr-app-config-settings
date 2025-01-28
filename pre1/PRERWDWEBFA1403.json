@@ -1,10 +1,5 @@
 [
   {
-    "name": "AzureWebJobsStorage",
-    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWD1403/)",
-    "slotSetting": false
-  },
-  {
     "name": "ServiceBus__ConnectionString",
     "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/ServiceBusConnectionString/)",
     "slotSetting": false
@@ -63,5 +58,10 @@
     "name": "Redis__ConnectionString",
     "slotSetting": false,
     "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+  },
+  {
+    "name": "CsvDataFile__IsLatest",
+    "slotSetting": false,
+    "value": "true"
   }
 ]

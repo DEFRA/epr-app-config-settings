@@ -1,0 +1,10 @@
+variables:
+  dnsSubscription: 'AZD-RWD-DEV-PrivateDNS'
+  resourceType1: 'webApp'
+  resourceType2: 'functionApp'
+  resourceType3: 'storageAccount'
+  resourceType4: 'dynamicServices'
+  dnsZone_websites: 'privatelink.azurewebsites.net'
+  dnsZone_scm_websites: 'scm.privatelink.azurewebsites.net'
+  time_to_live: 300
+

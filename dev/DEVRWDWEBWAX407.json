@@ -1,7 +1,12 @@
 [
   {
+    "name": "ASPNETCORE_ENVIRONMENT",
+    "value": "Development",
+    "slotSetting": true
+  },
+  {
     "name": "ConnectionStrings__AccountsDatabase",
-    "slotSetting": false,
-    "value": "Server=tcp:devrwddbssq1401.database.windows.net,1433;Initial Catalog=#{{ accountsDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;"
+    "value": "Server=tcp:devrwddbssq1401.database.windows.net,1433;Initial Catalog=#{{ accountsDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;",
+    "slotSetting": false
   }
 ]

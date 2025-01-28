@@ -30,11 +30,6 @@
     "slotSetting": false
   },
   {
-    "name": "ConnectionStrings__REDIS_CONNECTION",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)",
-    "slotSetting": false
-  },
-  {
     "name": "ExternalUrls__ExistingUserRedirectUrl",
     "slotSetting": false,
     "value": "/report-data"

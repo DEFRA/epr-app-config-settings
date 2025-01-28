@@ -160,6 +160,11 @@
     "slotSetting": false
   },
   {
+    "name": "ExternalUrls__FindAndUpdateCompanyInformation",
+    "value": "https://find-and-update.company-information.service.gov.uk",
+    "slotSetting": false
+  },
+  {
     "name": "IntegrationFacadeAPI__DownstreamScope",
     "slotSetting": false,
     "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-producers-account-facade/account-creation"
@@ -190,12 +195,27 @@
     "value": true
   },
   {
-    "name": "FeatureManagement__ShowDirectProducerSubsidiaries",
+    "name": "FeatureManagement__ShowRegistration",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__ShowSubsidiariesSingleUploadJourney",
     "slotSetting": false,
     "value": "false"
   },
   {
+    "name": "FeatureManagement__ShowPrn",
+    "slotSetting": false,
+    "value": true
+  },
+  {
     "name": "FeatureManagement__ShowSubsidiaries",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableCsvDownload",
     "slotSetting": false,
     "value": false
   },
@@ -260,6 +280,11 @@
     "value": "https://www.gov.uk/government/publications/organisation-details-how-to-create-your-file-for-extended-producer-responsibility-epr-for-packaging"
   },
   {
+    "name": "GuidanceLinks__HowToCompleteSubsidiaryFile",
+    "slotSetting": false,
+    "value": "https://www.gov.uk/government/publications/groups-and-subsidiaries-how-to-create-your-file-for-extended-producer-responsibility"
+  },
+  {
     "name": "BasePath",
     "value": "/report-data",
     "slotSetting": false
@@ -267,7 +292,7 @@
   {
     "name": "PhaseBanner__ApplicationStatus",
     "slotSetting": false,
-    "value": "Alpha"
+    "value": "Beta"
   },
   {
     "name": "PhaseBanner__Enabled",
@@ -463,5 +488,15 @@
     "name": "Validation__MaxIssueReportSize",
     "slotSetting": false,
     "value": "5MB"
+  },
+  {
+    "name": "PaymentFacadeApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa8424.azurewebsites.net/api/v1/"
+  },
+  {
+    "name": "PaymentFacadeApi__DownstreamScope",
+    "slotSetting": false,
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev-payments-facade/payment-service"
   }
 ]

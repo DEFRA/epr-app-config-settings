@@ -15,6 +15,11 @@
     "value": "#{{ apiConfig.addressLookupBaseUrl }}"
   },
   {
+    "name": "ApiConfig__PayCalBaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}424.azurewebsites.net"
+  },
+  {
     "name": "ApiConfig__Certificate",
     "slotSetting": false,
     "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/certificates/boomi-api-certificate/)"
@@ -23,6 +28,31 @@
     "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
     "slotSetting": false,
     "value": "#{{ apiConfig.companiesHouseLookupBaseUrl }}"
+  },
+  {
+    "name": "ApiConfig__TenantId",
+    "value": "#{{ apiConfig.boomi.tenantid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__AddressLookupScope",
+    "value": "#{{ apiConfig.boomi.addressLookupScope }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseScope",
+    "value": "#{{ apiConfig.boomi.companiesHouseScope }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientId",
+    "value": "#{{ apiConfig.boomi.clientid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/boomi-api-secret/)",
+    "slotSetting": false
   },
   {
     "name": "AzureAdB2C__ClientId",
@@ -62,12 +92,12 @@
   {
     "name": "MessagingConfig__AccountCreationUrl",
     "slotSetting": false,
-    "value": "https://rwd-dev#{{ environmentSpoke }}.azure.defra.cloud/create-account/invitation/"
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/create-account/invitation/"
   },
   {
     "name": "MessagingConfig__AccountLoginUrl",
     "slotSetting": false,
-    "value": "https://rwd-dev#{{ environmentSpoke }}.azure.defra.cloud/report-data"
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/report-data"
   },
   {
     "name": "MessagingConfig__ApiKey",
@@ -197,6 +227,11 @@
   {
     "name": "EprPackagingRegulatorEmailConfig__Wales",
     "value": "#{{ regulatoremail.producer.wales }}",
+    "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__UseBoomiOAuth",
+    "value": "#{{ featureManagement.useBoomiOAuth }}",
     "slotSetting": false
   }
 ]

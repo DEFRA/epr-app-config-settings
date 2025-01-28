@@ -10,19 +10,49 @@
     "value": "6d65d29d-fbeb-41ed-b001-f98e37d05079"
   },
   {
-    "name": "ApiConfig__AddressLookupBaseUrl",
-    "slotSetting": false,
-    "value": "https://integration-snd.azure.defra.cloud/ws/rest/DEFRA/v1/address/"
-  },
-  {
     "name": "ApiConfig__Certificate",
     "slotSetting": false,
     "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/certificates/boomi-api-certificate/)"
   },
   {
+    "name": "ApiConfig__AddressLookupBaseUrl",
+    "slotSetting": false,
+    "value": "https://integration-tst.azure.defra.cloud/ws/rest/DEFRA/v1/address/"
+  },
+  {
     "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
     "slotSetting": false,
-    "value": "https://integration-snd.azure.defra.cloud/ws/rest/DEFRA/v2.1/"
+    "value": "https://integration-tst.azure.defra.cloud/ws/rest/DEFRA/v2.1/"
+  },
+  {
+    "name": "ApiConfig__TenantId",
+    "value": "6f504113-6b64-43f2-ade9-242e05780007",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__AddressLookupScope",
+    "value": "api://0815da39-8dcf-49d7-955b-4006cc16c75e/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseScope",
+    "value": "api://f674049a-1629-4381-8bf3-a5209c6e032b/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientId",
+    "value": "d7fc5db0-4aca-45da-a131-e1029679ef11",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/boomi-api-secret/)",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__PayCalBaseUrl",
+    "slotSetting": false,
+    "value": "https://tstrwdwebwa1424.azurewebsites.net"
   },
   {
     "name": "AzureAdB2C__ClientId",
@@ -142,7 +172,7 @@
   {
     "name": "MessagingConfig__UserDetailChangeRequestTemplateId",
     "slotSetting": false,
-    "value": "PLACEHOLDER"
+    "value": "db0cf9a3-06d6-4c0d-9179-8e2b16ee5fcc"
   },
   {
     "name": "RegulatorEmailConfig__NorthernIreland",
@@ -171,22 +201,37 @@
   },
   {
     "name": "EprPackagingRegulatorEmailConfig__NorthernIreland",
-    "value": "EPRCustomerService@defra.gov.uk",
+    "value": "nithya.kannan.external@eviden.com",
     "slotSetting": false
   },
   {
     "name": "EprPackagingRegulatorEmailConfig__England",
-    "value": "EPRCustomerService@defra.gov.uk",
+    "value": "nithya.kannan.external@eviden.com",
     "slotSetting": false
   },
   {
     "name": "EprPackagingRegulatorEmailConfig__Scotland",
-    "value": "EPRCustomerService@defra.gov.uk",
+    "value": "nithya.kannan.external@eviden.com",
     "slotSetting": false
   },
   {
     "name": "EprPackagingRegulatorEmailConfig__Wales",
-    "value": "EPRCustomerService@defra.gov.uk",
+    "value": "nithya.kannan.external@eviden.com",
+    "slotSetting": false
+  },
+  {
+    "name": "OrganisationEndpoints__UpdateOrganisation",
+    "value": "api/organisations/organisation",
+    "slotSetting": false
+  },
+  {
+    "name": "UserDetailsEndpoints__UpdateUserDetails",
+    "value": "api/users/personal-details",
+    "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__UseBoomiOAuth",
+    "value": false,
     "slotSetting": false
   }
 ]

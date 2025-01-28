@@ -1,41 +1,26 @@
 [
   {
-    "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
-    "value": "fb7d3853-5354-4dc9-9c64-4ea560448bff",
-    "slotSetting": false
-  },
-  {
-    "name": "ApplicationInsightsAgent_EXTENSION_VERSION",
-    "value": "~3",
-    "slotSetting": false
-  },
-  {
-    "name": "ASPNETCORE_ENVIRONMENT",
-    "value": "Development",
-    "slotSetting": true
-  },
-  {
     "name": "AllowedHosts",
     "value": "*",
     "slotSetting": true
   },
   {
-    "name": "FeatureManagement__EnablePaymentsFeature",
+    "name": "FeatureManagement__EnableOnlinePaymentsFeature",
     "value": "true",
     "slotSetting": true
   },
   {
-    "name": "FeatureManagement__EnablePaymentStatusInsert",
+    "name": "FeatureManagement__EnableOnlinePaymentInsert",
     "value": "true",
     "slotSetting": true
   },
   {
-    "name": "FeatureManagement__EnablePaymentStatusUpdate",
+    "name": "FeatureManagement__EnableOnlinePaymentUpdate",
     "value": "true",
     "slotSetting": true
   },
   {
-    "name": "FeatureManagement__EnableGetPaymentByExternalPaymentId",
+    "name": "FeatureManagement__EnableGetOnlinePaymentByExternalPaymentId",
     "value": "true",
     "slotSetting": true
   },
@@ -45,7 +30,12 @@
     "slotSetting": true
   },
   {
-    "name": "FeatureManagement__EnableProducerResubmissionAmount",
+    "name": "FeatureManagement__EnableProducersResubmissionFeesFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableProducerResubmissionFee",
     "value": "true",
     "slotSetting": true
   },
@@ -65,39 +55,33 @@
     "slotSetting": true
   },
   {
-    "name": "ConnectionStrings__PaymentConnectionString",
-    "value": "Server=tcp:prdrwddbssq1401.database.windows.net,1433;Initial Catalog=FeesPayment;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;",
-    "slotSetting": false
+    "name": "FeatureManagement__EnableResubmissionComplianceSchemeFeature",
+    "value": "true",
+    "slotSetting": true
   },
-
   {
-    "name": "ConnectionStrings__REDIS_CONNECTION",
-    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)",
+    "name": "FeatureManagement__EnableResubmissionFeesCalculation",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOfflinePaymentsFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOfflinePayment",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "ConnectionStrings__PaymentConnectionString",
+    "value": "Server=tcp:prdrwddbssq1401.database.windows.net,1433;Initial Catalog=prd1_feespayment;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;",
     "slotSetting": false
   },
   {
     "name": "WEBSITE_AUTH_AAD_ALLOWED_TENANTS",
     "value": "6f504113-6b64-43f2-ade9-242e05780007",
-    "slotSetting": false
-  },
-  {
-    "name": "WEBSITE_ENABLE_SYNC_UPDATE_SITE",
-    "value": "true",
-    "slotSetting": false
-  },
-  {
-    "name": "WEBSITE_PULL_IMAGE_OVER_VNET",
-    "value": "true",
-    "slotSetting": false
-  },
-  {
-    "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
-    "value": "false",
-    "slotSetting": false
-  },
-  {
-    "name": "XDT_MicrosoftApplicationInsights_Mode",
-    "value": "default",
     "slotSetting": false
   }
 ]

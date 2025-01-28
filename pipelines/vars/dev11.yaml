@@ -5,11 +5,15 @@ variables:
   subscriptionPrefix: AZD
   projectCode: RWD
   agentPool: DEFRA-COMMON-ubuntu2004-SSV3
+  teamName.lower: dev11
 
   environmentName: ${{ variables.environmentGroup }}${{ variables.environmentSpoke1}}
   subscriptionName: ${{ variables.subscriptionPrefix }}-${{ variables.projectCode }}-${{ variables.environmentName }}
   webResourceGroupName: ${{ variables.environmentGroup }}RWDWEBRG${{ variables.environmentSpoke}}401
   infrastructureResourceGroupName: ${{ variables.environmentGroup }}RWDWEBWA${{ variables.environmentSpoke}}419
 
-  validationDataApi.appRegistration.clientId: ec668afe-3d8e-4242-91d7-910fac38c3b2
-  
+  #File upload
+  CsvDataFile.IsLatest: true
+
+ #Enterprise Applications Details
+  apiConfig.paymentFacadeClientId: 'f3f2de37-8ee3-4ae4-8fca-6d79be546ef4'   # Application ID for DEVRWDWEBWAB425_API

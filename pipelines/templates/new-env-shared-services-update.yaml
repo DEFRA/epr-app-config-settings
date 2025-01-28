@@ -1,0 +1,98 @@
+parameters:
+  - name: buildUpEnv
+    type: string
+    default: ""
+  - name: targetEnv
+    type: string
+    default: ""
+  - name: sharedSubscription
+    type: string
+    default: ""
+  - name: serviceBusNamespace
+    type: string
+    default: ""
+  - name: sharedResourceGroup
+    type: string
+    default: ""
+  - name: sharedStorageAccount
+    type: string
+    default: ""
+  - name: sqlServer
+    type: string
+    default: ""
+  - name: sb_queues_to_create
+    type: object
+    default: 
+      - 'defra.epr.pom.data.uploaded'
+      - 'defra.epr.producer.data'
+      - 'defra.epr.protectivemonitoring.events'
+      - 'defra.epr.registration.data'
+      - 'defra.epr.calculator.run'                           # for PayCal FAx411
+      - 'defra.epr.obligation'                               # for PRN  FAx410
+      - 'defra.epr.obligationlastsuccessfulrun'              # for PRN FAx410
+      - 'defra.epr.npwd.integration.errorqueue'                     # for PRN Integration  FAx412
+      - 'defra.epr.npwd.integration.fetchprn'                       # for PRN Integration FAx412
+      - 'defra.npwd.integration.lastsuccessfulrun.fetchprn'         # for PRN Integration FAx412
+      - 'defra.npwd.integration.lastsuccessfulrun.updateprn'        # for PRN Integration FAx412
+      - 'defra.npwd.integration.lastsuccessfulrun.updateproducer'   # for PRN Integration FAx412
+
+  - name: lockDuration
+    type: number
+    default: 5   
+  - name: maxTopicSizeinMB
+    type: number
+    default: 1024
+  - name: maxMessageSizeinKB
+    type: number
+    default: 1024  
+  - name: containers_to_create
+    type: object
+    default:
+      - 'pom-upload-container'
+      - 'registration-upload-container'
+      - 'subsidiary-companies-house-upload-container' 
+      - 'subsidiary-upload-container'
+      - 'paycal'
+ 
+
+jobs:
+  - job: job1  
+    pool:  DEFRA-COMMON-windows2022-SSV3
+    displayName: Create queues and containers in common environment for ${{ parameters.buildUpEnv }}  
+    steps:
+      - ${{ each new_queue in parameters.sb_queues_to_create }}:
+        - task: AzureCLI@2
+          displayName: Creating ${{ new_queue }} queue for ${{ parameters.buildUpEnv }}
+          inputs: 
+              azureSubscription: '${{ parameters.sharedSubscription }}'
+              scriptType: 'bash'
+              scriptLocation: 'inlineScript'
+              inlineScript: |
+
+                  az servicebus queue create \
+                    --name ${{ new_queue }}.${{ lower(parameters.buildUpEnv) }} \
+                    --resource-group ${{ parameters.sharedResourceGroup }} \
+                    --namespace-name ${{ parameters.serviceBusNamespace }} \
+                    --lock-duration "00h0${{ parameters.lockDuration }}m00s" \
+                    --max-message-size ${{ parameters.maxMessageSizeinKB }} \
+                    --max-size ${{ parameters.maxTopicSizeinMB }}
+  
+      - ${{ each new_container in parameters.containers_to_create }}:
+        - task: AzureCLI@2
+          displayName: Creating ${{ new_container }} queue for ${{ parameters.buildUpEnv }}
+          inputs: 
+              azureSubscription: '${{ parameters.sharedSubscription }}'
+              scriptType: 'bash'
+              scriptLocation: 'inlineScript'
+              inlineScript: |
+                       az storage container create  \
+                                          --name  ${{ new_container }}-${{ lower(parameters.buildUpEnv) }} \
+                                          --account-name ${{ parameters.sharedStorageAccount }}  \
+                                          --account-key $(saKey)  \
+                                          --auth-mode key   \
+                                          --public-access off  
+
+    
+
+
+                

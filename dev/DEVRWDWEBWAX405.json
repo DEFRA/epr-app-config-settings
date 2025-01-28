@@ -35,11 +35,6 @@
     "value": "#{{ b2c.signedOutCallbackPath }}"
   },
   {
-    "name": "ConnectionStrings__REDIS_CONNECTION",
-    "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)"
-  },
-  {
     "name": "CookieOptions__AntiForgeryCookieName",
     "slotSetting": false,
     "value": ".epr_anti_forgery"
@@ -127,7 +122,7 @@
   {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
-    "value": "rwd-dev#{{ environmentSpoke }}.azure.defra.cloud"
+    "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"
   },
   {
     "name": "ForwardedHeaders__ForwardedHostHeaderName",
@@ -140,12 +135,17 @@
     "value": "X-Initial-Host"
   },
   {
-    "name": "GOOGLE_ANALYTICS__MeasurementId",
+    "name": "GoogleAnalytics__CookiePrefix",
+    "slotSetting": false,
+    "value": "_ga"
+  },
+  {
+    "name": "GoogleAnalytics__MeasurementId",
     "slotSetting": false,
     "value": "VMDE8PW9W7"
   },
   {
-    "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
+    "name": "GoogleAnalytics__TagManagerContainerId",
     "slotSetting": false,
     "value": "G-VMDE8PW9W7"
   },

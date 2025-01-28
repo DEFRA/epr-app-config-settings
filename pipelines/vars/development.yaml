@@ -2,6 +2,7 @@ variables:
   environmentGroup: DEV
   subscriptionPrefix: AZD
   projectCode: RWD
+  dataTeamCode: EPD
   agentPool: DEFRA-COMMON-ubuntu2004-SSV3
 
   environmentName: ${{ variables.environmentGroup }}$(environmentSpoke)
@@ -11,9 +12,23 @@ variables:
   teamName.dot: .$(teamName.lower)
   teamName.dash: -$(teamName.lower)
 
+  # These variables will specially be referenced during new env creations
   sharedInfrastructureSubscriptionName: $(subscriptionPrefix)-$(projectCode)-DEV1
+  serviceBusNamespace: DEVRWDINFSB1402
+  agentPoolWindows: DEFRA-COMMON-windows2022-SSV3
+  sqlServer: devrwddbssq1401.database.windows.net,1433
+  sharedResourceGroup: DEVRWDINFRG1401
+  sharedStorageAccount: devrwdwebsa1403
+  privateEndpointService1: webApp
+  privateEndpointService2: functionApp
+  privateEndpointService3: storageAccount
+  epdSubscriptionName: $(subscriptionPrefix)-$(dataTeamCode)-DEV1
+  synapseWorkspace: devepdinfas1401.sql.azuresynapse.net
+  sqlPool1: devepdsp1401
+  sqlPool2: devepdsp1402
 
-  validation.latest: false
+  # Validation
+  Validation.Islatest: false
 
   # Redis
   redis.producers.instance.name: epr-dev$(environmentSpoke)-producers-
@@ -36,27 +51,42 @@ variables:
   sharedKeyVault.CompaniesHouse.Table.secret.url: $(sharedKeyVault.secretsUrl)/$(sharedKeyVault.CompaniesHouse.Table.secret.name)
 
   # AntiVirus
-  TradeAntivirusApi.url: https://dev-gateway.trade.azure.defra.cloud/trade-file-store
+  TradeAntivirusApi.url: https://devrwdwebwa9499.azurewebsites.net
   TradeAntivirusApi.enableDirectAccess: false
   TradeAntivirusApi.scope: api://dev-futuretrade-ext.defra.gov.uk/.default
-  TradeAntivirus.ServiceBus.subscriptionName: filestore-notify-epr-dev$(environmentSpoke)
+  TradeAntivirus.ServiceBus.subscriptionName: filestore-notify-epr-dev$(environmentSpoke1)
 
   # Facade API
   facadeAPI.DownstreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev-producers-account-facade/account-creation
+
+  # Payment Facade
+  payment_facade.DownstreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev-payments-facade/payment-service
 
   # B2C
   b2c.frontend.clientId: 595f49c3-f886-4869-a1e4-abb0915801ac
   b2c.backend.clientId: c9b7618f-fd19-494d-8a92-07a82b96821f
   b2c.facade.clientId: df2b3ff9-b54a-4ddf-8762-bcf07f61a828
   b2c.permissionsService.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
-  b2c.wax409.clientId: ec08c5b8-4d11-4d01-a8b2-47bbda6e579b
+  b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671
   b2c.regulators.clientId: 150201c3-9190-4bb9-92dd-8fefdc8fadb1
   b2c.domain: AZDCUSPOC2.onmicrosoft.com
-  b2c.instance: https://AZDCUSPOC2.b2clogin.com
+  b2c.instance: https://AZDCUSPOC2.b2clogin.com  
+  b2c.paymentfacade.clientId: 266861c4-3d0b-4e91-b752-91ca02a4b671
 
-  apiConfig.accountServiceClientId: 476e8e0b-f6f6-4ca0-ba1f-b05e60a51afb
-  apiConfig.addressLookupBaseUrl: 'https://integration-snd.azure.defra.cloud/ws/rest/DEFRA/v1/address/'
-  apiConfig.companiesHouseLookupBaseUrl: 'https://integration-snd.azure.defra.cloud/ws/rest/DEFRA/v2.1/'
+  # Boomi config for companies house and address lookup
+  apiConfig.addressLookupBaseUrl: 'https://dev-api-gateway.azure.defra.cloud/api/address-lookup/v1.0/'
+  apiConfig.companiesHouseLookupBaseUrl: 'https://dev-api-gateway.azure.defra.cloud/api/companies-house/v2.2/'
+  apiConfig.boomi.tenantid: 6f504113-6b64-43f2-ade9-242e05780007
+  apiConfig.boomi.addressLookupScope: 'api://0815da39-8dcf-49d7-955b-4006cc16c75e/.default'
+  apiConfig.boomi.companiesHouseScope: 'api://f674049a-1629-4381-8bf3-a5209c6e032b/.default'
+  apiConfig.boomi.clientid: d7fc5db0-4aca-45da-a131-e1029679ef11
+  
+
+  # Application IDs
+  apiConfig.accountServiceClientId: ''  # This should be replaced in var files by the client/application id for devrwdwebwax407_api
+  validationDataApi.appRegistration.clientId:  ''   # This should be replaced in var files by the client/application id for devrwdwebfax407_api
+  prnServiceApi.appRegistration.clientId: ''    # This should be replaced in var files by the client/application id for devrwdwebwax418_api
+  apiConfig.paymentFacadeClientId: ''   # This should be replaced in var files by the client ID for DEVRWDWEBWAX425_API
 
   # Feature management
   featureManagement.enableBrandPartnerDataRowValidation: false
@@ -73,21 +103,34 @@ variables:
   featureManagement.sendDissociationNotificationEmail: false
   featureManagement.validationDataApi: false
   featureManagement.pomDataPeriodAndTime: false
-  featureManagement.showDirectProducerSubsidiaries: false
+  featureManagement.ShowSubsidiariesSingleUploadJourney: false
   featureManagement.showRegistrationResubmission: true
   featureManagement.ShowSubsidiaries: false
-  featureManagement.obligationCheckerEnabled: false
+  featureManagement.obligationCheckerEnabled: true
   featureManagement.largeProducerRegisterEnabled: true
   featureManagement.manageUserDetailChanges: true
-  featureManagement.ShowPrn: false
+  featureManagement.showPrn: false
   featureManagement.OverridePrnCurrentDateForTestingPurposes: false
-  
+  featureManagement.manageRegistrationSubmissions: false
+  featureManagement.enableSubsidiaryValidation: false
+  featureManagement.enableSubsidiaryValidationPom: false
+  featureManagement.enableOrganisationSizeFieldValidation: false
+  featureManagement.ShowRegistration: false
+  featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: false
+  featureManagement.enableCsvDownload: false
+  featureManagement.RunIntegration: false
+  featureManagement.RunUpdateProducers: false
+  featureManagement.useBoomiOAuth: true
+
   # Databases
-  accountsDatabase.name: dev$(environmentSpoke)_accounts
+  accountsDatabase.name: dev$(environmentSpoke1)_accounts
+  prnDatabase.name: dev$(environmentSpoke1)_prn
+  payCalDatabase.name: dev$(environmentSpoke1)_paycal
+  feesPaymentDatabase.name: dev$(environmentSpoke1)_feespayment
   cosmos.database.connectionString: '@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/CosmoConnectionString/)'
   cosmos.database.name: SubmissionDB
 
-  # Web API
+   # Web API
   webApi.downstreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev-api-web.file-upload/epr-api-web.file-upload
 
   # EPR Authorization
@@ -121,9 +164,10 @@ variables:
   messaging.producer.complianceschemeresubmissionnotification.templateid: 253892da-55b2-4c8f-b97a-9feb20b85709
   messaging.producer.approveduseraccountconfirmation.templateid: 4be9716b-ab73-47be-a915-287325446aab
   messaging.producer.userdetailchangerequestnotification.templateid: db0cf9a3-06d6-4c0d-9179-8e2b16ee5fcc
-
-  # This should be replaced with specific client Id's when moved to other environments
-  validationDataApi.appRegistration.clientId: 
+  messaging.prn.npwdemail.templateid: 4e67b91b-b010-4d39-a0ea-ecb7e5e77b25
+  messaging.prn.prnemail.templateid: a43a573c-3367-4aa2-b9ac-6b347ce8bf32
+  messaging.prn.pernemail.templateid: 24925202-125b-4b85-b54a-9f3100301eb4
+  messaging.prn.npwdvalidationerrors.templateid: 66bf9f5e-82d3-4f43-8b25-50d6a138a7ef
 
   # Submission periods
   submissionPeriod.2024.1.activeFrom: "1 Jul 2024 12:00:00 AM"
@@ -136,5 +180,12 @@ variables:
   regulatoremail.producer.scotland: "dev_producer.responsibility@sepa.org.uk"
 
   # Subsidiary bulk upload configuration
-  bulkUpload.antivirusnotificationEmail: "data.protection@defra.gov.uk"
-  bulkUpload.companiesHouseDownloadSchedule: "0 0 9-17 * * *"
+  bulkUpload.antivirusnotificationEmail: "michael.wild.external@eviden.com"
+  bulkUpload.companiesHouseDownloadSchedule: "0 0 9 * * *"
+  bulkUpload.redisnotificationsexpiryinminutes: "720"
+
+  # ExternalUrls
+  externalUrls.startPage: "https://www.gov.uk/guidance/report-packaging-data"
+
+  #File upload versioning
+  CsvDataFile.IsLatest: false

@@ -1,16 +1,13 @@
 variables:
   environmentSpoke: 3
+  environmentSpoke1: 3
 
   infrastructureResourceGroupName: $(environmentGroup)RWDINFRG1401
   teamName.lower: recyclers
-  b2c.backend.clientId: c9b7618f-fd19-494d-8a92-07a82b96821f
-  b2c.permissionsService.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
-  apiConfig.accountServiceClientId: 92ede5ee-1d6e-44f7-a232-c039e666a3ca
-  b2c.wax413.accountServiceclientId: 92ede5ee-1d6e-44f7-a232-c039e666a3ca
-  b2c.wax413.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
-  b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671
-
-  validationDataApi.appRegistration.clientId: 
+ 
+   # Enterprise Applications
+  apiConfig.accountServiceClientId: 92ede5ee-1d6e-44f7-a232-c039e666a3ca    # Application ID for DEVRWDWEBWA3407
+  validationDataApi.appRegistration.clientId: 2be0df10-34b0-4936-8870-a0adec99764f   # Application ID for DEVRWDWEBFA3407_API
 
   # Feature management
   featureManagement.pomDataPeriodAndTime: true
@@ -24,7 +21,12 @@ variables:
   featureManagement.validationDataApi: true
   featureManagement.manageApprovedUsers: true
   featureManagement.ShowSubsidiaries: true
-    
+  featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: true
+  featureManagement.enableCsvDownload: true
+  featureManagement.obligationCheckerEnabled: true
+  featureManagement.enableSubsidiaryValidationPom: true
+  featureManagement.enableOrganisationSizeFieldValidation: true
+
   # Submission periods
   submissionPeriod.2024.1.activeFrom: "28 May 2024 12:00:00 AM"
   submissionPeriod.2024.2.activeFrom: "28 May 2024 12:00:00 AM"
@@ -35,5 +37,11 @@ variables:
   regulatoremail.producer.wales: "nithya.kannan.external@eviden.com"
   regulatoremail.producer.scotland: "venkata-reddy.mandala@eviden.com"
 
-  # Subsidiary bulk upload email configuration
-  bulkUpload.antivirusnotificationEmail: "michael.wild.external@eviden.com"
+  # Subsidiary bulk upload
+  bulkUpload.companiesHouseDownloadSchedule: "0 30 10 * * *"
+
+  #File upload versioning
+  CsvDataFile.IsLatest: true
+
+  # Validation
+  Validation.Islatest: true

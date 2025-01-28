@@ -147,7 +147,7 @@
   {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
-    "value": "rwd-dev#{{ environmentSpoke }}.azure.defra.cloud"
+    "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"
   },
   {
     "name": "ForwardedHeaders__ForwardedHostHeaderName",
@@ -160,14 +160,19 @@
     "value": "X-Initial-Host"
   },
   {
-    "name": "GOOGLE_ANALYTICS__MeasurementId",
+    "name": "GoogleAnalytics__CookiePrefix",
     "slotSetting": false,
-    "value": "XCV3BQ1YKX"
+    "value": "_ga"
   },
   {
-    "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
+    "name": "GoogleAnalytics__MeasurementId",
     "slotSetting": false,
-    "value": "GTM-MV74DN2"
+    "value": "VMDE8PW9W7"
+  },
+  {
+    "name": "GoogleAnalytics__TagManagerContainerId",
+    "slotSetting": false,
+    "value": "G-VMDE8PW9W7"
   },
   {
     "name": "HTTPCLIENT__APPLICATION_SERVICE_URL",

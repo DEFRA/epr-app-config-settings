@@ -15,14 +15,34 @@
     "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ApiConfigAddressLookupBaseUrl/)"
   },
   {
-    "name": "ApiConfig__Certificate",
-    "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/certificates/boomi-api-certificate/)"
-  },
-  {
     "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
     "slotSetting": false,
     "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ApiConfigCompaniesHouseLookupBaseUrl/)"
+  },
+  {
+    "name": "ApiConfig__TenantId",
+    "value": "6f504113-6b64-43f2-ade9-242e05780007",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__AddressLookupScope",
+    "value": "api://0815da39-8dcf-49d7-955b-4006cc16c75e/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseScope",
+    "value": "api://f674049a-1629-4381-8bf3-a5209c6e032b/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientId",
+    "value": "d7fc5db0-4aca-45da-a131-e1029679ef11",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/boomi-api-secret/)",
+    "slotSetting": false
   },
   {
     "name": "AzureAdB2C__ClientId",
@@ -48,6 +68,11 @@
     "name": "FacadeAPI__Address",
     "slotSetting": false,
     "value": "https://devrwdwebwa8413.azurewebsites.net"
+  },
+  {
+    "name": "FeatureManagement__UseBoomiOAuth",
+    "slotSetting": false,
+    "value": false
   },
   {
     "name": "MessagingConfig__AccountCreationUrl",

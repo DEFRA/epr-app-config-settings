@@ -19,17 +19,17 @@ parameters:
 
 steps:
   - ${{ if eq(parameters.useDevConfig, 'true') }}:
-      - task: qetza.replacetokens.replacetokens-task.replacetokens@3
+      - task: qetza.replacetokens.replacetokens-task.replacetokens@6
         displayName: 'Replace tokens'
         inputs:
           tokenPattern: custom
           tokenPrefix: '#{{'
           tokenSuffix: '}}'
-          actionOnMissing: fail
+          missingVarLog: error
           useLegacyPattern: false
           enableTransforms: true
           useLegacyEmptyFeature: false
-          targetFiles: |
+          sources: |
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX401.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}401.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX402.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}402.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX403.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}403.json
@@ -37,6 +37,9 @@ steps:
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX405.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}405.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX406.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}406.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX407.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}407.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX408.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}408.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX409.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}409.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX410.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}410.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX401.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}401.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX402.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}402.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX403.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}403.json
@@ -48,9 +51,11 @@ steps:
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX409.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}409.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX410.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}410.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX411.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}411.json
-            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX412.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}412.json
-            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX413.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}413.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX415.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}415.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX418.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}418.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX423.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}423.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX424.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}424.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX425.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}425.json
 
   - task: AzureCLI@2
     displayName: Cleaning app settings
@@ -58,41 +63,64 @@ steps:
       azureSubscription: '${{ parameters.subscriptionName }}'
       scriptType: 'bash'
       scriptLocation: 'inlineScript'
-      failOnStandardError: true
       inlineScript: |
+
+        ExistingWebApps=$(az webapp list \
+          --subscription ${{ parameters.subscriptionName }} \
+          -g ${{ parameters.webResourceGroupName }} \
+          --query "[].name" -o tsv)
+        
+        ExistingFuncApps=$(az functionapp list \
+          --subscription ${{ parameters.subscriptionName }} \
+          -g ${{ parameters.webResourceGroupName }} \
+          --query "[].name" -o tsv)
+        
+        ExistingApps="${ExistingWebApps}
+        ${ExistingFuncApps}"
+
         for filename in `ls`
         do
+
           service=`basename -s .json $filename`
-          echo -e "\033[0;32m Cleaning AppSettings on "$service
+          echo $service
 
-          ACTIVEAPPSETTINGLIST=$(az webapp config appsettings list -g ${{ parameters.webResourceGroupName }} -n $service --query "[].name" -o tsv)
-          DELETELIST=" "
+          if echo "$ExistingApps" | grep -q "^${service}$"; then
+            echo -e "\033[0;32m Cleaning AppSettings on "$service
 
-          for appsetting in $ACTIVEAPPSETTINGLIST
-            do
-              case $appsetting in
-                APPINSIGHTS_INSTRUMENTATIONKEY|APPLICATIONINSIGHTS_CONNECTION_STRING|ApplicationInsightsAgent_EXTENSION_VERSION )                         echo "$appsetting found in group 1";;
-                AzureWbeJobStorage|ConnectionStrings__REDIS_CONNECTION|DOCKER_CUSTOM_IMAGE_NAME|DOCKER_REGISTRY_SERVER_URL )                              echo "$appsetting found in group 2";;
-                FUNCTIONS_EXTENSION_VERSION|FUNCTIONS_WORKER_RUNTIME|AzureWebJobsStorage )                                                                echo "$appsetting found in group 3";;
-                WEBSITE_CONTENTAZUREFILECONNECTIONSTRING|WEBSITE_CONTENTOVERVNET|WEBSITES_ENABLE_APP_SERVICE_STORAGE )                                    echo "$appsetting found in group 4";;
-                WEBSITE_ENABLE_SYNC_UPDATE_SITE|WEBSITE_PULL_IMAGE_OVER_VNET|WEBSITE_CONTENTSHARE|XDT_MicrosoftApplicationInsights_Mode )                 echo "$appsetting found in group 5";;
-                *)
-                    echo "$appsetting not found, adding to the delete list"
-                    DELETELIST=$DELETELIST$appsetting' ';;
-              esac
+              ACTIVEAPPSETTINGLIST=$(az webapp config appsettings list -g ${{ parameters.webResourceGroupName }} -n $service --query "[].name" -o tsv)
+              DELETELIST=" "
+
+              for appsetting in $ACTIVEAPPSETTINGLIST
+                do
+                  case $appsetting in
+                    APPINSIGHTS_INSTRUMENTATIONKEY|APPLICATIONINSIGHTS_CONNECTION_STRING|ApplicationInsightsAgent_EXTENSION_VERSION )                         echo "$appsetting found in group 1";;
+                    AzureWbeJobStorage|ConnectionStrings__REDIS_CONNECTION|DOCKER_CUSTOM_IMAGE_NAME|DOCKER_REGISTRY_SERVER_URL )                              echo "$appsetting found in group 2";;
+                    FUNCTIONS_EXTENSION_VERSION|FUNCTIONS_WORKER_RUNTIME|AzureWebJobsStorage )                                                                echo "$appsetting found in group 3";;
+                    WEBSITE_CONTENTAZUREFILECONNECTIONSTRING|WEBSITE_CONTENTOVERVNET|WEBSITES_ENABLE_APP_SERVICE_STORAGE )                                    echo "$appsetting found in group 4";;
+                    WEBSITE_ENABLE_SYNC_UPDATE_SITE|WEBSITE_PULL_IMAGE_OVER_VNET|WEBSITE_CONTENTSHARE|XDT_MicrosoftApplicationInsights_Mode )                 echo "$appsetting found in group 5";;
+                    *)
+                        echo "$appsetting not found, adding to the delete list"
+                        DELETELIST=$DELETELIST$appsetting' ';;
+                  esac
+                done
+
+                if [[ "$DELETELIST" != " " ]]
+                then
+                  az webapp config appsettings delete \
+                    --subscription ${{ parameters.subscriptionName }} \
+                    --name $service \
+                    --resource-group ${{ parameters.webResourceGroupName }} \
+                    --setting-names {$DELETELIST} \
+                    --only-show-errors
+
+                else
+                  echo "Nothing to remove for $service"
+              fi
+            else
+                echo "Skipping $service - App does not exist in this environment"
+            fi
           done
-          if [[ "$DELETELIST" != " " ]]
-          then
-            az webapp config appsettings delete \
-              --subscription ${{ parameters.subscriptionName }} \
-              --name $service \
-              --resource-group ${{ parameters.webResourceGroupName }} \
-              --setting-names {$DELETELIST} \
-              --only-show-errors
-          else
-            echo "Nothing to remove for $service"
-          fi
-        done
+
       workingDirectory: ${{ parameters.configDirectory }}
 
   - task: AzureCLI@2
@@ -102,16 +130,39 @@ steps:
       scriptType: 'bash'
       scriptLocation: 'inlineScript'
       inlineScript: |
-        for filename in `ls`
-        do
-          service=`basename -s .json $filename`
-          echo "Deploying AppSettings to "$service
-          az webapp config appsettings set \
+
+        ExistingWebApps=$(az webapp list \
             --subscription ${{ parameters.subscriptionName }} \
             -g ${{ parameters.webResourceGroupName }} \
-            -n $service \
-            --settings @./$service.json
+            --query "[].name" -o tsv)
+        
+        ExistingFuncApps=$(az functionapp list \
+            --subscription ${{ parameters.subscriptionName }} \
+            -g ${{ parameters.webResourceGroupName }} \
+            --query "[].name" -o tsv)
+        
+        ExistingApps="${ExistingWebApps}
+        ${ExistingFuncApps}"
+
+        for filename in `ls`
+
+          do
+            service=`basename -s .json $filename`
+
+          if echo "$ExistingApps" | grep -q "^${service}$"; then
+
+            echo "Deploying AppSettings to "$service
+
+            az webapp config appsettings set \
+              --subscription ${{ parameters.subscriptionName }} \
+              -g ${{ parameters.webResourceGroupName }} \
+              -n $service \
+              --settings @./$service.json
+          else
+            echo "Skipping $service - webapp does not exist in this environment"
+          fi
         done
+
       workingDirectory: ${{ parameters.configDirectory }}
 
 
@@ -123,13 +174,36 @@ steps:
           scriptType: 'bash'
           scriptLocation: 'inlineScript'
           inlineScript: |
+
+            ExistingWebApps=$(az webapp list \
+            --subscription ${{ parameters.subscriptionName }} \
+            -g ${{ parameters.webResourceGroupName }} \
+            --query "[].name" -o tsv)
+        
+            ExistingFuncApps=$(az functionapp list \
+            --subscription ${{ parameters.subscriptionName }} \
+            -g ${{ parameters.webResourceGroupName }} \
+            --query "[].name" -o tsv)
+        
+            ExistingApps="${ExistingWebApps}
+            ${ExistingFuncApps}"
+
             for filename in `ls`
             do
               service=`basename -s .json $filename`
+
+              if echo "$ExistingApps" | grep -q "^${service}$"; then
+
               echo "Restarting " $service
-              az webapp restart \
-                --name $service \
-                --resource-group ${{ parameters.webResourceGroupName }} \
-                --subscription ${{ parameters.subscriptionName }}
+
+                az webapp restart \
+                  --name $service \
+                  --resource-group ${{ parameters.webResourceGroupName }} \
+                  --subscription ${{ parameters.subscriptionName }}
+
+              else
+                echo "Skipping $service - webapp does not exist in this environment"
+              fi
             done
+
           workingDirectory: ${{ parameters.configDirectory }}

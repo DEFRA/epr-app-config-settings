@@ -25,6 +25,21 @@
     "slotSetting": false
   },
   {
+    "name": "CompanyDetailsApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebfa8407.azurewebsites.net/"
+  },
+  {
+    "name": "CompanyDetailsApi__Timeout",
+    "slotSetting": false,
+    "value": 10
+  },
+  {
+    "name": "CompanyDetailsApi__ClientId",
+    "slotSetting": false,
+    "value": "e9840126-7f4f-4756-8cba-0c7596b9bb8d"
+  },
+  {
     "name": "Validation__Disabled",
     "value": "false",
     "slotSetting": false
@@ -33,6 +48,11 @@
     "name": "Validation__MaxIssuesToProcess",
     "value": "1000",
     "slotSetting": false
+  },
+  {
+    "name": "Validation__IsLatest",
+    "slotSetting": false,
+    "value": true
   },
   {
     "name": "SubmissionPeriods__0__SubmissionPeriod",
@@ -105,8 +125,23 @@
     "value": "2024-P4"
   },
   {
+    "name": "SubmissionPeriods__3__PeriodCodes__1",
+    "slotSetting": false,
+    "value": "2024-P0"
+  },
+  {
     "name": "SubmissionPeriods__3__ErrorCode",
     "slotSetting": false,
     "value": "66"
+  },
+  {
+    "name": "FeatureManagement__EnableSubsidiaryValidationPom",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableSmallProducerPackagingTypeEnhancedValidation",
+    "slotSetting": false,
+    "value": true
   }
 ]

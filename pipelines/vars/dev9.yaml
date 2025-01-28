@@ -1,6 +1,16 @@
 variables:
+  environmentGroup: DEV
   environmentSpoke: 9
-  infrastructureResourceGroupName: $(environmentGroup)RWDINFRG1401
-  teamName.lower: ops
+  environmentSpoke1: 9
+  subscriptionPrefix: AZD
+  projectCode: RWD
+  agentPool: DEFRA-COMMON-ubuntu2004-SSV3
+  teamName.lower: dev9
 
-  b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671
+  environmentName: ${{ variables.environmentGroup }}${{ variables.environmentSpoke1}}
+  subscriptionName: ${{ variables.subscriptionPrefix }}-${{ variables.projectCode }}-${{ variables.environmentName }}
+  infrastructureResourceGroupName: $(environmentGroup)RWDINFRG1401
+  webResourceGroupName: ${{ variables.environmentGroup }}RWDWEBRG${{ variables.environmentSpoke}}401
+  
+  #Enterprise Applications Details
+ 

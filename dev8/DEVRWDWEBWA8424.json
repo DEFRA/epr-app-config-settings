@@ -1,15 +1,5 @@
 [
   {
-    "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
-    "value": "fb7d3853-5354-4dc9-9c64-4ea560448bff",
-    "slotSetting": false
-  },
-  {
-    "name": "ApplicationInsightsAgent_EXTENSION_VERSION",
-    "value": "~3",
-    "slotSetting": false
-  },
-  {
     "name": "ASPNETCORE_ENVIRONMENT",
     "value": "Development",
     "slotSetting": true
@@ -20,7 +10,7 @@
     "slotSetting": true
   },
   {
-    "name": "FeatureManagement__EnablePaymentsFeature",
+    "name": "FeatureManagement__EnableOnlinePaymentsFeature",
     "value": "true",
     "slotSetting": true
   },
@@ -65,8 +55,58 @@
     "slotSetting": true
   },
   {
+    "name": "FeatureManagement__EnableResubmissionComplianceSchemeFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableResubmissionFeesCalculation",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableProducersResubmissionFeesFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOfflinePaymentsFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOfflinePayment",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableAuthenticationFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__OfflinePaymentService__Url",
+    "value": "https://devrwdwebwa8425.azurewebsites.net/",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__OfflinePaymentService__EndPointName",
+    "value": "api/v1",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__OfflinePaymentService__HttpClientName",
+    "value": "offline_payment_service_client",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__OfflinePaymentService__ServiceClientId",
+    "value": "342edf1b-f441-49ff-a3ba-98a56928f478",
+    "slotSetting": true
+  },
+  {
     "name": "Services__PaymentServiceHealthCheck__Url",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "value": "https://devrwdwebwa8425.azurewebsites.net/",
     "slotSetting": true
   },
   {
@@ -76,12 +116,17 @@
   },
   {
     "name": "Services__PaymentService__Url",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "value": "https://devrwdwebwa8425.azurewebsites.net/",
     "slotSetting": true
   },
   {
     "name": "Services__PaymentService__EndPointName",
     "value": "api/v1",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__PaymentService__ServiceClientId",
+    "value": "342edf1b-f441-49ff-a3ba-98a56928f478",
     "slotSetting": true
   },
   {
@@ -111,7 +156,7 @@
   },
   {
     "name": "Services__ProducerFeesService__Url",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "value": "https://devrwdwebwa8425.azurewebsites.net/",
     "slotSetting": true
   },
   {
@@ -125,8 +170,13 @@
     "slotSetting": true
   },
   {
+    "name": "Services__ProducerFeesService__ServiceClientId",
+    "value": "342edf1b-f441-49ff-a3ba-98a56928f478",
+    "slotSetting": true
+  },
+  {
     "name": "Services__ComplianceSchemeFeesService__Url",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "value": "https://devrwdwebwa8425.azurewebsites.net/",
     "slotSetting": true
   },
   {
@@ -140,8 +190,33 @@
     "slotSetting": true
   },
   {
+    "name": "Services__ComplianceSchemeFeesService__ServiceClientId",
+    "value": "342edf1b-f441-49ff-a3ba-98a56928f478",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ProducerResubmissionFeesService__Url",
+    "value": "https://devrwdwebwa8425.azurewebsites.net/",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ProducerResubmissionFeesService__EndPointName",
+    "value": "api/v1",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ProducerResubmissionFeesService__HttpClientName",
+    "value": "producer_resubmission_fees_service_client",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ProducerResubmissionFeesService__ServiceClientId",
+    "value": "342edf1b-f441-49ff-a3ba-98a56928f478",
+    "slotSetting": true
+  },
+  {
     "name": "PaymentServiceOptions__ReturnUrl",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}423.azurewebsites.net/GovPayCallback",
+    "value": "https://rwd-dev8.azure.defra.cloud/Payment/GovPayCallback",
     "slotSetting": true
   },
   {
@@ -151,42 +226,42 @@
   },
   {
     "name": "PaymentServiceOptions__ErrorUrl",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}423.azurewebsites.net/",
+    "value": "https://rwd-dev8.azure.defra.cloud/payment/",
     "slotSetting": true
   },
   {
     "name": "AllowedOrigins",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}424.azurewebsites.net/, https://card.payments.service.gov.uk",
+    "value": "https://devrwdwebwa8424.azurewebsites.net/, https://card.payments.service.gov.uk",
     "slotSetting": true
   },
-  {
-    "name": "ConnectionStrings__REDIS_CONNECTION",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)",
-    "slotSetting": false
-  },
-  {
+   {
     "name": "WEBSITE_AUTH_AAD_ALLOWED_TENANTS",
     "value": "6f504113-6b64-43f2-ade9-242e05780007",
     "slotSetting": false
   },
   {
-    "name": "WEBSITE_ENABLE_SYNC_UPDATE_SITE",
-    "value": "true",
-    "slotSetting": false
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "fe244aad-5a4b-4240-8059-abc728a3192e"
   },
   {
-    "name": "WEBSITE_PULL_IMAGE_OVER_VNET",
-    "value": "true",
-    "slotSetting": false
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "AZDCUSPOC2.onmicrosoft.com"
   },
   {
-    "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
-    "value": "false",
-    "slotSetting": false
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "https://AZDCUSPOC2.b2clogin.com"
   },
   {
-    "name": "XDT_MicrosoftApplicationInsights_Mode",
-    "value": "default",
-    "slotSetting": false
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "B2C_1A_EPR_SignUpSignIn"
+  },
+  {
+    "name": "AzureAdB2C__Scopes",
+    "slotSetting": false,
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-dev8-payment-facade/payment-service"
   }
 ]

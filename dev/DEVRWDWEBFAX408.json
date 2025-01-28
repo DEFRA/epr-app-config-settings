@@ -20,14 +20,19 @@
     "value": "dev#{{ environmentSpoke }}"
   },
   {
-    "name": "AntivirusApi__EnableDirectAccess",
-    "slotSetting": false,
-    "value": "#{{ TradeAntivirusApi.enableDirectAccess }}"
-  },
-  {
     "name": "AntivirusApi__NotificationEmail",
     "slotSetting": false,
-    "value": "#{{ bulkUpload.antivirusnotificationEmail}}"
+    "value": "#{{ bulkUpload.antivirusnotificationEmail }}"
+  },
+  {
+    "name": "AntivirusApi__RetryPolicyInitialWaitTime",
+    "slotSetting": false,
+    "value": "5"
+  },
+  {
+    "name": "AntivirusApi__RetryPolicyMaxRetries",
+    "slotSetting": false,
+    "value": "4"
   },
   {
     "name": "AntivirusApi__Scope",
@@ -70,12 +75,32 @@
     "value": "#{{ apiConfig.companiesHouseLookupBaseUrl }}"
   },
   {
+    "name": "ApiConfig__TenantId",
+    "value": "#{{ apiConfig.boomi.tenantid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseScope",
+    "value": "#{{ apiConfig.boomi.companiesHouseScope }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientId",
+    "value": "#{{ apiConfig.boomi.clientid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/boomi-api-secret/)",
+    "slotSetting": false
+  },
+  {
     "name": "ApiConfig__RetryPolicyMaxRetries",
     "slotSetting": false,
     "value": "3"
   },
   {
-    "name": "ApiConfig__RetryPolicyIntitalWaitTime",
+    "name": "ApiConfig__RetryPolicyInitialWaitTime",
     "slotSetting": false,
     "value": "3"
   },
@@ -87,17 +112,12 @@
   {
     "name": "ApiConfig__RetryPolicyTooManyAttemptsWaitTime",
     "slotSetting": false,
-    "value": "200"
+    "value": "150"
   },
   {
     "name": "ApiConfig__Timeout",
     "slotSetting": false,
     "value": "60"
-  },
-  {
-    "name": "ApiConfig__CompaniesHouseDataDownloadUrl",
-    "slotSetting": false,
-    "value": "https://download.companieshouse.gov.uk/"
   },
   {
     "name": "BlobStorage__ConnectionString",
@@ -115,14 +135,44 @@
     "value": "subsidiary-companies-house-upload-container#{{ teamName.dash }}"
   },
   {
+    "name": "CompaniesHouseDownload__DataDownloadUrl",
+    "slotSetting": false,
+    "value": "https://download.companieshouse.gov.uk/"
+  },
+  {
+    "name": "CompaniesHouseDownload__DownloadPage",
+    "slotSetting": false,
+    "value": "en_output.html"
+  },
+  {
+    "name": "CompaniesHouseDownload__RetryPolicyInitialWaitTime",
+    "slotSetting": false,
+    "value": "5"
+  },
+  {
+    "name": "CompaniesHouseDownload__RetryPolicyMaxRetries",
+    "slotSetting": false,
+    "value": "4"
+  },
+  {
     "name": "CompaniesHouseDownload__Schedule",
     "slotSetting": false,
     "value": "#{{ bulkUpload.companiesHouseDownloadSchedule }}"
   },
   {
+    "name": "FeatureManagement__UseBoomiOAuth",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.useBoomiOAuth }}"
+  },
+  {
     "name": "Redis__ConnectionString",
     "slotSetting": false,
     "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+  },
+  {
+    "name": "Redis__TimeToLiveInMinutes",
+    "slotSetting": false,
+    "value": "#{{ bulkUpload.redisnotificationsexpiryinminutes }}"
   },
   {
     "name": "SubmissionApi__BaseUrl",

@@ -98,10 +98,5 @@
     "name": "SiteDates__DateFormat",
     "slotSetting": false,
     "value": "d MMMM yyyy"
-  },
-  {
-    "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
-    "slotSetting": false,
-    "value": false
   }
 ]

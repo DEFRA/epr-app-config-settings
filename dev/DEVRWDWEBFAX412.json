@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Service__AccountBaseUrl",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net/"
+  },
+  {
+    "name": "Service__AccountEndPointName",
+    "value": "api/organisations"
+  },
+  {
+    "name": "UpdateProducersTrigger",
+    "value": "0 0 18 * * 1-5"
+  },
+  {
+    "name": "ProducersContext",
+    "value": "https://fat.npwd.org.uk/odata/Producers/$delta"
+  },
+  {
+    "name": "FetchNpwdIssuedPrns__Schedule",
+    "value": "0 0 18 * * 1-5"
+  },
+  {
+    "name": "ServiceBus__FullyQualifiedNamespace",
+    "value": "DEVRWDINFSB1402.servicebus.windows.net"
+  },
+  {
+    "name": "ServiceBus__FetchPrnQueueName",
+    "value": "defra.epr.npwd.integration.fetchprn.dev#{{ environmentSpoke1 }}"
+  },
+  {
+    "name": "ServiceBus__ErrorPrnQueue",
+    "value": "defra.epr.npwd.integration.errorqueue.dev#{{ environmentSpoke1 }}"
+  },
+  {
+    "name": "UpdatePrnsTrigger",
+    "value": "0 0 18 * * 1-5"
+  },
+  {
+    "name": "Service__PrnBaseUrl",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}418.azurewebsites.net/"
+  },
+  {
+    "name": "Service__PrnEndPointName",
+    "value": "api/v1/prn"
+  },
+  {
+    "name": "FeatureManagement__RunIntegration",
+    "value": "#{{ featureManagement.RunIntegration }}"
+  },
+  {
+    "name": "PrnsContext",
+    "value": "https://fat.npwd.org.uk/odata/PRNs/$delta"
+  },
+  {
+    "name": "DefaultLastRunDate",
+    "value": "2024-10-01"
+  },
+  {
+    "name": "MessagingConfig__NpwdEmailTemplateId",
+    "value": "#{{ messaging.prn.npwdemail.templateid }}"
+  },
+  {
+    "name": "MessagingConfig__NpwdEmail",
+    "value": "akintunde.oyefodunrin.external@eviden.com"
+  },
+  {
+    "name": "ApiCallsRetryConfig__WaitTimeBetweenRetryInSecs",
+    "value": 30
+  },
+  {
+    "name": "ApiCallsRetryConfig__MaxAttempts",
+    "value": 3
+  },
+  {
+    "name": "MessagingConfig__ApiKey",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/MessagingConfigApiKeyDev/)"
+  },
+  {
+    "name": "MessagingConfig__PrnTemplateId",
+    "value": "#{{ messaging.prn.prnemail.templateid }}"
+  },
+  {
+    "name": "MessagingConfig__PERNTemplateId",
+    "value": "#{{ messaging.prn.pernemail.templateid }}"
+  },
+  {
+    "name": "ServiceBus__MaxWaitTimeInSeconds",
+    "value": "1"
+  },
+  {
+    "name": "NpwdIntegration__BaseUrl",
+    "value": "https://fat.npwd.org.uk/"
+  },
+  {
+    "name": "NpwdIntegration__ClientId",
+    "value": "b6a9cebf-1eac-4907-b1ae-b0387e627016"
+  },
+  {
+    "name": "NpwdIntegration__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/NPWDIntegrationClientSecret/)"
+  },
+  {
+    "name": "NpwdIntegration__Scope",
+    "value": "api://52d36e18-cba5-4f44-9ab0-e9a8053518c3/.default"
+  },
+  {
+    "name": "NpwdIntegration__AccessTokenUrl",
+    "value": "https://npwdorguk.ciamlogin.com/638f082d-9a35-45fd-b98c-1d27072d70ea/oauth2/v2.0/token"
+  },
+  {
+    "name": "NpwdIntegration__Authority",
+    "value": "https://npwdorguk.ciamlogin.com/638f082d-9a35-45fd-b98c-1d27072d70ea/"
+  },
+  {
+    "name": "MessagingConfig__NpwdValidationErrorsTemplateId",
+    "value": "#{{ messaging.prn.npwdvalidationerrors.templateid }}"
+  },
+  {
+    "name": "ServiceBus__FetchPrnDeltaSyncQueueName",
+    "value": "defra.npwd.integration.lastsuccessfulrun.fetchprn.dev#{{ environmentSpoke1 }}"
+  },
+  {
+    "name": "ServiceBus__UpdateProducerDeltaSyncQueueName",
+    "value": "defra.npwd.integration.lastsuccessfulrun.updateproducer.dev#{{ environmentSpoke1 }}"
+  },
+  {
+    "name": "ServiceBus__UpdatePrnDeltaSyncQueueName",
+    "value": "defra.npwd.integration.lastsuccessfulrun.updateprn.dev#{{ environmentSpoke1 }}"
+  },
+  {
+    "name": "Service__AccountClientId",
+    "value": "#{{ apiConfig.accountServiceClientId }}"
+  },
+  {
+    "name": "Service__PrnClientId",
+    "value": "#{{ prnServiceApi.appRegistration.clientId }}"
+  },
+  {
+    "name": "FeatureManagement__RunUpdateProducers",
+    "value": "#{{ featureManagement.RunUpdateProducers }}"
+  }
+]

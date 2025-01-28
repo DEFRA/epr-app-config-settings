@@ -12,17 +12,37 @@
   {
     "name": "ApiConfig__AddressLookupBaseUrl",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ApiConfigAddressLookupBaseUrl/)"
-  },
-  {
-    "name": "ApiConfig__Certificate",
-    "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/certificates/boomi-api-certificate/)"
+    "value": "#{{ apiConfig.addressLookupBaseUrl }}"
   },
   {
     "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ApiConfigCompaniesHouseLookupBaseUrl/)"
+    "value": "#{{ apiConfig.companiesHouseLookupBaseUrl }}"
+  },
+  {
+    "name": "ApiConfig__TenantId",
+    "value": "#{{ apiConfig.boomi.tenantid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__AddressLookupScope",
+    "value": "#{{ apiConfig.boomi.addressLookupScope }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseScope",
+    "value": "#{{ apiConfig.boomi.companiesHouseScope }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientId",
+    "value": "#{{ apiConfig.boomi.clientid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/boomi-api-secret/)",
+    "slotSetting": false
   },
   {
     "name": "AzureAdB2C__ClientId",
@@ -50,9 +70,14 @@
     "value": "https://devrwdwebwa#{{ environmentSpoke }}413.azurewebsites.net"
   },
   {
+    "name": "FeatureManagement__UseBoomiOAuth",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.useBoomiOAuth }}"
+  },
+  {
     "name": "MessagingConfig__AccountCreationUrl",
     "slotSetting": false,
-    "value": "https://rwd-dev#{{ environmentSpoke }}.azure.defra.cloud/regulators/full-name?token="
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/regulators/full-name?token="
   },
   {
     "name": "MessagingConfig__ApiKey",

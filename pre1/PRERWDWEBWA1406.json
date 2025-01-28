@@ -70,11 +70,6 @@
     "slotSetting": false
   },
   {
-    "name": "AccountsServiceApiConfig__Certificate",
-    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/certificates/boomi-api-certificate/)",
-    "slotSetting": false
-  },
-  {
     "name": "AccountsServiceApiConfig__Timeout",
     "value": 30,
     "slotSetting": false
@@ -92,16 +87,6 @@
   {
     "name": "AccountsServiceApiConfig__ServiceRetryCount",
     "value": 6,
-    "slotSetting": false
-  },
-  {
-    "name": "AccountsServiceApiConfig__AddressLookupBaseUrl",
-    "value": "https://integration-pre.azure.defra.cloud/ws/rest/DEFRA/v1/address/",
-    "slotSetting": false
-  },
-  {
-    "name": "AccountsServiceApiConfig__CompaniesHouseLookupBaseUrl",
-    "value": "https://integration-pre.azure.defra.cloud/ws/rest/DEFRA/v2.1/",
     "slotSetting": false
   },
   {
@@ -319,6 +304,26 @@
     "slotSetting": false,
     "value": "https://rwd-pre1.azure.defra.cloud/report-data"
 
+  },
+  {
+    "name": "MessagingConfig__OrganisationRegistrationSubmissionQueriedId",
+    "slotSetting": false,
+    "value": "449d5816-c0bf-4437-9de8-6fba41e15e95"
+  },
+  {
+    "name": "MessagingConfig__OrganisationRegistrationSubmissionDecisionId",
+    "slotSetting": false,
+    "value": "f9fd10d4-1207-40e2-b620-f8e854b11c65"
+  },
+  {
+    "name": "MessagingConfig__WelshOrganisationRegistrationSubmissionQueriedId",
+    "slotSetting": false,
+    "value": "8b7b9a77-c161-428b-822d-1192083810f8"
+  },
+  {
+    "name": "MessagingConfig__WelshOrganisationRegistrationSubmissionDecisionId",
+    "slotSetting": false,
+    "value": "79a6b4ef-adbb-4b0d-b23a-76be05665356"
   },
   {
     "name": "rolesConfig__roles",

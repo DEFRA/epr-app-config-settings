@@ -1,7 +1,12 @@
-[ 
+[
   {
     "name": "ConnectionStrings__SynapseDatabase",
     "slotSetting": false,
     "value": "Server=tcp:prdepdinfas1401.sql.azuresynapse.net;Initial Catalog=prdepdsp1401;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;"
+  },
+  {
+    "name": "ApiConfig__PomDataSubmissionPeriods",
+    "slotSetting": false,
+    "value": "2024-P1,2024-P4"
   }
 ]

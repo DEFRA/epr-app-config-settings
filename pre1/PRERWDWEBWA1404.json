@@ -10,19 +10,49 @@
     "value": "fe38b8c5-550b-45e4-9323-f941595f7fa3"
   },
   {
-    "name": "ApiConfig__AddressLookupBaseUrl",
-    "slotSetting": false,
-    "value": "https://integration-pre.azure.defra.cloud/ws/rest/DEFRA/v1/address/"
-  },
-  {
     "name": "ApiConfig__Certificate",
     "slotSetting": false,
     "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/certificates/boomi-api-certificate/)"
   },
   {
+    "name": "ApiConfig__AddressLookupBaseUrl",
+    "slotSetting": false,
+    "value": "https://integration-pre.azure.defra.cloud/ws/rest/DEFRA/v1/address/"
+  },
+  {
     "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
     "slotSetting": false,
     "value": "https://integration-pre.azure.defra.cloud/ws/rest/DEFRA/v2.1/"
+  },
+  {
+    "name": "ApiConfig__TenantId",
+    "slotSetting": false,
+    "value": "770a2450-0227-4c62-90c7-4e38537f1102"
+  },
+  {
+    "name": "ApiConfig__AddressLookupScope",
+    "slotSetting": false,
+    "value": "api://79136e90-a852-437d-8f98-b77a43d6a1f1/.default"
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseScope",
+    "slotSetting": false,
+    "value": "api://1042f571-934b-4608-aa44-bc1535feb549/.default"
+  },
+  {
+    "name": "ApiConfig__ClientId",
+    "slotSetting": false,
+    "value": "02f2db58-749d-44ce-a396-8a8cd3ae2ef1"
+  },
+  {
+    "name": "ApiConfig__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/boomi-api-secret/)"
+  },
+  {
+    "name": "ApiConfig__PayCalBaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa1424.azurewebsites.net"
   },
   {
     "name": "AzureAdB2C__ClientId",
@@ -97,7 +127,7 @@
   {
     "name": "MessagingConfig__UserDetailChangeRequestTemplateId",
     "slotSetting": false,
-    "value": "PLACEHOLDER"
+    "value": "404bc327-e2ca-483e-8d35-544a0ba4c54f"
   },
   {
     "name": "RegulatorEmailConfig__NorthernIreland",
@@ -126,22 +156,37 @@
   },
   {
     "name": "EprPackagingRegulatorEmailConfig__NorthernIreland",
-    "value": "EPRCustomerService@defra.gov.uk",
+    "value": "kenneth.mcquarrie@defra.gov.uk",
     "slotSetting": false
   },
   {
     "name": "EprPackagingRegulatorEmailConfig__England",
-    "value": "EPRCustomerService@defra.gov.uk",
+    "value": "kenneth.mcquarrie@defra.gov.uk",
     "slotSetting": false
   },
   {
     "name": "EprPackagingRegulatorEmailConfig__Scotland",
-    "value": "EPRCustomerService@defra.gov.uk",
+    "value": "kenneth.mcquarrie@defra.gov.uk",
     "slotSetting": false
   },
   {
     "name": "EprPackagingRegulatorEmailConfig__Wales",
-    "value": "EPRCustomerService@defra.gov.uk",
+    "value": "kenneth.mcquarrie@defra.gov.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "OrganisationEndpoints__UpdateOrganisation",
+    "value": "api/organisations/organisation",
+    "slotSetting": false
+  },
+  {
+    "name": "UserDetailsEndpoints__UpdateUserDetails",
+    "value": "api/users/personal-details",
+    "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__UseBoomiOAuth",
+    "value": false,
     "slotSetting": false
   }
 ]

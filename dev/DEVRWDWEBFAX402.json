@@ -25,6 +25,21 @@
     "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"
   },
   {
+    "name": "CompanyDetailsApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebfa#{{ environmentSpoke }}407.azurewebsites.net/"
+  },
+  {
+    "name": "CompanyDetailsApi__Timeout",
+    "slotSetting": false,
+    "value": 10
+  },
+  {
+    "name": "CompanyDetailsApi__ClientId",
+    "slotSetting": false,
+    "value": "#{{ validationDataApi.appRegistration.clientId }}"
+  },
+  {
     "name": "Validation__Disabled",
     "slotSetting": false,
     "value": false
@@ -37,7 +52,7 @@
   {
     "name": "Validation__IsLatest",
     "slotSetting": false,
-    "value": "#{{ validation.latest }}"
+    "value": "#{{ Validation.Islatest }}"
   },
   {
     "name": "SubmissionPeriods__0__SubmissionPeriod",
@@ -110,8 +125,23 @@
     "value": "2024-P4"
   },
   {
+    "name": "SubmissionPeriods__3__PeriodCodes__1",
+    "slotSetting": false,
+    "value": "2024-P0"
+  },
+  {
     "name": "SubmissionPeriods__3__ErrorCode",
     "slotSetting": false,
     "value": "66"
+  },
+  {
+    "name": "FeatureManagement__EnableSubsidiaryValidationPom",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableSubsidiaryValidationPom }}"
+  },
+  {
+    "name": "FeatureManagement__EnableSmallProducerPackagingTypeEnhancedValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation }}"
   }
 ]

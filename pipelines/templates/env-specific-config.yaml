@@ -28,18 +28,27 @@ variables:
   - ${{ elseif eq(parameters.teamName, 'DEV8') }}:
     - template: ../vars/development.yaml
     - template: ../vars/dev8.yaml
+  - ${{ elseif eq(parameters.teamName, 'DEV9') }}:
+    - template: ../vars/development.yaml
+    - template: ../vars/dev9.yaml
   - ${{ elseif eq(parameters.teamName, 'DEV10') }}:
     - template: ../vars/development.yaml
     - template: ../vars/dev10.yaml
   - ${{ elseif eq(parameters.teamName, 'DEV11') }}:
     - template: ../vars/development.yaml
     - template: ../vars/dev11.yaml
+  - ${{ elseif eq(parameters.teamName, 'DEV12') }}:
+    - template: ../vars/development.yaml
+    - template: ../vars/dev12.yaml
+  - ${{ elseif eq(parameters.teamName, 'DEV13') }}:
+    - template: ../vars/development.yaml
+    - template: ../vars/dev13.yaml
+  - ${{ elseif eq(parameters.teamName, 'DEV14') }}:
+    - template: ../vars/development.yaml
+    - template: ../vars/dev14.yaml
   - ${{ elseif eq(parameters.teamName, 'tst') }}:
     - template: ../vars/tst1.yaml
   - ${{ elseif eq(parameters.teamName, 'preprod') }}:
     - template: ../vars/pre1.yaml
   - ${{ elseif eq(parameters.teamName, 'prod') }}:
     - template: ../vars/prd1.yaml
-  - ${{ else }}:
-    - template: ../vars/development.yaml
-    - template: ../vars/dev9.yaml

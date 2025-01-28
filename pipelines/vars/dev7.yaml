@@ -1,9 +1,13 @@
 variables:
   environmentSpoke: 7
+  environmentSpoke1: 7
 
   infrastructureResourceGroupName: $(environmentGroup)RWDINFRG1401
   teamName.lower: oscar
+ 
+   #Enterprise Applications Details
+  apiConfig.accountServiceClientId: fe0a0ce7-8b54-4cef-a559-7e192b4118a3          # Application ID for DEVRWDWEBWA7407_API
+  prnServiceApi.appRegistration.clientId: b1fc654f-c072-4d3d-82f2-6c8b864ac32e     # Application ID for DEVRWDWEBWA7418_API
 
-  b2c.permissionsService.clientId: 7287f0c3-8155-484e-a11f-51fd471c0133
-  b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671
-  apiConfig.accountServiceClientId: fe0a0ce7-8b54-4cef-a559-7e192b4118a3
+  featureManagement.RunIntegration: true
+  featureManagement.RunUpdateProducers: false

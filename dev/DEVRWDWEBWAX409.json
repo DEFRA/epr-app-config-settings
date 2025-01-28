@@ -32,7 +32,7 @@
   {
     "name": "AntivirusApi__CollectionSuffix",
     "slotSetting": false,
-    "value": "dev#{{ environmentSpoke }}"
+    "value": "dev#{{ environmentSpoke1 }}"
   },
   {
     "name": "AntivirusApi__EnableDirectAccess",
@@ -95,6 +95,16 @@
     "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)"
   },
   {
+    "name": "Redis__TimeToLiveInMinutes",
+    "slotSetting": false,
+    "value": "#{{ bulkUpload.redisnotificationsexpiryinminutes }}"
+  },
+  {
+    "name": "StorageAccount__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})"
+  },
+  {
     "name": "StorageAccount__PomContainer",
     "slotSetting": false,
     "value": "pom-upload-container#{{ teamName.dash }}"
@@ -110,28 +120,23 @@
     "value": "subsidiary-upload-container#{{ teamName.dash }}"
   },
   {
-    "name": "BlobStorage__ConnectionString",
-    "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/LargeProducersRegisterStorageAccountConnectionString)"
-  },
-  {
-    "name": "BlobStorage__SubsidiariesContainerName",
-    "slotSetting": false,
-    "value": "subsidiaries-template"
-  },
-  {
-    "name": "BlobStorage__SubsidiariesFileUploadTemplateFileName",
-    "slotSetting": false,
-    "value": "epr_subsidiary_details_template.ods"
-  },
-  {
     "name": "SubmissionStatusApi__BaseUrl",
     "slotSetting": false,
     "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"
   },
   {
+    "name": "CommonDataApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}415.azurewebsites.net"
+  },
+  {
     "name": "PrnServiceApi__BaseUrl",
     "slotSetting": false,
     "value": "https://devrwdwebwa#{{ environmentSpoke }}418.azurewebsites.net"
+  },
+  {
+    "name": "PrnServiceApi__ClientId",
+    "slotSetting": false,
+    "value": "#{{ prnServiceApi.appRegistration.clientId }}"   
   }
 ]

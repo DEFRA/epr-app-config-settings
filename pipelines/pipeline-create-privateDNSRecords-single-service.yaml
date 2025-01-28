@@ -1,0 +1,41 @@
+name: $(BuildId)
+parameters:
+  - name: recordName
+    displayName: Enter the name of the webapp or functionapp (in lower case)
+    type: string
+  - name: ipAddress
+    displayName: Enter the IP address for the above service's private endpoint
+    type: string
+  - name: zoneName
+    type: string
+    displayName: Select the name of the DNS Zone 
+    values:
+      - 'privatelink.azurewebsites.net'
+      - 'scm.privatelink.azurewebsites.net'
+      - 'privatelink.blob.core.windows.net'
+      - 'privatelink.file.core.windows.net'
+      - 'privatelink.queue.core.windows.net'
+      - 'privatelink.table.core.windows.net'
+  - name: OverwriteIfExists
+    displayName: If the DNS record already exists, check this box to confirm that you want to overwrite it.
+    type: boolean
+    default: 'true'
+
+trigger:
+  - none
+
+pool: DEFRA-COMMON-ubuntu2004-SSV3
+
+variables:
+      - template: vars/dnsVariables.yaml
+
+steps:
+  - task: AzurePowerShell@5
+    displayName: Create Private DNS Records for ${{ parameters.recordName }}
+    inputs:
+      azureSubscription: '${{ variables.dnsSubscription }}'
+      ScriptType: 'FilePath'
+      ScriptPath: '$(Build.SourcesDirectory)/pipelines/templates/createDNSRecord.ps1'
+      ScriptArguments: '-RecordName ${{ parameters.recordName }} -DNSZoneName ${{ parameters.zoneName }} -IPAddress ${{ parameters.ipAddress }} -OverwriteIfExists $${{ parameters.OverwriteIfExists }}'
+      azurePowerShellVersion: 'LatestVersion'
+      pwsh: true

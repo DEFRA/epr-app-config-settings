@@ -74,17 +74,17 @@ jobs:
   displayName: Create/Update ServiceBus Queues for ${{ parameters.teamName }}
   steps:
   - ${{ if and( ne(parameters.teamName, 'TST1'), ne(parameters.teamName, 'PRE1'), ne(parameters.teamName, 'PRD1'), ne(parameters.teamName, 'DEV8')) }}:
-    - task: qetza.replacetokens.replacetokens-task.replacetokens@3
+    - task: qetza.replacetokens.replacetokens-task.replacetokens@6
       displayName: 'Replace tokens'
       inputs:
         tokenPattern: custom
         tokenPrefix: '#{{'
         tokenSuffix: '}}'
-        actionOnMissing: fail
+        missingVarLog: error
         useLegacyPattern: false
         enableTransforms: true
         useLegacyEmptyFeature: false
-        targetFiles: |
+        sources: |
           bicep/queue/configs/queues.devX.bicepparam => queues.dev$(environmentSpoke).bicepparam
 
   - task: AzureCLI@2

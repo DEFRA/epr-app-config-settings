@@ -75,11 +75,6 @@
     "slotSetting": false
   },
   {
-    "name": "AccountsServiceApiConfig__Certificate",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/certificates/boomi-api-certificate/)",
-    "slotSetting": false
-  },
-  {
     "name": "AccountsServiceApiConfig__Timeout",
     "value": 30,
     "slotSetting": false
@@ -97,16 +92,6 @@
   {
     "name": "AccountsServiceApiConfig__ServiceRetryCount",
     "value": 6,
-    "slotSetting": false
-  },
-  {
-    "name": "AccountsServiceApiConfig__AddressLookupBaseUrl",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ApiConfigAddressLookupBaseUrl/)",
-    "slotSetting": false
-  },
-  {
-    "name": "AccountsServiceApiConfig__CompaniesHouseLookupBaseUrl",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ApiConfigCompaniesHouseLookupBaseUrl/)",
     "slotSetting": false
   },
   {

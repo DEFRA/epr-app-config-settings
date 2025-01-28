@@ -1,13 +1,93 @@
 [
   {
-    "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
-    "value": "fb7d3853-5354-4dc9-9c64-4ea560448bff",
-    "slotSetting": false
+    "name": "AzureAdB2C__CallbackPath",
+    "slotSetting": false,
+    "value": "/signin-oidc"
   },
   {
-    "name": "ApplicationInsightsAgent_EXTENSION_VERSION",
-    "value": "~3",
-    "slotSetting": false
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "#{{ b2c.frontend.clientId }}"
+  },
+  {
+    "name": "AzureAdB2C__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.b2c.frontend.secret.url }})"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "#{{ b2c.domain }}"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "#{{ b2c.instance }}"
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "#{{ b2c.signUpSignInPolicyId }}"
+  },
+  {
+    "name": "AzureAdB2C__SignedOutCallbackPath",
+    "slotSetting": false,
+    "value": "#{{ b2c.signedOutCallbackPath }}"
+  },
+  {
+    "name": "Cookie__AntiForgeryCookieName",
+    "slotSetting": false,
+    "value": ".epr_anti_forgery"
+  },
+  {
+    "name": "Cookie__AuthenticationCookieName",
+    "slotSetting": false,
+    "value": ".epr_auth"
+  },
+  {
+    "name": "Cookie__AuthenticationExpiryInMinutes",
+    "slotSetting": false,
+    "value": 20
+  },
+  {
+    "name": "Cookie__CookiePolicyCookieName",
+    "slotSetting": false,
+    "value": ".epr_regulator_cookies_policy"
+  },
+  {
+    "name": "Cookie__CookiePolicyDurationInMonths",
+    "slotSetting": false,
+    "value": 12
+  },
+  {
+    "name": "Cookie__SessionCookieName",
+    "slotSetting": false,
+    "value": ".epr_session"
+  },
+  {
+    "name": "Cookie__TempDataCookie",
+    "slotSetting": false,
+    "value": ".epr_temp"
+  },
+  {
+    "name": "Cookie__TsCookieName",
+    "slotSetting": false,
+    "value": "TSxxxxxxxx"
+  },
+  {
+    "name": "Cookie__OpenIdCookieName",
+    "slotSetting": false,
+    "value": ".epr_openid_nonce"
+  },
+  {
+    "name": "Cookie__CorrelationCookieName",
+    "slotSetting": false,
+    "value": ".epr_correlation"
+  },
+  {
+    "name": "BasePath",
+    "slotSetting": false,
+    "value": "/payment"
   },
   {
     "name": "ASPNETCORE_ENVIRONMENT",
@@ -16,7 +96,7 @@
   },
   {
     "name": "Dashboard__MenuUrl__Url",
-    "value": "https://google.com/",
+    "value": "/report-data/home-self-managed",
     "slotSetting": true
   },
   {
@@ -26,7 +106,7 @@
   },
   {
     "name": "Dashboard__BackUrl__Url",
-    "value": "https://google.com/",
+    "value": "/report-data/home-self-managed",
     "slotSetting": true
   },
   {
@@ -36,7 +116,7 @@
   },
   {
     "name": "Dashboard__FeedbackUrl__Url",
-    "value": "https://google.com/",
+    "value": "https://defragroup.eu.qualtrics.com/jfe/form/SV_a2Bm7vw3cht5B6C",
     "slotSetting": true
   },
   {
@@ -55,6 +135,56 @@
     "slotSetting": true
   },
   {
+    "name": "Dashboard__ManageAccountUrl__Url",
+    "value": "/manage-account/",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__ManageAccountUrl__Description",
+    "value": "This is url is Manage Account.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__SignOutUrl__Url",
+    "value": "/report-data/Account/SignOut",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__SignOutUrl__Description",
+    "value": "This is url is Sign Out.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__RPDRootUrl__Url",
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/payment",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__RPDRootUrl__Description",
+    "value": "This url is to redirect to main menu.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__RegistrationTaskList__Url",
+    "value": "/report-data/registration-task-list",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__RegistrationTaskList__Description",
+    "value": "This is Registration Task List.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__CookiesUrl__Url",
+    "value": "/report-data/cookies",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__CookiesUrl__Description",
+    "value": "This is Cookies.",
+    "slotSetting": true
+  },
+  {
     "name": "PaymentFacade__FacadeService__Url",
     "value": "https://devrwdwebwa#{{ environmentSpoke }}424.azurewebsites.net/",
     "slotSetting": true
@@ -70,9 +200,19 @@
     "slotSetting": true
   },
   {
-    "name": "ConnectionStrings__REDIS_CONNECTION",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)",
-    "slotSetting": false
+    "name": "PaymentFacade__FacadeService__DownstreamScope",
+    "value": "#{{ payment_facade.DownstreamScope }}",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__ShowLanguageSwitcher",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableAuthenticationFeature",
+    "value": "true",
+    "slotSetting": true
   },
   {
     "name": "WEBSITE_AUTH_AAD_ALLOWED_TENANTS",
@@ -80,23 +220,58 @@
     "slotSetting": false
   },
   {
-    "name": "WEBSITE_ENABLE_SYNC_UPDATE_SITE",
-    "value": "true",
-    "slotSetting": false
+    "name": "ForwardedHeaders__AllowedHosts",
+    "slotSetting": false,
+    "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"
   },
   {
-    "name": "WEBSITE_PULL_IMAGE_OVER_VNET",
-    "value": "true",
-    "slotSetting": false
+    "name": "ForwardedHeaders__ForwardedHostHeaderName",
+    "slotSetting": false,
+    "value": "X-Original-Host"
   },
   {
-    "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
-    "value": "false",
-    "slotSetting": false
+    "name": "ForwardedHeaders__OriginalHostHeaderName",
+    "slotSetting": false,
+    "value": "X-Initial-Host"
   },
   {
-    "name": "XDT_MicrosoftApplicationInsights_Mode",
-    "value": "default",
-    "slotSetting": false
+    "name": "ASPNETCORE_HTTPS_PORT",
+    "slotSetting": false,
+    "value": "443"
+  },
+  {
+    "name": "Redis__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+  },
+  {
+    "name": "Redis__InstanceName",
+    "slotSetting": false,
+    "value": "#{{ redis.producers.instance.name }}"
+  },
+  {
+    "name": "UseLocalSession",
+    "slotSetting": false,
+    "value": false
+  },
+  {
+    "name": "GoogleAnalytics__CookiePrefix",
+    "slotSetting": false,
+    "value": "_ga"
+  },
+  {
+    "name": "GoogleAnalytics__MeasurementId",
+    "slotSetting": false,
+    "value": "VMDE8PW9W7"
+  },
+  {
+    "name": "GoogleAnalytics__TagManagerContainerId",
+    "slotSetting": false,
+    "value": "G-VMDE8PW9W7"
+  },
+  {
+    "name": "Session__IdleTimeoutMinutes",
+    "slotSetting": false,
+    "value": "20"
   }
 ]

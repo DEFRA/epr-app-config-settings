@@ -1,10 +1,5 @@
 [
   {
-    "name": "AzureWebJobsStorage",
-    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/RegistrationContentValidationStorageAccountConnectionStringRWD1404/)",
-    "slotSetting": false
-  },
-  {
     "name": "ServiceBus__ConnectionString",
     "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/ServiceBusConnectionString/)",
     "slotSetting": false
@@ -66,6 +61,16 @@
   },
   {
     "name": "FeatureManagement__EnableBrandPartnerCrossFileValidation",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableSubsidiaryValidation",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableOrganisationSizeFieldValidation",
     "slotSetting": false,
     "value": true
   },

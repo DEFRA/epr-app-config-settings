@@ -1,0 +1,82 @@
+[
+  {
+    "name": "IsEncrypted",
+    "value": "false",
+    "slotSetting": false
+  },
+  {
+    "name": "StoreApprovedSubmissions__Schedule",
+    "value": "0 0 10 * * *",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsServiceApi__BaseUrl",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}415.azurewebsites.net/",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsServiceApi__SubmissionsEndPoint",
+    "value": "api/submissions/v1/pom/approved/",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsServiceApi__LogPrefix",
+    "value": "[EPR.PRN.ObligationCalculation]",
+    "slotSetting": false
+  },
+  {
+    "name": "PrnServiceApi__BaseUrl",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}418.azurewebsites.net/",
+    "slotSetting": false
+  },
+  {
+    "name": "PrnServiceApi__PrnCalculateEndPoint",
+    "value": "api/v1/prn/organisation/{0}/calculate",
+    "slotSetting": false
+  },
+  {
+    "name": "PrnServiceApi__LogPrefix",
+    "value": "[EPR.PRN.ObligationCalculation]",
+    "slotSetting": false
+  },
+  {
+    "name": "PrnServiceApi__ClientId",
+    "slotSetting": false,
+    "value": "#{{ prnServiceApi.appRegistration.clientId }}"   
+  },
+  {
+    "name": "FUNCTIONS_WORKER_RUNTIME",
+    "value": "dotnet-isolated",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__FullyQualifiedNamespace",
+    "value": "DEVRWDINFSB1402.servicebus.windows.net",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__ObligationQueueName",
+    "value": "defra.epr.obligation#{{ teamName.dot }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__ObligationLastSuccessfulRunQueueName",
+    "value": "defra.epr.obligationlastsuccessfulrun#{{ teamName.dot }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__LogPrefix",
+    "value": "[EPR.PRN.ObligationCalculation]",
+    "slotSetting": false
+  },
+  {
+    "name": "ApplicationConfig__DefaultRunDate",
+    "value": "2024-01-01",
+    "slotSetting": false
+  },
+  {
+    "name": "ApplicationConfig__LogPrefix",
+    "value": "[EPR.PRN.ObligationCalculation]",
+    "slotSetting": false
+  }
+]

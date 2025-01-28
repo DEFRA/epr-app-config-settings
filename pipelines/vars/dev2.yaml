@@ -1,17 +1,16 @@
 variables:
   environmentSpoke: 2
+  environmentSpoke1: 2
 
   infrastructureResourceGroupName: $(environmentGroup)RWDINFRG1401
   teamName.lower: wastebusters
 
-  # B2C
-  b2c.wax409.clientId: 0ff4a0dc-aa85-4b9f-858b-851dbfe7c671
+ # Enterprise Application Details
+  apiConfig.accountServiceClientId: abb69391-f412-464d-a771-2d302550dd60             # Application ID for DEVRWDWEBWA2407_API
+  validationDataApi.appRegistration.clientId: d9f74f90-38ff-401f-90bb-611c9a3177ac   # Application ID for DEVRWDWEBFA2407_API
 
-  apiConfig.accountServiceClientId: abb69391-f412-464d-a771-2d302550dd60
-  validationDataApi.appRegistration.clientId: d9f74f90-38ff-401f-90bb-611c9a3177ac
-
-  # Subsidiary bulk upload email configuration
-  bulkUpload.antivirusnotificationEmail: "michael.wild.external@eviden.com"
+  # Subsidiary bulk upload
+  bulkUpload.companiesHouseDownloadSchedule: "0 40 9 * * *"
 
   # Feature management
   featureManagement.enableBrandPartnerDataRowValidation: true
@@ -20,11 +19,23 @@ variables:
   featureManagement.enableOrganisationDataRowValidation: true
   featureManagement.enableRegistrationRowValidation: true
   featureManagement.enableRowValidation: true
+  featureManagement.enableSubsidiaryValidation: true
+  featureManagement.enableSubsidiaryValidationPom: true
   featureManagement.sendDissociationNotificationEmail: true
-  featureManagement.showDirectProducerSubsidiaries: true
+  featureManagement.ShowSubsidiariesSingleUploadJourney: true
   featureManagement.ShowSubsidiaries: true
   featureManagement.validationDataApi: true
+  featureManagement.enableCsvDownload: true
+  featureManagement.enableOrganisationSizeFieldValidation: true
 
   # Submission periods
   submissionPeriod.2024.1.activeFrom: "1 May 2024 12:00:00 AM"
   submissionPeriod.2024.2.activeFrom: "1 May 2024 12:00:00 AM"
+
+
+  #File upload versioning
+  CsvDataFile.IsLatest: true
+
+
+  # Validation
+  Validation.Islatest: true

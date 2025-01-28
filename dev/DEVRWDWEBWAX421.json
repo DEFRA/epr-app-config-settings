@@ -1,0 +1,102 @@
+[
+  {
+    "name": "AzureAd__CallbackPath",
+    "value": "/signin-oidc",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAd__CallbackUrl",
+    "value": "./Signin-oidc",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAd__ClientId",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/AzureAd-ClientId-dev#{{ environmentSpoke1 }}-Frontend/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAd__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/AzureAd-ClientSecret-dev#{{ environmentSpoke1 }}/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAd__Domain",
+    "value": "defradev.onmicrosoft.com",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAd__Instance",
+    "value": "https://login.microsoftonline.com/",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAd__SignoutCallbackUrl",
+    "value": "./Signout-oidc",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAd__TenantId",
+    "value": "6f504113-6b64-43f2-ade9-242e05780007",
+    "slotSetting": false
+  },
+  {
+    "name": "CalculationRunSettings__CalculationRunApi",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}422.azurewebsites.net/v1/calculatorRun",
+    "slotSetting": false
+  },
+  {
+    "name": "CalculationRunSettings__CalculationRunNameApi",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}422.azurewebsites.net/v1/CheckCalcNameExists",
+    "slotSetting": false
+  },
+  {
+    "name": "CalculationRunSettings__DownloadResultApi",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}422.azurewebsites.net/v1/DownloadResult",
+    "slotSetting": false
+  },
+  {
+    "name": "CalculationRunSettings__DownloadResultTimeoutInMilliSeconds",
+    "value": "30000",
+    "slotSetting": false
+  },
+  {
+    "name": "CalculationRunSettings__RunParameterYear",
+    "value": "2024-25",
+    "slotSetting": false
+  },
+  {
+    "name": "DashboardCalculatorRun__DashboardCalculatorRunApi",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}422.azurewebsites.net/v1/calculatorRuns",
+    "slotSetting": false
+  },
+  {
+    "name": "DashboardCalculatorRun__RunParameterYear",
+    "value": "2024-25",
+    "slotSetting": false
+  },
+  {
+    "name": "LapcapSettings__LapcapSettingsApi",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}422.azurewebsites.net/v1/lapcapData",
+    "slotSetting": false
+  },
+  {
+    "name": "LapcapSettings__ParameterYear",
+    "value": "2024-25",
+    "slotSetting": false
+  },
+  {
+    "name": "ParameterSettings__DefaultParameterSettingsApi",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}422.azurewebsites.net/v1/defaultParameterSetting",
+    "slotSetting": false
+  },
+  {
+    "name": "ParameterSettings__ParameterYear",
+    "value": "2024-25",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITE_AUTH_AAD_ALLOWED_TENANTS",
+    "value": "6f504113-6b64-43f2-ade9-242e05780007", 
+    "slotSetting": false
+  }
+]

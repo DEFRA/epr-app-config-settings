@@ -170,6 +170,11 @@
     "value": "https://prerwdwebwa1404.azurewebsites.net/api/"
   },
   {
+    "name": "ExternalUrls__FindAndUpdateCompanyInformation",
+    "value": "https://find-and-update.company-information.service.gov.uk",
+    "slotSetting": false
+  },
+  {
     "name": "FeatureManagement__ShowLanguageSwitcher",
     "value": true,
     "slotSetting": false
@@ -190,14 +195,24 @@
     "value": true
   },
   {
-    "name": "FeatureManagement__ShowDirectProducerSubsidiaries",
+    "name": "FeatureManagement__ShowRegistration",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__ShowSubsidiariesSingleUploadJourney",
     "slotSetting": false,
     "value": "false"
   },
   {
     "name": "FeatureManagement__ShowSubsidiaries",
     "slotSetting": false,
-    "value": false
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__ShowPrn",
+    "slotSetting": false,
+    "value": true
   },
   {
     "name": "ForwardedHeaders__AllowedHosts",
@@ -290,6 +305,11 @@
     "value": "https://www.gov.uk/government/publications/extended-producer-responsibility-for-packaging-example-file-for-packaging-data"
   },
   {
+    "name": "GuidanceLinks__HowToCompleteSubsidiaryFile",
+    "slotSetting": false,
+    "value": "https://www.gov.uk/government/publications/groups-and-subsidiaries-how-to-create-your-file-for-extended-producer-responsibility"
+  },
+  {
     "name": "BasePath",
     "slotSetting": false,
     "value": "/report-data"
@@ -297,7 +317,7 @@
   {
     "name": "PhaseBanner__ApplicationStatus",
     "slotSetting": false,
-    "value": "Alpha"
+    "value": "Beta"
   },
   {
     "name": "PhaseBanner__Enabled",
@@ -473,5 +493,20 @@
     "name": "Validation__MaxIssueReportSize",
     "slotSetting": false,
     "value": "5MB"
+  },
+  {
+    "name": "PaymentFacadeApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa1424.azurewebsites.net/api/v1/"
+  },
+  {
+    "name": "PaymentFacadeApi__DownstreamScope",
+    "slotSetting": false,
+    "value": "https://dcidmpreprod.onmicrosoft.com/epr-pre1-payments-facade/payment-service"
+  },
+  {
+    "name": "FeatureManagement__EnableCsvDownload",
+    "slotSetting": false,
+    "value": false
   }
 ]

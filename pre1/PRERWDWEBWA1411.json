@@ -182,12 +182,12 @@
   {
     "name": "GOOGLE_ANALYTICS__MeasurementId",
     "slotSetting": false,
-    "value": "XCV3BQ1YKX"
+    "value": "VMDE8PW9W7"
   },
   {
     "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
     "slotSetting": false,
-    "value": "GTM-MV74DN2"
+    "value": "G-VMDE8PW9W7"
   },
   {
     "name": "LandingPageUrls__ApplicationsUrl",
@@ -215,9 +215,19 @@
     "value": 20
   },
   {
+    "name": "PaymentFacadeApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa1424.azurewebsites.net/api/v1/"
+  },
+  {
+    "name": "PaymentFacadeApi__DownstreamScope",
+    "slotSetting": false,
+    "value": "https://dcidmpreprod.onmicrosoft.com/epr-pre1-payments-facade/payment-service"
+  },
+  {
     "name": "PhaseBannerOptions__ApplicationStatus",
     "slotSetting": false,
-    "value": "Alpha"
+    "value": "Beta"
   },
   {
     "name": "PhaseBannerOptions__Enabled",
@@ -258,5 +268,15 @@
     "name": "FeatureManagement__ManageRegistrations",
     "slotSetting": false,
     "value": true
+  },
+  {
+    "name": "FeatureManagement__ManageRegistrationSubmissions",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableCsvDownload",
+    "slotSetting": false,
+    "value": false
   }
 ]

@@ -12,7 +12,7 @@
   {
     "name": "StorageAccount__BlobContainerName",
     "slotSetting": false,
-    "value": "registration-upload-container#{{ TeamName.dash }}"
+    "value": "registration-upload-container#{{ teamName.dash }}"
   },
   {
     "name": "StorageAccount__ConnectionString",
@@ -63,6 +63,16 @@
     "name": "FeatureManagement__EnableCompanyDetailsValidation",
     "slotSetting": false,
     "value": "#{{ featureManagement.enableCompanyDetailsValidation }}"
+  },
+  {
+    "name": "FeatureManagement__EnableSubsidiaryValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableSubsidiaryValidation }}"
+  },
+  {
+    "name": "FeatureManagement__EnableOrganisationSizeFieldValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableOrganisationSizeFieldValidation }}"
   },
   {
     "name": "ValidationSettings__ErrorLimit",

@@ -15,14 +15,44 @@
     "value": "https://integration.azure.defra.cloud/ws/rest/DEFRA/v1/address/"
   },
   {
+    "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
+    "slotSetting": false,
+    "value": "https://integration.azure.defra.cloud/ws/rest/DEFRA/v2.1/"
+  },
+  {
+    "name": "ApiConfig__TenantId",
+    "slotSetting": false,
+    "value": "770a2450-0227-4c62-90c7-4e38537f1102"
+  },
+  {
+    "name": "ApiConfig__AddressLookupScope",
+    "slotSetting": false,
+    "value": "api://16659c09-5496-4bb9-8def-a0faf40bd89a/.default"
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseScope",
+    "slotSetting": false,
+    "value": "api://e4ccb9d9-42c3-4aab-af08-62ec9e088bc9/.default"
+  },
+  {
     "name": "ApiConfig__Certificate",
     "slotSetting": false,
     "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/certificates/boomi-api-certificate/)"
   },
   {
-    "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
+    "name": "ApiConfig__ClientId",
     "slotSetting": false,
-    "value": "https://integration.azure.defra.cloud/ws/rest/DEFRA/v2.1/"
+    "value": "0a59f4bc-e8d5-4889-8a92-5bc1fa89d9ba"
+  },
+  {
+    "name": "ApiConfig__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/boomi-api-secret/)"
+  },
+  {
+    "name": "ApiConfig__PayCalBaseUrl",
+    "slotSetting": false,
+    "value": "https://prdrwdwebwa1424.azurewebsites.net"
   },
   {
     "name": "AzureAdB2C__ClientId",
@@ -87,7 +117,7 @@
   {
     "name": "MessagingConfig__UserDetailChangeRequestTemplateId",
     "slotSetting": false,
-    "value": "PLACEHOLDER"
+    "value": "404bc327-e2ca-483e-8d35-544a0ba4c54f"
   },
   {
     "name": "RegulatorEmailConfig__NorthernIreland",
@@ -143,5 +173,20 @@
     "name": "EprPackagingRegulatorEmailConfig__Wales",
     "value": "EPRCustomerService@defra.gov.uk",
     "slotSetting": false
+  },
+  {
+    "name": "OrganisationEndpoints__UpdateOrganisation",
+    "value": "api/organisations/organisation",
+    "slotSetting": false
+  },
+  {
+    "name": "UserDetailsEndpoints__UpdateUserDetails",
+    "value": "api/users/personal-details",
+    "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__UseBoomiOAuth",
+    "slotSetting": false,
+    "value": false
   }
 ]

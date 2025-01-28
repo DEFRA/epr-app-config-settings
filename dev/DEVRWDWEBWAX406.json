@@ -5,24 +5,9 @@
     "value": "#{{ apiConfig.accountServiceClientId }}"
   },
   {
-    "name": "AccountsServiceApiConfig__AddressLookupBaseUrl",
-    "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ApiConfigAddressLookupBaseUrl/)"
-  },
-  {
     "name": "AccountsServiceApiConfig__BaseUrl",
     "slotSetting": false,
     "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net/api/"
-  },
-  {
-    "name": "AccountsServiceApiConfig__Certificate",
-    "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/certificates/boomi-api-certificate/)"
-  },
-  {
-    "name": "AccountsServiceApiConfig__CompaniesHouseLookupBaseUrl",
-    "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ApiConfigCompaniesHouseLookupBaseUrl/)"
   },
   {
     "name": "AccountsServiceApiConfig__Endpoints__CreateRegulator",
@@ -202,12 +187,12 @@
   {
     "name": "GOOGLE_ANALYTICS__MeasurementId",
     "slotSetting": false,
-    "value": "XCV3BQ1YKX"
+    "value": "VMDE8PW9W7"
   },
   {
     "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
     "slotSetting": false,
-    "value": "GTM-MV74DN2"
+    "value": "G-VMDE8PW9W7"
   },
   {
     "name": "HealthCheckPath",
@@ -217,12 +202,12 @@
   {
     "name": "MessagingConfig__AccountSignInUrl",
     "slotSetting": false,
-    "value": "https://rwd-dev#{{ environmentSpoke }}.azure.defra.cloud/report-data"
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/report-data"
   },
   {
     "name": "MessagingConfig__AccountCreationUrl",
     "slotSetting": false,
-    "value": "https://rwd-dev#{{ environmentSpoke }}.azure.defra.cloud/create-account/invitation/"
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/create-account/invitation/"
   },
   {
     "name": "MessagingConfig__ApiKey",

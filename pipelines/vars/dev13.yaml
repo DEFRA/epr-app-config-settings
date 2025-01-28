@@ -1,0 +1,19 @@
+variables:
+  environmentGroup: DEV
+  environmentSpoke1: 13
+  environmentSpoke: D
+  subscriptionPrefix: AZD
+  projectCode: RWD
+  agentPool: DEFRA-COMMON-ubuntu2004-SSV3
+  teamName.lower: dev13
+ 
+  environmentName: ${{ variables.environmentGroup }}${{ variables.environmentSpoke1}}
+  subscriptionName: ${{ variables.subscriptionPrefix }}-${{ variables.projectCode }}-${{ variables.environmentName }}
+  webResourceGroupName: ${{ variables.environmentGroup }}RWDWEBRG${{ variables.environmentSpoke}}401
+  
+  # Feature management
+  featureManagement.ShowPrn: true
+  featureManagement.OverridePrnCurrentDateForTestingPurposes: false
+
+  #Enterprise Applications Details
+ 

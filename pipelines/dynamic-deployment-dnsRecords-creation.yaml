@@ -1,0 +1,92 @@
+name: '$(BuildID)-Create Dynamic DNS Records'
+
+parameters:     
+    - name: resourceObject
+      default: '{ "Resource Group": "DEVRWDWEBRG9401",
+                   "Resources": 
+                    [
+                      "DEVRWDWEBWA9401",
+                      "DEVRWDWEBWA9402",
+                      "DEVRWDWEBWA9403",
+                      "DEVRWDWEBWA9404"
+                    ]
+                }'         
+       
+trigger: 
+  - 'none'
+
+pool: DEFRA-COMMON-ubuntu2004-SSV3
+
+jobs:
+  - job: job1
+    displayName: Get Private Endpoints
+    steps:
+
+      # This task will extract the service names and resource group name from the provided Json
+      # For each service it retrieves the corresponding Private endpoint IP address and write these to a json file
+     
+        - task: AzurePowerShell@5
+          displayName: Get IP Addresses
+          inputs:
+            azureSubscription: 'AZD-RWD-DEV9'
+            ScriptType: 'InlineScript'
+            Inline: |
+                  $jsonInput = '${{ parameters.resourceObject }}'
+                  $parsedJson = $jsonInput | ConvertFrom-Json
+                  $servicePEP = @()
+                  $rgName = $parsedJson."Resource Group"
+                  $services = $parsedJson.Resources
+                  foreach($service in $services)
+                  {
+                      $serviceNICName = $service + "-PE1-NIC"
+                      $nicResource = Get-AzNetworkInterface -ResourceGroupName $rgName -Name $serviceNICName
+                      $privateIpAddress = $nicResource.IPConfigurations[0].PrivateIPAddress
+                      $newEntry = @{
+                            name      = $service
+                            ipAddress = $privateIpAddress
+                      }
+                      $servicePEP += $newEntry
+                  }
+                  $webAppsPEP = $servicePEP | ConvertTo-Json -Depth 3
+                  $webAppsPEP | Out-File -FilePath "dynamicServices.json"
+                  Write-Host "##vso[task.setvariable variable=jsonFilePath]$(Build.SourcesDirectory)/dynamicServices.json"
+            azurePowerShellVersion: 'LatestVersion'
+
+        # Publish the Json file as an artifact to be used in the next job
+        - task: PublishPipelineArtifact@1
+          inputs:
+            targetPath: '$(Pipeline.Workspace)/s'  
+            artifactName: 'drop'  
+            publishLocation: 'pipeline'
+    
+    # This job will download the artifact generated from the previous job and create DNS record sets
+  - job: job2
+    displayName: Create DNS Records
+    dependsOn: job1
+    variables:
+      - template: vars/dnsVariables.yaml
+    steps:
+
+        - checkout: none
+        
+        - task: DownloadPipelineArtifact@1
+          inputs:
+            artifactName: 'drop'  
+            targetPath: '$(Pipeline.Workspace)'
+
+        - template: templates/create-dns-records.yaml
+          parameters:
+            dnsSubscription: '${{ variables.dnsSubscription }}'
+            resourceType: '${{ variables.resourceType4 }}'
+            dnsZone_websites: '${{ variables.dnsZone_websites }}'
+            dnsZone_scm_websites: '${{ variables.dnsZone_scm_websites }}'
+            time_to_live: '${{ variables.time_to_live }}'
+            overWriteIfExists: 'true'
+
+     
+        
+      
+
+          
+
+          

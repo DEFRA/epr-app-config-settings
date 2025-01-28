@@ -142,7 +142,27 @@
   {
     "name": "FeatureManagement__ManageUserDetailChanges",
     "slotSetting": false,
-    "value": false
+    "value": true
+  },
+  {
+    "name": "ExternalUrls__CompanyHouseChangeRequestLink",
+    "slotSetting": false,
+    "value": "https://www.gov.uk/file-changes-to-a-company-with-companies-house"
+  },
+  {
+    "name": "FacadeAPI__GetCompanyFromCompaniesHousePath",
+    "slotSetting": false,
+    "value": "/api/companies-house"
+  },
+  {
+    "name": "FacadeAPI__PutUserDetailsByUserIdPath",
+    "slotSetting": false,
+    "value": "user-accounts/personal-details"
+  },
+  {
+    "name": "FacadeAPI__PutUpdateOrganisationPath",
+    "slotSetting": false,
+    "value": "organisations/organisation"
   },
   {
     "name": "ForwardedHeaders__AllowedHosts",
@@ -162,12 +182,12 @@
   {
     "name": "GOOGLE_ANALYTICS__MeasurementId",
     "slotSetting": false,
-    "value": "XCV3BQ1YKX"
+    "value": "VMDE8PW9W7"
   },
   {
     "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
     "slotSetting": false,
-    "value": "GTM-MV74DN2"
+    "value": "G-VMDE8PW9W7"
   },
   {
     "name": "HTTPCLIENT__APPLICATION_SERVICE_URL",

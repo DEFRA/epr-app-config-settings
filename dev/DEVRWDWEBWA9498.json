@@ -1,0 +1,12 @@
+[
+  {
+    "name": "ASPNETCORE_ENVIRONMENT",
+    "value": "Development",
+    "slotSetting": false
+  },
+  {
+    "name": "APISettings__PostcodeNotFound",
+    "slotSetting": false,
+    "value": "XX9 9XX"
+  }
+]

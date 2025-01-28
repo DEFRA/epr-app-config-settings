@@ -17,6 +17,9 @@ parameters:
   - DEV9
   - DEV10
   - DEV11
+  - DEV12
+  - DEV13
+  - DEV14
   - tst
   - preprod
   - prod
@@ -46,17 +49,17 @@ jobs:
   displayName: Deploying settings for ${{ variables.uppercaseServiceName }}
   steps:
     - ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
-      - task: qetza.replacetokens.replacetokens-task.replacetokens@3
+      - task: qetza.replacetokens.replacetokens-task.replacetokens@6
         displayName: 'Replace tokens'
         inputs:
           tokenPattern: custom
           tokenPrefix: '#{{'
           tokenSuffix: '}}'
-          actionOnMissing: fail
+          missingVarLog: error
           useLegacyPattern: false
           enableTransforms: true
           useLegacyEmptyFeature: false
-          targetFiles: |
+          sources: |
             dev/DEVRWDWEBFAX401.json => config/DEVRWDWEBFA$(environmentSpoke)401.json
             dev/DEVRWDWEBFAX402.json => config/DEVRWDWEBFA$(environmentSpoke)402.json
             dev/DEVRWDWEBFAX403.json => config/DEVRWDWEBFA$(environmentSpoke)403.json
@@ -66,6 +69,9 @@ jobs:
             dev/DEVRWDWEBFAX407.json => config/DEVRWDWEBFA$(environmentSpoke)407.json
             dev/DEVRWDWEBFAX408.json => config/DEVRWDWEBFA$(environmentSpoke)408.json
             dev/DEVRWDWEBFAX409.json => config/DEVRWDWEBFA$(environmentSpoke)409.json
+            dev/DEVRWDWEBFAX410.json => config/DEVRWDWEBFA$(environmentSpoke)410.json
+            dev/DEVRWDWEBFAX411.json => config/DEVRWDWEBFA$(environmentSpoke)411.json
+            dev/DEVRWDWEBFAX412.json => config/DEVRWDWEBFA$(environmentSpoke)412.json
             dev/DEVRWDWEBWAX401.json => config/DEVRWDWEBWA$(environmentSpoke)401.json
             dev/DEVRWDWEBWAX402.json => config/DEVRWDWEBWA$(environmentSpoke)402.json
             dev/DEVRWDWEBWAX403.json => config/DEVRWDWEBWA$(environmentSpoke)403.json
@@ -81,13 +87,14 @@ jobs:
             dev/DEVRWDWEBWAX413.json => config/DEVRWDWEBWA$(environmentSpoke)413.json
             dev/DEVRWDWEBWAX415.json => config/DEVRWDWEBWA$(environmentSpoke)415.json
             dev/DEVRWDWEBWAA417.json => config/DEVRWDWEBWA$(environmentSpoke)417.json
-            dev/DEVRWDWEBWAA418.json => config/DEVRWDWEBWA$(environmentSpoke)418.json
+            dev/DEVRWDWEBWAX418.json => config/DEVRWDWEBWA$(environmentSpoke)418.json
             dev/DEVRWDWEBWAA419.json => config/DEVRWDWEBWA$(environmentSpoke)419.json
             dev/DEVRWDWEBWAA420.json => config/DEVRWDWEBWA$(environmentSpoke)420.json
             dev/DEVRWDWEBWAB417.json => config/DEVRWDWEBWA$(environmentSpoke)417.json
-            dev/DEVRWDWEBWAB418.json => config/DEVRWDWEBWA$(environmentSpoke)418.json
             dev/DEVRWDWEBWAB419.json => config/DEVRWDWEBWA$(environmentSpoke)419.json
             dev/DEVRWDWEBWAB420.json => config/DEVRWDWEBWA$(environmentSpoke)420.json
+            dev/DEVRWDWEBWAX421.json => config/DEVRWDWEBWA$(environmentSpoke)421.json
+            dev/DEVRWDWEBWAX422.json => config/DEVRWDWEBWA$(environmentSpoke)422.json
             dev/DEVRWDWEBWAX423.json => config/DEVRWDWEBWA$(environmentSpoke)423.json
             dev/DEVRWDWEBWAX424.json => config/DEVRWDWEBWA$(environmentSpoke)424.json
             dev/DEVRWDWEBWAX425.json => config/DEVRWDWEBWA$(environmentSpoke)425.json

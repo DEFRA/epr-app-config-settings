@@ -1,0 +1,172 @@
+trigger: 
+  - 'none'
+
+parameters:
+  - name: buildUpEnv
+    type: string
+    default: ''
+    values:
+      - 'DEV9'
+      - 'DEV10'
+      - 'DEV11'
+      - 'DEV12'
+      - 'DEV13'
+      - 'DEV14'
+  - name: targetEnv
+    type: string
+    default: development
+    values:
+      - 'development'
+      - 'tst'
+      - 'pre'
+      - 'prd'
+
+variables:
+  - ${{ if eq(parameters['buildUpEnv'], 'DEV9') }}:
+      - template: vars/dev9.yaml
+  - ${{ elseif eq(parameters['buildUpEnv'], 'DEV10') }}:
+      - template: vars/dev10.yaml
+  - ${{ elseif eq(parameters['buildUpEnv'], 'DEV11') }}:
+      - template: vars/dev11.yaml
+  - ${{ elseif eq(parameters['buildUpEnv'], 'DEV12') }}:
+      - template: vars/dev12.yaml
+  - ${{ elseif eq(parameters['buildUpEnv'], 'DEV13') }}:
+      - template: vars/dev13.yaml
+  - ${{ elseif eq(parameters['buildUpEnv'], 'DEV14') }}:
+      - template: vars/dev14.yaml
+  - ${{ if eq(parameters['targetEnv'],'development') }}:
+      - template: vars/development.yaml
+  - ${{ if eq(parameters['targetEnv'],'tst') }}:
+      - template: vars/tst1.yaml
+  - ${{ if eq(parameters['targetEnv'],'pre') }}:
+      - template: vars/pre1.yaml
+  - ${{ if eq(parameters['targetEnv'],'prd') }}:
+      - template: vars/prd1.yaml
+      
+jobs:
+    - template: templates/new-env-shared-services-update.yaml
+      parameters:
+        buildUpEnv: ${{ parameters.buildUpEnv }}
+        targetEnv: ${{ parameters.targetEnv }}
+        sharedSubscription: ${{ variables.sharedInfrastructureSubscriptionName }}
+        sharedResourceGroup: ${{ variables.sharedResourceGroup }}
+        serviceBusNamespace: ${{ variables.serviceBusNamespace }}
+        sharedStorageAccount: ${{ variables.sharedStorageAccount }}
+
+    - job: sqlUserRoles
+      pool: DEFRA-COMMON-windows2022-SSV3
+      displayName: Creating User Roles in Sql Databases for ${{ parameters.buildUpEnv }}
+      steps:
+          - task: SqlAzureDacpacDeployment@1
+            displayName: Creating SQL User Roles for Accounts database
+            inputs:
+              azureSubscription: '${{ variables.sharedInfrastructureSubscriptionName }}'
+              AuthenticationType: 'aadAuthenticationPassword'
+              ServerName: ${{ variables.sqlServer }}
+              DatabaseName: 'dev$(environmentSpoke1)_accounts'
+              aadSqlUsername: $(uname)
+              aadSqlPassword: $(pwd)
+              deployType: 'InlineSqlTask'
+              SqlInline: |  
+                    CREATE USER [DEVRWDWEBFA$(environmentSpoke)406] FROM EXTERNAL PROVIDER  WITH DEFAULT_SCHEMA=[dbo];
+                    GRANT EXECUTE TO [DEVRWDWEBFA$(environmentSpoke)406];
+                    GRANT SELECT to [DEVRWDWEBFA$(environmentSpoke)406];
+                    GRANT INSERT to [DEVRWDWEBFA$(environmentSpoke)406];
+                    GRANT UPDATE to [DEVRWDWEBFA$(environmentSpoke)406];
+                    CREATE USER [DEVRWDWEBWA$(environmentSpoke)407] FROM EXTERNAL PROVIDER  WITH DEFAULT_SCHEMA=[dbo];
+                    GRANT EXECUTE TO [DEVRWDWEBWA$(environmentSpoke)407];
+                    GRANT SELECT to [DEVRWDWEBwA$(environmentSpoke)407];
+                    GRANT INSERT to [DEVRWDWEBWA$(environmentSpoke)407];
+                    GRANT UPDATE to [DEVRWDWEBWA$(environmentSpoke)407];
+                    CREATE USER [DEVRWDWEBFA$(environmentSpoke)407] FROM EXTERNAL PROVIDER  WITH DEFAULT_SCHEMA=[dbo];
+                    GRANT EXECUTE TO [DEVRWDWEBFA$(environmentSpoke)407];
+                    GRANT SELECT to [DEVRWDWEBFA$(environmentSpoke)407];
+                    GRANT INSERT to [DEVRWDWEBFA$(environmentSpoke)407] ;
+                    GRANT UPDATE to [DEVRWDWEBFA$(environmentSpoke)407] ;
+                    GO
+              IpDetectionMethod: 'AutoDetect'
+
+          - task: SqlAzureDacpacDeployment@1
+            displayName: Creating SQL User Roles for PRN database
+            inputs:
+              azureSubscription: '${{ variables.sharedInfrastructureSubscriptionName }}'
+              AuthenticationType: 'aadAuthenticationPassword'
+              ServerName: ${{ variables.sqlServer }}
+              DatabaseName: 'dev$(environmentSpoke1)_prn'
+              aadSqlUsername: $(uname)
+              aadSqlPassword: $(pwd)
+              deployType: 'InlineSqlTask'
+              SqlInline: |  
+                    CREATE USER [DEVRWDWEBWA$(environmentSpoke)418] FROM EXTERNAL PROVIDER  WITH DEFAULT_SCHEMA=[dbo];
+                    GRANT EXECUTE TO [DEVRWDWEBWA$(environmentSpoke)418];
+                    GRANT SELECT to [DEVRWDWEBWA$(environmentSpoke)418];
+                    GRANT INSERT to [DEVRWDWEBWA$(environmentSpoke)418];
+                    GRANT UPDATE to [DEVRWDWEBWA$(environmentSpoke)418];
+                    GO
+              IpDetectionMethod: 'AutoDetect'
+
+          - task: SqlAzureDacpacDeployment@1
+            displayName: Creating SQL User Roles for Paycal Database
+            inputs:
+              azureSubscription: '${{ variables.sharedInfrastructureSubscriptionName }}'
+              AuthenticationType: 'aadAuthenticationPassword'
+              ServerName: ${{ variables.sqlServer }}
+              DatabaseName: 'dev$(environmentSpoke1)_paycal'
+              aadSqlUsername: $(uname)
+              aadSqlPassword: $(pwd)
+              deployType: 'InlineSqlTask'
+              SqlInline: |  
+                    CREATE USER [DEVRWDWEBWA$(environmentSpoke)422] FROM EXTERNAL PROVIDER  WITH DEFAULT_SCHEMA=[dbo];
+                    GRANT EXECUTE TO [DEVRWDWEBWA$(environmentSpoke)422];
+                    GRANT SELECT to [DEVRWDWEBWA$(environmentSpoke)422];
+                    GRANT INSERT to [DEVRWDWEBWA$(environmentSpoke)422];
+                    GRANT UPDATE to [DEVRWDWEBWA$(environmentSpoke)422];
+                    GO
+              IpDetectionMethod: 'AutoDetect'
+
+          - task: SqlAzureDacpacDeployment@1
+            displayName: Creating SQL User Roles for FeesPayment database
+            inputs:
+                azureSubscription: '${{ variables.sharedInfrastructureSubscriptionName }}'
+                AuthenticationType: 'aadAuthenticationPassword'
+                ServerName: ${{ variables.sqlServer }}
+                DatabaseName: 'dev$(environmentSpoke1)_feespayment'
+                aadSqlUsername: $(uname)
+                aadSqlPassword: $(pwd)
+                deployType: 'InlineSqlTask'
+                SqlInline: |  
+                      CREATE USER [DEVRWDWEBFA$(environmentSpoke)409] FROM EXTERNAL PROVIDER  WITH DEFAULT_SCHEMA=[dbo];
+                      GRANT EXECUTE TO [DEVRWDWEBFA$(environmentSpoke)409];
+                      GRANT SELECT to [DEVRWDWEBFA$(environmentSpoke)409];
+                      GRANT INSERT to [DEVRWDWEBFA$(environmentSpoke)409];
+                      GRANT UPDATE to [DEVRWDWEBFA$(environmentSpoke)409];
+                      CREATE USER [DEVRWDWEBWA$(environmentSpoke)425] FROM EXTERNAL PROVIDER  WITH DEFAULT_SCHEMA=[dbo];
+                      GRANT EXECUTE TO [DEVRWDWEBWA$(environmentSpoke)425];
+                      GRANT SELECT to [DEVRWDWEBWA$(environmentSpoke)425];
+                      GRANT INSERT to [DEVRWDWEBWA$(environmentSpoke)425];
+                      GRANT UPDATE to [DEVRWDWEBWA$(environmentSpoke)425];
+                      GO
+                IpDetectionMethod: 'AutoDetect'
+
+          - task: SqlAzureDacpacDeployment@1
+            displayName: Creating SQL User Roles for Synapse SQL Pools
+            inputs:
+              azureSubscription: '${{ variables.epdSubscriptionName }}'
+              AuthenticationType: 'aadAuthenticationPassword'
+              ServerName: ${{ variables.synapseWorkspace }}
+              DatabaseName: '${{ variables.sqlPool1 }}'
+              aadSqlUsername: $(uname)
+              aadSqlPassword: $(pwd)
+              deployType: 'InlineSqlTask'
+              SqlInline: |  
+                    CREATE USER [DEVRWDWEBWA$(environmentSpoke)415] FROM EXTERNAL PROVIDER  WITH DEFAULT_SCHEMA=[dbo];
+                    GRANT EXECUTE TO [DEVRWDWEBWA$(environmentSpoke)415];
+                    GRANT SELECT to [DEVRWDWEBWA$(environmentSpoke)415];
+                    GRANT INSERT to [DEVRWDWEBWA$(environmentSpoke)415];
+                    GRANT UPDATE to [DEVRWDWEBWA$(environmentSpoke)415];
+                    GO
+              IpDetectionMethod: 'AutoDetect'
+
+
+
+

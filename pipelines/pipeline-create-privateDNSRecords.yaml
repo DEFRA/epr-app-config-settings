@@ -1,0 +1,113 @@
+name: $(BuildID)
+
+parameters:
+    - name: teamName
+      displayName: The subscirption on which the pipeline should be run
+      type: string
+      default: 'DEV13'
+      values:
+        - 'DEV9'
+        - 'DEV10'
+        - 'DEV11'
+        - 'DEV12'
+        - 'DEV13'
+        - 'DEV14'
+
+    - name: envToDeploy
+      displayName: The environment in use
+      type: string
+      default: 'development'
+      values:
+        - 'development'
+        - 'tst1'
+        - 'pre1'
+        - 'prd1'
+       
+    - name: OverwriteIfExists
+      displayName: If the DNS record already exists, check this box to confirm that you want to overwrite it.
+      type: boolean
+      default: true
+
+trigger: none
+
+pool: DEFRA-COMMON-ubuntu2004-SSV3
+
+jobs:
+  - job: Get_job
+    displayName: Getting Record names and IP addresses
+    variables:
+      - ${{ if eq( parameters.envToDeploy, 'development') }}:
+        - name: teamName
+          value: ${{ parameters.teamName }}
+        - template: vars/development.yaml
+      - ${{ else }}:
+        - name: teamName
+          value: ${{ parameters.envToDeploy }}
+      - template: vars/${{ lower(variables.teamName) }}.yaml
+    steps:
+      - template: templates/get-service-names-and-ips.yaml
+        parameters:
+          subscription: ${{ variables.subscriptionName }}
+          rgName: ${{ variables.webResourceGroupName }}
+          serviceType: ${{ variables.privateEndpointService1 }}
+
+      - template: templates/get-service-names-and-ips.yaml
+        parameters:
+          subscription: ${{ variables.subscriptionName }}
+          rgName: ${{ variables.webResourceGroupName }}
+          serviceType: ${{ variables.privateEndpointService2 }}
+
+      - template: templates/get-service-names-and-ips.yaml
+        parameters:
+          subscription: ${{ variables.subscriptionName }}
+          rgName: ${{ variables.webResourceGroupName }}
+          serviceType: ${{ variables.privateEndpointService3 }}
+
+     
+      - task: PublishPipelineArtifact@1
+        inputs:
+          targetPath: '$(Pipeline.Workspace)/s'  # Path to the JSON file
+          artifactName: 'WebAppsInfo'  # Name of the artifact
+          publishLocation: 'pipeline'   # Publish as a pipeline artifact
+
+  - job: deploy_Job
+    displayName: Creating the DNS record sets for all services in ${{ parameters.teamName }}
+    dependsOn: Get_job
+    
+    variables:
+      - template: vars/dnsVariables.yaml
+    steps:
+
+        - checkout: none
+        
+        - task: DownloadPipelineArtifact@1
+          inputs:
+            artifactName: 'webAppsInfo'  # Name of the artifact to download
+            targetPath: '$(Pipeline.Workspace)'
+
+        - template: templates/create-dns-records.yaml
+          parameters:
+            dnsSubscription: '${{ variables.dnsSubscription }}'
+            resourceType: '${{ variables.resourceType1 }}'
+            dnsZone_websites: '${{ variables.dnsZone_websites }}'
+            dnsZone_scm_websites: '${{ variables.dnsZone_scm_websites }}'
+            time_to_live: '${{ variables.time_to_live }}'
+            overWriteIfExists: '${{ parameters.OverwriteIfExists }}'
+
+        - template: templates/create-dns-records.yaml
+          parameters:
+            dnsSubscription: '${{ variables.dnsSubscription }}'
+            resourceType: '${{ variables.resourceType2 }}'
+            dnsZone_websites: '${{ variables.dnsZone_websites }}'
+            dnsZone_scm_websites: '${{ variables.dnsZone_scm_websites }}'
+            time_to_live: '${{ variables.time_to_live }}'
+            overWriteIfExists: '${{ parameters.OverwriteIfExists }}'
+
+        - template: templates/create-dns-records.yaml
+          parameters:
+            dnsSubscription: '${{ variables.dnsSubscription }}'
+            resourceType: '${{ variables.resourceType3 }}'
+            time_to_live: '${{ variables.time_to_live }}'
+            overWriteIfExists: '${{ parameters.OverwriteIfExists }}'
+
+     

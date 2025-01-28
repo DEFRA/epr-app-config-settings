@@ -17,6 +17,9 @@ parameters:
   - DEV9
   - DEV10
   - DEV11
+  - DEV12
+  - DEV13
+  - DEV14
   - tst
   - preprod
   - prod

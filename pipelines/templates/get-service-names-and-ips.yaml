@@ -1,0 +1,80 @@
+parameters:
+
+  - name: subscription
+    type: string
+  - name: rgName
+    type: string
+  - name: serviceType
+    type: string
+
+steps:
+
+  - task: AzureCLI@2
+    displayName: "Working for ${{ parameters.serviceType }}"
+    inputs:
+      azureSubscription: '${{ parameters.subscription }}'
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+
+          if [[ "${{ parameters.serviceType }}" == "webApp" ]];
+          then
+              webAppsPE="[]"
+              webAppsList=$(az webapp list --resource-group ${{ parameters.rgName }} --query "[].name" -o tsv)
+              for app in $webAppsList;
+              do
+                ipAddress=$(az network private-endpoint-connection list \
+                                                  -n $app \
+                                                  -g ${{ parameters.rgName }} \
+                                                  --type Microsoft.Web/sites \
+                                                  --query "[].properties.ipAddresses" -o tsv)
+                webAppsPE=$(echo "$webAppsPE" | jq --arg name "$app" --arg ip "$ipAddress" '. += [{"name": $name, "ipAddress": $ip}]')
+              done
+              echo "$webAppsPE" > ${{ parameters.serviceType }}.json
+              echo "##vso[task.setvariable variable=jsonFilePath]$(Build.SourcesDirectory)/${{ parameters.serviceType }}.json"
+
+          elif [[ "${{ parameters.serviceType }}" = 'functionApp' ]];
+          then
+              functionAppsPE="[]"
+              functionAppsList=$(az functionapp list --resource-group ${{ parameters.rgName }} --query "[].name" -o tsv)
+              for func in $functionAppsList;
+              do
+                ipAddress=$(az network private-endpoint-connection list \
+                                                  -n $func \
+                                                  -g ${{ parameters.rgName }} \
+                                                  --type Microsoft.Web/sites \
+                                                  --query "[].properties.ipAddresses" -o tsv)
+                functionAppsPE=$(echo "$functionAppsPE" | jq --arg name "$func" --arg ip "$ipAddress" '. += [{"name": $name, "ipAddress": $ip}]')
+              done
+              echo "$functionAppsPE" > ${{ parameters.serviceType }}.json
+              echo "##vso[task.setvariable variable=jsonFilePath]$(Build.SourcesDirectory)/{{ parameters.serviceType }}.json"
+          
+          elif [[ "${{ parameters.serviceType }}" = 'storageAccount' ]];
+          then
+              storageAccountsPE="[]"
+              storageAccountsList=$(az storage account list --resource-group ${{ parameters.rgName }} --query "[].name" -o tsv)
+              for storageAccount in $storageAccountsList;
+              do
+                privateEndPointIDList=$(az storage account show \
+                                                        -n $storageAccount \
+                                                        -g ${{ parameters.rgName }} \
+                                                        --query "privateEndpointConnections[].privateEndpoint.id"  \
+                                                        -o tsv)
+
+                
+                  for privateEndpointID in $privateEndPointIDList;
+                  do
+                      fqdn=$(az network private-endpoint show  \
+                                                          --ids $privateEndpointID  \
+                                                          --query "customDnsConfigs[0].fqdn"  \
+                                                          -o tsv)
+                      ipAddress=$(az network private-endpoint show  \
+                                                          --ids $privateEndpointID  \
+                                                          --query "customDnsConfigs[0].ipAddresses[0]"  \
+                                                          -o tsv)                  
+                      storageAccountsPE=$(echo "$storageAccountsPE" | jq --arg name "$storageAccount" --arg fqdn "$fqdn"  --arg ip "$ipAddress" '. += [{"name": $name, "fqdn":$fqdn, "ipAddress": $ip}]')
+                  done
+              done
+              echo "$storageAccountsPE" > ${{ parameters.serviceType }}.json
+              echo "##vso[task.setvariable variable=jsonFilePath]$(Build.SourcesDirectory)/${{ parameters.serviceType }}.json"
+          fi   

@@ -116,8 +116,28 @@
   },
   {
     "name": "FeatureManagement__ManageUserDetailChanges",
-    "value": false,
-    "slotSetting": false
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "ExternalUrls__CompanyHouseChangeRequestLink",
+    "slotSetting": false,
+    "value": "https://www.gov.uk/file-changes-to-a-company-with-companies-house"
+  },
+  {
+    "name": "FacadeAPI__GetCompanyFromCompaniesHousePath",
+    "slotSetting": false,
+    "value": "/api/companies-house"
+  },
+  {
+    "name": "FacadeAPI__PutUserDetailsByUserIdPath",
+    "slotSetting": false,
+    "value": "user-accounts/personal-details"
+  },
+  {
+    "name": "FacadeAPI__PutUpdateOrganisationPath",
+    "slotSetting": false,
+    "value": "organisations/organisation"
   },
   {
     "name": "ForwardedHeaders__AllowedHosts",

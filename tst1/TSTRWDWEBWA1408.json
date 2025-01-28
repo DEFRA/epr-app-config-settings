@@ -26,17 +26,17 @@
   },
   {
     "name": "LoggingApi__BaseUrl",
-    "value": "https://devrwdwebwa1403.azurewebsites.net",
+    "value": "https://tstrwdwebwa1403.azurewebsites.net",
     "slotSetting": false
   },
   {
     "name": "GOOGLE_ANALYTICS__MeasurementId",
-    "value": "XCV3BQ1YKX",
+    "value": "VMDE8PW9W7",
     "slotSetting": false
   },
   {
     "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
-    "value": "GTM-MV74DN2",
+    "value": "G-VMDE8PW9W7",
     "slotSetting": false
   },
   {

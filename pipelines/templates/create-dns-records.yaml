@@ -1,0 +1,127 @@
+parameters:
+  - name: dnsSubscription
+    type: string
+  - name: resourceType
+    type: string
+  - name: dnsZone_websites
+    type: string
+    default: ''
+  - name: dnsZone_scm_websites
+    type: string
+    default: ''
+  - name: time_to_live
+    type: number
+  - name: overWriteIfExists
+    type: boolean
+
+
+steps:
+   - ${{ if or( eq(parameters.resourceType, 'webApp'), eq(parameters.resourceType, 'functionApp'), eq(parameters.resourceType, 'dynamicServices') ) }}:
+     - task: AzurePowerShell@5
+       displayName: Creating Records for ${{ parameters.resourceType }} 
+       inputs:
+            azureSubscription: '${{ parameters.dnsSubscription }} '
+            ScriptType: 'InlineScript'
+            Inline: |
+              $jsonFilePath = "$(Pipeline.Workspace)\${{ parameters.resourceType}}.json"
+              Write-Host "JSON file path: $jsonFilePath"
+              
+              $jsonContent = Get-Content -Path $jsonFilePath | ConvertFrom-Json
+              
+               foreach ($row in $jsonContent) {  
+                  $appName = $row.name 
+                  $appName = $appName.ToLower() 
+                  $appIP = $row.ipAddress              
+                  Write-Host "Web App: $appName, IP Address: $appIP"  
+                  $regionsResourceGroups = @("MSTINFDNSRGP001", "MSTINFDNSRGP201", "MSTINFDNSRGP401", "MSTINFDNSRGP601" )
+
+                  foreach($resourceGroup in $regionsResourceGroups)
+                  {
+                      Write-Output ("Setting record for the Resource Group>" +$resourceGroup)
+                      Write-Output ("ZoneName1: ${{ parameters.dnsZone_websites }}")
+                      Write-Output ("ZoneName2: ${{ parameters.dnsZone_scm_websites }}")
+                      Write-Output ("RecordSetName: $appName")
+                      Write-Output ("IpAddress: $appIP")
+                      Write-Output ("RecordType: A")
+                      Write-Output ("Ttl: ${{ parameters.time_to_live }}")
+                      $OverwriteIfExists = $${{ parameters.overWriteIfExists }}
+                      if($OverwriteIfExists)
+                      {
+                          New-AzPrivateDnsRecordSet -Name $appName -ZoneName ${{ parameters.dnsZone_websites }}  `
+                              -ResourceGroupName $resourceGroup -Ttl ${{ parameters.time_to_live }} -RecordType 'A' `
+                              -PrivateDnsRecords (New-AzPrivateDnsRecordConfig -Ipv4Address $appIP) `
+                              -Overwrite
+                          New-AzPrivateDnsRecordSet -Name $appName -ZoneName ${{ parameters.dnsZone_scm_websites }}  `
+                              -ResourceGroupName $resourceGroup -Ttl ${{ parameters.time_to_live }} -RecordType 'A' `
+                              -PrivateDnsRecords (New-AzPrivateDnsRecordConfig -Ipv4Address $appIP) `
+                              -Overwrite
+                      }
+                      else 
+                      {
+                          New-AzPrivateDnsRecordSet -Name $appName -ZoneName ${{ parameters.dnsZone_websites }} `
+                              -ResourceGroupName $resourceGroup -Ttl ${{ parameters.time_to_live }} -RecordType 'A' `
+                              -PrivateDnsRecords (New-AzPrivateDnsRecordConfig -Ipv4Address $appIP) 
+                          New-AzPrivateDnsRecordSet -Name $appName -ZoneName ${{ parameters.dnsZone_scm_websites }}  `
+                              -ResourceGroupName $resourceGroup -Ttl ${{ parameters.time_to_live }} -RecordType 'A' `
+                              -PrivateDnsRecords (New-AzPrivateDnsRecordConfig -Ipv4Address $appIP) 
+                      }
+                   
+                  }
+              }  
+            
+            azurePowerShellVersion: 'LatestVersion'
+            pwsh: true
+
+   - ${{ elseif eq(parameters.resourceType, 'storageAccount') }}:
+      - task: AzurePowerShell@5
+        displayName: Creating Records for ${{ parameters.resourceType }} 
+        inputs:
+              azureSubscription: '${{ parameters.dnsSubscription }} '
+              ScriptType: 'InlineScript'
+              Inline: |
+                $jsonFilePath = "$(Pipeline.Workspace)\${{ parameters.resourceType}}.json"
+                Write-Host "JSON file path: $jsonFilePath"
+                
+                $jsonContent = Get-Content -Path $jsonFilePath | ConvertFrom-Json
+                
+                foreach ($row in $jsonContent)
+                {  
+                    $storageName = $row.name  
+                    $pepFQDN = $row.fqdn   
+                    $pepIP = $row.ipAddress          
+                    $zoneName = $pepFQDN.Replace($storageName,"privatelink")
+                    Write-Host "Storage Account: $storageName, PEP Name: $pepFQDN, IP Address: $pepIP, ZoneName: $zoneName"  
+                    $regionsResourceGroups = @("MSTINFDNSRGP001", "MSTINFDNSRGP201", "MSTINFDNSRGP401", "MSTINFDNSRGP601" )
+                    foreach($resourceGroup in $regionsResourceGroups)
+                    {
+                      Write-Output ("Setting record for the Resource Group>" +$resourceGroup)
+                      Write-Output ("ZoneName: $zoneName ")
+                      Write-Output ("RecordSetName: $storageName")
+                      Write-Output ("IpAddress: $pepIP")
+                      Write-Output ("RecordType: A")
+                      Write-Output ("Ttl: ${{ parameters.time_to_live }}")
+                      $OverwriteIfExists = $${{ parameters.overWriteIfExists }}
+                      if($OverwriteIfExists)
+                      {
+                          New-AzPrivateDnsRecordSet -Name $storageName -ZoneName $zoneName  `
+                              -ResourceGroupName $resourceGroup -Ttl ${{ parameters.time_to_live }} -RecordType 'A' `
+                              -PrivateDnsRecords (New-AzPrivateDnsRecordConfig -Ipv4Address $pepIP) `
+                              -Overwrite
+                      }
+                      else 
+                      {
+                         New-AzPrivateDnsRecordSet -Name $storageName -ZoneName $zoneName  `
+                              -ResourceGroupName $resourceGroup -Ttl ${{ parameters.time_to_live }} -RecordType 'A' `
+                              -PrivateDnsRecords (New-AzPrivateDnsRecordConfig -Ipv4Address $pepIP) 
+                      }
+                    }
+                }
+              
+              azurePowerShellVersion: 'LatestVersion'
+              pwsh: true
+
+    
+
+
+
+  

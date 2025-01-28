@@ -1,0 +1,192 @@
+[
+  {
+    "name": "AntivirusApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://dev-gateway.trade.azure.defra.cloud/trade-file-store"
+  },
+  {
+    "name": "AntivirusApi__ClientId",
+    "slotSetting": false,
+    "value": "020511d9-8c13-4c89-910b-04aaa212e296"
+  },
+  {
+    "name": "AntivirusApi__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/AntivirusApi-ClientSecret-DEV-3-7/)"
+  },
+  {
+    "name": "AntivirusApi__CollectionSuffix",
+    "slotSetting": false,
+    "value": "dev8"
+  },
+  {
+    "name": "AntivirusApi__NotificationEmail",
+    "slotSetting": false,
+    "value": "michael.wild.external@eviden.com"
+  },
+  {
+    "name": "AntivirusApi__RetryPolicyInitialWaitTime",
+    "slotSetting": false,
+    "value": "5"
+  },
+  {
+    "name": "AntivirusApi__RetryPolicyMaxRetries",
+    "slotSetting": false,
+    "value": "4"
+  },
+  {
+    "name": "AntivirusApi__Scope",
+    "slotSetting": false,
+    "value": "api://dev-futuretrade-ext.defra.gov.uk/.default"
+  },
+  {
+    "name": "AntivirusApi__SubscriptionKey",
+    "slotSetting": false,
+    "value": "2bbc3ee9c7514c70b1628e766f90582d"
+  },
+  {
+    "name": "AntivirusApi__TenantId",
+    "slotSetting": false,
+    "value": "c9d74090-b4e6-4b04-981d-e6757a160812"
+  },
+  {
+    "name": "AntivirusApi__Timeout",
+    "slotSetting": false,
+    "value": "300"
+  },
+  {
+    "name": "ApiConfig__Certificate",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/certificates/boomi-api-certificate/)"
+  },
+  {
+    "name": "ApiConfig__TenantId",
+    "value": "6f504113-6b64-43f2-ade9-242e05780007",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseScope",
+    "value": "api://f674049a-1629-4381-8bf3-a5209c6e032b/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientId",
+    "value": "d7fc5db0-4aca-45da-a131-e1029679ef11",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/boomi-api-secret/)",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__SubsidiaryServiceBaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa8407.azurewebsites.net"
+  },
+  {
+    "name": "ApiConfig__AccountServiceClientId",
+    "slotSetting": false,
+    "value": "a88c5fbb-1bd2-45fc-bd52-61d9b3192e09"
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ApiConfigCompaniesHouseLookupBaseUrl/)"
+  },
+  {
+    "name": "ApiConfig__RetryPolicyInitialWaitTime",
+    "slotSetting": false,
+    "value": "3"
+  },
+  {
+    "name": "ApiConfig__RetryPolicyMaxRetries",
+    "slotSetting": false,
+    "value": "3"
+  },
+  {
+    "name": "ApiConfig__RetryPolicyTooManyAttemptsWaitTime",
+    "slotSetting": false,
+    "value": "150"
+  },
+  {
+    "name": "ApiConfig__RetryPolicyTooManyAttemptsMaxRetries",
+    "slotSetting": false,
+    "value": "4"
+  },
+  {
+    "name": "ApiConfig__Timeout",
+    "slotSetting": false,
+    "value": "60"
+  },
+  {
+    "name": "BlobStorage__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWD8403/)"
+  },
+  {
+    "name": "BlobStorage__SubsidiaryContainerName",
+    "slotSetting": false,
+    "value": "subsidiary-upload-container-dev8"
+  },
+  {
+    "name": "BlobStorage__CompaniesHouseContainerName",
+    "slotSetting": false,
+    "value": "subsidiary-companies-house-upload-container-dev8"
+  },
+  {
+    "name": "CompaniesHouseDownload__DataDownloadUrl",
+    "slotSetting": false,
+    "value": "https://download.companieshouse.gov.uk/"
+  },
+  {
+    "name": "CompaniesHouseDownload__DownloadPage",
+    "slotSetting": false,
+    "value": "en_output.html"
+  },
+  {
+    "name": "CompaniesHouseDownload__RetryPolicyInitialWaitTime",
+    "slotSetting": false,
+    "value": "5"
+  },
+  {
+    "name": "CompaniesHouseDownload__RetryPolicyMaxRetries",
+    "slotSetting": false,
+    "value": "4"
+  },
+  {
+    "name": "CompaniesHouseDownload__Schedule",
+    "slotSetting": false,
+    "value": "0 0 23 * * *"
+  },
+  {
+    "name": "FeatureManagement__UseBoomiOAuth",
+    "slotSetting": false,
+    "value": false
+  },
+  {
+    "name": "Redis__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+  },
+  {
+    "name": "Redis__TimeToLiveInMinutes",
+    "slotSetting": false,
+    "value": "720"
+  },
+  {
+    "name": "SubmissionApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa8408.azurewebsites.net"
+  },
+  {
+    "name": "TableStorage__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/SubsidiaryBulkUploadStorageAccountConnectionStringRWD8408/)"
+  },
+  {
+    "name": "TableStorage__CompaniesHouseOfflineDataTableName",
+    "slotSetting": false,
+    "value": "CompaniesHouse"
+  }
+]

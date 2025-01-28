@@ -12,24 +12,44 @@
   {
     "name": "ApiConfig__AddressLookupBaseUrl",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/ApiConfigAddressLookupBaseUrl/)"
-  },
-  {
-    "name": "ApiConfig__Certificate",
-    "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/certificates/boomi-api-certificate/)"
+    "value": "https://integration.azure.defra.cloud/ws/rest/DEFRA/v1/address/"
   },
   {
     "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/ApiConfigCompaniesHouseLookupBaseUrl/)"
+    "value": "https://integration.azure.defra.cloud/ws/rest/DEFRA/v2.1/"
+  },
+  {
+    "name": "ApiConfig__TenantId",
+    "value": "770a2450-0227-4c62-90c7-4e38537f1102",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__AddressLookupScope",
+    "value": "api://16659c09-5496-4bb9-8def-a0faf40bd89a/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseScope",
+    "value": "api://e4ccb9d9-42c3-4aab-af08-62ec9e088bc9/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientId",
+    "value": "0a59f4bc-e8d5-4889-8a92-5bc1fa89d9ba",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRDRWDINFKV1401.vault.azure.net/secrets/boomi-api-secret/)",
+    "slotSetting": false
   },
   {
     "name": "AzureAdB2C__ClientId",
     "slotSetting": false,
     "value": "b73d20cf-464c-43a8-83e2-fa3b360f33aa"
   },
-    {
+  {
     "name": "AzureAdB2C__Domain",
     "slotSetting": false,
     "value": "DCIDM.onmicrosoft.com"
@@ -53,6 +73,11 @@
     "name": "FacadeAPI__Address",
     "slotSetting": false,
     "value": "https://prdrwdwebwa1413.azurewebsites.net"
+  },
+  {
+    "name": "FeatureManagement__UseBoomiOAuth",
+    "slotSetting": false,
+    "value": false
   },
   {
     "name": "MessagingConfig__AccountCreationUrl",

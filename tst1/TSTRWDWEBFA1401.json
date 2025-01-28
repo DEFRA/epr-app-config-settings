@@ -1,10 +1,5 @@
 [
   {
-    "name": "AzureWebJobsStorage",
-    "value": "@Microsoft.KeyVault(SecretUri=https://TSTRWDINFKV1401.vault.azure.net/secrets/ProtectiveMonitoringEventDispatcherStorageAccountConnectionStringRWD1401/)",
-    "slotSetting": false
-  },
-  {
     "name": "EventDispatcher__ConnectionString",
     "value": "@Microsoft.KeyVault(SecretUri=https://tstrwdinfkv1401.vault.azure.net/secrets/ProtectiveMonitoringEventHubConnectionString/)",
     "slotSetting": false

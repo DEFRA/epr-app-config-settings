@@ -5,14 +5,21 @@ variables:
   subscriptionPrefix: AZD
   projectCode: RWD
   agentPool: DEFRA-COMMON-ubuntu2004-SSV3
-
-  environmentName: ${{ variables.environmentGroup }}${{ variables.environmentSpoke1}}
-  subscriptionName: ${{ variables.subscriptionPrefix }}-${{ variables.projectCode }}-${{ variables.environmentName }}
+  teamName.lower: dev10
   webResourceGroupName: ${{ variables.environmentGroup }}RWDWEBRG${{ variables.environmentSpoke}}401
   infrastructureResourceGroupName: ${{ variables.environmentGroup }}RWDWEBWA${{ variables.environmentSpoke}}419
-
-  validationDataApi.appRegistration.clientId: ec668afe-3d8e-4242-91d7-910fac38c3b2
+  subscriptionName: ${{ variables.subscriptionPrefix }}-${{ variables.projectCode }}-DEV${{ variables.environmentSpoke1 }}
+  environmentName: ${{ variables.environmentGroup }}${{ variables.environmentSpoke1}}
 
   # Feature management
-  featureManagement.ShowPrn: true
+  featureManagement.showPrn: true
   featureManagement.OverridePrnCurrentDateForTestingPurposes: false
+
+  #Enterprise Applications Details
+  apiConfig.accountServiceClientId: 0b4a4acf-bb89-4d8d-ae0e-eb456149b5c5           # Application ID for DEVRWDWEBWAA407_API
+  validationDataApi.appRegistration.clientId: e21c31af-3a39-4f59-bc9d-60f54ec34115 # Application ID for DEVRWDWEBFAA407_API
+  prnServiceApi.appRegistration.clientId: 3bfb3dd0-7c2e-4daf-927f-8686e496d83a     # Application ID for DEVRWDWEBWAA418_API
+  
+  #File upload
+  CsvDataFile.IsLatest: true
+

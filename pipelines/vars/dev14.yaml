@@ -1,0 +1,21 @@
+variables:
+  environmentGroup: DEV
+  environmentSpoke1: 14
+  environmentSpoke: E
+  subscriptionPrefix: AZD
+  projectCode: RWD
+  agentPool: DEFRA-COMMON-ubuntu2004-SSV3
+  teamName.lower: dev14
+  
+  environmentName: ${{ variables.environmentGroup }}${{ variables.environmentSpoke1}}
+  subscriptionName: ${{ variables.subscriptionPrefix }}-${{ variables.projectCode }}-${{ variables.environmentName }}
+  webResourceGroupName: ${{ variables.environmentGroup }}RWDWEBRG${{ variables.environmentSpoke}}401
+  
+  # Feature management
+  featureManagement.ShowPrn: true
+  featureManagement.OverridePrnCurrentDateForTestingPurposes: false
+
+ # Enterprise Application IDS
+  apiConfig.accountServiceClientId: 6a5b0530-c1ea-4bb3-8141-201c3fec2ce5           # Application ID for DEVRWDWEBWAE407_API
+  validationDataApi.appRegistration.clientId: c21d48ad-b5f0-4d98-a53b-8c39d8105539 # Application ID for DEVRWDWEBFAE407_API
+  prnServiceApi.appRegistration.clientId: 6a397806-e3f2-4bea-b290-adb3a5e0b1e9     # Application ID for DEVRWDWEBWAE418_API

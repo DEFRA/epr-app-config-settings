@@ -65,6 +65,16 @@
     "value": true
   },
   {
+    "name": "FeatureManagement__EnableSubsidiaryValidation",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableOrganisationSizeFieldValidation",
+    "slotSetting": false,
+    "value": true
+  },
+  {
     "name": "ValidationSettings__ErrorLimit",
     "slotSetting": false,
     "value": 200

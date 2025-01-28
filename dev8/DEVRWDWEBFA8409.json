@@ -15,9 +15,14 @@
     "value": "0 */90 * * * *"
   },
   {
+    "name": "FUNCTIONS_WORKER_RUNTIME",
+    "value": "dotnet",
+    "slotSetting": false
+  },
+  {
     "name": "SqlConnectionString",
     "slotSetting": false,
-    "value": "Server=tcp:devrwddbssq1401.database.windows.net,1433;Initial Catalog=FeesPayment;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;"
+    "value": "Server=tcp:devrwddbssq1401.database.windows.net,1433;Initial Catalog=dev8_feespayment;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;"
   },
   {
     "name": "TotalMinutesToUpdate",

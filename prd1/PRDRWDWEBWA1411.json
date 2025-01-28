@@ -102,12 +102,12 @@
   {
     "name": "GOOGLE_ANALYTICS__MeasurementId",
     "slotSetting": false,
-    "value": "XCV3BQ1YKX"
+    "value": "VMDE8PW9W7"
   },
   {
     "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
     "slotSetting": false,
-    "value": "GTM-MV74DN2"
+    "value": "G-VMDE8PW9W7"
   },
   {
     "name": "LandingPageUrls__ApplicationsUrl",
@@ -123,6 +123,11 @@
     "name": "PhaseBannerOptions__SurveyUrl",
     "slotSetting": false,
     "value": "https://defragroup.eu.qualtrics.com/jfe/form/SV_a2Bm7vw3cht5B6C"
+  },
+  {
+    "name": "PhaseBannerOptions__ApplicationStatus",
+    "slotSetting": false,
+    "value": "Beta"
   },
   {
     "name": "RedisInstanceName",
@@ -179,6 +184,16 @@
     "name": "Pagination__PageSize",
     "slotSetting": false,
     "value": 20
+  },
+  {
+    "name": "PaymentFacadeApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://prdrwdwebwa1424.azurewebsites.net/api/v1/"
+  },
+  {
+    "name": "PaymentFacadeApi__DownstreamScope",
+    "slotSetting": false,
+    "value": "https://DCIDM.onmicrosoft.com/epr-dev-payments-facade/payment-service"
   },
   {
     "name": "Regulators__Organisations",
@@ -259,5 +274,15 @@
     "name": "FeatureManagement__ManageRegistrations",
     "slotSetting": false,
     "value": true
+  },
+  {
+    "name": "FeatureManagement__ManageRegistrationSubmissions",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableCsvDownload",
+    "slotSetting": false,
+    "value": false
   }
 ]
