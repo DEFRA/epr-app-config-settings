@@ -156,7 +156,7 @@
   },
   {
     "name": "Dashboard__RPDRootUrl__Url",
-    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/payment",
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud",
     "slotSetting": true
   },
   {
