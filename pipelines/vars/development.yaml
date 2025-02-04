@@ -89,12 +89,12 @@ variables:
   apiConfig.paymentFacadeClientId: ''   # This should be replaced in var files by the client ID for DEVRWDWEBWAX425_API
 
   # Feature management
-  featureManagement.enableBrandPartnerDataRowValidation: false
-  featureManagement.enableBrandPartnerCrossFileValidation: false
-  featureManagement.enableCompanyDetailsValidation: false
-  featureManagement.enableOrganisationDataRowValidation: false
-  featureManagement.enableRegistrationRowValidation: false
-  featureManagement.enableRowValidation: false
+  featureManagement.enableBrandPartnerDataRowValidation: true
+  featureManagement.enableBrandPartnerCrossFileValidation: true
+  featureManagement.enableCompanyDetailsValidation: true
+  featureManagement.enableOrganisationDataRowValidation: true
+  featureManagement.enableRegistrationRowValidation: true
+  featureManagement.enableRowValidation: true
   featureManagement.removeUsers: true
   featureManagement.showLanguageSwitcher: true
   featureManagement.managePomSubmissions: true
@@ -112,12 +112,12 @@ variables:
   featureManagement.showPrn: false
   featureManagement.OverridePrnCurrentDateForTestingPurposes: false
   featureManagement.manageRegistrationSubmissions: false
-  featureManagement.enableSubsidiaryValidation: false
-  featureManagement.enableSubsidiaryValidationPom: false
-  featureManagement.enableOrganisationSizeFieldValidation: false
+  featureManagement.enableSubsidiaryValidation: true
+  featureManagement.enableSubsidiaryValidationPom: true
+  featureManagement.enableOrganisationSizeFieldValidation: true
   featureManagement.ShowRegistration: false
   featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: false
-  featureManagement.enableCsvDownload: false
+  featureManagement.enableCsvDownload: true
   featureManagement.RunIntegration: false
   featureManagement.RunUpdateProducers: false
   featureManagement.useBoomiOAuth: true
