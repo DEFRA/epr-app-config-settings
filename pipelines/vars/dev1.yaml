@@ -23,6 +23,7 @@ variables:
   featureManagement.enableOrganisationDataRowValidation: true
   featureManagement.enableRegistrationRowValidation: true
   featureManagement.enableRowValidation: true
+  featureManagement.enableSubsidiaryJoinerAndLeaverColumns: true
   featureManagement.enableSubsidiaryValidation: true
   featureManagement.enableSubsidiaryValidationPom: true
   featureManagement.ShowSubsidiaries: true

@@ -160,6 +160,11 @@
     "value": "#{{ bulkUpload.companiesHouseDownloadSchedule }}"
   },
   {
+    "name": "FeatureManagement__EnableSubsidiaryJoinerAndLeaverColumns",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableSubsidiaryJoinerAndLeaverColumns }}"
+  },
+  {
     "name": "FeatureManagement__UseBoomiOAuth",
     "slotSetting": false,
     "value": "#{{ featureManagement.useBoomiOAuth }}"

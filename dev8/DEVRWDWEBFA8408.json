@@ -160,6 +160,11 @@
     "value": "0 0 23 * * *"
   },
   {
+    "name": "FeatureManagement__EnableSubsidiaryJoinerAndLeaverColumns",
+    "slotSetting": false,
+    "value": "false"
+  },
+  {
     "name": "FeatureManagement__UseBoomiOAuth",
     "slotSetting": false,
     "value": false

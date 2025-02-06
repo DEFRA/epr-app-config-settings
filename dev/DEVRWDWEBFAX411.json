@@ -83,5 +83,20 @@
     "name": "TransposeTimeout",
     "value": "10",
     "slotSetting": false
+  },
+  {
+    "name": "BlobConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobContainerName",
+    "value": "paycal#{{ teamName.dash }}",
+    "slotSetting": false
+  },
+  {
+    "name": "DbConnectionString",
+    "value": "Server=tcp:devrwddbssq1401.database.windows.net,1433;Initial Catalog=#{{ payCalDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=\"Active Directory Managed Identity\";",
+    "slotSetting": false
   }
 ]

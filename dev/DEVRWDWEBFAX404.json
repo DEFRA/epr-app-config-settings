@@ -70,6 +70,11 @@
     "value": "#{{ featureManagement.enableSubsidiaryValidation }}"
   },
   {
+    "name": "FeatureManagement__EnableSubsidiaryJoinerAndLeaverColumns",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableSubsidiaryJoinerAndLeaverColumns }}"
+  },
+  {
     "name": "FeatureManagement__EnableOrganisationSizeFieldValidation",
     "slotSetting": false,
     "value": "#{{ featureManagement.enableOrganisationSizeFieldValidation }}"

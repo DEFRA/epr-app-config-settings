@@ -8,5 +8,10 @@
     "name": "ApiConfig__PomDataSubmissionPeriods",
     "slotSetting": false,
     "value": "2024-P1,2024-P4"
+  },
+  {
+    "name": "ApiConfig__ExcludePackagingTypes",
+    "slotSetting": false,
+    "value": "OW,CW,RU"
   }
 ]

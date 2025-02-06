@@ -1,142 +1,222 @@
 [
   {
     "name": "Service__AccountBaseUrl",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net/"
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net/",
+    "slotSetting": false
   },
   {
     "name": "Service__AccountEndPointName",
-    "value": "api/organisations"
+    "value": "api/organisations",
+    "slotSetting": false
   },
   {
     "name": "UpdateProducersTrigger",
-    "value": "0 0 18 * * 1-5"
+    "value": "0 0 18 * * 1-5",
+    "slotSetting": false
   },
   {
     "name": "ProducersContext",
-    "value": "https://fat.npwd.org.uk/odata/Producers/$delta"
+    "value": "https://fat.npwd.org.uk/odata/Producers/$delta",
+    "slotSetting": false
   },
   {
     "name": "FetchNpwdIssuedPrns__Schedule",
-    "value": "0 0 18 * * 1-5"
+    "value": "0 0 18 * * 1-5",
+    "slotSetting": false
   },
   {
     "name": "ServiceBus__FullyQualifiedNamespace",
-    "value": "DEVRWDINFSB1402.servicebus.windows.net"
+    "value": "DEVRWDINFSB1402.servicebus.windows.net",
+    "slotSetting": false
   },
   {
     "name": "ServiceBus__FetchPrnQueueName",
-    "value": "defra.epr.npwd.integration.fetchprn.dev#{{ environmentSpoke1 }}"
+    "value": "defra.epr.npwd.integration.fetchprn.dev#{{ environmentSpoke1 }}",
+    "slotSetting": false
   },
   {
     "name": "ServiceBus__ErrorPrnQueue",
-    "value": "defra.epr.npwd.integration.errorqueue.dev#{{ environmentSpoke1 }}"
+    "value": "defra.epr.npwd.integration.errorqueue.dev#{{ environmentSpoke1 }}",
+    "slotSetting": false
   },
   {
     "name": "UpdatePrnsTrigger",
-    "value": "0 0 18 * * 1-5"
+    "value": "0 0 18 * * 1-5",
+    "slotSetting": false
   },
   {
     "name": "Service__PrnBaseUrl",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}418.azurewebsites.net/"
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}418.azurewebsites.net/",
+    "slotSetting": false
   },
   {
     "name": "Service__PrnEndPointName",
-    "value": "api/v1/prn"
+    "value": "api/v1/prn",
+    "slotSetting": false
+  },
+  {
+    "name": "Service__CommonDataServiceBaseUrl",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}415.azurewebsites.net/",
+    "slotSetting": false
+  },
+  {
+    "name": "Service__CommonDataServiceEndPointName",
+    "value": "api/producer-details",
+    "slotSetting": false
   },
   {
     "name": "FeatureManagement__RunIntegration",
-    "value": "#{{ featureManagement.RunIntegration }}"
+    "value": "#{{ featureManagement.RunIntegration }}",
+    "slotSetting": false
   },
   {
     "name": "PrnsContext",
-    "value": "https://fat.npwd.org.uk/odata/PRNs/$delta"
+    "value": "https://fat.npwd.org.uk/odata/PRNs/$delta",
+    "slotSetting": false
   },
   {
     "name": "DefaultLastRunDate",
-    "value": "2024-10-01"
+    "value": "2024-10-01",
+    "slotSetting": false
   },
   {
     "name": "MessagingConfig__NpwdEmailTemplateId",
-    "value": "#{{ messaging.prn.npwdemail.templateid }}"
+    "value": "#{{ messaging.prn.npwdemail.templateid }}",
+    "slotSetting": false
   },
   {
     "name": "MessagingConfig__NpwdEmail",
-    "value": "akintunde.oyefodunrin.external@eviden.com"
+    "value": "akintunde.oyefodunrin.external@eviden.com",
+    "slotSetting": false
   },
   {
     "name": "ApiCallsRetryConfig__WaitTimeBetweenRetryInSecs",
-    "value": 30
+    "value": 30,
+    "slotSetting": false
   },
   {
     "name": "ApiCallsRetryConfig__MaxAttempts",
-    "value": 3
+    "value": 3,
+    "slotSetting": false
   },
   {
     "name": "MessagingConfig__ApiKey",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/MessagingConfigApiKeyDev/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/MessagingConfigApiKeyDev/)",
+    "slotSetting": false
   },
   {
     "name": "MessagingConfig__PrnTemplateId",
-    "value": "#{{ messaging.prn.prnemail.templateid }}"
+    "value": "#{{ messaging.prn.prnemail.templateid }}",
+    "slotSetting": false
   },
   {
     "name": "MessagingConfig__PERNTemplateId",
-    "value": "#{{ messaging.prn.pernemail.templateid }}"
+    "value": "#{{ messaging.prn.pernemail.templateid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__NpwdReconcileUpdatedOrganisationsTemplateId",
+    "value": "#{{ messaging.prn.reconcileupdatedorganisationemail.templateid }}",
+    "slotSetting": false
   },
   {
     "name": "ServiceBus__MaxWaitTimeInSeconds",
-    "value": "1"
+    "value": "1",
+    "slotSetting": false
   },
   {
     "name": "NpwdIntegration__BaseUrl",
-    "value": "https://fat.npwd.org.uk/"
+    "value": "https://fat.npwd.org.uk/",
+    "slotSetting": false
   },
   {
     "name": "NpwdIntegration__ClientId",
-    "value": "b6a9cebf-1eac-4907-b1ae-b0387e627016"
+    "value": "b6a9cebf-1eac-4907-b1ae-b0387e627016",
+    "slotSetting": false
   },
   {
     "name": "NpwdIntegration__ClientSecret",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/NPWDIntegrationClientSecret/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/NPWDIntegrationClientSecret/)",
+    "slotSetting": false
   },
   {
     "name": "NpwdIntegration__Scope",
-    "value": "api://52d36e18-cba5-4f44-9ab0-e9a8053518c3/.default"
+    "value": "api://52d36e18-cba5-4f44-9ab0-e9a8053518c3/.default",
+    "slotSetting": false
   },
   {
     "name": "NpwdIntegration__AccessTokenUrl",
-    "value": "https://npwdorguk.ciamlogin.com/638f082d-9a35-45fd-b98c-1d27072d70ea/oauth2/v2.0/token"
+    "value": "https://npwdorguk.ciamlogin.com/638f082d-9a35-45fd-b98c-1d27072d70ea/oauth2/v2.0/token",
+    "slotSetting": false
   },
   {
     "name": "NpwdIntegration__Authority",
-    "value": "https://npwdorguk.ciamlogin.com/638f082d-9a35-45fd-b98c-1d27072d70ea/"
+    "value": "https://npwdorguk.ciamlogin.com/638f082d-9a35-45fd-b98c-1d27072d70ea/",
+    "slotSetting": false
   },
   {
     "name": "MessagingConfig__NpwdValidationErrorsTemplateId",
-    "value": "#{{ messaging.prn.npwdvalidationerrors.templateid }}"
+    "value": "#{{ messaging.prn.npwdvalidationerrors.templateid }}",
+    "slotSetting": false
   },
   {
     "name": "ServiceBus__FetchPrnDeltaSyncQueueName",
-    "value": "defra.npwd.integration.lastsuccessfulrun.fetchprn.dev#{{ environmentSpoke1 }}"
+    "value": "defra.npwd.integration.lastsuccessfulrun.fetchprn.dev#{{ environmentSpoke1 }}",
+    "slotSetting": false
   },
   {
     "name": "ServiceBus__UpdateProducerDeltaSyncQueueName",
-    "value": "defra.npwd.integration.lastsuccessfulrun.updateproducer.dev#{{ environmentSpoke1 }}"
+    "value": "defra.npwd.integration.lastsuccessfulrun.updateproducer.dev#{{ environmentSpoke1 }}",
+    "slotSetting": false
   },
   {
     "name": "ServiceBus__UpdatePrnDeltaSyncQueueName",
-    "value": "defra.npwd.integration.lastsuccessfulrun.updateprn.dev#{{ environmentSpoke1 }}"
+    "value": "defra.npwd.integration.lastsuccessfulrun.updateprn.dev#{{ environmentSpoke1 }}",
+    "slotSetting": false
   },
   {
     "name": "Service__AccountClientId",
-    "value": "#{{ apiConfig.accountServiceClientId }}"
+    "value": "#{{ apiConfig.accountServiceClientId }}",
+    "slotSetting": false
   },
   {
     "name": "Service__PrnClientId",
-    "value": "#{{ prnServiceApi.appRegistration.clientId }}"
+    "value": "#{{ prnServiceApi.appRegistration.clientId }}",
+    "slotSetting": false
+  },
+  {
+    "name": "Service__CommonDataClientId",
+    "value": "#{{ commonDataApi.appRegistration.clientId }}",
+    "slotSetting": false
   },
   {
     "name": "FeatureManagement__RunUpdateProducers",
-    "value": "#{{ featureManagement.RunUpdateProducers }}"
+    "value": "#{{ featureManagement.RunUpdateProducers }}",
+    "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__RunReconciliation",
+    "value": "#{{ featureManagement.RunReconciliation }}",
+    "slotSetting": false
+  },
+  {
+    "name": "EmailNpwdReconciliationTrigger",
+    "value": "0 0 21 * * 1-5",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__NpwdReconcileIssuedPrnsTemplateId",
+    "value": "#{{ messaging.prn.npwdreconcileissuedprns.templateid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "AppInsightsConfig__ResourceId",
+    "value": "/subscriptions/8f549c59-2438-4495-b571-705081e497e4/resourceGroups/DEVRWDINFRG1401/providers/Microsoft.Insights/components/DEVRWDINFAI1401",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__NpwdReconcileUpdatedPrnsTemplateId",
+    "value": "#{{ messaging.prn.reconcileupdatedprns.templateid }}",
+    "slotSetting": false
   }
 ]

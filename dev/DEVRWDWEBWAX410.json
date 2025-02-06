@@ -215,6 +215,11 @@
     "value": "#{{ featureManagement.enableCsvDownload }}"
   },
   {
+    "name": "FeatureManagement__EnableSubsidiaryJoinerAndLeaverColumns",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableSubsidiaryJoinerAndLeaverColumns }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"

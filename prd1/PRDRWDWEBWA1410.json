@@ -513,5 +513,10 @@
     "name": "FeatureManagement__EnableCsvDownload",
     "slotSetting": false,
     "value": false
+  },
+  {
+    "name": "FeatureManagement__EnableSubsidiaryJoinerAndLeaverColumns",
+    "slotSetting": false,
+    "value": "false"
   }
 ]

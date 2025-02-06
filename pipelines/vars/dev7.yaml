@@ -8,6 +8,8 @@ variables:
    #Enterprise Applications Details
   apiConfig.accountServiceClientId: fe0a0ce7-8b54-4cef-a559-7e192b4118a3          # Application ID for DEVRWDWEBWA7407_API
   prnServiceApi.appRegistration.clientId: b1fc654f-c072-4d3d-82f2-6c8b864ac32e     # Application ID for DEVRWDWEBWA7418_API
+  commonDataApi.appRegistration.clientId: 6294f5b4-ae39-4ab6-b6e8-1f783c16aca3	  # Application ID for DEVRWDWEBWA7415_API
 
   featureManagement.RunIntegration: true
   featureManagement.RunUpdateProducers: false
+  featureManagement.RunReconciliation: false
