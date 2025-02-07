@@ -15,5 +15,8 @@ variables:
   featureManagement.ShowPrn: true
   featureManagement.OverridePrnCurrentDateForTestingPurposes: false
 
-  #Enterprise Applications Details
- 
+  # Enterprise Application IDS
+  apiConfig.accountServiceClientId: 5d84922e-aa29-43aa-b055-a0e36cd86c26        # Application ID for DEVRWDWEBWAD407_API
+  validationDataApi.appRegistration.clientId: 0c51aece-d8ad-4950-ba5f-46af64229b65  # Application ID for DEVRWDWEBFAD407_API
+  prnServiceApi.appRegistration.clientId: 1c5fee8f-b8e4-47bd-8914-bc8b6d2a856c     # Application ID for DEVRWDWEBWAD418_API
+  apiConfig.paymentFacadeClientId: 49c2faf7-041d-4c1d-b7b2-d089fdcd6b83   # Application ID for DEVRWDWEBWAD425_API

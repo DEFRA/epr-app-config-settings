@@ -40,6 +40,8 @@ steps:
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX408.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}408.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX409.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}409.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX410.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}410.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX411.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}411.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBFAX412.json => ${{ parameters.configDirectory }}/DEVRWDWEBFA${{ parameters.environmentSpoke }}412.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX401.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}401.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX402.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}402.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX403.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}403.json
@@ -51,8 +53,12 @@ steps:
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX409.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}409.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX410.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}410.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX411.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}411.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX412.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}412.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX413.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}413.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX415.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}415.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX418.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}418.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX421.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}421.json
+            ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX422.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}422.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX423.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}423.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX424.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}424.json
             ${{ parameters.configTemplateInputDirectory }}/DEVRWDWEBWAX425.json => ${{ parameters.configDirectory }}/DEVRWDWEBWA${{ parameters.environmentSpoke }}425.json
