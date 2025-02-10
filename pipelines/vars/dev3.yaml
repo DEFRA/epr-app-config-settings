@@ -26,6 +26,7 @@ variables:
   featureManagement.obligationCheckerEnabled: true
   featureManagement.enableSubsidiaryValidationPom: true
   featureManagement.enableOrganisationSizeFieldValidation: true
+  featureManagement.manageRegistrationSubmissions: true
 
   # Submission periods
   submissionPeriod.2024.1.activeFrom: "28 May 2024 12:00:00 AM"
