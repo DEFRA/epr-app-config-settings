@@ -88,6 +88,7 @@ variables:
   prnServiceApi.appRegistration.clientId: ''    # This should be replaced in var files by the client/application id for devrwdwebwax418_api
   apiConfig.paymentFacadeClientId: ''   # This should be replaced in var files by the client ID for DEVRWDWEBWAX425_API
   commonDataApi.appRegistration.clientId:  ''   # This should be replaced in var files by the client/application id for devrwdwebfax415_api
+  paycalFrontEnd.appRegistration.clientId: ''   # This should be replaced in var files by the client/application id for devrwdwebwax421_frontend
 
   # Feature management
   featureManagement.enableBrandPartnerDataRowValidation: true

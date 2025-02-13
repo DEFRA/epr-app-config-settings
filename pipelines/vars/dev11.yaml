@@ -16,4 +16,9 @@ variables:
   CsvDataFile.IsLatest: true
 
  #Enterprise Applications Details
+
+  apiConfig.accountServiceClientId: d04f28af-7b03-4446-94d2-75dc4cc22f1b           # Application ID for DEVRWDWEBWAB407_API
+  validationDataApi.appRegistration.clientId: 9ec2d9c4-6440-4a4f-a22e-b24753a97800 # Application ID for DEVRWDWEBFAB407_API
+  prnServiceApi.appRegistration.clientId: 1e8a96a3-42e4-48e7-89ef-e356f899cca2     # Application ID for DEVRWDWEBWAB418_API
   apiConfig.paymentFacadeClientId: 'f3f2de37-8ee3-4ae4-8fca-6d79be546ef4'   # Application ID for DEVRWDWEBWAB425_API
+  
