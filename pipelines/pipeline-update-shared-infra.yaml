@@ -121,6 +121,11 @@ jobs:
                     GRANT SELECT to [DEVRWDWEBWA$(environmentSpoke)422];
                     GRANT INSERT to [DEVRWDWEBWA$(environmentSpoke)422];
                     GRANT UPDATE to [DEVRWDWEBWA$(environmentSpoke)422];
+                    CREATE USER [DEVRWDWEBFA$(environmentSpoke)411] FROM EXTERNAL PROVIDER  WITH DEFAULT_SCHEMA=[dbo];
+                    GRANT EXECUTE TO [DEVRWDWEBFA$(environmentSpoke)411];
+                    GRANT SELECT to [DEVRWDWEBFA$(environmentSpoke)411];
+                    GRANT INSERT to [DEVRWDWEBFA$(environmentSpoke)411];
+                    GRANT UPDATE to [DEVRWDWEBFA$(environmentSpoke)411];
                     GO
               IpDetectionMethod: 'AutoDetect'
 

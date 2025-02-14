@@ -10,8 +10,13 @@
     "value": "2024-P1,2024-P4"
   },
   {
-    "name": "ApiConfig__ExcludePackagingTypes",
+    "name": "ApiConfig__IncludePackagingTypes",
     "slotSetting": false,
-    "value": "OW,CW,RU"
+    "value": "HH,NH,PB,HDC,NHC"
+  },
+  {
+    "name": "ApiConfig__IncludePackagingMaterials",
+    "slotSetting": false,
+    "value": "AL,FC,GL,PC,PL,ST,WD"
   }
 ]
