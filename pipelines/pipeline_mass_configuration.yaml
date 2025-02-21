@@ -48,15 +48,14 @@ variables:
 pool: $(agentPool)
 
 jobs:
-- job: DeploySettings
-  displayName: Deploying settings for ${{ parameters.teamName }}
-  steps:
-  - template: templates/mass-configuration-template.yaml
-    parameters:
-      restartApp: ${{ parameters.restartApp }}
-      subscriptionName: ${{ variables.subscriptionName }}
-      webResourceGroupName: ${{ variables.webResourceGroupName }}
-      useDevConfig: ${{ variables.useDevConfig }}
-      configDirectory: ${{ variables.configDir }}
-      environmentSpoke: $(environmentSpoke)
-      configTemplateInputDirectory: $(Pipeline.Workspace)/s/dev
+
+- template: templates/mass-configuration-template.yaml
+  parameters:
+    restartApp: ${{ parameters.restartApp }}
+    subscriptionName: ${{ variables.subscriptionName }}
+    webResourceGroupName: ${{ variables.webResourceGroupName }}
+    useDevConfig: ${{ variables.useDevConfig }}
+    configDirectory: ${{ variables.configDir }}
+    environmentSpoke: $(environmentSpoke)
+    environmentGroup: ${{ variables.environmentGroup }}
+    configTemplateInputDirectory: $(Pipeline.Workspace)/s/dev

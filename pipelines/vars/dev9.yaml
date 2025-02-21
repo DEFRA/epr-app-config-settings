@@ -9,8 +9,16 @@ variables:
 
   environmentName: ${{ variables.environmentGroup }}${{ variables.environmentSpoke1}}
   subscriptionName: ${{ variables.subscriptionPrefix }}-${{ variables.projectCode }}-${{ variables.environmentName }}
-  infrastructureResourceGroupName: $(environmentGroup)RWDINFRG1401
+  infrastructureResourceGroupName: ${{ variables.environmentGroup }}RWDWEBWA${{ variables.environmentSpoke}}419
   webResourceGroupName: ${{ variables.environmentGroup }}RWDWEBRG${{ variables.environmentSpoke}}401
-  
-  #Enterprise Applications Details
- 
+
+  # Feature management
+  featureManagement.showPrn: true
+  featureManagement.OverridePrnCurrentDateForTestingPurposes: false 
+
+  #File upload
+  CsvDataFile.IsLatest: true
+
+ #Enterprise Applications Details
+
+  apiConfig.accountServiceClientId: 9eb49cf7-c183-4b38-b10e-f08a404bb26b           # Application ID for DEVRWDWEBWA9407_API
