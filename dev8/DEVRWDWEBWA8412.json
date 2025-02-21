@@ -145,6 +145,11 @@
     "slotSetting": false
   },
   {
+    "name": "FeatureManagement__ManageCompanyDetailChanges",
+    "slotSetting": false,
+    "value": true
+  },
+  {
     "name": "ExternalUrls__CompanyHouseChangeRequestLink",
     "slotSetting": false,
     "value": "https://www.gov.uk/file-changes-to-a-company-with-companies-house"

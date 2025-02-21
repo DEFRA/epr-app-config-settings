@@ -118,6 +118,11 @@
     "name": "FeatureManagement__ManageUserDetailChanges",
     "slotSetting": false,
     "value": "#{{ featureManagement.manageUserDetailChanges }}"
+  },  
+  {
+    "name": "FeatureManagement__ManageCompanyDetailChanges",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.manageCompanyDetailChanges }}"
   },
   {
     "name": "ForwardedHeaders__AllowedHosts",
