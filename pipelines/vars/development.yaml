@@ -111,6 +111,7 @@ variables:
   featureManagement.obligationCheckerEnabled: true
   featureManagement.largeProducerRegisterEnabled: true
   featureManagement.manageUserDetailChanges: true
+  featureManagement.manageCompanyDetailChanges: true
   featureManagement.showPrn: false
   featureManagement.OverridePrnCurrentDateForTestingPurposes: false
   featureManagement.manageRegistrationSubmissions: false

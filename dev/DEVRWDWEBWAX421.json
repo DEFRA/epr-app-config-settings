@@ -108,5 +108,10 @@
     "name": "DownstreamApi__Scopes",
     "value": "openid offline_access api://#{{ paycalFrontEnd.appRegistration.clientId }}/Read_Scope api://#{{ paycalFrontEnd.appRegistration.clientId }}/Write_Scope api://#{{ paycalFrontEnd.appRegistration.clientId }}/default",
     "slotSetting": false
+  },
+  {
+    "name": "SessionTimeOut",
+    "value": "40",
+    "slotSetting": false
   }
 ]

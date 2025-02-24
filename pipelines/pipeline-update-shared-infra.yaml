@@ -12,6 +12,7 @@ parameters:
       - 'DEV12'
       - 'DEV13'
       - 'DEV14'
+      - 'DEV15'
   - name: targetEnv
     type: string
     default: development
@@ -34,6 +35,8 @@ variables:
       - template: vars/dev13.yaml
   - ${{ elseif eq(parameters['buildUpEnv'], 'DEV14') }}:
       - template: vars/dev14.yaml
+  - ${{ elseif eq(parameters['buildUpEnv'], 'DEV15') }}:
+      - template: vars/dev15.yaml
   - ${{ if eq(parameters['targetEnv'],'development') }}:
       - template: vars/development.yaml
   - ${{ if eq(parameters['targetEnv'],'tst') }}:

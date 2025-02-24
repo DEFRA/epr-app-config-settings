@@ -120,6 +120,11 @@
     "value": "#{{ featureManagement.manageUserDetailChanges }}"
   },
   {
+    "name": "FeatureManagement__ManageCompanyDetailChanges",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.manageCompanyDetailChanges }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"

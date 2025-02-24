@@ -12,7 +12,7 @@ parameters:
         - 'DEV12'
         - 'DEV13'
         - 'DEV14'
-
+        - 'DEV15'
     - name: envToDeploy
       displayName: The environment in use
       type: string
