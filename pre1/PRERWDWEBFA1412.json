@@ -1,0 +1,182 @@
+[
+	{
+		"name": "AzureWebJobsStorage",
+		"value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/EprPrnIntegrationStorageAccountConnectionStringRWD1412/)",
+		"slotSetting": false
+	},
+	{
+		"name": "Service__AccountBaseUrl",
+		"value": "https://prerwdwebwa1407.azurewebsites.net/",
+		"slotSetting": false
+	},
+	{
+		"name": "Service__AccountEndPointName",
+		"value": "api/organisations",
+		"slotSetting": false
+	},
+	{
+		"name": "UpdateProducersTrigger",
+		"value": "0 0 18 * * 1-5",
+		"slotSetting": false
+	},
+	{
+		"name": "ProducersContext",
+		"value": "https://stage.npwd.org.uk/odata/Producers/$delta",
+		"slotSetting": false
+	},
+	{
+		"name": "FetchNpwdIssuedPrns__Schedule",
+		"value": "0 0 18 * * 1-5",
+		"slotSetting": false
+	},
+	{
+		"name": "ServiceBus__FullyQualifiedNamespace",
+		"value": "prerwdinfsb1401.servicebus.windows.net",
+		"slotSetting": false
+	},
+	{
+		"name": "ServiceBus__FetchPrnQueueName",
+		"value": "defra.epr.npwd.integration.fetchprn.pre1",
+		"slotSetting": false
+	},
+	{
+		"name": "ServiceBus__ErrorPrnQueue",
+		"value": "defra.epr.npwd.integration.errorqueue.pre1",
+		"slotSetting": false
+	},
+	{
+		"name": "UpdatePrnsTrigger",
+		"value": "0 0 18 * * 1-5",
+		"slotSetting": false
+	},
+	{
+		"name": "Service__PrnBaseUrl",
+		"value": "https://prerwdwebwa1418.azurewebsites.net/",
+		"slotSetting": false
+	},
+	{
+		"name": "Service__PrnEndPointName",
+		"value": "api/v1/prn",
+		"slotSetting": false
+	},
+	{
+		"name": "FeatureManagement__RunIntegration",
+		"value": true,
+		"slotSetting": false
+	},
+	{
+		"name": "PrnsContext",
+		"value": "https://stage.npwd.org.uk/odata/PRNs/$delta",
+		"slotSetting": false
+	},
+	{
+		"name": "DefaultLastRunDate",
+		"value": "2024-10-01",
+		"slotSetting": false
+	},
+	{
+		"name": "MessagingConfig__NpwdEmailTemplateId",
+		"value": "750b5985-0a81-4dd9-8fb6-3b4005f3cff6",
+		"slotSetting": false
+	},
+	{
+		"name": "MessagingConfig__NpwdEmail",
+		"value": "akintunde.oyefodunrin.external@eviden.com",
+		"slotSetting": false
+	},
+	{
+		"name": "ApiCallsRetryConfig__WaitTimeBetweenRetryInSecs",
+		"value": 30,
+		"slotSetting": false
+	},
+	{
+		"name": "ApiCallsRetryConfig__MaxAttempts",
+		"value": 3,
+		"slotSetting": false
+	},
+	{
+		"name": "MessagingConfig__ApiKey",
+		"value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/MessagingConfigApiKey/)",
+		"slotSetting": false
+	},
+	{
+		"name": "MessagingConfig__PrnTemplateId",
+		"value": "47ccc195-7967-4845-928c-5a9bcfe13da8",
+		"slotSetting": false
+	},
+	{
+		"name": "MessagingConfig__PERNTemplateId",
+		"value": "384cff05-9137-4f39-9794-855b00671f74",
+		"slotSetting": false
+	},
+	{
+		"name": "ServiceBus__MaxWaitTimeInSeconds",
+		"value": "1",
+		"slotSetting": false
+	},
+	{
+		"name": "NpwdIntegration__BaseUrl",
+		"value": "https://stage.npwd.org.uk/",
+		"slotSetting": false
+	},
+	{
+		"name": "NpwdIntegration__ClientId",
+		"value": "b6a9cebf-1eac-4907-b1ae-b0387e627016",
+		"slotSetting": false
+	},
+	{
+		"name": "NpwdIntegration__ClientSecret",
+		"value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV1401.vault.azure.net/secrets/NPWDIntegrationClientSecret/)",
+		"slotSetting": false
+	},
+	{
+		"name": "NpwdIntegration__Scope",
+		"value": "api://52d36e18-cba5-4f44-9ab0-e9a8053518c3/.default",
+		"slotSetting": false
+	},
+	{
+		"name": "NpwdIntegration__AccessTokenUrl",
+		"value": "https://npwdorguk.ciamlogin.com/638f082d-9a35-45fd-b98c-1d27072d70ea/oauth2/v2.0/token",
+		"slotSetting": false
+	},
+	{
+		"name": "NpwdIntegration__Authority",
+		"value": "https://npwdorguk.ciamlogin.com/638f082d-9a35-45fd-b98c-1d27072d70ea/",
+		"slotSetting": false
+	},
+	{
+		"name": "MessagingConfig__NpwdValidationErrorsTemplateId",
+		"value": "00a081ed-9782-4c5d-96f9-102c4e0b77de",
+		"slotSetting": false
+	},
+	{
+		"name": "ServiceBus__FetchPrnDeltaSyncQueueName",
+		"value": "defra.npwd.integration.lastsuccessfulrun.fetchprn.pre1",
+		"slotSetting": false
+	},
+	{
+		"name": "ServiceBus__UpdateProducerDeltaSyncQueueName",
+		"value": "defra.npwd.integration.lastsuccessfulrun.updateproducer.pre1",
+		"slotSetting": false
+	},
+	{
+		"name": "ServiceBus__UpdatePrnDeltaSyncQueueName",
+		"value": "defra.npwd.integration.lastsuccessfulrun.updateprn.pre1",
+		"slotSetting": false
+	},
+	{
+		"name": "Service__AccountClientId",
+		"value": "fe38b8c5-550b-45e4-9323-f941595f7fa3",
+		"slotSetting": false
+	},
+	{
+		"name": "Service__PrnClientId",
+		"value": "cc0f2682-41f6-4658-9645-2c35f8e6f091",
+		"slotSetting": false
+	},
+	{
+		"name": "FeatureManagement__RunUpdateProducers",
+		"value": false,
+		"slotSetting": false
+	}
+]

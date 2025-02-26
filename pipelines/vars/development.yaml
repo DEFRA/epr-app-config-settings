@@ -126,6 +126,7 @@ variables:
   featureManagement.RunUpdateProducers: false
   featureManagement.useBoomiOAuth: true
   featureManagement.RunReconciliation: false
+  featureManagement.showSubsidiariesRemoveLink: true
 
   # Databases
   accountsDatabase.name: dev$(environmentSpoke1)_accounts

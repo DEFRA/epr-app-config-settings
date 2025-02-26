@@ -220,6 +220,11 @@
     "value": "#{{ featureManagement.enableSubsidiaryJoinerAndLeaverColumns }}"
   },
   {
+    "name": "FeatureManagement__ShowSubsidiariesRemoveLink",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.showSubsidiariesRemoveLink }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"

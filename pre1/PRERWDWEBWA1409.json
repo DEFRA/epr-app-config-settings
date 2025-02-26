@@ -138,5 +138,10 @@
     "name": "CommonDataApi__BaseUrl",
     "slotSetting": false,
     "value": "https://prerwdwebwa1415.azurewebsites.net"
+  },
+  {
+    "name": "PrnServiceApi__ClientId",
+    "slotSetting": false,
+    "value": "cc0f2682-41f6-4658-9645-2c35f8e6f091"
   }
 ]

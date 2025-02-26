@@ -195,6 +195,11 @@
     "value": "false"
   },
   {
+    "name": "FeatureManagement__ShowSubsidiariesRemoveLink",
+    "slotSetting": false,
+    "value": true
+  },
+  {
     "name": "FeatureManagement__ShowSubsidiaries",
     "slotSetting": false,
     "value": true

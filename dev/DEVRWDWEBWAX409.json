@@ -60,6 +60,11 @@
     "value": "300"
   },
   {
+    "name": "ASPNETCORE_ENVIRONMENT",
+    "value": "development",
+    "slotSetting": false
+  },
+  {
     "name": "AzureAdB2C__ClientId",
     "slotSetting": false,
     "value": "#{{ b2c.wax409.clientId }}"
