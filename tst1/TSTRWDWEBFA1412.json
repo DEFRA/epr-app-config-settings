@@ -71,7 +71,7 @@
 	},
 	{
 		"name": "DefaultLastRunDate",
-		"value": "2024-10-01",
+		"value": "2025-02-11",
 		"slotSetting": false
 	},
 	{
@@ -176,7 +176,52 @@
 	},
 	{
 		"name": "FeatureManagement__RunUpdateProducers",
-		"value": false,
+		"value": true,
+		"slotSetting": false
+	},
+	{
+		"name": "Service__CommonDataServiceBaseUrl",
+		"value": "https://tstrwdwebwa1415.azurewebsites.net/",
+		"slotSetting": false
+	},
+	{
+		"name": "Service__CommonDataServiceEndPointName",
+		"value": "api/producer-details",
+		"slotSetting": false
+	},
+	{
+		"name": "Service__CommonDataClientId",
+		"value": "3903899c-7d08-480d-b498-c6ea3fa9e4e9",
+		"slotSetting": false
+	},
+	{
+		"name": "EmailNpwdReconciliationTrigger",
+		"value": "0 0 21 * * 1-5",
+		"slotSetting": false
+	},
+	{
+		"name": "FeatureManagement__RunReconciliation",
+		"value": true,
+		"slotSetting": false
+	},
+	{
+		"name": "AppInsightsConfig__ResourceId",
+		"value": "/subscriptions/5ac20727-8367-4439-81c1-1ba4c030ecb0/resourceGroups/TSTRWDINFRG1401/providers/microsoft.insights/components/TSTRWDINFAI1401",
+		"slotSetting": false
+	},
+	{
+		"name": "MessagingConfig__NpwdReconcileUpdatedOrganisationsTemplateId",
+		"value": "07e89bba-7f0e-47f3-a96d-9fbcd923f9ee",
+		"slotSetting": false
+	},
+	{
+		"name": "MessagingConfig__NpwdReconcileUpdatedPrnsTemplateId",
+		"value": "a1b81df4-560e-4034-a3cc-282d00ee2959",
+		"slotSetting": false
+	},
+	{
+		"name": "MessagingConfig__NpwdReconcileIssuedPrnsTemplateId",
+		"value": "3f28cb69-4703-46c6-902f-9350aaeebc87",
 		"slotSetting": false
 	}
 ]
