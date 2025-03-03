@@ -220,6 +220,11 @@
     "value": true
   },
   {
+    "name": "FeatureManagement__ShowSubsidiaryJoinerAndLeaverColumns",
+    "slotSetting": false,
+    "value": false
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-pre1.azure.defra.cloud"
@@ -513,10 +518,5 @@
     "name": "FeatureManagement__EnableCsvDownload",
     "slotSetting": false,
     "value": false
-  },
-  {
-    "name": "FeatureManagement__EnableSubsidiaryJoinerAndLeaverColumns",
-    "slotSetting": false,
-    "value": "false"
   }
 ]

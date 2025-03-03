@@ -215,14 +215,14 @@
     "value": "#{{ featureManagement.enableCsvDownload }}"
   },
   {
-    "name": "FeatureManagement__EnableSubsidiaryJoinerAndLeaverColumns",
-    "slotSetting": false,
-    "value": "#{{ featureManagement.enableSubsidiaryJoinerAndLeaverColumns }}"
-  },
-  {
     "name": "FeatureManagement__ShowSubsidiariesRemoveLink",
     "slotSetting": false,
     "value": "#{{ featureManagement.showSubsidiariesRemoveLink }}"
+  },
+  {
+    "name": "FeatureManagement__ShowSubsidiaryJoinerAndLeaverColumns",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.showSubsidiaryJoinerAndLeaverColumns }}"
   },
   {
     "name": "ForwardedHeaders__AllowedHosts",

@@ -28,6 +28,7 @@ variables:
   featureManagement.validationDataApi: true
   featureManagement.enableCsvDownload: true
   featureManagement.enableOrganisationSizeFieldValidation: true
+  featureManagement.ShowSubsidiariesRemoveLink: false
 
   # Submission periods
   submissionPeriod.2024.1.activeFrom: "1 May 2024 12:00:00 AM"

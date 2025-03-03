@@ -160,7 +160,7 @@
     "value": "0 0 23 * * *"
   },
   {
-    "name": "FeatureManagement__EnableSubsidiaryJoinerAndLeaverColumns",
+    "name": "FeatureManagement__EnableSubsidiaryUploadJoinerColumns",
     "slotSetting": false,
     "value": "false"
   },

@@ -160,9 +160,9 @@
     "value": "#{{ bulkUpload.companiesHouseDownloadSchedule }}"
   },
   {
-    "name": "FeatureManagement__EnableSubsidiaryJoinerAndLeaverColumns",
+    "name": "FeatureManagement__EnableSubsidiaryUploadJoinerColumns",
     "slotSetting": false,
-    "value": "#{{ featureManagement.enableSubsidiaryJoinerAndLeaverColumns }}"
+    "value": "#{{ featureManagement.enableSubsidiaryUploadJoinerColumns }}"
   },
   {
     "name": "FeatureManagement__UseBoomiOAuth",

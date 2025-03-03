@@ -210,6 +210,11 @@
     "value": true
   },
   {
+    "name": "FeatureManagement__ShowSubsidiaryJoinerAndLeaverColumns",
+    "slotSetting": false,
+    "value": false
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "report-packaging-data.defra.gov.uk"
@@ -518,10 +523,5 @@
     "name": "FeatureManagement__EnableCsvDownload",
     "slotSetting": false,
     "value": false
-  },
-  {
-    "name": "FeatureManagement__EnableSubsidiaryJoinerAndLeaverColumns",
-    "slotSetting": false,
-    "value": "false"
   }
 ]
