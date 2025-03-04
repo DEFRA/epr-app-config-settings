@@ -101,16 +101,6 @@
     "slotSetting": true
   },
   {
-    "name": "Services__PaymentServiceHealthCheck__Url",
-    "value": "https://prerwdwebwa1425.azurewebsites.net/",
-    "slotSetting": true
-  },
-  {
-    "name": "Services__PaymentServiceHealthCheck__EndPointName",
-    "value": "health",
-    "slotSetting": true
-  },
-  {
     "name": "Services__PaymentService__Url",
     "value": "https://prerwdwebwa1425.azurewebsites.net/",
     "slotSetting": true
@@ -231,14 +221,9 @@
     "slotSetting": true
   },
   {
-    "name": "WEBSITE_AUTH_AAD_ALLOWED_TENANTS",
-    "value": "6f504113-6b64-43f2-ade9-242e05780007",
-    "slotSetting": false
-  },
-  {
     "name": "AzureAdB2C__ClientId",
     "slotSetting": false,
-    "value": "50644e63-76d0-4d66-894e-e693bdb46b52"
+    "value": "7495f3a6-3f35-4f62-9bac-f094241ffe8e"
   },
   {
     "name": "AzureAdB2C__Domain",

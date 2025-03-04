@@ -6,7 +6,7 @@
   },
   {
     "name": "ConnectionStrings__AccountsDatabase",
-    "value": "Server=tcp:devrwddbssq1401.database.windows.net,1433;Initial Catalog=#{{ accountsDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;",
+    "value": "Server=tcp:devrwddbssq1401.database.windows.net,1433;Initial Catalog=#{{ accountsDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;Max Pool Size=500;Pooling=True;Application Name=DEVRWDWEBWAx407",
     "slotSetting": false
   }
 ]

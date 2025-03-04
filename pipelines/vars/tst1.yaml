@@ -15,12 +15,3 @@ variables:
   privateEndpointService1: webApp
   privateEndpointService2: functionApp
   privateEndpointService3: storageAccount
-
-  featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: true
-  featureManagement.enableSubsidiaryValidationPom: true
-
-  #File upload versioning
-  CsvDataFile.IsLatest: true
-
-  # Validation
-  Validation.Islatest: true

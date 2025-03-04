@@ -2,6 +2,6 @@
   {
     "name": "ConnectionStrings__AccountsDatabase",
     "slotSetting": false,
-    "value": "Server=tcp:devrwddbssq1401.database.windows.net;Authentication=Active Directory Default;Database=dev8_accounts;"
+    "value": "Server=tcp:devrwddbssq1401.database.windows.net;Authentication=Active Directory Default;Database=dev8_accounts;Max Pool Size=500;Pooling=True;Application Name=DEVRWDWEBWA8407"
   }
 ]

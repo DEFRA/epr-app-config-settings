@@ -7,7 +7,7 @@
   {
     "name": "AzureAdB2C__ClientId",
     "slotSetting": false,
-    "value": "595f49c3-f886-4869-a1e4-abb0915801ac"
+    "value": "3d4bc284-bc1f-434b-a7f4-9e48291202fb"
   },
   {
     "name": "AzureAdB2C__ClientSecret",
@@ -96,7 +96,7 @@
   },
   {
     "name": "Dashboard__MenuUrl__Description",
-    "value": "This is url is redirect to main menu.",
+    "value": "This url is redirect to main menu.",
     "slotSetting": true
   },
   {
@@ -116,7 +116,7 @@
   },
   {
     "name": "Dashboard__FeedbackUrl__Description",
-    "value": "This is url is redirect to feedback page.",
+    "value": "This url is redirect to feedback page.",
     "slotSetting": true
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "name": "Dashboard__OfflinePaymentUrl__Description",
-    "value": "This is url is redirect to offline payment information page",
+    "value": "This url is redirect to offline payment information page",
     "slotSetting": true
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "name": "Dashboard__ManageAccountUrl__Description",
-    "value": "This is url is Manage Account.",
+    "value": "This url is Manage Account.",
     "slotSetting": true
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "PaymentFacade__FacadeService__DownstreamScope",
-    "value": "https://DCIDM.onmicrosoft.com/epr-prd1-payments-facade/payment-service",
+    "value": "https://DCIDM.onmicrosoft.com/1c6b4036-ce93-4c79-9755-5d6d89de5c6e/default",
     "slotSetting": true
   },
   {
@@ -208,11 +208,6 @@
     "name": "FeatureManagement__EnableAuthenticationFeature",
     "value": "true",
     "slotSetting": true
-  },
-  {
-    "name": "WEBSITE_AUTH_AAD_ALLOWED_TENANTS",
-    "value": "6f504113-6b64-43f2-ade9-242e05780007",
-    "slotSetting": false
   },
   {
     "name": "ForwardedHeaders__AllowedHosts",
@@ -228,11 +223,6 @@
     "name": "ForwardedHeaders__OriginalHostHeaderName",
     "slotSetting": false,
     "value": "X-Initial-Host"
-  },
-  {
-    "name": "ASPNETCORE_HTTPS_PORT",
-    "slotSetting": false,
-    "value": "443"
   },
   {
     "name": "Redis__InstanceName",

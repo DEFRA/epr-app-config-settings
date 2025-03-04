@@ -78,10 +78,5 @@
     "name": "ConnectionStrings__PaymentConnectionString",
     "value": "Server=tcp:prerwddbssq1401.database.windows.net,1433;Initial Catalog=pre1_feespayment;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;",
     "slotSetting": false
-  },
-  {
-    "name": "WEBSITE_AUTH_AAD_ALLOWED_TENANTS",
-    "value": "6f504113-6b64-43f2-ade9-242e05780007",
-    "slotSetting": false
   }
 ]

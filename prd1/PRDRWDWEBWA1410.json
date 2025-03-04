@@ -310,6 +310,21 @@
     "value": "https://www.gov.uk/government/publications/groups-and-subsidiaries-how-to-create-your-file-for-extended-producer-responsibility"
   },
   {
+    "name": "GuidanceLinks__ProducerResponsibilitiesForPackagingWaste",
+    "slotSetting": false,
+    "value": "https://www.gov.uk/guidance/packaging-producer-responsibilities"
+  },
+  {
+    "name": "GuidanceLinks__EPR_IllustrativeFeesAndCharges",
+    "slotSetting": false,
+    "value": "https://gov.uk/guidance/extended-producer-responsibility-for-packaging-register-and-pay-the-fee"
+  },
+  {
+    "name": "GuidanceLinks__YouCanPaySEPA",
+    "slotSetting": false,
+    "value": "https://beta.sepa.scot/about-sepa/online-payments/"
+  },
+  {
     "name": "BasePath",
     "slotSetting": false,
     "value": "/report-data"
@@ -517,7 +532,7 @@
   {
     "name": "PaymentFacadeApi__DownstreamScope",
     "slotSetting": false,
-    "value": "https://DCIDM.onmicrosoft.com/epr-dev-payments-facade/payment-service"
+    "value": "https://DCIDM.onmicrosoft.com/1c6b4036-ce93-4c79-9755-5d6d89de5c6e/default"
   },
   {
     "name": "FeatureManagement__EnableCsvDownload",

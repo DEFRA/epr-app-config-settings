@@ -101,7 +101,7 @@
   },
   {
     "name": "Dashboard__MenuUrl__Description",
-    "value": "This is url is redirect to main menu.",
+    "value": "This url is redirect to main menu.",
     "slotSetting": true
   },
   {
@@ -121,7 +121,7 @@
   },
   {
     "name": "Dashboard__FeedbackUrl__Description",
-    "value": "This is url is redirect to feedback page.",
+    "value": "This url is redirect to feedback page.",
     "slotSetting": true
   },
   {
@@ -131,7 +131,7 @@
   },
   {
     "name": "Dashboard__OfflinePaymentUrl__Description",
-    "value": "This is url is redirect to offline payment information page",
+    "value": "This url is redirect to offline payment information page",
     "slotSetting": true
   },
   {
@@ -141,7 +141,7 @@
   },
   {
     "name": "Dashboard__ManageAccountUrl__Description",
-    "value": "This is url is Manage Account.",
+    "value": "This url is Manage Account.",
     "slotSetting": true
   },
   {
@@ -215,11 +215,6 @@
     "slotSetting": true
   },
   {
-    "name": "WEBSITE_AUTH_AAD_ALLOWED_TENANTS",
-    "value": "6f504113-6b64-43f2-ade9-242e05780007",
-    "slotSetting": false
-  },
-  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev8.azure.defra.cloud"
@@ -233,11 +228,6 @@
     "name": "ForwardedHeaders__OriginalHostHeaderName",
     "slotSetting": false,
     "value": "X-Initial-Host"
-  },
-  {
-    "name": "ASPNETCORE_HTTPS_PORT",
-    "slotSetting": false,
-    "value": "443"
   },
   {
     "name": "Redis__InstanceName",

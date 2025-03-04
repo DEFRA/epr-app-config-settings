@@ -120,6 +120,11 @@
     "value": "/regulators/manage-account/manage"
   },
   {
+    "name": "PhaseBannerOptions__ApplicationStatus",
+    "slotSetting": false,
+    "value": "Beta"
+  },
+  {
     "name": "PhaseBannerOptions__SurveyUrl",
     "slotSetting": false,
     "value": "https://defragroup.eu.qualtrics.com/jfe/form/SV_a2Bm7vw3cht5B6C"
@@ -193,7 +198,7 @@
   {
     "name": "PaymentFacadeApi__DownstreamScope",
     "slotSetting": false,
-    "value": "https://DCIDM.onmicrosoft.com/epr-dev-payments-facade/payment-service"
+    "value": "https://DCIDM.onmicrosoft.com/1c6b4036-ce93-4c79-9755-5d6d89de5c6e/default"
   },
   {
     "name": "Regulators__Organisations",

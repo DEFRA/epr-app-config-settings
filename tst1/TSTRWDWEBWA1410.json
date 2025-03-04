@@ -320,6 +320,11 @@
     "value": "https://www.gov.uk/government/publications/groups-and-subsidiaries-how-to-create-your-file-for-extended-producer-responsibility"
   },
   {
+    "name": "GuidanceLinks__EPR_IllustrativeFeesAndCharges",
+    "slotSetting": false,
+    "value": "https://gov.uk/guidance/extended-producer-responsibility-for-packaging-register-and-pay-the-fee"
+  },
+  {
     "name": "BasePath",
     "slotSetting": false,
     "value": "/report-data"

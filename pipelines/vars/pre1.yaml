@@ -11,13 +11,3 @@ variables:
   sharedInfrastructureSubscriptionName: ${{ variables.subscriptionName }}
   webResourceGroupName: ${{ variables.environmentGroup }}RWDWEBRG${{ variables.environmentSpoke}}401
   infrastructureResourceGroupName: ${{ variables.environmentGroup }}RWDINFRG${{ variables.environmentSpoke}}401
-
-  featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: true
-  featureManagement.enableSubsidiaryValidationPom: true
-
-  #File upload versioning
-  CsvDataFile.IsLatest: true
-
-  # Validation
-  Validation.Islatest: true
-

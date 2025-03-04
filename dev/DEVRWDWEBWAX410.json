@@ -327,7 +327,7 @@
   {
     "name": "GuidanceLinks__EPR_IllustrativeFeesAndCharges",
     "slotSetting": false,
-    "value": "https://www.gov.uk/government/publications/extended-producer-responsibility-for-packaging-illustrative-base-fees/extended-producer-responsibility-for-packaging-illustrative-base-fees"
+    "value": "https://gov.uk/guidance/extended-producer-responsibility-for-packaging-register-and-pay-the-fee"
   },
   {
     "name": "GuidanceLinks__YouCanPaySEPA",
@@ -477,7 +477,7 @@
   {
     "name": "SubmissionPeriods__2__ActiveFrom",
     "slotSetting": false,
-    "value": "#{{ submissionPeriod.2024.1.activeFrom }}"
+    "value": "1 Jul 2024 12:00:00 AM",
   },
   {
     "name": "SubmissionPeriods__3__DataPeriod",
@@ -507,7 +507,7 @@
   {
     "name": "SubmissionPeriods__3__ActiveFrom",
     "slotSetting": false,
-    "value": "#{{ submissionPeriod.2024.2.activeFrom }}"
+    "value": "1 Jan 2025 12:00:00 AM"
   },
   {
     "name": "WebAPI__DownstreamScope",

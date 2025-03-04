@@ -87,7 +87,7 @@
   {
     "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
     "slotSetting": false,
-    "value": "https://integration.azure.defra.cloud/ws/rest/DEFRA/v2.1/"
+    "value": "https://prd-api-gateway.azure.defra.cloud/api/companies-house/v2.2/"
   },
   {
     "name": "ApiConfig__RetryPolicyInitialWaitTime",
@@ -162,7 +162,7 @@
   {
     "name": "FeatureManagement__UseBoomiOAuth",
     "slotSetting": false,
-    "value": false
+    "value": true
   },
   {
     "name": "Redis__ConnectionString",

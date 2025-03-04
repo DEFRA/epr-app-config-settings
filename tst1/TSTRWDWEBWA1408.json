@@ -30,16 +30,6 @@
     "slotSetting": false
   },
   {
-    "name": "GOOGLE_ANALYTICS__MeasurementId",
-    "value": "VMDE8PW9W7",
-    "slotSetting": false
-  },
-  {
-    "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
-    "value": "G-VMDE8PW9W7",
-    "slotSetting": false
-  },
-  {
     "name": "Validation__MaxIssuesToProcess",
     "slotSetting": false,
     "value": "1000"

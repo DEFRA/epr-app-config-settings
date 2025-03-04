@@ -80,7 +80,6 @@ variables:
   apiConfig.boomi.addressLookupScope: 'api://0815da39-8dcf-49d7-955b-4006cc16c75e/.default'
   apiConfig.boomi.companiesHouseScope: 'api://f674049a-1629-4381-8bf3-a5209c6e032b/.default'
   apiConfig.boomi.clientid: d7fc5db0-4aca-45da-a131-e1029679ef11
-  
 
   # Application IDs
   apiConfig.accountServiceClientId: ''  # This should be replaced in var files by the client/application id for devrwdwebwax407_api
@@ -180,10 +179,6 @@ variables:
   messaging.prn.reconcileupdatedprns.templateid: a1b81df4-560e-4034-a3cc-282d00ee2959
   messaging.prn.reconcileupdatedorganisationemail.templateid: 07e89bba-7f0e-47f3-a96d-9fbcd923f9ee
   
-  # Submission periods
-  submissionPeriod.2024.1.activeFrom: "1 Jul 2024 12:00:00 AM"
-  submissionPeriod.2024.2.activeFrom: "1 Jan 2025 12:00:00 AM"
-
   # EprPackagingRegulatorEmailConfig
   regulatoremail.producer.northernireland: "dev_packaging@daera-ni.gov.uk"
   regulatoremail.producer.england: "dev_packagingproducers@environment-agency.gov.uk"

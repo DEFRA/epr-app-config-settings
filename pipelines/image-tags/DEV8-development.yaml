@@ -1,31 +1,30 @@
 variables:
-  DEVRWDWEBWAx401: 'releases_public-beta-rc7.0-rpd-20241219.7'
-  DEVRWDWEBWAx402: 'releases_public-beta-rc5.0-rpd-20241004.1'
-  DEVRWDWEBWAx403: 'releases_public-beta-rc5.0-rpd-20240906.1'
-  DEVRWDWEBWAx404: 'releases_public-beta-rc7.0-rpd-20250114.2'
-  DEVRWDWEBWAx405: 'releases_public-beta-rc5.0-rpd-20241004.1'
-  DEVRWDWEBWAx406: 'releases_public-beta-rc7.0-rpd-20250113.14'
-  DEVRWDWEBWAx407: 'releases_public-beta-rc7.0-rpd-20250114.1'
-  DEVRWDWEBWAx408: 'releases_public-beta-rc7.0-rpd-20250110.1'
-  DEVRWDWEBWAx409: 'releases_public-beta-rc7.0-rpd-20250103.8'
-  DEVRWDWEBWAx410: 'releases_public-beta-rc7.0-rpd-20250115.22'
-  DEVRWDWEBWAx411: 'releases_public-beta-rc7.0-rpd-20250115.7'
-  DEVRWDWEBWAx412: 'releases_public-beta-rc5.0-rpd-20241004.1'
-  DEVRWDWEBWAx413: 'releases_public-beta-rc6.0-rpd-20241106.1'
-  DEVRWDWEBWAx415: 'releases_public-beta-rc7.0-rpd-20250103.11'
-  DEVRWDWEBWAx418: 'releases_public-beta-rc7.0-rpd-20250106.2'
-  DEVRWDWEBWAx423: 'releases_public-beta-rc7.0-rpd-20250108.12'
-  DEVRWDWEBWAx424: 'releases_public-beta-rc7.0-rpd-20241216.2'
-  DEVRWDWEBWAx425: 'releases_public-beta-rc7.0-rpd-20241218.1'
-  DEVRWDWEBFAx401: 'releases_public-beta-rc5.0-rpd-20240906.1'
-  DEVRWDWEBFAx402: 'releases_public-beta-rc7.0-rpd-20241216.1'
-  DEVRWDWEBFAx403: 'releases_public-beta-rc7.0-rpd-20241220.1'
-  DEVRWDWEBFAx404: 'releases_public-beta-rc7.0-rpd-20241218.2'
-  DEVRWDWEBFAx405: 'releases_public-beta-rc7.0-rpd-20241216.2'
-  DEVRWDWEBFAx406: 'releases_public-beta-rc5.0-rpd-20240906.1'
-  DEVRWDWEBFAx407: 'releases_public-beta-rc7.0-rpd-20241218.11'
-  DEVRWDWEBFAx408: 'releases_public-beta-rc7.0-rpd-20241218.17'
-  DEVRWDWEBFAx409: 'releases_public-beta-rc7.0-rpd-20241216.1'
-  DEVRWDWEBFAx410: 'releases_public-beta-rc7.0-rpd-20241218.5'
-  
-  
+  DEVRWDWEBWAx401: 'releases_public-beta-rc7.0-rpd-20250127.6' #frontend-obligationchecker-microservice
+  DEVRWDWEBWAx402: 'releases_public-beta-rc5.0-rpd-20241004.1' #frontend-accountcreation-microservice
+  DEVRWDWEBWAx403: 'releases_public-beta-rc5.0-rpd-20240906.1' #epr-logging-api
+  DEVRWDWEBWAx404: 'releases_public-beta-rc8.0-rpd-20250129.4' #facade-account-microservice
+  DEVRWDWEBWAx405: 'releases_public-beta-rc5.0-rpd-20241004.1' #frontend-accountmanagement-microservice
+  DEVRWDWEBWAx406: 'releases_public-beta-rc7.0-rpd-20250123.3' #epr_regulator_service_facade
+  DEVRWDWEBWAx407: 'releases_public-beta-rc8.0-rpd-20250117.1' #backend-account-microservice
+  DEVRWDWEBWAx408: 'releases_public-beta-rc7.0-rpd-20250110.1' #epr_pom_api_submission_status
+  DEVRWDWEBWAx409: 'releases_public-beta-rc8.0-rpd-20250206.1' #epr_pom_api_web
+  DEVRWDWEBWAx410: 'releases_public-beta-rc8.0-rpd-20250225.10' #epr_packaging_frontend
+  DEVRWDWEBWAx411: 'releases_public-beta-rc7.0-rpd-20250211.9' #epr_regulator_service
+  DEVRWDWEBWAx412: 'releases_public-beta-rc5.0-rpd-20241004.1' #frontend-accountmanagement-microservice (regulators)
+  DEVRWDWEBWAx413: 'releases_public-beta-rc8.0-rpd-20250129.4' #facade-account-microservice (regulators)
+  DEVRWDWEBWAx415: 'releases_public-beta-rc7.0-rpd-20250131.6' #epr-common-data-api
+  DEVRWDWEBWAx418: 'releases_public-beta-rc8.0-rpd-20250214.15' #epr-prn-common-backend
+  DEVRWDWEBWAx423: 'releases_public-beta-rc7.0-rpd-20250203.9' #epr-payment-frontend
+  DEVRWDWEBWAx424: 'releases_public-beta-rc7.0-rpd-20250131.1' #epr-payment-facade
+  DEVRWDWEBWAx425: 'releases_public-beta-rc7.0-rpd-20250131.1' #epr-payment-service
+  DEVRWDWEBFAx401: 'releases_public-beta-rc5.0-rpd-20240906.1' #epr-event-dispatcher-function-app
+  DEVRWDWEBFAx402: 'releases_public-beta-rc7.0-rpd-20250221.6' #epr_pom_func_producer_validation
+  DEVRWDWEBFAx403: 'releases_public-beta-rc7.0-rpd-20241220.1' #epr_pom_func_submission_check_splitter
+  DEVRWDWEBFAx404: 'releases_public-beta-rc7.0-rpd-20250205.8' #epr-registration-validation-function-app
+  DEVRWDWEBFAx405: 'releases_public-beta-rc7.0-rpd-20241216.2' #epr-anti-virus-function-app
+  DEVRWDWEBFAx406: 'releases_public-beta-rc5.0-rpd-20240906.1' #epr-document-schema-job-runner-function-app
+  DEVRWDWEBFAx407: 'releases_public-beta-rc7.0-rpd-20241218.11' #backend-account-microservice (validation api)
+  DEVRWDWEBFAx408: 'releases_public-beta-rc8.0-rpd-20250129.3' #epr-subsidiary-func-bulk-upload
+  DEVRWDWEBFAx409: 'releases_public-beta-rc7.0-rpd-20241216.1' #epr-payment-mopup
+  DEVRWDWEBFAx410: 'releases_public-beta-rc7.0-rpd-20241218.5' #epr-prn-obligationcalculations-function
+  DEVRWDWEBFAx412: 'releases_public-beta-rc8.0-rpd-20250219.10' #epr-prn-integration-function

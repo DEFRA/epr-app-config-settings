@@ -100,16 +100,6 @@
     "slotSetting": true
   },
   {
-    "name": "Services__PaymentServiceHealthCheck__Url",
-    "value": "https://prdrwdwebwa1425.azurewebsites.net/",
-    "slotSetting": true
-  },
-  {
-    "name": "Services__PaymentServiceHealthCheck__EndPointName",
-    "value": "health",
-    "slotSetting": true
-  },
-  {
     "name": "Services__PaymentService__Url",
     "value": "https://prdrwdwebwa1425.azurewebsites.net/",
     "slotSetting": true
@@ -230,14 +220,9 @@
     "slotSetting": true
   },
   {
-    "name": "WEBSITE_AUTH_AAD_ALLOWED_TENANTS",
-    "value": "6f504113-6b64-43f2-ade9-242e05780007",
-    "slotSetting": false
-  },
-  {
     "name": "AzureAdB2C__ClientId",
     "slotSetting": false,
-    "value": ""
+    "value": "1c6b4036-ce93-4c79-9755-5d6d89de5c6e"
   },
   {
     "name": "AzureAdB2C__Domain",
@@ -257,6 +242,6 @@
   {
     "name": "AzureAdB2C__Scopes",
     "slotSetting": false,
-    "value": "https://DCIDM.onmicrosoft.com/epr-prd1-payments-facade/payment-service"
+    "value": "https://DCIDM.onmicrosoft.com/1c6b4036-ce93-4c79-9755-5d6d89de5c6e/default"
   }
 ]

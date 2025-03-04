@@ -30,14 +30,8 @@ variables:
   featureManagement.enableOrganisationSizeFieldValidation: true
   featureManagement.ShowSubsidiariesRemoveLink: false
 
-  # Submission periods
-  submissionPeriod.2024.1.activeFrom: "1 May 2024 12:00:00 AM"
-  submissionPeriod.2024.2.activeFrom: "1 May 2024 12:00:00 AM"
-
-
   #File upload versioning
   CsvDataFile.IsLatest: true
-
 
   # Validation
   Validation.Islatest: true

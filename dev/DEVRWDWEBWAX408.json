@@ -30,16 +30,6 @@
     "value": "_ga"
   },
   {
-    "name": "GoogleAnalytics__MeasurementId",
-    "slotSetting": false,
-    "value": "VMDE8PW9W7"
-  },
-  {
-    "name": "GoogleAnalytics__TagManagerContainerId",
-    "slotSetting": false,
-    "value": "GTM-TVVC7VFT"
-  },
-  {
     "name": "LoggingApi__BaseUrl",
     "slotSetting": false,
     "value": "https://devrwdwebwa#{{ environmentSpoke }}403.azurewebsites.net"

@@ -28,10 +28,6 @@ variables:
   featureManagement.enableOrganisationSizeFieldValidation: true
   featureManagement.manageRegistrationSubmissions: true
 
-  # Submission periods
-  submissionPeriod.2024.1.activeFrom: "28 May 2024 12:00:00 AM"
-  submissionPeriod.2024.2.activeFrom: "28 May 2024 12:00:00 AM"
-
   # EprPackagingRegulatorEmailConfig
   regulatoremail.producer.northernireland: "murali.karlapudi.external@eviden.com"
   regulatoremail.producer.england: "masil.puveendran@eviden.com"

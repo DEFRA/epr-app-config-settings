@@ -27,7 +27,7 @@ variables:
   prnServiceApi.appRegistration.clientId: 0564db9d-26b5-4271-b986-34282775d8e8        # Application ID for DEVRWDWEBWA4418_API
   apiConfig.paymentFacadeClientId: '6d359990-1a64-4d15-b90d-c73803968e03'             # Application ID for DEVRWDWEBWA4425_API
   paycalFrontEnd.appRegistration.clientId: 542488b9-bf70-429f-bad7-1e592efce352       # Application ID for DEVRWDWEBWA4422_API
-  
+
   cosmos.database.connectionString: https://devrwddbsco1401.documents.azure.com:443/
 
   # Feature management
