@@ -216,7 +216,7 @@
   },
   {
     "name": "PaymentServiceOptions__ErrorUrl",
-    "value": "https://rwd-dev8.azure.defra.cloud/payment/",
+    "value": "https://rwd-dev8.azure.defra.cloud/payment",
     "slotSetting": true
   },
   {
