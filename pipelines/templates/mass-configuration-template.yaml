@@ -57,7 +57,6 @@ parameters:
       - DEVRWDWEBFAX410
       - DEVRWDWEBFAX412
 
-
 jobs:
 
   - job: ReplaceTokens
@@ -132,10 +131,12 @@ jobs:
               map(
                   if $env == "DEV" then
                       sub("DEV"; ($env | ascii_upcase)) 
-                      | sub("X"; $spoke)
-                  else
+                      | gsub("WA[Xx]"; "WA" + $spoke) | gsub("FA[Xx]"; "FA" + $spoke)
+                  elif $env == "TST" or $env == "PRE" or $env == "PRD" then
                       sub("DEV"; ($env | ascii_upcase)) 
-                      | sub("WAX"; "WA1")
+                      | gsub("WA[Xx]"; "WA1") | gsub("FA[Xx]"; "FA1")
+                  else
+                      .
                   end
               )')
 
@@ -237,10 +238,11 @@ jobs:
 
     steps:
 
-      - task: DownloadPipelineArtifact@2
-        inputs:
-          artifactName: 'config-files'
-          targetPath: '${{ parameters.configDirectory }}'
+      - ${{ if eq(parameters.useDevConfig, 'true') }}:
+        - task: DownloadPipelineArtifact@2
+          inputs:
+            artifactName: 'config-files'
+            targetPath: '${{ parameters.configDirectory }}'
 
       - task: AzureCLI@2
         displayName: UpdateSettings

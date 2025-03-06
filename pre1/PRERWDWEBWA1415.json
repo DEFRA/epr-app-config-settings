@@ -12,7 +12,7 @@
   {
     "name": "ApiConfig__IncludePackagingTypes",
     "slotSetting": false,
-    "value": "HH,NH,PB,HDC,NHC"
+    "value": "HH,NH,PB,HDC,NDC"
   },
   {
     "name": "ApiConfig__IncludePackagingMaterials",
