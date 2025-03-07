@@ -1,0 +1,67 @@
+[
+  {
+    "name": "ServiceBus__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/ServiceBusConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__SplitQueueName",
+    "value": "defra.epr.producer.data",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__UploadQueueName",
+    "value": "defra.epr.pom.data.uploaded",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWD2403/)",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__PomBlobContainerName",
+    "value": "pom-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionApi__BaseUrl",
+    "value": "https://prerwdwebwa2408.azurewebsites.net/",
+    "slotSetting": false
+  },
+  {
+    "name": "ValidationDataApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebfa2407.azurewebsites.net/"
+  },
+  {
+    "name": "ValidationDataApi__IsEnabled",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "ValidationDataApi__Timeout",
+    "slotSetting": false,
+    "value": 10
+  },
+  {
+    "name": "Validation__MaxIssuesToProcess",
+    "slotSetting": false,
+    "value": 1000
+  },
+  {
+    "name": "ValidationDataApi__ClientId",
+    "slotSetting": false,
+    "value": "42bf400a-9a6c-4d51-ba73-798f1cd3b537"
+  },
+  {
+    "name": "Redis__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+  },
+  {
+    "name": "CsvDataFile__IsLatest",
+    "slotSetting": false,
+    "value": "true"
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "name": "AllowedHosts",
+    "value": "*",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOnlinePaymentsFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOnlinePaymentInsert",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOnlinePaymentUpdate",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableGetOnlinePaymentByExternalPaymentId",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableRegistrationFeesFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableProducersResubmissionFeesFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableProducerResubmissionFee",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableRegistrationFeesCalculation",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableComplianceSchemeFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableComplianceSchemeFees",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableResubmissionComplianceSchemeFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableResubmissionFeesCalculation",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOfflinePaymentsFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOfflinePayment",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "ConnectionStrings__PaymentConnectionString",
+    "value": "Server=tcp:prerwddbssq2401.database.windows.net,1433;Initial Catalog=pre2_feespayment;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITE_AUTH_AAD_ALLOWED_TENANTS",
+    "value": "6f504113-6b64-43f2-ade9-242e05780007",
+    "slotSetting": false
+  }
+]

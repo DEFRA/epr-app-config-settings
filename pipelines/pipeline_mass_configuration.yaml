@@ -35,7 +35,7 @@ variables:
     teamName: ${{ parameters.teamName }}
 - name: settingsDir
   value: $(Build.SourcesDirectory)/${{ lower(variables.environmentName) }}
-- ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
+- ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'preprod2'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
   - name: useDevConfig
     value: true
   - name: configDir

@@ -7,42 +7,32 @@
   {
     "name": "AzureAdB2C__ClientId",
     "slotSetting": false,
-    "value": "c7adc58b-7cc6-45e9-a3f8-72af71238575"
+    "value": "94703d30-98fb-4a66-a89d-f28698010832"
   },
   {
     "name": "AzureAdB2C__ClientSecret",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/AzureAdB2CClientSecretRWDRegulatorsDev4-8/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/AzureAdB2CClientSecretRegulators/)"
   },
   {
     "name": "AzureAdB2C__Domain",
     "slotSetting": false,
-    "value": "AZDCUSPOC2.onmicrosoft.com"
-  },
-  {
-    "name": "AzureAdB2C__EditProfilePolicyId",
-    "slotSetting": false,
-    "value": "B2C_1_Edit"
+    "value": "dcidmpreprod.onmicrosoft.com"
   },
   {
     "name": "AzureAdB2C__Instance",
     "slotSetting": false,
-    "value": "https://AZDCUSPOC2.b2clogin.com"
-  },
-  {
-    "name": "AzureAdB2C__ResetPasswordPolicyId",
-    "slotSetting": false,
-    "value": "B2C_1_ResetPassword"
+    "value": "https://dcidmpreprod.b2clogin.com"
   },
   {
     "name": "AzureAdB2C__SignUpSignInPolicyId",
     "slotSetting": false,
-    "value": "B2C_1A_EPR_SignUpSignIn"
+    "value": "B2C_1A_EPR_CUI_SignUpSignIn"
   },
   {
     "name": "AzureAdB2C__SignedOutCallbackPath",
     "slotSetting": false,
-    "value": "/signout/B2C_1A_EPR_SignUpSignIn"
+    "value": "/signout/B2C_1A_EPR_CUI_SignUpSignIn"
   },
   {
     "name": "CookieOptions__AntiForgeryCookieName",
@@ -67,12 +57,12 @@
   {
     "name": "EprAuthorizationConfig__FacadeBaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa8413.azurewebsites.net/api/"
+    "value": "https://prerwdwebwa2413.azurewebsites.net/api/"
   },
   {
     "name": "EprAuthorizationConfig__FacadeDownStreamScope",
     "slotSetting": false,
-    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-dev8-regulators-facade/regulator-service"
+    "value": "https://dcidmpreprod.onmicrosoft.com/epr-pre2-regulators-facade/regulator-service"
   },
   {
     "name": "EprAuthorizationConfig__FacadeUserAccountEndpoint",
@@ -107,12 +97,12 @@
   {
     "name": "FacadeAPI__Address",
     "slotSetting": false,
-    "value": "https://devrwdwebwa8413.azurewebsites.net/api/"
+    "value": "https://prerwdwebwa2413.azurewebsites.net/api/"
   },
   {
     "name": "FacadeAPI__DownstreamScope",
     "slotSetting": false,
-    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-dev8-regulators-facade/regulator-service"
+    "value": "https://dcidmpreprod.onmicrosoft.com/epr-pre2-regulators-facade/regulator-service"
   },
   {
     "name": "FacadeAPI__GetServiceRolesPath",
@@ -126,17 +116,17 @@
   },
   {
     "name": "FeatureManagement__ManageUserPermissions",
-    "value": "true",
+    "value": true,
     "slotSetting": false
   },
   {
     "name": "FeatureManagement__RemoveUsers",
-    "value": "true",
+    "value": true,
     "slotSetting": false
   },
   {
     "name": "FeatureManagement__ShowLanguageSwitcher",
-    "value": "true",
+    "value": true,
     "slotSetting": false
   },
   {
@@ -167,7 +157,7 @@
   {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
-    "value": "rwd-dev8.azure.defra.cloud"
+    "value": "rwd-pre1.azure.defra.cloud"
   },
   {
     "name": "ForwardedHeaders__ForwardedHostHeaderName",
@@ -187,12 +177,12 @@
   {
     "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
     "slotSetting": false,
-    "value": "GTM-TVVC7VFT"
+    "value": "G-VMDE8PW9W7"
   },
   {
     "name": "HTTPCLIENT__APPLICATION_SERVICE_URL",
     "slotSetting": false,
-    "value": "https://devrwdwebwa8409.azurewebsites.net"
+    "value": "https://prerwdwebwa2409.azurewebsites.net"
   },
   {
     "name": "HTTPCLIENT__RETRY_COUNT",
@@ -212,7 +202,7 @@
   {
     "name": "HTTPCLIENT__WEB_API_GATEWAY_SERVICE_URL",
     "slotSetting": false,
-    "value": "https://devrwdwebwa8409.azurewebsites.net"
+    "value": "https://prerwdwebwa2409.azurewebsites.net"
   },
   {
     "name": "MsalOptions__L2SlidingExpiration",
@@ -227,7 +217,7 @@
   {
     "name": "PhaseBannerOptions__ApplicationStatus",
     "slotSetting": false,
-    "value": "Beta"
+    "value": "Alpha"
   },
   {
     "name": "PhaseBannerOptions__Enabled",
@@ -242,7 +232,7 @@
   {
     "name": "RedisInstanceName",
     "slotSetting": false,
-    "value": "epr-dev8-regulators-"
+    "value": "epr-pre1-regulators-"
   },
   {
     "name": "ServiceSettings__ServiceKey",

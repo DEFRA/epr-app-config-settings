@@ -1,0 +1,107 @@
+[
+  {
+    "name": "ApiConfig__AccountServiceBaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa2407.azurewebsites.net"
+  },
+  {
+    "name": "ApiConfig__AccountServiceClientId",
+    "slotSetting": false,
+    "value": "fe38b8c5-550b-45e4-9323-f941595f7fa3"
+  },
+  {
+    "name": "ApiConfig__AddressLookupBaseUrl",
+    "slotSetting": false,
+    "value": "https://integration-pre.azure.defra.cloud/ws/rest/DEFRA/v1/address/"
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
+    "slotSetting": false,
+    "value": "https://integration-pre.azure.defra.cloud/ws/rest/DEFRA/v2.1/"
+  },
+  {
+    "name": "ApiConfig__Certificate",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/certificates/boomi-api-certificate/)"
+  },
+  {
+    "name": "ApiConfig__TenantId",
+    "value": "770a2450-0227-4c62-90c7-4e38537f1102",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__AddressLookupScope",
+    "value": "api://79136e90-a852-437d-8f98-b77a43d6a1f1/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseScope",
+    "value": "api://1042f571-934b-4608-aa44-bc1535feb549/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientId",
+    "value": "02f2db58-749d-44ce-a396-8a8cd3ae2ef1",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/boomi-api-secret/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "50644e63-76d0-4d66-894e-e693bdb46b52"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "dcidmpreprod.onmicrosoft.com"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "https://dcidmpreprod.b2clogin.com"
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "B2C_1A_EPR_CUI_SignUpSignIn"
+  },
+  {
+    "name": "FacadeAPI__Address",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa2413.azurewebsites.net"
+  },
+  {
+    "name": "FeatureManagement__UseBoomiOAuth",
+    "slotSetting": false,
+    "value": false
+  },
+  {
+    "name": "MessagingConfig__AccountCreationUrl",
+    "slotSetting": false,
+    "value": "https://rwd-pre1.azure.defra.cloud/regulators/full-name?token="
+  },
+  {
+    "name": "MessagingConfig__ApiKey",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/MessagingConfigApiKey/)"
+  },
+  {
+    "name": "RedisInstanceName",
+    "slotSetting": false,
+    "value": "epr-pre1-regulators-"
+  },
+  {
+    "name": "rolesConfig__roles__4__InvitationTemplateId",
+    "slotSetting": false,
+    "value": "f2363374-9f0c-420e-a91d-b4af16ff9333"
+  },
+  {
+    "name": "rolesConfig__roles__5__InvitationTemplateId",
+    "slotSetting": false,
+    "value": "f2363374-9f0c-420e-a91d-b4af16ff9333"
+  }
+]

@@ -227,7 +227,7 @@
   {
     "name": "PhaseBannerOptions__ApplicationStatus",
     "slotSetting": false,
-    "value": "Alpha"
+    "value": "Beta"
   },
   {
     "name": "PhaseBannerOptions__Enabled",

@@ -12,7 +12,8 @@ parameters:
         - 'DEV12'
         - 'DEV13'
         - 'DEV14'
-        - 'DEV15'
+        - 'pre2'
+
     - name: envToDeploy
       displayName: The environment in use
       type: string
@@ -22,6 +23,7 @@ parameters:
         - 'tst1'
         - 'pre1'
         - 'prd1'
+        - 'pre2'
        
     - name: OverwriteIfExists
       displayName: If the DNS record already exists, check this box to confirm that you want to overwrite it.

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "ConnectionStrings__SynapseDatabase",
+    "slotSetting": false,
+    "value": "Server=tcp:preepdinfas2401.sql.azuresynapse.net;Initial Catalog=preepdsp2401;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;"
+  },
+  {
+    "name": "ApiConfig__PomDataSubmissionPeriods",
+    "slotSetting": false,
+    "value": "2024-P1,2024-P4"
+  },
+  {
+    "name": "ApiConfig__IncludePackagingTypes",
+    "slotSetting": false,
+    "value": "HH,NH,PB,HDC,NHC"
+  },
+  {
+    "name": "ApiConfig__IncludePackagingMaterials",
+    "slotSetting": false,
+    "value": "AL,FC,GL,PC,PL,ST,WD"
+  }
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "name": "ApiConfig__AccountServiceBaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa2407.azurewebsites.net"
+  },
+  {
+    "name": "ApiConfig__AccountServiceClientId",
+    "slotSetting": false,
+    "value": "477d967b-24f8-4a98-bfb8-ef9ae8de4992"
+  },
+  {
+    "name": "ApiConfig__Certificate",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/certificates/boomi-api-certificate/)"
+  },
+  {
+    "name": "ApiConfig__AddressLookupBaseUrl",
+    "slotSetting": false,
+    "value": "https://integration-pre2.azure.defra.cloud/ws/rest/DEFRA/v1/address/"
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
+    "slotSetting": false,
+    "value": "https://integration-pre.azure.defra.cloud/ws/rest/DEFRA/v2.1/"
+  },
+  {
+    "name": "ApiConfig__TenantId",
+    "slotSetting": false,
+    "value": "770a2450-0227-4c62-90c7-4e38537f1102"
+  },
+  {
+    "name": "ApiConfig__AddressLookupScope",
+    "slotSetting": false,
+    "value": "api://79136e90-a852-437d-8f98-b77a43d6a1f1/.default"
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseScope",
+    "slotSetting": false,
+    "value": "api://1042f571-934b-4608-aa44-bc1535feb549/.default"
+  },
+  {
+    "name": "ApiConfig__ClientId",
+    "slotSetting": false,
+    "value": "02f2db58-749d-44ce-a396-8a8cd3ae2ef1"
+  },
+  {
+    "name": "ApiConfig__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/boomi-api-secret/)"
+  },
+  {
+    "name": "ApiConfig__PayCalBaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa2424.azurewebsites.net"
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "82b64a76-5867-4669-824a-c69e6605b654"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "dcidmpreprod.onmicrosoft.com"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "https://dcidmpreprod.b2clogin.com"
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "B2C_1A_EPR_CUI_SignUpSignIn"
+  },
+  {
+    "name": "LoggingApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa2403.azurewebsites.net"
+  },
+  {
+    "name": "MessagingConfig__AccountCreationUrl",
+    "slotSetting": false,
+    "value": "https://rwd-pre2.azure.defra.cloud/create-account/invitation/"
+  },
+  {
+    "name": "MessagingConfig__AccountLoginUrl",
+    "slotSetting": false,
+    "value": "https://rwd-pre2.azure.defra.cloud/report-data"
+  },
+  {
+    "name": "MessagingConfig__ApiKey",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/MessagingConfigApiKey/)"
+  },
+  {
+    "name": "MessagingConfig__RemovedUserNotificationTemplateId",
+    "slotSetting": false,
+    "value": "892c4a5e-ed9e-467c-9935-42e33c21013c"
+  },
+  {
+    "name": "MessagingConfig__MemberDissociationRegulatorsTemplateId",
+    "slotSetting": false,
+    "value": "888b4d56-53f2-4554-b479-5eb88e8b0d74"
+  },
+  {
+    "name": "MessagingConfig__MemberDissociationProducersTemplateId",
+    "slotSetting": false,
+    "value": "591c8026-2ceb-495b-a4f5-ec4326e9fa61"
+  },
+  {
+    "name": "FeatureManagement__SendDissociationNotificationEmail",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "MessagingConfig__ComplianceSchemeResubmissionTemplateId",
+    "value": "158fed45-5f3b-4110-a699-00305c9c11db",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ProducerResubmissionTemplateId",
+    "value": "09a4c59c-f4ac-40f5-a76c-947405ca3364",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__UserDetailChangeRequestTemplateId",
+    "slotSetting": false,
+    "value": "404bc327-e2ca-483e-8d35-544a0ba4c54f"
+  },
+  {
+    "name": "RegulatorEmailConfig__NorthernIreland",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/NorthernIrelandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__England",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/EnglandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__Scotland",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/ScotlandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__Wales",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/WalesRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ApprovedUserAccountConfirmationTemplateId",
+    "value": "70eb6162-7c12-4951-bc65-46e223225da7",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__NorthernIreland",
+    "value": "kenneth.mcquarrie@defra.gov.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__England",
+    "value": "kenneth.mcquarrie@defra.gov.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__Scotland",
+    "value": "kenneth.mcquarrie@defra.gov.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__Wales",
+    "value": "kenneth.mcquarrie@defra.gov.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "OrganisationEndpoints__UpdateOrganisation",
+    "value": "api/organisations/organisation",
+    "slotSetting": false
+  },
+  {
+    "name": "UserDetailsEndpoints__UpdateUserDetails",
+    "value": "api/users/personal-details",
+    "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__UseBoomiOAuth",
+    "value": false,
+    "slotSetting": false
+  }
+]

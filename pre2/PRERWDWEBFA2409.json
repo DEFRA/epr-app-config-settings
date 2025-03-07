@@ -1,0 +1,52 @@
+[
+ {
+    "name": "IsEncrypted",
+    "slotSetting": false,
+    "value": "false"
+  },
+  {
+    "name": "FUNCTIONS_INPROC_NET8_ENABLED",
+    "slotSetting": false,
+    "value": "1"
+  },
+  {
+    "name": "FUNCTIONS_TIME_TRIGGER",
+    "slotSetting": false,
+    "value": "0 */90 * * * *"
+  },
+  {
+    "name": "FUNCTIONS_WORKER_RUNTIME",
+    "value": "dotnet",
+    "slotSetting": false
+  },
+  {
+    "name": "SqlConnectionString",
+    "slotSetting": false,
+    "value": "Server=tcp:prerwddbssq2401.database.windows.net,1433;Initial Catalog=pre2_feespayment;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;"
+  },
+  {
+    "name": "TotalMinutesToUpdate",
+    "slotSetting": false,
+    "value": "270"
+  },
+  {
+    "name": "IgnoringMinutesToUpdate",
+    "slotSetting": false,
+    "value": "180"
+  },
+  {
+    "name": "Services__GovPayService__Url",
+    "slotSetting": false,
+    "value": "https://publicapi.payments.service.gov.uk"
+  },
+  {
+    "name": "Services__GovPayService__EndPointName",
+    "slotSetting": false,
+    "value": "v1"
+  },
+  {
+    "name": "Services__GovPayService__BearerToken",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/FeesPaymentGovPayBearerToken/)"
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "name": "AccountApi__BaseUrl",
+    "value": "https://prerwdwebwa2407.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountApi__ClientId",
+    "value": "477d967b-24f8-4a98-bfb8-ef9ae8de4992",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountApi__Timeout",
+    "value": "30",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__BaseUrl",
+    "value": "https://pre-gateway.trade.azure.defra.cloud/trade-file-store",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientId",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/EPR-APIM1002-OAuth-ClientId/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/EPR-APIM1002-OAuth-ClientSecret/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__EnableDirectAccess",
+    "value": false,
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Scope",
+    "value": "api://pre-futuretrade-ext.defra.gov.uk/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__SubscriptionKey",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/EPR-APIM1002-SUBSCRIPTION-KEY/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__TenantId",
+    "value": "9e1ba897-3a49-4461-b406-377db4ec2959",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Timeout",
+    "value": "300",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureADB2C__SignUpSignInPolicyId",
+    "value": "B2C_1A_EPR_CUI_SignUpSignIn",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "value": "1c7b2a0d-dd1c-4980-a9da-f8a44f0c6002",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "value": "dcidmpreprod.onmicrosoft.com",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "value": "https://dcidmpreprod.b2clogin.com",
+    "slotSetting": false
+  },
+  {
+    "name": "ComplianceSchemeEndpoints__GetUserOrganisations",
+    "value": "api/users/user-organisations",
+    "slotSetting": false
+  },
+  {
+    "name": "HealthCheckPath",
+    "value": "/admin/health",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionPeriod",
+    "value": "2023",
+    "slotSetting": false
+  },
+  {
+    "name": "LoggingApi__BaseUrl",
+    "value": "https://prerwdwebwa2403.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "Redis__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/RedisCacheConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "Redis__TimeToLiveInMinutes",
+    "slotSetting": false,
+    "value": "720"
+  },
+  {
+    "name": "StorageAccount__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWD2403/)"
+  },
+  {
+    "name": "StorageAccount__PomContainer",
+    "value": "pom-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__RegistrationContainer",
+    "value": "registration-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__SubsidiaryContainer",
+    "slotSetting": false,
+    "value": "subsidiary-upload-container"
+  },
+  {
+    "name": "SubmissionStatusApi__BaseUrl",
+    "value": "https://prerwdwebwa2408.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "PrnServiceApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa2418.azurewebsites.net"
+  },
+  {
+    "name": "CommonDataApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa2415.azurewebsites.net"
+  }
+]

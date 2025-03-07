@@ -1,5 +1,5 @@
 variables:
-  dnsSubscription: 'AZD-RWD-DEV-PrivateDNS'
+  dnsSubscription: 'AZR-MST'
   resourceType1: 'webApp'
   resourceType2: 'functionApp'
   resourceType3: 'storageAccount'

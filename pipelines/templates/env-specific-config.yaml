@@ -50,5 +50,7 @@ variables:
     - template: ../vars/tst1.yaml
   - ${{ elseif eq(parameters.teamName, 'preprod') }}:
     - template: ../vars/pre1.yaml
+  - ${{ elseif eq(parameters.teamName, 'preprod2') }}:
+    - template: ../vars/pre2.yaml
   - ${{ elseif eq(parameters.teamName, 'prod') }}:
     - template: ../vars/prd1.yaml

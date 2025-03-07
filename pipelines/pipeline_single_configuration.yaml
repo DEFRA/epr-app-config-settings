@@ -49,7 +49,7 @@ jobs:
 - job: DeploySettings
   displayName: Deploying settings for ${{ variables.uppercaseServiceName }}
   steps:
-    - ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
+    - ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'preprod2'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
       - task: qetza.replacetokens.replacetokens-task.replacetokens@6
         displayName: 'Replace tokens'
         inputs:
@@ -139,7 +139,7 @@ jobs:
             echo "Nothing to remove for $service"
           fi
 
-        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
+        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'preprod2'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
           workingDirectory: $(Pipeline.Workspace)/s/dev/config
         ${{ else }}:
           workingDirectory: $(settingsDir)
@@ -157,7 +157,7 @@ jobs:
             -n ${{ variables.uppercaseServiceName }} \
             --settings @./${{ variables.uppercaseServiceName }}.json \
             --debug 
-        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
+        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'preprod2'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
           workingDirectory: $(Pipeline.Workspace)/s/dev/config
         ${{ else }}:
           workingDirectory: $(settingsDir)

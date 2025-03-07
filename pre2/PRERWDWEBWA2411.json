@@ -1,0 +1,282 @@
+[
+  {
+    "name": "AzureAdB2C__CallbackPath",
+    "slotSetting": false,
+    "value": "/signin-oidc"
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "94703d30-98fb-4a66-a89d-f28698010832"
+  },
+  {
+    "name": "AzureAdB2C__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/AzureAdB2CClientSecretRegulators/)"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "dcidmpreprod.onmicrosoft.com"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "https://dcidmpreprod.b2clogin.com"
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "B2C_1A_EPR_CUI_SignUpSignIn"
+  },
+  {
+    "name": "AzureAdB2C__SignedOutCallbackPath",
+    "slotSetting": false,
+    "value": "/signout/B2C_1A_EPR_CUI_SignUpSignIn"
+  },
+  {
+    "name": "CookieOptions__AntiForgeryCookieName",
+    "slotSetting": false,
+    "value": ".epr_anti_forgery"
+  },
+  {
+    "name": "CookieOptions__AuthenticationCookieName",
+    "slotSetting": false,
+    "value": ".epr_auth"
+  },
+  {
+    "name": "CookieOptions__AuthenticationExpiryInMinutes",
+    "slotSetting": false,
+    "value": 20
+  },
+  {
+    "name": "CookieOptions__CookiePolicyCookieName",
+    "slotSetting": false,
+    "value": ".epr_regulator_cookies_policy"
+  },
+  {
+    "name": "CookieOptions__CookiePolicyDurationInMonths",
+    "slotSetting": false,
+    "value": 12
+  },
+  {
+    "name": "CookieOptions__SessionCookieName",
+    "slotSetting": false,
+    "value": ".epr_session"
+  },
+  {
+    "name": "CookieOptions__TempDataCookie",
+    "slotSetting": false,
+    "value": ".epr_temp"
+  },
+  {
+    "name": "CookieOptions__TsCookieName",
+    "slotSetting": false,
+    "value": "TSxxxxxxxx"
+  },
+  {
+    "name": "EprAuthorizationConfig__FacadeBaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa2406.azurewebsites.net/api/"
+  },
+  {
+    "name": "EprAuthorizationConfig__FacadeDownStreamScope",
+    "slotSetting": false,
+    "value": "https://dcidmpreprod.onmicrosoft.com/epr-pre2-regulators-facade/regulator-service"
+  },
+  {
+    "name": "EprAuthorizationConfig__FacadeUserAccountEndpoint",
+    "slotSetting": false,
+    "value": "user-accounts"
+  },
+  {
+    "name": "EprAuthorizationConfig__SignInRedirect",
+    "slotSetting": false,
+    "value": "/regulators/home"
+  },
+  {
+    "name": "ExternalUrls__CompaniesHouseRegisterBaseUrl",
+    "slotSetting": false,
+    "value": "https://find-and-update.company-information.service.gov.uk/company"
+  },
+  {
+    "name": "ExternalUrls__LandingPageUrl",
+    "slotSetting": false,
+    "value": "/regulators/home"
+  },
+  {
+    "name": "ExternalUrls__ManageAccountRedirectUrl",
+    "slotSetting": false,
+    "value": "/regulators/manage-account/manage"
+  },
+  {
+    "name": "ExternalUrls__ReportDataRedirectUrl",
+    "slotSetting": false,
+    "value": "/report-data"
+  },
+  {
+    "name": "FacadeApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa2406.azurewebsites.net/api/"
+  },
+  {
+    "name": "FacadeApi__DownstreamScope",
+    "slotSetting": false,
+    "value": "https://dcidmpreprod.onmicrosoft.com/epr-pre2-regulators-facade/regulator-service"
+  },
+  {
+    "name": "FacadeApi__Endpoints__EnrolInvitedUser",
+    "slotSetting": false,
+    "value": "accounts-management/enrol-invited-user"
+  },
+  {
+    "name": "FacadeApi__Endpoints__OrganisationEnrolmentsPath",
+    "slotSetting": false,
+    "value": "organisations/{0}/pending-applications"
+  },
+  {
+    "name": "FacadeApi__Endpoints__PendingApplications",
+    "slotSetting": false,
+    "value": "organisations/pending-applications"
+  },
+  {
+    "name": "FacadeApi__Endpoints__SendEnrolmentUpdatedEmails",
+    "slotSetting": false,
+    "value": "regulators/accounts/govNotification"
+  },
+  {
+    "name": "FacadeApi__Endpoints__UpdateEnrolment",
+    "slotSetting": false,
+    "value": "organisations/update-enrolment"
+  },
+  {
+    "name": "FacadeApi__Endpoints__UserAccounts",
+    "slotSetting": false,
+    "value": "user-accounts"
+  },
+  {
+    "name": "FacadeApi__UseMockData",
+    "slotSetting": false,
+    "value": false
+  },
+  {
+    "name": "FeatureManagement__ManageApprovedUsers",
+    "value": true,
+    "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__PomDataPeriodAndTime",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__ShowLanguageSwitcher",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "ForwardedHeaders__AllowedHosts",
+    "slotSetting": false,
+    "value": "rwd-pre1.azure.defra.cloud"
+  },
+  {
+    "name": "GOOGLE_ANALYTICS__MeasurementId",
+    "slotSetting": false,
+    "value": "VMDE8PW9W7"
+  },
+  {
+    "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
+    "slotSetting": false,
+    "value": "G-VMDE8PW9W7"
+  },
+  {
+    "name": "LandingPageUrls__ApplicationsUrl",
+    "slotSetting": false,
+    "value": "/regulators/applications"
+  },
+  {
+    "name": "LandingPageUrls__ManageAccountUrl",
+    "slotSetting": false,
+    "value": "/regulators/manage-account/manage"
+  },
+  {
+    "name": "MsalOptions__L2SlidingExpiration",
+    "slotSetting": false,
+    "value": 60
+  },
+  {
+    "name": "PATH_BASE",
+    "slotSetting": false,
+    "value": "/regulators"
+  },
+  {
+    "name": "Pagination__PageSize",
+    "slotSetting": false,
+    "value": 20
+  },
+  {
+    "name": "PaymentFacadeApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa2424.azurewebsites.net/api/v1/"
+  },
+  {
+    "name": "PaymentFacadeApi__DownstreamScope",
+    "slotSetting": false,
+    "value": "https://dcidmpreprod.onmicrosoft.com/epr-pre2-payments-facade/payment-service"
+  },
+  {
+    "name": "PhaseBannerOptions__ApplicationStatus",
+    "slotSetting": false,
+    "value": "Beta"
+  },
+  {
+    "name": "PhaseBannerOptions__Enabled",
+    "slotSetting": false,
+    "value": "True"
+  },
+  {
+    "name": "PhaseBannerOptions__SurveyUrl",
+    "slotSetting": false,
+    "value": "https://defragroup.eu.qualtrics.com/jfe/form/SV_a2Bm7vw3cht5B6C"
+  },
+  {
+    "name": "RedisInstanceName",
+    "slotSetting": false,
+    "value": "epr-pre1-regulators-"
+  },
+  {
+    "name": "Regulators__Organisations",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/RegulatorOrganisationString/)"
+  },
+  {
+    "name": "ServiceBus__UploadQueueName",
+    "slotSetting": false,
+    "value": "defra.epr.registration.data"
+  },
+  {
+    "name": "SubmissionApi__PostEvent",
+    "slotSetting": false,
+    "value": "events/"
+  },
+  {
+    "name": "FeatureManagement__ManagePoMSubmissions",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__ManageRegistrations",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__ManageRegistrationSubmissions",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableCsvDownload",
+    "slotSetting": false,
+    "value": false
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "name": "ServiceBus__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/ServiceBusConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__UploadQueueName",
+    "value": "defra.epr.registration.data",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__BlobContainerName",
+    "value": "registration-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWD2403/)",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionApi__BaseUrl",
+    "value": "https://prerwdwebwa2408.azurewebsites.net/",
+    "slotSetting": false
+  },
+  {
+    "name": "CompanyDetailsApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebfa2407.azurewebsites.net/"
+  },
+  {
+    "name": "CompanyDetailsApi__Timeout",
+    "slotSetting": false,
+    "value": 10
+  },
+  {
+    "name": "CompanyDetailsApi__ClientId",
+    "slotSetting": false,
+    "value": "42bf400a-9a6c-4d51-ba73-798f1cd3b537"
+  },
+  {
+    "name": "FeatureManagement__EnableRowValidation",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableOrganisationDataRowValidation",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableCompanyDetailsValidation",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableBrandPartnerDataRowValidation",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableBrandPartnerCrossFileValidation",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableSubsidiaryValidation",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__EnableSubsidiaryJoinerAndLeaverColumns",
+    "slotSetting": false,
+    "value": "false"
+  },
+  {
+    "name": "FeatureManagement__EnableOrganisationSizeFieldValidation",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "ValidationSettings__ErrorLimit",
+    "slotSetting": false,
+    "value": 200
+  }
+]

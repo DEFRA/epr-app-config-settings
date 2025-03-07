@@ -1,0 +1,26 @@
+variables:
+  environmentGroup: PRE
+  environmentSpoke: 2
+  environmentSpoke1: 1
+  subscriptionPrefix: AZR
+  projectCode: RWD
+  agentPool: DEFRA-COMMON-ubuntu2004-SSV3
+
+  environmentName: ${{ variables.environmentGroup }}${{ variables.environmentSpoke}}
+  subscriptionName: ${{ variables.subscriptionPrefix }}-${{ variables.projectCode }}-${{ variables.environmentName }}
+  sharedInfrastructureSubscriptionName: ${{ variables.subscriptionName }}
+  webResourceGroupName: ${{ variables.environmentGroup }}RWDWEBRG${{ variables.environmentSpoke}}401
+  infrastructureResourceGroupName: ${{ variables.environmentGroup }}RWDINFRG${{ variables.environmentSpoke}}401
+  privateEndpointService1: webApp
+  privateEndpointService2: functionApp
+  privateEndpointService3: storageAccount
+
+  featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: true
+  featureManagement.enableSubsidiaryValidationPom: true
+
+  #File upload versioning
+  CsvDataFile.IsLatest: true
+
+  # Validation
+  Validation.Islatest: true
+

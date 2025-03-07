@@ -1,0 +1,317 @@
+[
+  {
+    "name": "BANNER_OPTIONS__ApplicationStatus",
+    "value": "Alpha",
+    "slotSetting": false
+  },
+  {
+    "name": "BANNER_OPTIONS__Enabled",
+    "value": true,
+    "slotSetting": false
+  },
+  {
+    "name": "BANNER_OPTIONS__SurveyUrl",
+    "value": "https://defragroup.eu.qualtrics.com/jfe/form/SV_a2Bm7vw3cht5B6C",
+    "slotSetting": false
+  },
+  {
+    "name": "Caching__ProducerReportFileSizeDays",
+    "value": 1,
+    "slotSetting": false
+  },
+  {
+    "name": "Caching__LargeProducersFileGeneratedHour",
+    "value": 19,
+    "slotSetting": false
+  },
+  {
+    "name": "Caching__LargeProducersFileGenerationWaitMinutes",
+    "value": 30,
+    "slotSetting": false
+  },
+  {
+    "name": "COOKIE_OPTIONS__AntiForgeryCookieName",
+    "value": ".epr_oc_anti_forgery",
+    "slotSetting": false
+  },
+  {
+    "name": "COOKIE_OPTIONS__CookiePolicyCookieName",
+    "value": ".epr_oc_cookie_policy",
+    "slotSetting": false
+  },
+  {
+    "name": "COOKIE_OPTIONS__SessionCookieName",
+    "value": ".epr_oc_session",
+    "slotSetting": false
+  },
+  {
+    "name": "EmailAddresses__DataProtection",
+    "value": "data.protection@defra.gov.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "EmailAddresses__DefraGroupProtectionOfficer",
+    "value": "defragroupdataprotectionofficer@defra.gov.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "EmailAddresses__DefraHelpline",
+    "value": "defra.helpline@defra.gov.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "EmailAddresses__InformationCommissioner",
+    "value": "icocasework@ico.org.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__AccessibilityAbilityNet",
+    "value": "https://mcmw.abilitynet.org.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__AccessibilityContactUs",
+    "value": "https://www.gov.uk/guidance/contact-defra",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__AccessibilityEqualityAdvisorySupportService",
+    "value": "https://www.equalityadvisoryservice.com/",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__AccessibilityWebContentAccessibility",
+    "value": "https://www.w3.org/TR/WCAG21",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__EprGuidance",
+    "value": "https://www.gov.uk/guidance/how-to-collect-your-packaging-data-for-extended-producer-responsibility",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__GovUkHome",
+    "value": "https://www.gov.uk",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__NpwdRegister",
+    "value": "https://npwd.environment-agency.gov.uk/PublicRegisterProducers.aspx",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__PrivacyDataProtectionPublicRegister",
+    "value": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__PrivacyDefrasPersonalInformationCharter",
+    "value": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs/about/personal-information-charter",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__PrivacyEnvironmentAgency",
+    "value": "https://npwd.environment-agency.gov.uk/Public/Guidance.aspx?CategoryId=ad749427-9848-41a6-9d8e-ddf142e98720&ReturnUrl=%2fPublic%2fNewsAndGuidance.aspx",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__PrivacyEuropeanEconomicArea",
+    "value": "https://www.gov.uk/eu-eea",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__PrivacyFindOutAboutCallCharges",
+    "value": "https://www.gov.uk/call-charges",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__PrivacyGoogleAnalytics",
+    "value": "https://support.google.com/analytics/topic/2919631",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__PrivacyInformationCommissioner",
+    "value": "https://ico.org.uk/make-a-complaint",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__PrivacyNationalResourcesWales",
+    "value": "https://naturalresources.wales/footer-links/privacy-notice/?lang=en",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__PrivacyNorthernIrelandEnvironmentAgency",
+    "value": "https://www.daera-ni.gov.uk/daera-privacy-statement",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__PrivacyScottishEnvironmentalProtectionAgency",
+    "value": "https://www.sepa.org.uk/help/privacy-policy/privacy-notices",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__PrivacyWebBrowser",
+    "value": "https://www.gov.uk/help/browsers",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__StartPage",
+    "value": "https://www.gov.uk/guidance/report-packaging-data",
+    "slotSetting": false
+  },
+  {
+    "name": "ExternalUrls__WhoIsAffectedAndWhatToDo",
+    "value": "https://www.gov.uk/guidance/find-large-producers-on-the-report-packaging-data-service",
+    "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__ObligationCheckerEnabled",
+    "value": true,
+    "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__LargeProducerRegisterEnabled",
+    "value": true,
+    "slotSetting": false
+  },
+  {
+    "name": "GOOGLE_ANALYTICS__CookiePrefix",
+    "value": "_ga",
+    "slotSetting": false
+  },
+  {
+    "name": "GOOGLE_ANALYTICS__MeasurementId",
+    "value": "VMDE8PW9W7",
+    "slotSetting": false
+  },
+  {
+    "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
+    "value": "G-VMDE8PW9W7",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__AllNationsReportFileName",
+    "value": "large-producers-all-regulators-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__EnglishReportFileName",
+    "value": "large-producers-ea-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__NorthernIrelandReportFileName",
+    "value": "large-producers-niea-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__ScottishReportFileName",
+    "value": "large-producers-sepa-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__WalesReportFileName",
+    "value": "large-producers-nrw-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__AllNationsReportFileNameInWelsh",
+    "value": "cynhyrchwyr-mawr-pob-rheolydd-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__EnglishReportFileNameInWelsh",
+    "value": "cynhyrchwyr-mawr-ea-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__NorthernIrelandReportFileNameInWelsh",
+    "value": "cynhyrchwyr-mawr-niea-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__ScottishReportFileNameInWelsh",
+    "value": "cynhyrchwyr-mawr-sepa-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__WalesReportFileNameInWelsh",
+    "value": "cynhyrchwyr-mawr-nrw-2023.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__LatestAllNationsReportFileNamePrefix",
+    "value": "large_producers",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__LatestAllNationsReportFileNamePrefixInWelsh",
+    "value": "cynhyrchwyr_mawr",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__LatestAllNationsReportDownloadFileName",
+    "value": "large_producers_{0}_{1:dd}_{1:MMMM}_{1:yyyy}.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "LargeProducerReportFileNames__LatestAllNationsReportDownloadFileNameInWelsh",
+    "value": "cynhyrchwyr_mawr_{0}_{1:dd}_{1:MMMM}_{1:yyyy}.csv",
+    "slotSetting": false
+  },
+  {
+    "name": "PATH_BASE",
+    "value": "/",
+    "slotSetting": false
+  },
+  {
+    "name": "REDIS_INSTANCE_NAME",
+    "value": "EPR_OC_",
+    "slotSetting": false
+  },
+  {
+    "name": "SESSION_IDLE_TIMEOUT_MINUTES",
+    "value": 10,
+    "slotSetting": false
+  },
+  {
+    "name": "SiteDates__AccessibilitySiteTested",
+    "value": "2023-08-31",
+    "slotSetting": false
+  },
+  {
+    "name": "SiteDates__AccessibilityStatementPrepared",
+    "value": "2023-05-23",
+    "slotSetting": false
+  },
+  {
+    "name": "SiteDates__AccessibilityStatementReviewed",
+    "value": "2024-01-23",
+    "slotSetting": false
+  },
+  {
+    "name": "SiteDates__DateFormat",
+    "value": "d MMMM yyyy",
+    "slotSetting": false
+  },
+  {
+    "name": "SiteDates__PrivacyLastUpdated",
+    "value": "2024-01-23",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__BlobContainerName",
+    "value": "large-producers",
+    "slotSetting": false
+  },
+  {
+    "name": "StorageAccount__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://prerwdinfkv2401.vault.azure.net/secrets/LargeProducersRegisterStorageAccountConnectionString)",
+    "slotSetting": false
+  },
+  {
+    "name": "UseLocalSession",
+    "slotSetting": false,
+    "value": false
+  }
+]

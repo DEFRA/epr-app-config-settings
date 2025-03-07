@@ -98,5 +98,10 @@
     "name": "SiteDates__DateFormat",
     "slotSetting": false,
     "value": "d MMMM yyyy"
+  },
+  {
+    "name": "PhaseBannerOptions__ApplicationStatus",
+    "slotSetting": false,
+    "value": "Beta"
   }
 ]

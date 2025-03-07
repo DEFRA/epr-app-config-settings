@@ -2,12 +2,12 @@
   {
     "name": "AzureAdB2C__ClientId",
     "slotSetting": false,
-    "value": "dc6d5bdf-2024-4990-a43e-25cadddc5533"
+    "value": ""
   },
   {
     "name": "AzureAdB2C__ClientSecret",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://prerwdinfkv1401.vault.azure.net/secrets/AzureAdB2CClientSecret/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://prerwdinfkv2401.vault.azure.net/secrets/AzureAdB2CClientSecret/)"
   },
   {
     "name": "AzureAdB2C__Domain",
@@ -37,12 +37,12 @@
   {
     "name": "FacadeAPI__Address",
     "slotSetting": false,
-    "value": "https://prerwdwebwa1404.azurewebsites.net"
+    "value": "https://prerwdwebwa2404.azurewebsites.net"
   },
   {
     "name": "FacadeAPI__DownstreamScope",
     "slotSetting": false,
-    "value": "https://dcidmpreprod.onmicrosoft.com/epr-pre1-producers-account-facade/account-creation"
+    "value": "https://dcidmpreprod.onmicrosoft.com/epr-pre2-producers-account-facade/account-creation"
   },
   {
     "name": "FeatureManagement__ShowLanguageSwitcher",
@@ -52,7 +52,7 @@
   {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
-    "value": "rwd-pre1.azure.defra.cloud"
+    "value": "rwd-pre2.azure.defra.cloud"
   },
   {
     "name": "GoogleAnalytics__MeasurementId",
@@ -77,7 +77,7 @@
   {
     "name": "RedisInstanceName",
     "slotSetting": false,
-    "value": "epr-pre1-producers-"
+    "value": "epr-pre2-producers-"
   },
   {
     "name": "SiteDates__AccessibilityStatementPrepared",
@@ -98,10 +98,5 @@
     "name": "SiteDates__DateFormat",
     "slotSetting": false,
     "value": "d MMMM yyyy"
-  },
-  {
-    "name": "PhaseBannerOptions__ApplicationStatus",
-    "slotSetting": false,
-    "value": "Beta"
   }
 ]

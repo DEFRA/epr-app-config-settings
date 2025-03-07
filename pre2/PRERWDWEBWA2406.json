@@ -1,0 +1,353 @@
+[
+  {
+    "name": "HealthCheckPath",
+    "value": "/admin/health",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__BaseUrl",
+    "value": "https://pre-gateway.trade.azure.defra.cloud/trade-file-store",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientId",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/EPR-APIM1002-OAuth-ClientId/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/EPR-APIM1002-OAuth-ClientSecret/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__EnableDirectAccess",
+    "value": false,
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Scope",
+    "value": "api://pre-futuretrade-ext.defra.gov.uk/.default",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__SubscriptionKey",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/EPR-APIM1002-SUBSCRIPTION-KEY/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__TenantId",
+    "value": "9e1ba897-3a49-4461-b406-377db4ec2959",
+    "slotSetting": false
+  },
+  {
+    "name": "AntivirusApi__Timeout",
+    "value": "300",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "value": "50644e63-76d0-4d66-894e-e693bdb46b52",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "value": "dcidmpreprod.onmicrosoft.com",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "value": "https://dcidmpreprod.b2clogin.com",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "value": "B2C_1A_EPR_CUI_SignUpSignIn",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__BaseUrl",
+    "value": "https://prerwdwebwa2407.azurewebsites.net/api/",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__Timeout",
+    "value": 30,
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__AccountServiceClientId",
+    "value": "477d967b-24f8-4a98-bfb8-ef9ae8de4992",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__ServicePooledConnectionLifetime",
+    "value": 15,
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__ServiceRetryCount",
+    "value": 6,
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__PendingApplications",
+    "value": "regulators/pending-applications?userId={0}&currentPage={1}&pageSize={2}&organisationName={3}&applicationType={4}",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__GetOrganisationsApplications",
+    "value": "regulators/applications/enrolments?userId={0}&organisationId={1}",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__ManageEnrolment",
+    "value": "regulators/accounts/manage-enrolment",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__TransferOrganisationNation",
+    "value": "regulators/organisation/transfer",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__UserOrganisations",
+    "value": "users/user-organisations",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__CreateRegulator",
+    "value": "regulator-organisation",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__GetRegulator",
+    "value": "regulator-organisation?nation=",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__RegulatorInvitation",
+    "value": "regulator-accounts/invite-user",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__RegulatorEnrollment",
+    "value": "accounts-management/enrol-invited-user",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__GetRegulatorUsers",
+    "value": "regulators/organisations/users",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWD2403/)",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__PomContainerName",
+    "value": "pom-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__RegistrationContainerName",
+    "value": "registration-upload-container",
+    "slotSetting": false
+  },
+  {
+    "name": "CommonDataApiConfig__ApiVersion",
+    "value": 1,
+    "slotSetting": false
+  },
+  {
+    "name": "CommonDataApiConfig__BaseUrl",
+    "value": "https://prerwdwebwa2415.azurewebsites.net/api/",
+    "slotSetting": false
+  },
+  {
+    "name": "CommonDataApiConfig__Endpoints__GetRegistrationSubmissions",
+    "value": "submissions/registrations/summary",
+    "slotSetting": false
+  },
+  {
+    "name": "CommonDataApiConfig__Endpoints__GetPoMSubmissions",
+    "value": "submissions/pom/summary",
+    "slotSetting": false
+  },
+  {
+    "name": "CommonDataApiConfig__Endpoints__GetSubmissionEventsLastSyncTime",
+    "value": "submission-events/get-last-sync-time",
+    "slotSetting": false
+  },
+  {
+    "name": "CommonDataApiConfig__ServiceRetryCount",
+    "value": 6,
+    "slotSetting": false
+  },
+  {
+    "name": "CommonDataApiConfig__Timeout",
+    "value": 30,
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__BaseUrl",
+    "value": "https://prerwdwebwa2408.azurewebsites.net",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Timeout",
+    "value": "30",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__ServiceRetryCount",
+    "value": "6",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__ApiVersion",
+    "value": "1",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__CreateSubmissionEvent",
+    "value": "v{0}/submissions/{1}/events",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__GetPoMSubmissions",
+    "value": "v{0}/submissions/events/get-regulator-pom-decision",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__GetRegistrationSubmissions",
+    "value": "v{0}/submissions/events/get-regulator-registration-decision",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ApiKey",
+    "value": "@Microsoft.KeyVault(SecretUri=https://PRERWDINFKV2401.vault.azure.net/secrets/MessagingConfigApiKey/)",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ToApprovedPersonApprovedPersonAccepted",
+    "value": "ea93d22f-090f-444c-b868-9438faf472c5",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorRegistrationAccepted",
+    "value": "99dabb0e-e7b2-4a30-a9c1-9ff8389b8aa5",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorRegistrationRejected",
+    "value": "c9ad4001-02df-40f5-a09b-b98594b12c7c",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__InviteNewApprovedPersonTemplateId",
+    "value": "c8d5bc5c-580a-4817-9bab-4fd26c0dabee",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ToApprovedPersonDelegatedPersonAccepted",
+    "value": "248ef8cd-3e36-4966-a1db-6d9dd05e64e0",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ToDelegatedPersonDelegatedPersonAccepted",
+    "value": "74609ccd-75cd-4208-b99f-c5ac0c6beeff",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ToApprovedPersonApprovedPersonRejected",
+    "value": "b6010217-e5b7-4e70-a3f8-4e4628a9805a",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ToApprovedPersonDelegatedPersonRejected",
+    "value": "236a2857-a956-4d3c-9fa7-a1c6369ced76",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ToDelegatedPersonDelegatedPersonRejected",
+    "value": "e6e47f07-6d58-4f5d-bb9a-162e92e3fdf3",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ToDelegatedPersonApprovedPersonRejected",
+    "value": "e876d330-b12d-4fc3-be92-7c2297bd6c69",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorSubmissionAccepted",
+    "value": "dcab7c30-8b9f-49c0-9d01-86197499d063",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorSubmissionRejectedResubmissionRequired",
+    "value": "6b890053-d35d-4dbd-85b5-57a306251902",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorSubmissionRejectedResubmissionNotRequired",
+    "value": "381ee65d-dc2c-4dc6-9d45-616e4953f349",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__AccountCreationUrl",
+    "value": "https://rwd-pre2.azure.defra.cloud/create-account/invitation/",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__AccountSignInUrl",
+    "slotSetting": false,
+    "value": "https://rwd-pre2.azure.defra.cloud/report-data"
+
+  },
+  {
+    "name": "MessagingConfig__OrganisationRegistrationSubmissionQueriedId",
+    "slotSetting": false,
+    "value": "449d5816-c0bf-4437-9de8-6fba41e15e95"
+  },
+  {
+    "name": "MessagingConfig__OrganisationRegistrationSubmissionDecisionId",
+    "slotSetting": false,
+    "value": "f9fd10d4-1207-40e2-b620-f8e854b11c65"
+  },
+  {
+    "name": "MessagingConfig__WelshOrganisationRegistrationSubmissionQueriedId",
+    "slotSetting": false,
+    "value": "8b7b9a77-c161-428b-822d-1192083810f8"
+  },
+  {
+    "name": "MessagingConfig__WelshOrganisationRegistrationSubmissionDecisionId",
+    "slotSetting": false,
+    "value": "79a6b4ef-adbb-4b0d-b23a-76be05665356"
+  },
+  {
+    "name": "rolesConfig__roles",
+    "value": "[\r\n {\r\n \"serviceRoleId\": 4,\r\n \"personRoleId\": 1,\r\n \"key\": \"Regulator.Admin\" \r\n },\r\n {\r\n \"serviceRoleId\": 5,\r\n \"personRoleId\": 2,\r\n \"key\": \"Regulator.Basic\"\r\n }\r\n ]",
+    "slotSetting": false
+  },
+  {
+    "name": "RedisInstanceName",
+    "value": "rwd-pre2-regulators-",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__DemotedDelegatedUserTemplateId",
+    "value": "ea8906ac-e489-46dc-be00-4174fa26560d",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RemovedApprovedUserTemplateId",
+    "value": "08f82eee-2dfc-4e77-950f-cc3e0a4a411b",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__PromotedApprovedUserTemplateId",
+    "value": "12154c47-b082-42bf-adef-e6fcba1e9173",
+    "slotSetting": false
+  }
+]

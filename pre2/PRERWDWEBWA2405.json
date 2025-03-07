@@ -7,42 +7,32 @@
   {
     "name": "AzureAdB2C__ClientId",
     "slotSetting": false,
-    "value": "c7adc58b-7cc6-45e9-a3f8-72af71238575"
+    "value": "dc6d5bdf-2024-4990-a43e-25cadddc5533"
   },
   {
     "name": "AzureAdB2C__ClientSecret",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/AzureAdB2CClientSecretRWDRegulatorsDev4-8/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://prerwdinfkv2401.vault.azure.net/secrets/AzureAdB2CClientSecret/)"
   },
   {
     "name": "AzureAdB2C__Domain",
     "slotSetting": false,
-    "value": "AZDCUSPOC2.onmicrosoft.com"
-  },
-  {
-    "name": "AzureAdB2C__EditProfilePolicyId",
-    "slotSetting": false,
-    "value": "B2C_1_Edit"
+    "value": "dcidmpreprod.onmicrosoft.com"
   },
   {
     "name": "AzureAdB2C__Instance",
     "slotSetting": false,
-    "value": "https://AZDCUSPOC2.b2clogin.com"
-  },
-  {
-    "name": "AzureAdB2C__ResetPasswordPolicyId",
-    "slotSetting": false,
-    "value": "B2C_1_ResetPassword"
+    "value": "https://dcidmpreprod.b2clogin.com"
   },
   {
     "name": "AzureAdB2C__SignUpSignInPolicyId",
     "slotSetting": false,
-    "value": "B2C_1A_EPR_SignUpSignIn"
+    "value": "B2C_1A_EPR_CUI_SignUpSignIn"
   },
   {
     "name": "AzureAdB2C__SignedOutCallbackPath",
     "slotSetting": false,
-    "value": "/signout/B2C_1A_EPR_SignUpSignIn"
+    "value": "/signout/B2C_1A_EPR_CUI_SignUpSignIn"
   },
   {
     "name": "CookieOptions__AntiForgeryCookieName",
@@ -50,9 +40,14 @@
     "value": ".epr_anti_forgery"
   },
   {
+    "name": "CookieOptions__AuthenticationExpiryInMinutes",
+    "slotSetting": false,
+    "value": "20"
+  },
+  {
     "name": "CookieOptions__CookiePolicyCookieName",
     "slotSetting": false,
-    "value": ".epr_regulator_cookies_policy"
+    "value": ".epr_cookies_policy"
   },
   {
     "name": "CookieOptions__SessionCookieName",
@@ -60,19 +55,14 @@
     "value": ".epr_session"
   },
   {
-    "name": "DeploymentRole",
-    "slotSetting": false,
-    "value": "Regulator"
-  },
-  {
     "name": "EprAuthorizationConfig__FacadeBaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa8413.azurewebsites.net/api/"
+    "value": "https://prerwdwebwa2404.azurewebsites.net/api/"
   },
   {
     "name": "EprAuthorizationConfig__FacadeDownStreamScope",
     "slotSetting": false,
-    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-dev8-regulators-facade/regulator-service"
+    "value": "https://dcidmpreprod.onmicrosoft.com/epr-pre2-producers-account-facade/account-creation"
   },
   {
     "name": "EprAuthorizationConfig__FacadeUserAccountEndpoint",
@@ -80,24 +70,9 @@
     "value": "user-accounts"
   },
   {
-    "name": "EprAuthorizationConfig__SignInRedirect",
-    "slotSetting": false,
-    "value": "/regulators/home"
-  },
-  {
-    "name": "ExternalUrls__CookiesLink",
-    "slotSetting": false,
-    "value": "/regulators/cookies"
-  },
-  {
     "name": "ExternalUrls__LandingPageUrl",
     "slotSetting": false,
-    "value": "/regulators/home"
-  },
-  {
-    "name": "ExternalUrls__PrivacyLink",
-    "slotSetting": false,
-    "value": "/regulators/privacy"
+    "value": "/report-data"
   },
   {
     "name": "FILE_UPLOAD_LIMIT_IN_BYTES",
@@ -107,12 +82,12 @@
   {
     "name": "FacadeAPI__Address",
     "slotSetting": false,
-    "value": "https://devrwdwebwa8413.azurewebsites.net/api/"
+    "value": "https://prerwdwebwa2404.azurewebsites.net/api/"
   },
   {
     "name": "FacadeAPI__DownstreamScope",
     "slotSetting": false,
-    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-dev8-regulators-facade/regulator-service"
+    "value": "https://dcidmpreprod.onmicrosoft.com/epr-pre2-producers-account-facade/account-creation"
   },
   {
     "name": "FacadeAPI__GetServiceRolesPath",
@@ -126,23 +101,23 @@
   },
   {
     "name": "FeatureManagement__ManageUserPermissions",
-    "value": "true",
+    "value": true,
     "slotSetting": false
   },
   {
     "name": "FeatureManagement__RemoveUsers",
-    "value": "true",
+    "value": true,
     "slotSetting": false
   },
   {
     "name": "FeatureManagement__ShowLanguageSwitcher",
-    "value": "true",
+    "value": true,
     "slotSetting": false
   },
   {
     "name": "FeatureManagement__ManageUserDetailChanges",
-    "value": true,
-    "slotSetting": false
+    "slotSetting": false,
+    "value": true
   },
   {
     "name": "ExternalUrls__CompanyHouseChangeRequestLink",
@@ -167,7 +142,7 @@
   {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
-    "value": "rwd-dev8.azure.defra.cloud"
+    "value": "rwd-pre2.azure.defra.cloud"
   },
   {
     "name": "ForwardedHeaders__ForwardedHostHeaderName",
@@ -180,19 +155,19 @@
     "value": "X-Initial-Host"
   },
   {
-    "name": "GOOGLE_ANALYTICS__MeasurementId",
+    "name": "GoogleAnalytics__MeasurementId",
     "slotSetting": false,
     "value": "VMDE8PW9W7"
   },
   {
-    "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
+    "name": "GoogleAnalytics__TagManagerContainerId",
     "slotSetting": false,
-    "value": "GTM-TVVC7VFT"
+    "value": "G-VMDE8PW9W7"
   },
   {
     "name": "HTTPCLIENT__APPLICATION_SERVICE_URL",
     "slotSetting": false,
-    "value": "https://devrwdwebwa8409.azurewebsites.net"
+    "value": "https://prerwdwebwa2409.azurewebsites.net"
   },
   {
     "name": "HTTPCLIENT__RETRY_COUNT",
@@ -212,7 +187,7 @@
   {
     "name": "HTTPCLIENT__WEB_API_GATEWAY_SERVICE_URL",
     "slotSetting": false,
-    "value": "https://devrwdwebwa8409.azurewebsites.net"
+    "value": "https://prerwdwebwa2409.azurewebsites.net"
   },
   {
     "name": "MsalOptions__L2SlidingExpiration",
@@ -222,12 +197,12 @@
   {
     "name": "PATH_BASE",
     "slotSetting": false,
-    "value": "/regulators/manage-account"
+    "value": "/manage-account"
   },
   {
     "name": "PhaseBannerOptions__ApplicationStatus",
     "slotSetting": false,
-    "value": "Beta"
+    "value": "Alpha"
   },
   {
     "name": "PhaseBannerOptions__Enabled",
@@ -242,12 +217,7 @@
   {
     "name": "RedisInstanceName",
     "slotSetting": false,
-    "value": "epr-dev8-regulators-"
-  },
-  {
-    "name": "ServiceSettings__ServiceKey",
-    "slotSetting": false,
-    "value": "Regulating"
+    "value": "epr-pre2-producers-"
   },
   {
     "name": "SCHEME_YEAR",
@@ -258,5 +228,25 @@
     "name": "SESSION_IDLE_TIMEOUT_MINUTES",
     "slotSetting": false,
     "value": "20"
+  },
+  {
+    "name": "SiteDates__AccessibilityStatementPrepared",
+    "slotSetting": false,
+    "value": "2023-05-23"
+  },
+  {
+    "name": "SiteDates__AccessibilityStatementReviewed",
+    "slotSetting": false,
+    "value": "2023-11-03"
+  },
+  {
+    "name": "SiteDates__AccessibilitySiteTested",
+    "slotSetting": false,
+    "value": "2023-08-31"
+  },
+  {
+    "name": "SiteDates__DateFormat",
+    "slotSetting": false,
+    "value": "d MMMM yyyy"
   }
 ]
