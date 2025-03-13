@@ -225,6 +225,11 @@
     "value": "#{{ featureManagement.showSubsidiaryJoinerAndLeaverColumns }}"
   },
   {
+    "name": "FeatureManagement__ImplementPackagingDataResubmissionJourney",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.ImplementPackagingDataResubmissionJourney }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"

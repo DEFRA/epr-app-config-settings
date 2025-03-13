@@ -11,21 +11,14 @@ variables:
 
   # Feature management
   featureManagement.pomDataPeriodAndTime: true
-  featureManagement.enableBrandPartnerDataRowValidation: true
-  featureManagement.enableBrandPartnerCrossFileValidation: true
-  featureManagement.enableCompanyDetailsValidation: true
-  featureManagement.enableOrganisationDataRowValidation: true
-  featureManagement.enableRegistrationRowValidation: true
-  featureManagement.enableRowValidation: true
   featureManagement.sendDissociationNotificationEmail: true
   featureManagement.validationDataApi: true
   featureManagement.manageApprovedUsers: true
   featureManagement.ShowSubsidiaries: true
   featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: true
   featureManagement.enableCsvDownload: true
+  featureManagement.enableSubsidiaryJoinerAndLeaverColumns: true
   featureManagement.obligationCheckerEnabled: true
-  featureManagement.enableSubsidiaryValidationPom: true
-  featureManagement.enableOrganisationSizeFieldValidation: true
   featureManagement.manageRegistrationSubmissions: true
 
   # EprPackagingRegulatorEmailConfig

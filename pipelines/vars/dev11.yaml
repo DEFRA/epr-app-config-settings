@@ -23,4 +23,4 @@ variables:
   apiConfig.paymentFacadeClientId: 'f3f2de37-8ee3-4ae4-8fca-6d79be546ef4'   # Application ID for DEVRWDWEBWAB425_API
   paycalFrontEnd.appRegistration.clientId: 17c1ab24-2914-4c94-98bf-b1b8023cc765      # Application ID for DEVRWDWEBWAB422_API
   
-  
+  featureManagement.ImplementPackagingDataResubmissionJourney: true

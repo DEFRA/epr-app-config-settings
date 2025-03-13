@@ -17,6 +17,7 @@ variables:
   featureManagement.obligationCheckerEnabled: true
   featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: true
   featureManagement.enableSubsidiaryValidationPom: true
+  featureManagement.ImplementPackagingDataResubmissionJourney: true
 
   #File upload versioning
   CsvDataFile.IsLatest: true

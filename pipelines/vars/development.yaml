@@ -128,6 +128,7 @@ variables:
   featureManagement.showSubsidiariesRemoveLink: true
   featureManagement.showSubsidiaryJoinerAndLeaverColumns: false
   featureManagement.enableSubsidiaryUploadJoinerColumns: false
+  featureManagement.ImplementPackagingDataResubmissionJourney: false
 
   # Databases
   accountsDatabase.name: dev$(environmentSpoke1)_accounts

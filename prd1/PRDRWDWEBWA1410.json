@@ -215,6 +215,11 @@
     "value": false
   },
   {
+    "name": "FeatureManagement__ImplementPackagingDataResubmissionJourney",
+    "slotSetting": false,
+    "value": false
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "report-packaging-data.defra.gov.uk"

@@ -225,6 +225,11 @@
     "value": false
   },
   {
+    "name": "FeatureManagement__ImplementPackagingDataResubmissionJourney",
+    "slotSetting": false,
+    "value": false
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-pre1.azure.defra.cloud"
