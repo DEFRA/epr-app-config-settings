@@ -102,6 +102,11 @@
   {
     "name": "DbLoadingChunkSize",
     "value": "1000",
-    "slotSetting":false
+    "slotSetting": false
+  },
+  {
+    "name": "APPINSIGHTS_INSTRUMENTATIONKEY",
+    "value": "fb7d3853-5354-4dc9-9c64-4ea560448bff",
+    "slotSetting": false
   }
 ]
