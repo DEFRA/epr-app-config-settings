@@ -16,7 +16,7 @@
 	},
 	{
 		"name": "UpdateProducersTrigger",
-		"value": "0 0 18 * * 1-5",
+		"value": "0 */10 * * * 1-5",
 		"slotSetting": false
 	},
 	{
@@ -26,7 +26,7 @@
 	},
 	{
 		"name": "FetchNpwdIssuedPrns__Schedule",
-		"value": "0 0 18 * * 1-5",
+		"value": "0 */10 * * * 1-5",
 		"slotSetting": false
 	},
 	{
@@ -46,7 +46,7 @@
 	},
 	{
 		"name": "UpdatePrnsTrigger",
-		"value": "0 0 18 * * 1-5",
+		"value": "0 */10 * * * 1-5",
 		"slotSetting": false
 	},
 	{
@@ -81,7 +81,7 @@
 	},
 	{
 		"name": "MessagingConfig__NpwdEmail",
-		"value": "akintunde.oyefodunrin.external@eviden.com",
+		"value": "npwd.support@solution7.co.uk",
 		"slotSetting": false
 	},
 	{
