@@ -41,7 +41,7 @@
   },
   {
     "name": "UpdatePrnsTrigger",
-    "value": "0 0 18 * * 1-5",
+    "value": "0 1,31 0-7 * * 1-5",
     "slotSetting": false
   },
   {
@@ -217,6 +217,21 @@
   {
     "name": "MessagingConfig__NpwdReconcileUpdatedPrnsTemplateId",
     "value": "#{{ messaging.prn.reconcileupdatedprns.templateid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "UpdatePrnsMaxRows",
+    "value": "100",
+    "slotSetting": false
+  },
+  {
+    "name": "NpwdIntegration__TimeoutSeconds",
+    "value": "310",
+    "slotSetting": false
+  },
+  {
+    "name": "Service__TimeoutSeconds",
+    "value": "100",
     "slotSetting": false
   }
 ]

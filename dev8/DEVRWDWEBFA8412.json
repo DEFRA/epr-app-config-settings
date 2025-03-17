@@ -46,7 +46,7 @@
 	},
 	{
 		"name": "UpdatePrnsTrigger",
-		"value": "0 0 18 * * 1-5",
+		"value": "0 1,31 0-7 * * 1-5",
 		"slotSetting": false
 	},
 	{
@@ -176,7 +176,7 @@
 	},
 	{
 		"name": "FeatureManagement__RunUpdateProducers",
-		"value": true,
+		"value": false,
 		"slotSetting": false
 	},
 	{
@@ -222,6 +222,21 @@
 	{
 		"name": "MessagingConfig__NpwdReconcileIssuedPrnsTemplateId",
 		"value": "3f28cb69-4703-46c6-902f-9350aaeebc87",
+		"slotSetting": false
+	},
+	{
+		"name": "UpdatePrnsMaxRows",
+		"value": "100",
+		"slotSetting": false
+	},
+	{
+		"name": "NpwdIntegration__TimeoutSeconds",
+		"value": "310",
+		"slotSetting": false
+	},
+	{
+		"name": "Service__TimeoutSeconds",
+		"value": "100",
 		"slotSetting": false
 	}
 ]
