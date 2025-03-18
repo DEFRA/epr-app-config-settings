@@ -30,6 +30,7 @@ variables:
   featureManagement.ShowSubsidiariesSingleUploadJourney: true
   featureManagement.enableCsvDownload: true
   featureManagement.enableOrganisationSizeFieldValidation: true
+  featureManagement.showAllSubsidiaries: true
 
   #File upload versioning
   CsvDataFile.IsLatest: true

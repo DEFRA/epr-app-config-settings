@@ -29,6 +29,7 @@ variables:
   featureManagement.enableCsvDownload: true
   featureManagement.enableOrganisationSizeFieldValidation: true
   featureManagement.ShowSubsidiariesRemoveLink: false
+  featureManagement.showAllSubsidiaries: true
 
   #File upload versioning
   CsvDataFile.IsLatest: true

@@ -289,5 +289,10 @@
     "name": "FeatureManagement__EnableCsvDownload",
     "slotSetting": false,
     "value": false
+  },
+  {
+    "name": "FeatureManagement__ReprocessorExporter",
+    "slotSetting": false,
+    "value": false
   }
 ]

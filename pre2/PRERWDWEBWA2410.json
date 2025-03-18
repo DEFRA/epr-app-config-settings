@@ -220,6 +220,11 @@
     "value": true
   },
   {
+    "name": "FeatureManagement__ShowAllSubsidiaries",
+    "slotSetting": false,
+    "value": false
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-pre1.azure.defra.cloud"

@@ -230,6 +230,11 @@
     "value": "#{{ featureManagement.ImplementPackagingDataResubmissionJourney }}"
   },
   {
+    "name": "FeatureManagement__ShowAllSubsidiaries",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.showAllSubsidiaries }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"

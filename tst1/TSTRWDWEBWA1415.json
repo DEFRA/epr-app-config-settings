@@ -18,5 +18,10 @@
     "name": "ApiConfig__IncludePackagingMaterials",
     "slotSetting": false,
     "value": "AL,FC,GL,PC,PL,ST,WD"
+  },
+  {
+    "name": "ApiConfig__IncludeOrganisationSize",
+    "slotSetting": false,
+    "value": "L"
   }
 ]
