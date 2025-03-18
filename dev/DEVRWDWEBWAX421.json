@@ -117,7 +117,7 @@
   {
     "name": "SessionCookieName",
     "slotSetting": false,
-    "value": "Paycal-dev#{{ environmentSpoke1 }}"
+    "value": "Paycal-#{{ environmentSpoke1 }}"
   },
   {
     "name": "BlobStorage__ConnectionString",
