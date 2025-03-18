@@ -113,5 +113,20 @@
     "name": "SessionTimeOut",
     "value": "40",
     "slotSetting": false
+  },
+  {
+    "name": "SessionCookieName",
+    "slotSetting": false,
+    "value": "Paycal-dev#{{ environmentSpoke1 }}"
+  },
+  {
+    "name": "BlobStorage__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__ContainerName",
+    "value": "paycal",
+    "slotSetting": false
   }
 ]
