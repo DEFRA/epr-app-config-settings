@@ -1,0 +1,87 @@
+[
+  {
+    "name": "ServiceBus__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/ServiceBusConnectionString/)"
+  },
+  {
+    "name": "ServiceBus__UploadQueueName",
+    "slotSetting": false,
+    "value": "defra.epr.registration.data#{{ teamName.dot }}"
+  },
+  {
+    "name": "StorageAccount__BlobContainerName",
+    "slotSetting": false,
+    "value": "registration-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "StorageAccount__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})"
+  },
+  {
+    "name": "SubmissionApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net/"
+  },
+  {
+    "name": "CompanyDetailsApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebfa#{{ environmentSpoke }}407.azurewebsites.net/"
+  },
+  {
+    "name": "CompanyDetailsApi__Timeout",
+    "slotSetting": false,
+    "value": 10
+  },
+  {
+    "name": "CompanyDetailsApi__ClientId",
+    "slotSetting": false,
+    "value": "#{{ validationDataApi.appRegistration.clientId }}"
+  },
+  {
+    "name": "FeatureManagement__EnableRowValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableRowValidation }}"
+  },
+  {
+    "name": "FeatureManagement__EnableOrganisationDataRowValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableOrganisationDataRowValidation }}"
+  },
+  {
+    "name": "FeatureManagement__EnableBrandPartnerDataRowValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableBrandPartnerDataRowValidation }}"
+  },
+  {
+    "name": "FeatureManagement__EnableBrandPartnerCrossFileValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableBrandPartnerCrossFileValidation }}"
+  },
+  {
+    "name": "FeatureManagement__EnableCompanyDetailsValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableCompanyDetailsValidation }}"
+  },
+  {
+    "name": "FeatureManagement__EnableSubsidiaryValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableSubsidiaryValidation }}"
+  },
+  {
+    "name": "FeatureManagement__EnableSubsidiaryJoinerAndLeaverColumns",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableSubsidiaryJoinerAndLeaverColumns }}"
+  },
+  {
+    "name": "FeatureManagement__EnableOrganisationSizeFieldValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableOrganisationSizeFieldValidation }}"
+  },
+  {
+    "name": "ValidationSettings__ErrorLimit",
+    "slotSetting": false,
+    "value": 200
+  }
+]

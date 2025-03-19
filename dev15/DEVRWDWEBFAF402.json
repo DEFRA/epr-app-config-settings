@@ -1,0 +1,147 @@
+[
+  {
+    "name": "Redis__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+  },
+  {
+    "name": "ServiceBus__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/ServiceBusConnectionString/)"
+  },
+  {
+    "name": "ServiceBus__SplitQueueName",
+    "slotSetting": false,
+    "value": "defra.epr.producer.data#{{ teamName.dot }}"
+  },
+  {
+    "name": "StorageAccount__PomContainer",
+    "slotSetting": false,
+    "value": "pom-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "SubmissionApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"
+  },
+  {
+    "name": "CompanyDetailsApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebfa#{{ environmentSpoke }}407.azurewebsites.net/"
+  },
+  {
+    "name": "CompanyDetailsApi__Timeout",
+    "slotSetting": false,
+    "value": 10
+  },
+  {
+    "name": "CompanyDetailsApi__ClientId",
+    "slotSetting": false,
+    "value": "#{{ validationDataApi.appRegistration.clientId }}"
+  },
+  {
+    "name": "Validation__Disabled",
+    "slotSetting": false,
+    "value": false
+  },
+  {
+    "name": "Validation__MaxIssuesToProcess",
+    "slotSetting": false,
+    "value": "1000"
+  },
+  {
+    "name": "Validation__IsLatest",
+    "slotSetting": false,
+    "value": "#{{ Validation.Islatest }}"
+  },
+  {
+    "name": "SubmissionPeriods__0__SubmissionPeriod",
+    "slotSetting": false,
+    "value": "January to June 2023"
+  },
+  {
+    "name": "SubmissionPeriods__0__PeriodCodes__0",
+    "slotSetting": false,
+    "value": "2023-P1"
+  },
+  {
+    "name": "SubmissionPeriods__0__PeriodCodes__1",
+    "slotSetting": false,
+    "value": "2023-P2"
+  },
+  {
+    "name": "SubmissionPeriods__0__ErrorCode",
+    "slotSetting": false,
+    "value": "54"
+  },
+  {
+    "name": "SubmissionPeriods__1__SubmissionPeriod",
+    "slotSetting": false,
+    "value": "July to December 2023"
+  },
+  {
+    "name": "SubmissionPeriods__1__PeriodCodes__0",
+    "slotSetting": false,
+    "value": "2023-P3"
+  },
+  {
+    "name": "SubmissionPeriods__1__ErrorCode",
+    "slotSetting": false,
+    "value": "55"
+  },
+  {
+    "name": "SubmissionPeriods__2__SubmissionPeriod",
+    "slotSetting": false,
+    "value": "January to June 2024"
+  },
+  {
+    "name": "SubmissionPeriods__2__PeriodCodes__0",
+    "slotSetting": false,
+    "value": "2024-P1"
+  },
+  {
+    "name": "SubmissionPeriods__2__PeriodCodes__1",
+    "slotSetting": false,
+    "value": "2024-P2"
+  },
+  {
+    "name": "SubmissionPeriods__2__PeriodCodes__2",
+    "slotSetting": false,
+    "value": "2024-P3"
+  },
+  {
+    "name": "SubmissionPeriods__2__ErrorCode",
+    "slotSetting": false,
+    "value": "65"
+  },
+  {
+    "name": "SubmissionPeriods__3__SubmissionPeriod",
+    "slotSetting": false,
+    "value": "July to December 2024"
+  },
+  {
+    "name": "SubmissionPeriods__3__PeriodCodes__0",
+    "slotSetting": false,
+    "value": "2024-P4"
+  },
+  {
+    "name": "SubmissionPeriods__3__PeriodCodes__1",
+    "slotSetting": false,
+    "value": "2024-P0"
+  },
+  {
+    "name": "SubmissionPeriods__3__ErrorCode",
+    "slotSetting": false,
+    "value": "66"
+  },
+  {
+    "name": "FeatureManagement__EnableSubsidiaryValidationPom",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableSubsidiaryValidationPom }}"
+  },
+  {
+    "name": "FeatureManagement__EnableSmallProducerPackagingTypeEnhancedValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation }}"
+  }
+]

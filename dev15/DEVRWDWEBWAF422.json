@@ -1,0 +1,82 @@
+[
+  {
+    "name": "ASPNETCORE_ENVIRONMENT",
+    "value": "Development",
+    "slotSetting": true
+  },
+  {
+    "name": "BlobStorage__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobStorage__ContainerName",
+    "value": "paycal#{{ teamName.dash }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ConnectionStrings__DefaultConnection",
+    "value": "Server=tcp:devrwddbssqf401.database.windows.net,1433;Initial Catalog=#{{ payCalDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=\"Active Directory Managed Identity\";",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__ConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/ServiceBusConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBus__QueueName",
+    "value": "defra.epr.calculator.run#{{ teamName.dot }}",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITE_AUTH_AAD_ALLOWED_TENANTS",
+    "value": "6f504113-6b64-43f2-ade9-242e05780007",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAd__TenantId",
+    "value": "6f504113-6b64-43f2-ade9-242e05780007",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAd__ClientId",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/AzureAd-ClientId-dev#{{ environmentSpoke1 }}/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAd__Instance",
+    "value": "https://login.microsoftonline.com/",
+    "slotSetting": false
+  },
+  {
+    "name": "Timeouts__RpdStatus",
+    "value": "1",
+    "slotSetting": false
+  },
+  {
+    "name": "Timeouts__RpdStatusCommand",
+    "value": "1",
+    "slotSetting": false
+  },
+  {
+    "name": "Timeouts__PrepareCalcResults",
+    "value": "11",
+    "slotSetting": false
+  },
+  {
+    "name": "Timeouts__PrepareCalcResultsCommand",
+    "value": "2",
+    "slotSetting": false
+  },
+  {
+    "name": "Timeouts__Transpose",
+    "value": "10",
+    "slotSetting": false
+  },
+   {
+    "name": "Timeouts__TransposeCommand",
+    "value": "6",
+    "slotSetting": false
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Database__AccountKey",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/CosmoAccountKey/)"
+  },
+  {
+    "name": "Database__ConnectionString",
+    "slotSetting": false,
+    "value": "#{{ cosmos.database.connectionString }}"
+  },
+  {
+    "name": "Database__MaxRetryCount",
+    "slotSetting": false,
+    "value": 30
+  },
+  {
+    "name": "Database__MaxRetryDelayInMilliseconds",
+    "slotSetting": false,
+    "value": 1000
+  },
+  {
+    "name": "Database__Name",
+    "slotSetting": false,
+    "value": "#{{ cosmos.database.name }}"
+  },
+  {
+    "name": "GoogleAnalytics__CookiePrefix",
+    "slotSetting": false,
+    "value": "_ga"
+  },
+  {
+    "name": "LoggingApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}403.azurewebsites.net"
+  },
+  {
+    "name": "Validation__MaxIssuesToProcess",
+    "slotSetting": false,
+    "value": "1000"
+  }
+]

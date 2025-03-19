@@ -1,0 +1,87 @@
+[
+  {
+    "name": "ASPNETCORE_ENVIRONMENT",
+    "value": "Development",
+    "slotSetting": true
+  },
+  {
+    "name": "AllowedHosts",
+    "value": "*",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOnlinePaymentsFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOnlinePaymentInsert",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOnlinePaymentUpdate",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableGetOnlinePaymentByExternalPaymentId",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableRegistrationFeesFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableProducersResubmissionFeesFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableProducerResubmissionFee",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableRegistrationFeesCalculation",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableComplianceSchemeFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableComplianceSchemeFees",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableResubmissionComplianceSchemeFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableResubmissionFeesCalculation",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOfflinePaymentsFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOfflinePayment",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "ConnectionStrings__PaymentConnectionString",
+    "value": "Server=tcp:devrwddbssqf401.database.windows.net,1433;Initial Catalog=#{{ feesPaymentDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;",
+    "slotSetting": false
+  }
+]

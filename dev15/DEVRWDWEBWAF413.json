@@ -1,0 +1,107 @@
+[
+  {
+    "name": "ApiConfig__AccountServiceBaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net"
+  },
+  {
+    "name": "ApiConfig__AccountServiceClientId",
+    "slotSetting": false,
+    "value": "#{{ apiConfig.accountServiceClientId }}"
+  },
+  {
+    "name": "ApiConfig__Certificate",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/certificates/boomi-api-certificate/)"
+  },
+  {
+    "name": "ApiConfig__AddressLookupBaseUrl",
+    "slotSetting": false,
+    "value": "#{{ apiConfig.addressLookupBaseUrl }}"
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
+    "slotSetting": false,
+    "value": "#{{ apiConfig.companiesHouseLookupBaseUrl }}"
+  },
+  {
+    "name": "ApiConfig__TenantId",
+    "value": "#{{ apiConfig.boomi.tenantid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__AddressLookupScope",
+    "value": "#{{ apiConfig.boomi.addressLookupScope }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseScope",
+    "value": "#{{ apiConfig.boomi.companiesHouseScope }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientId",
+    "value": "#{{ apiConfig.boomi.clientid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/boomi-api-secret/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "#{{ b2c.permissionsService.clientId }}"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "#{{ b2c.domain }}"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "#{{ b2c.instance }}"
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "#{{ b2c.signUpSignInPolicyId }}"
+  },
+  {
+    "name": "FacadeAPI__Address",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}413.azurewebsites.net"
+  },
+  {
+    "name": "FeatureManagement__UseBoomiOAuth",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.useBoomiOAuth }}"
+  },
+  {
+    "name": "MessagingConfig__AccountCreationUrl",
+    "slotSetting": false,
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/regulators/full-name?token="
+  },
+  {
+    "name": "MessagingConfig__ApiKey",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/MessagingConfigApiKeyDev/)"
+  },
+  {
+    "name": "RedisInstanceName",
+    "slotSetting": false,
+    "value": "#{{ redis.regulators.instance.name }}"
+  },
+  {
+    "name": "rolesConfig__roles__4__InvitationTemplateId",
+    "slotSetting": false,
+    "value": "#{{ messaging.regulator.templateid }}"
+  },
+  {
+    "name": "rolesConfig__roles__5__InvitationTemplateId",
+    "slotSetting": false,
+    "value": "#{{ messaging.regulator.templateid }}"
+  }
+]

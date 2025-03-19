@@ -9,13 +9,20 @@ variables:
   
   environmentName: ${{ variables.environmentGroup }}${{ variables.environmentSpoke1}}
   subscriptionName: ${{ variables.subscriptionPrefix }}-${{ variables.projectCode }}-${{ variables.environmentName }}
+  infrastructureResourceGroupName: ${{ variables.environmentGroup }}RWDWEBWA${{ variables.environmentSpoke}}419
   webResourceGroupName: ${{ variables.environmentGroup }}RWDWEBRG${{ variables.environmentSpoke}}401
   
   # Feature management
   featureManagement.ShowPrn: true
   featureManagement.OverridePrnCurrentDateForTestingPurposes: false
 
- # Enterprise Application IDS
-  apiConfig.accountServiceClientId: 6a5b0530-c1ea-4bb3-8141-201c3fec2ce5           # Application ID for DEVRWDWEBWAF407_API
-  validationDataApi.appRegistration.clientId: c21d48ad-b5f0-4d98-a53b-8c39d8105539 # Application ID for DEVRWDWEBFAF407_API
-  prnServiceApi.appRegistration.clientId: 6a397806-e3f2-4bea-b290-adb3a5e0b1e9     # Application ID for DEVRWDWEBWAF418_API
+  #File upload
+  CsvDataFile.IsLatest: true
+
+ #Enterprise Applications Details
+
+  #apiConfig.accountServiceClientId: 9eb49cf7-c183-4b38-b10e-f08a404bb26b           # Application ID for DEVRWDWEBWAF407_API
+  #validationDataApi.appRegistration.clientId: eb459bfd-dd66-4d83-92e3-06d4c26cef95 # Application ID for DEVRWDWEBFAF407_API
+  #prnServiceApi.appRegistration.clientId: 3e491f6e-c685-41f4-b9f3-cd6f2615c169     # Application ID for DEVRWDWEBWAF418_API
+  #apiConfig.paymentFacadeClientId: 4e86892b-0496-476f-8538-5ceeb8c50082          # Application ID for DEVRWDWEBWAF425_API
+  #paycalFrontEnd.appRegistration.clientId: 28defe0f-7e2b-41f1-b4f8-6862914677fa    # Application ID for DEVRWDWEBWAF422_API

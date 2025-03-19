@@ -1,0 +1,107 @@
+[
+  {
+    "name": "AzureWebJobs.EPRCalculatorRunServiceBusQueueTrigger.Disabled",
+    "value": "0",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureWebJobs.ServiceBusQueueTrigger.Disabled",
+    "value": "1",
+    "slotSetting": false
+  },
+  {
+    "name": "CheckInterval",
+    "value": "450000",
+    "slotSetting": false
+  },
+  {
+    "name": "FUNCTIONS_WORKER_RUNTIME",
+    "value": "dotnet",
+    "slotSetting": false
+  },
+  {
+    "name": "GetOrgDataPipelineName",
+    "value": "pip_paycal_get_org_data",
+    "slotSetting": false
+  },
+  {
+    "name": "GetPomDataPipelineName",
+    "value": "pip_paycal_get_pom_data",
+    "slotSetting": false
+  },
+  {
+    "name": "MaxCheckCount",
+    "value": "30",
+    "slotSetting": false
+  },
+  {
+    "name": "ExecuteRPDPipeline",
+    "value": "true",
+    "slotSetting": false
+  },
+  {
+    "name": "PrepareCalcResultEndPoint",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}422.azurewebsites.net/v1/internal/prepareCalcResults",
+    "slotSetting": false
+  },
+  {
+    "name": "PipelineUrl",
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/EPRCalculatorAzureSynapsePipelineUrlDev#{{ environmentSpoke1 }}/)",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBusConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/ServiceBusConnectionString/)",
+    "slotSetting": false
+  },
+  {
+    "name": "ServiceBusQueueName",
+    "value": "defra.epr.calculator.run#{{ teamName.dot }}",
+    "slotSetting": false
+  },
+  {
+    "name": "StatusUpdateEndpoint",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}422.azurewebsites.net/v1/internal/rpdStatus",
+    "slotSetting": false
+  },
+  {
+    "name": "WEBSITE_HEALTHCHECK_MAXPINGFAILURES",
+    "value": "9",
+    "slotSetting": false
+  },
+  {
+    "name": "RpdStatusTimeout",
+    "value": "1",
+    "slotSetting": false
+  },
+  {
+    "name": "PrepareCalcResultsTimeout",
+    "value": "11",
+    "slotSetting": false
+  },
+  {
+    "name": "TransposeTimeout",
+    "value": "10",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobConnectionString",
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})",
+    "slotSetting": false
+  },
+  {
+    "name": "BlobContainerName",
+    "value": "paycal#{{ teamName.dash }}",
+    "slotSetting": false
+  },
+  {
+    "name": "DbConnectionString",
+    "value": "Server=tcp:devrwddbssqf401.database.windows.net,1433;Initial Catalog=#{{ payCalDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=\"Active Directory Managed Identity\";",
+    "slotSetting": false
+  },
+  {
+    "name": "DbLoadingChunkSize",
+    "value": "1000",
+    "slotSetting":false
+  }
+]

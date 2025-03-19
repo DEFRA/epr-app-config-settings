@@ -87,13 +87,10 @@ jobs:
             dev/DEVRWDWEBWAX412.json => config/DEVRWDWEBWA$(environmentSpoke)412.json
             dev/DEVRWDWEBWAX413.json => config/DEVRWDWEBWA$(environmentSpoke)413.json
             dev/DEVRWDWEBWAX415.json => config/DEVRWDWEBWA$(environmentSpoke)415.json
-            dev/DEVRWDWEBWAA417.json => config/DEVRWDWEBWA$(environmentSpoke)417.json
+            dev/DEVRWDWEBWAX417.json => config/DEVRWDWEBWA$(environmentSpoke)417.json
             dev/DEVRWDWEBWAX418.json => config/DEVRWDWEBWA$(environmentSpoke)418.json
-            dev/DEVRWDWEBWAA419.json => config/DEVRWDWEBWA$(environmentSpoke)419.json
-            dev/DEVRWDWEBWAA420.json => config/DEVRWDWEBWA$(environmentSpoke)420.json
-            dev/DEVRWDWEBWAB417.json => config/DEVRWDWEBWA$(environmentSpoke)417.json
-            dev/DEVRWDWEBWAB419.json => config/DEVRWDWEBWA$(environmentSpoke)419.json
-            dev/DEVRWDWEBWAB420.json => config/DEVRWDWEBWA$(environmentSpoke)420.json
+            dev/DEVRWDWEBWAX419.json => config/DEVRWDWEBWA$(environmentSpoke)419.json
+            dev/DEVRWDWEBWAX420.json => config/DEVRWDWEBWA$(environmentSpoke)420.json
             dev/DEVRWDWEBWAX421.json => config/DEVRWDWEBWA$(environmentSpoke)421.json
             dev/DEVRWDWEBWAX422.json => config/DEVRWDWEBWA$(environmentSpoke)422.json
             dev/DEVRWDWEBWAX423.json => config/DEVRWDWEBWA$(environmentSpoke)423.json

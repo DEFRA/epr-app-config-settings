@@ -1,0 +1,237 @@
+[
+  {
+    "name": "ApiConfig__AccountServiceBaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net"
+  },
+  {
+    "name": "ApiConfig__AccountServiceClientId",
+    "slotSetting": false,
+    "value": "#{{ apiConfig.accountServiceClientId }}"
+  },
+  {
+    "name": "ApiConfig__AddressLookupBaseUrl",
+    "slotSetting": false,
+    "value": "#{{ apiConfig.addressLookupBaseUrl }}"
+  },
+  {
+    "name": "ApiConfig__PayCalBaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}424.azurewebsites.net"
+  },
+  {
+    "name": "ApiConfig__Certificate",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/certificates/boomi-api-certificate/)"
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
+    "slotSetting": false,
+    "value": "#{{ apiConfig.companiesHouseLookupBaseUrl }}"
+  },
+  {
+    "name": "ApiConfig__TenantId",
+    "value": "#{{ apiConfig.boomi.tenantid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__AddressLookupScope",
+    "value": "#{{ apiConfig.boomi.addressLookupScope }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__CompaniesHouseScope",
+    "value": "#{{ apiConfig.boomi.companiesHouseScope }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientId",
+    "value": "#{{ apiConfig.boomi.clientid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "ApiConfig__ClientSecret",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/boomi-api-secret/)",
+    "slotSetting": false
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "#{{ b2c.facade.clientId }}"
+  },
+  {
+    "name": "AzureAdB2C__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/AzureAdB2C-ClientSecret/)"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "#{{ b2c.domain }}"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "#{{ b2c.instance }}"
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "#{{ b2c.signUpSignInPolicyId }}"
+  },
+  {
+    "name": "AzureAdB2C__SignedOutCallbackPath",
+    "slotSetting": false,
+    "value": "#{{ b2c.signedOutCallbackPath }}"
+  },
+  {
+    "name": "FacadeAPI__Address",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}404.azurewebsites.net"
+  },
+  {
+    "name": "MessagingConfig__AccountCreationUrl",
+    "slotSetting": false,
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/create-account/invitation/"
+  },
+  {
+    "name": "MessagingConfig__AccountLoginUrl",
+    "slotSetting": false,
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/report-data"
+  },
+  {
+    "name": "MessagingConfig__ApiKey",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/#{{ messaging.producer.apikeysecret }}/)"
+  },
+  {
+    "name": "RedisInstanceName",
+    "slotSetting": false,
+    "value": "#{{ redis.producers.instance.name }}"
+  },
+  {
+    "name": "MessagingConfig__ComplianceSchemeAccountConfirmationTemplateId",
+    "slotSetting": false,
+    "value": "#{{ messaging.producer.complianceschemeaccountconfirmation.templateid }}"
+  },
+  {
+    "name": "MessagingConfig__ComplianceSchemeResubmissionTemplateId",
+    "value": "#{{messaging.producer.complianceschemeresubmissionnotification.templateid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__ProducerResubmissionTemplateId",
+    "value": "#{{messaging.producer.producerresubmissionnotification.templateid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__UserDetailChangeRequestTemplateId",
+    "value": "#{{ messaging.producer.userdetailchangerequestnotification.templateid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__NorthernIreland",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/NorthernIrelandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__England",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/EnglandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__Scotland",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/ScotlandRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "RegulatorEmailConfig__Wales",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/WalesRegulatorInbox/)",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__DelegatedRoleRemovedTemplateId",
+    "slotSetting": false,
+    "value": "#{{ messaging.producer.delegatedroleremoved.templateid }}"
+  },
+  {
+    "name": "MessagingConfig__NominateDelegatedUserTemplateId",
+    "slotSetting": false,
+    "value": "#{{  messaging.producer.nominatedelegateduser.templateid }}"
+  },
+  {
+    "name": "MessagingConfig__NominationCancelledTemplateId",
+    "slotSetting": false,
+    "value": "#{{ messaging.producer.nominationcancelled.templateid }}"
+  },
+  {
+    "name": "MessagingConfig__ProducerAccountConfirmationTemplateId",
+    "slotSetting": false,
+    "value": "#{{ messaging.producer.produceraccountconfirmation.templateid }}"
+  },
+  {
+    "name": "MessagingConfig__RemovedUserNotificationTemplateId",
+    "slotSetting": false,
+    "value": "#{{ messaging.producer.removedusernotification.templateid }}"
+  },
+  {
+    "name": "MessagingConfig__MemberDissociationRegulatorsTemplateId",
+    "slotSetting": false,
+    "value": "#{{ messaging.member.dissociation.regulators.templateid }}"
+  },
+  {
+    "name": "MessagingConfig__MemberDissociationProducersTemplateId",
+    "slotSetting": false,
+    "value": "#{{ messaging.member.dissociation.producers.templateid }}"
+  },
+  {
+    "name": "rolesConfig__roles__2__InvitationTemplateId",
+    "slotSetting": false,
+    "value": "#{{ messaging.producer.admininvitation.templateid }}"
+  },
+  {
+    "name": "rolesConfig__roles__3__InvitationTemplateId",
+    "slotSetting": false,
+    "value": "#{{ messaging.producer.userinvitation.templateid }}"
+  },
+  {
+    "name": "LoggingApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}403.azurewebsites.net"
+  },
+  {
+    "name": "FeatureManagement__SendDissociationNotificationEmail",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "MessagingConfig__ApprovedUserAccountConfirmationTemplateId",
+    "slotSetting": false,
+    "value": "#{{ messaging.producer.approveduseraccountconfirmation.templateid }}"
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__NorthernIreland",
+    "value": "#{{ regulatoremail.producer.northernireland }}",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__England",
+    "value": "#{{ regulatoremail.producer.england }}",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__Scotland",
+    "value": "#{{ regulatoremail.producer.scotland }}",
+    "slotSetting": false
+  },
+  {
+    "name": "EprPackagingRegulatorEmailConfig__Wales",
+    "value": "#{{ regulatoremail.producer.wales }}",
+    "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__UseBoomiOAuth",
+    "value": "#{{ featureManagement.useBoomiOAuth }}",
+    "slotSetting": false
+  }
+]

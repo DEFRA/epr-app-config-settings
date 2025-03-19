@@ -46,6 +46,9 @@ variables:
   - ${{ elseif eq(parameters.teamName, 'DEV14') }}:
     - template: ../vars/development.yaml
     - template: ../vars/dev14.yaml
+  - ${{ elseif eq(parameters.teamName, 'DEV15') }}:
+    - template: ../vars/development.yaml
+    - template: ../vars/dev15.yaml    
   - ${{ elseif eq(parameters.teamName, 'tst') }}:
     - template: ../vars/tst1.yaml
   - ${{ elseif eq(parameters.teamName, 'preprod') }}:

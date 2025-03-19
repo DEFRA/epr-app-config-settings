@@ -1,0 +1,252 @@
+[
+  {
+    "name": "ASPNETCORE_ENVIRONMENT",
+    "value": "Development",
+    "slotSetting": true
+  },
+  {
+    "name": "AllowedHosts",
+    "value": "*",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOnlinePaymentsFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnablePaymentInitiation",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnablePaymentCompletion",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableProducersFeesFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableProducersFeesCalculation",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableProducerResubmissionFee",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableComplianceSchemeFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableComplianceSchemeFees",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableHomePage",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableResubmissionComplianceSchemeFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableResubmissionFeesCalculation",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableProducersResubmissionFeesFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOfflinePaymentsFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableOfflinePayment",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableAuthenticationFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__OfflinePaymentService__Url",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__OfflinePaymentService__EndPointName",
+    "value": "api/v1",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__OfflinePaymentService__HttpClientName",
+    "value": "offline_payment_service_client",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__OfflinePaymentService__ServiceClientId",
+    "value": "#{{ apiConfig.paymentFacadeClientId }}",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__PaymentService__Url",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__PaymentService__EndPointName",
+    "value": "api/v1",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__PaymentService__HttpClientName",
+    "value": "payment_service_client",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__PaymentService__ServiceClientId",
+    "value": "#{{ apiConfig.paymentFacadeClientId }}",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__GovPayService__Url",
+    "value": "https://publicapi.payments.service.gov.uk",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__GovPayService__EndPointName",
+    "value": "v1",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__GovPayService__BearerToken",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/FeesPaymentGovPayBearerToken/)",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__GovPayService__Retries",
+    "value": "3",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ProducerFeesService__Url",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ProducerFeesService__EndPointName",
+    "value": "api/v1",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ProducerFeesService__HttpClientName",
+    "value": "producer_fees_service_client",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ProducerFeesService__ServiceClientId",
+    "value": "#{{ apiConfig.paymentFacadeClientId }}",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ComplianceSchemeFeesService__Url",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ComplianceSchemeFeesService__EndPointName",
+    "value": "api/v1",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ComplianceSchemeFeesService__HttpClientName",
+    "value": "compliance_scheme_fees_service_client",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ComplianceSchemeFeesService__ServiceClientId",
+    "value": "#{{ apiConfig.paymentFacadeClientId }}",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ProducerResubmissionFeesService__Url",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ProducerResubmissionFeesService__EndPointName",
+    "value": "api/v1",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ProducerResubmissionFeesService__HttpClientName",
+    "value": "producer_resubmission_fees_service_client",
+    "slotSetting": true
+  },
+  {
+    "name": "Services__ProducerResubmissionFeesService__ServiceClientId",
+    "value": "#{{ apiConfig.paymentFacadeClientId }}",
+    "slotSetting": true
+  },
+  {
+    "name": "PaymentServiceOptions__ReturnUrl",
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/Payment/GovPayCallback",
+    "slotSetting": true
+  },
+  {
+    "name": "PaymentServiceOptions__Description",
+    "value": "Registration fee",
+    "slotSetting": true
+  },
+  {
+    "name": "PaymentServiceOptions__ErrorUrl",
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/payment",
+    "slotSetting": true
+  },
+  {
+    "name": "AllowedOrigins",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}424.azurewebsites.net/, https://card.payments.service.gov.uk",
+    "slotSetting": true
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "#{{ b2c.paymentfacade.clientId }}"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "#{{ b2c.domain }}"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "#{{ b2c.instance }}"
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "#{{ b2c.signUpSignInPolicyId }}"
+  },
+  {
+    "name": "AzureAdB2C__Scopes",
+    "slotSetting": false,
+    "value": "#{{ payment_facade.downStreamScope }}"
+  }
+]

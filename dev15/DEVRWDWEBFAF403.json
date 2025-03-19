@@ -1,0 +1,72 @@
+[
+  {
+    "name": "ServiceBus__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/ServiceBusConnectionString/)"
+  },
+  {
+    "name": "ServiceBus__SplitQueueName",
+    "slotSetting": false,
+    "value": "defra.epr.producer.data#{{ teamName.dot }}"
+  },
+  {
+    "name": "ServiceBus__UploadQueueName",
+    "slotSetting": false,
+    "value": "defra.epr.pom.data.uploaded#{{ teamName.dot }}"
+  },
+  {
+    "name": "StorageAccount__BlobContainerName",
+    "slotSetting": false,
+    "value": "pom-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "StorageAccount__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})"
+  },
+  {
+    "name": "StorageAccount__PomBlobContainerName",
+    "slotSetting": false,
+    "value": "pom-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "SubmissionApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net/"
+  },
+  {
+    "name": "ValidationDataApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebfa#{{ environmentSpoke }}407.azurewebsites.net/"
+  },
+  {
+    "name": "ValidationDataApi__IsEnabled",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.validationDataApi }}"
+  },
+  {
+    "name": "ValidationDataApi__Timeout",
+    "slotSetting": false,
+    "value": 10
+  },
+  {
+    "name": "ValidationDataApi__ClientId",
+    "slotSetting": false,
+    "value": "#{{ validationDataApi.appRegistration.clientId }}"
+  },
+  {
+    "name": "Validation__MaxIssuesToProcess",
+    "slotSetting": false,
+    "value": 1000
+  },
+  {
+    "name": "Redis__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+  },
+  {
+    "name": "CsvDataFile__IsLatest",
+    "slotSetting": false,
+    "value": "true"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "name": "BlobStorage__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})"
+  },
+  {
+    "name": "BlobStorage__PomContainerName",
+    "slotSetting": false,
+    "value": "pom-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "BlobStorage__RegistrationContainerName",
+    "slotSetting": false,
+    "value": "registration-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "BlobStorage__SubsidiaryContainerName",
+    "slotSetting": false,
+    "value": "subsidiary-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "BlobStorage__SubsidiaryCompaniesHouseContainerName",
+    "slotSetting": false,
+    "value": "subsidiary-companies-house-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "LoggingApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}403.azurewebsites.net"
+  },
+  {
+    "name": "ServiceBus__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/ServiceBusConnectionString/)"
+  },
+  {
+    "name": "ServiceBus__PomUploadQueueName",
+    "slotSetting": false,
+    "value": "defra.epr.pom.data.uploaded#{{ teamName.dot }}"
+  },
+  {
+    "name": "ServiceBus__RegistrationDataQueueName",
+    "slotSetting": false,
+    "value": "defra.epr.registration.data#{{ teamName.dot }}"
+  },
+  {
+    "name": "SubmissionApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"
+  },
+  {
+    "name": "TradeAntivirusApi__BaseUrl",
+    "slotSetting": false,
+    "value": "#{{ TradeAntivirusApi.url }}"
+  },
+  {
+    "name": "TradeAntivirusApi__ClientId",
+    "slotSetting": false,
+    "value": "020511d9-8c13-4c89-910b-04aaa212e296"
+  },
+  {
+    "name": "TradeAntivirusApi__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/AntivirusApi-ClientSecret-DEV15/)"
+  },
+  {
+    "name": "TradeAntivirusApi__EnableDirectAccess",
+    "slotSetting": false,
+    "value": "#{{ TradeAntivirusApi.enableDirectAccess }}"
+  },
+  {
+    "name": "TradeAntivirusApi__Scope",
+    "slotSetting": false,
+    "value": "#{{ TradeAntivirusApi.scope }}"
+  },
+  {
+    "name": "TradeAntivirusApi__SubscriptionKey",
+    "slotSetting": false,
+    "value": "2bbc3ee9c7514c70b1628e766f90582d"
+  },
+  {
+    "name": "TradeAntivirusApi__TenantId",
+    "slotSetting": false,
+    "value": "c9d74090-b4e6-4b04-981d-e6757a160812"
+  },
+  {
+    "name": "TradeAntivirusApi__Timeout",
+    "slotSetting": false,
+    "value": "600"
+  },
+  {
+    "name": "TradeAntivirusServiceBus__AntivirusTopicName",
+    "slotSetting": false,
+    "value": "defra.trade.filestore.pete"
+  },
+  {
+    "name": "TradeAntivirusServiceBus__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/ServiceBusConnectionString/)"
+  },
+  {
+    "name": "TradeAntivirusServiceBus__SubscriptionName",
+    "slotSetting": false,
+    "value": "#{{ TradeAntivirus.ServiceBus.subscriptionName }}"
+  },
+  {
+    "name": "FeatureManagement__EnableRegistrationRowValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableRegistrationRowValidation }}"
+  } 
+]

@@ -1,0 +1,542 @@
+[
+  {
+    "name": "AzureAdB2C__CallbackPath",
+    "slotSetting": false,
+    "value": "/signin-oidc"
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "#{{ b2c.frontend.clientId }}"
+  },
+  {
+    "name": "AzureAdB2C__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.b2c.frontend.secret.url }})"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "#{{ b2c.domain }}"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "#{{ b2c.instance }}"
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "#{{ b2c.signUpSignInPolicyId }}"
+  },
+  {
+    "name": "AzureAdB2C__SignedOutCallbackPath",
+    "slotSetting": false,
+    "value": "#{{ b2c.signedOutCallbackPath }}"
+  },
+  {
+    "name": "Cookie__AntiForgeryCookieName",
+    "slotSetting": false,
+    "value": ".epr_anti_forgery"
+  },
+  {
+    "name": "Cookie__AuthenticationExpiryInMinutes",
+    "slotSetting": false,
+    "value": "20"
+  },
+  {
+    "name": "Cookie__CookiePolicyCookieName",
+    "slotSetting": false,
+    "value": ".epr_cookies_policy"
+  },
+  {
+    "name": "Cookie__SessionCookieName",
+    "slotSetting": false,
+    "value": ".epr_session"
+  },
+  {
+    "name": "EprAuthorizationConfig__FacadeBaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}404.azurewebsites.net/api/"
+  },
+  {
+    "name": "EprAuthorizationConfig__FacadeDownStreamScope",
+    "slotSetting": false,
+    "value": "#{{ facadeAPI.DownstreamScope }}"
+  },
+  {
+    "name": "EprAuthorizationConfig__FacadeUserAccountEndpoint",
+    "slotSetting": false,
+    "value": "user-accounts"
+  },
+  {
+    "name": "Caching__CacheNotifications",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "Caching__CacheComplianceSchemeSummaries",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "Caching__SlidingExpirationSeconds",
+    "slotSetting": false,
+    "value": 120
+  },
+  {
+    "name": "Caching__AbsoluteExpirationSeconds",
+    "slotSetting": false,
+    "value": 300
+  },
+  {
+    "name": "ComplianceSchemeMemberPaths__PageSize",
+    "slotSetting": false,
+    "value": 50
+  },
+  {
+    "name": "ExternalUrls__LandingPage",
+    "slotSetting": false,
+    "value": "/report-data"
+  },
+  {
+    "name": "ExternalUrls__GovUkHome",
+    "slotSetting": false,
+    "value": "https://www.gov.uk"
+  },
+  {
+    "name": "ExternalUrls__PrivacyScottishEnvironmentalProtectionAgency",
+    "slotSetting": false,
+    "value": "https://www.sepa.org.uk/help/privacy-policy/privacy-notices"
+  },
+  {
+    "name": "ExternalUrls__PrivacyNationalResourcesWales",
+    "slotSetting": false,
+    "value": "https://naturalresources.wales/footer-links/privacy-notice/?lang=en"
+  },
+  {
+    "name": "ExternalUrls__PrivacyNorthernIrelandEnvironmentAgency",
+    "slotSetting": false,
+    "value": "https://www.daera-ni.gov.uk/daera-privacy-statement"
+  },
+  {
+    "name": "ExternalUrls__PrivacyEnvironmentAgency",
+    "slotSetting": false,
+    "value": "https://npwd.environment-agency.gov.uk/Public/Guidance.aspx?CategoryId=ad749427-9848-41a6-9d8e-ddf142e98720&ReturnUrl=%2fPublic%2fNewsAndGuidance.aspx"
+  },
+  {
+    "name": "ExternalUrls__PrivacyDataProtectionPublicRegister",
+    "slotSetting": false,
+    "value": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights"
+  },
+  {
+    "name": "ExternalUrls__PrivacyDefrasPersonalInformationCharter",
+    "slotSetting": false,
+    "value": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs/about/personal-information-charter"
+  },
+  {
+    "name": "ExternalUrls__PrivacyInformationCommissioner",
+    "slotSetting": false,
+    "value": "https://ico.org.uk/make-a-complaint"
+  },
+  {
+    "name": "ExternalUrls__FindAndUpdateCompanyInformation",
+    "slotSetting": false,
+    "value": "https://find-and-update.company-information.service.gov.uk"
+  },
+  {
+    "name": "FileUploadLimitInBytes",
+    "slotSetting": false,
+    "value": "268435456"
+  },
+  {
+    "name": "AccountsFacadeAPI__DownstreamScope",
+    "slotSetting": false,
+    "value": "#{{ facadeAPI.DownstreamScope }}"
+  },
+  {
+    "name": "AccountsFacadeAPI__BaseEndpoint",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}404.azurewebsites.net/api/"
+  },
+  {
+    "name": "IntegrationFacadeAPI__DownstreamScope",
+    "slotSetting": false,
+    "value": "#{{ facadeAPI.DownstreamScope }}"
+  },
+  {
+    "name": "IntegrationFacadeAPI__BaseEndpoint",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}404.azurewebsites.net/api/"
+  },
+  {
+    "name": "FeatureManagement__ShowLanguageSwitcher",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.showLanguageSwitcher }}"
+  },
+  {
+    "name": "FeatureManagement__ShowComplianceSchemeMemberManagement",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__ShowPoMResubmission",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "FeatureManagement__ShowRegistrationResubmission",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.showRegistrationResubmission }}"
+  },
+  {
+    "name": "FeatureManagement__ShowSubsidiariesSingleUploadJourney",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.ShowSubsidiariesSingleUploadJourney }}"
+  },
+  {
+    "name": "FeatureManagement__ShowSubsidiaries",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.ShowSubsidiaries }}"
+  },
+  {
+    "name": "FeatureManagement__ShowRegistration",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.ShowRegistration }}"
+  },
+  {
+    "name": "FeatureManagement__ShowPrn",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.showPrn }}"
+  },
+  {
+    "name": "FeatureManagement__EnableCsvDownload",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableCsvDownload }}"
+  },
+  {
+    "name": "FeatureManagement__ShowSubsidiariesRemoveLink",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.showSubsidiariesRemoveLink }}"
+  },
+  {
+    "name": "FeatureManagement__ShowSubsidiaryJoinerAndLeaverColumns",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.showSubsidiaryJoinerAndLeaverColumns }}"
+  },
+  {
+    "name": "ForwardedHeaders__AllowedHosts",
+    "slotSetting": false,
+    "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"
+  },
+  {
+    "name": "ForwardedHeaders__ForwardedHostHeaderName",
+    "slotSetting": false,
+    "value": "X-Original-Host"
+  },
+  {
+    "name": "ForwardedHeaders__OriginalHostHeaderName",
+    "slotSetting": false,
+    "value": "X-Initial-Host"
+  },
+  {
+    "name": "FrontEndAccountCreation__BaseUrl",
+    "slotSetting": false,
+    "value": "/create-account"
+  },
+  {
+    "name": "FrontEndAccountManagement__BaseUrl",
+    "slotSetting": false,
+    "value": "/manage-account"
+  },
+  {
+    "name": "GoogleAnalytics__CookiePrefix",
+    "slotSetting": false,
+    "value": "_ga"
+  },
+  {
+    "name": "GoogleAnalytics__MeasurementId",
+    "slotSetting": false,
+    "value": "VMDE8PW9W7"
+  },
+  {
+    "name": "GoogleAnalytics__TagManagerContainerId",
+    "slotSetting": false,
+    "value": "GTM-TVVC7VFT"
+  },
+  {
+    "name": "HttpClient__AppServiceUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}409.azurewebsites.net"
+  },
+  {
+    "name": "HttpClient__RetryCount",
+    "slotSetting": false,
+    "value": "3"
+  },
+  {
+    "name": "HttpClient__RetryDelaySeconds",
+    "slotSetting": false,
+    "value": "3"
+  },
+  {
+    "name": "HttpClient__TimeoutSeconds",
+    "slotSetting": false,
+    "value": "30"
+  },
+  {
+    "name": "HttpClient__UserAgent",
+    "slotSetting": false,
+    "value": "SchemeRegistration/1.0"
+  },
+  {
+    "name": "GuidanceLinks__HowToBuildCsvFileToReportYourPackagingData",
+    "slotSetting": false,
+    "value": "https://www.gov.uk/government/publications/packaging-data-how-to-create-your-file-for-extended-producer-responsibility/packaging-data-file-specification-for-extended-producer-responsibility"
+  },
+  {
+    "name": "GuidanceLinks__HowToReportOrganisationDetails",
+    "slotSetting": false,
+    "value": "https://www.gov.uk/government/publications/organisation-details-how-to-create-your-file-for-extended-producer-responsibility-epr-for-packaging"
+  },
+  {
+    "name": "GuidanceLinks__WhatPackagingDataYouNeedToCollect",
+    "slotSetting": false,
+    "value": "https://www.gov.uk/guidance/how-to-collect-your-packaging-data-for-extended-producer-responsibility"
+  },
+  {
+    "name": "GuidanceLinks__HowToBuildCsvFileToReportYourOrganisationData",
+    "slotSetting": false,
+    "value": "https://www.gov.uk/government/publications/organisation-details-how-to-create-your-file-for-extended-producer-responsibility-epr-for-packaging/organisation-details-file-specification-for-extended-producer-responsibility"
+  },
+  {
+    "name": "GuidanceLinks__ExampleCsvFile",
+    "slotSetting": false,
+    "value": "https://www.gov.uk/government/publications/extended-producer-responsibility-for-packaging-example-file-for-packaging-data"
+  },
+  {
+    "name": "GuidanceLinks__HowToCompleteSubsidiaryFile",
+    "slotSetting": false,
+    "value": "https://www.gov.uk/government/publications/groups-and-subsidiaries-how-to-create-your-file-for-extended-producer-responsibility"
+  },
+  {
+    "name": "GuidanceLinks__ProducerResponsibilitiesForPackagingWaste",
+    "slotSetting": false,
+    "value": "https://www.gov.uk/guidance/packaging-producer-responsibilities"
+  },
+  {
+    "name": "GuidanceLinks__EPR_IllustrativeFeesAndCharges",
+    "slotSetting": false,
+    "value": "https://gov.uk/guidance/extended-producer-responsibility-for-packaging-register-and-pay-the-fee"
+  },
+  {
+    "name": "GuidanceLinks__YouCanPaySEPA",
+    "slotSetting": false,
+    "value": "https://beta.sepa.scot/about-sepa/online-payments/"
+  },
+  {
+    "name": "BasePath",
+    "slotSetting": false,
+    "value": "/report-data"
+  },
+  {
+    "name": "PhaseBanner__ApplicationStatus",
+    "slotSetting": false,
+    "value": "Beta"
+  },
+  {
+    "name": "PhaseBanner__Enabled",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "PhaseBanner__SurveyUrl",
+    "slotSetting": false,
+    "value": "https://defragroup.eu.qualtrics.com/jfe/form/SV_a2Bm7vw3cht5B6C"
+  },
+  {
+    "name": "Redis__InstanceName",
+    "slotSetting": false,
+    "value": "#{{ redis.producers.instance.name }}"
+  },
+  {
+    "name": "Redis__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+  },
+  {
+    "name": "Session__IdleTimeoutMinutes",
+    "slotSetting": false,
+    "value": "20"
+  },
+  {
+    "name": "MSAL__DisableL1Cache",
+    "slotSetting": false,
+    "value": true
+  },
+  {
+    "name": "MSAL__L2SlidingExpiration",
+    "slotSetting": false,
+    "value": 60
+  },
+  {
+    "name": "SiteDates__PrivacyLastUpdated",
+    "slotSetting": false,
+    "value": "#{{ siteDates.privacyLastUpdated }}"
+  },
+  {
+    "name": "SiteDates__DateFormat",
+    "slotSetting": false,
+    "value": "#{{ siteDates.dateFormat }}"
+  },
+  {
+    "name": "SubmissionPeriods__0__DataPeriod",
+    "slotSetting": false,
+    "value": "January to June 2023"
+  },
+  {
+    "name": "SubmissionPeriods__0__StartMonth",
+    "slotSetting": false,
+    "value": "January"
+  },
+  {
+    "name": "SubmissionPeriods__0__EndMonth",
+    "slotSetting": false,
+    "value": "June"
+  },
+  {
+    "name": "SubmissionPeriods__0__Year",
+    "slotSetting": false,
+    "value": "2023"
+  },
+  {
+    "name": "SubmissionPeriods__0__Deadline",
+    "slotSetting": false,
+    "value": "1 Oct 2023 11:59:00 PM"
+  },
+  {
+    "name": "SubmissionPeriods__0__ActiveFrom",
+    "slotSetting": false,
+    "value": "1 Jul 2023 12:00:00 AM"
+  },
+  {
+    "name": "SubmissionPeriods__1__DataPeriod",
+    "slotSetting": false,
+    "value": "July to December 2023"
+  },
+  {
+    "name": "SubmissionPeriods__1__StartMonth",
+    "slotSetting": false,
+    "value": "July"
+  },
+  {
+    "name": "SubmissionPeriods__1__EndMonth",
+    "slotSetting": false,
+    "value": "December"
+  },
+  {
+    "name": "SubmissionPeriods__1__Year",
+    "slotSetting": false,
+    "value": "2023"
+  },
+  {
+    "name": "SubmissionPeriods__1__Deadline",
+    "slotSetting": false,
+    "value": "1 Apr 2024 11:59:00 PM"
+  },
+  {
+    "name": "SubmissionPeriods__1__ActiveFrom",
+    "slotSetting": false,
+    "value": "1 Jan 2024 12:00:00 AM"
+  },
+  {
+    "name": "SubmissionPeriods__2__DataPeriod",
+    "slotSetting": false,
+    "value": "January to June 2024"
+  },
+  {
+    "name": "SubmissionPeriods__2__StartMonth",
+    "slotSetting": false,
+    "value": "January"
+  },
+  {
+    "name": "SubmissionPeriods__2__EndMonth",
+    "slotSetting": false,
+    "value": "June"
+  },
+  {
+    "name": "SubmissionPeriods__2__Year",
+    "slotSetting": false,
+    "value": "2024"
+  },
+  {
+    "name": "SubmissionPeriods__2__Deadline",
+    "slotSetting": false,
+    "value": "1 Oct 2024 11:59:00 PM"
+  },
+  {
+    "name": "SubmissionPeriods__2__ActiveFrom",
+    "slotSetting": false,
+    "value": "1 Jul 2024 12:00:00 AM"
+  },
+  {
+    "name": "SubmissionPeriods__3__DataPeriod",
+    "slotSetting": false,
+    "value": "July to December 2024"
+  },
+  {
+    "name": "SubmissionPeriods__3__StartMonth",
+    "slotSetting": false,
+    "value": "July"
+  },
+  {
+    "name": "SubmissionPeriods__3__EndMonth",
+    "slotSetting": false,
+    "value": "December"
+  },
+  {
+    "name": "SubmissionPeriods__3__Year",
+    "slotSetting": false,
+    "value": "2024"
+  },
+  {
+    "name": "SubmissionPeriods__3__Deadline",
+    "slotSetting": false,
+    "value": "1 Apr 2025 11:59:00 PM"
+  },
+  {
+    "name": "SubmissionPeriods__3__ActiveFrom",
+    "slotSetting": false,
+    "value": "1 Jan 2025 12:00:00 AM"
+  },
+  {
+    "name": "WebAPI__DownstreamScope",
+    "slotSetting": false,
+    "value": "#{{ webApi.downstreamScope }}"
+  },
+  {
+    "name": "WebAPI__BaseEndpoint",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}409.azurewebsites.net/"
+  },
+  {
+    "name": "Validation__MaxIssuesToProcess",
+    "slotSetting": false,
+    "value": "1000"
+  },
+  {
+    "name": "Validation__MaxIssueReportSize",
+    "slotSetting": false,
+    "value": "5MB"
+  },
+  {
+    "name": "PaymentFacadeApi__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}424.azurewebsites.net/api/v1/"
+  },
+  {
+    "name": "PaymentFacadeApi__DownstreamScope",
+    "slotSetting": false,
+    "value": "#{{ payment_facade.DownstreamScope }}"
+  }
+]

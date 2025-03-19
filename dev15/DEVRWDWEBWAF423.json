@@ -1,0 +1,267 @@
+[
+  {
+    "name": "AzureAdB2C__CallbackPath",
+    "slotSetting": false,
+    "value": "/signin-oidc"
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "#{{ b2c.frontend.clientId }}"
+  },
+  {
+    "name": "AzureAdB2C__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.b2c.frontend.secret.url }})"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "#{{ b2c.domain }}"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "#{{ b2c.instance }}"
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "#{{ b2c.signUpSignInPolicyId }}"
+  },
+  {
+    "name": "AzureAdB2C__SignedOutCallbackPath",
+    "slotSetting": false,
+    "value": "#{{ b2c.signedOutCallbackPath }}"
+  },
+  {
+    "name": "Cookie__AntiForgeryCookieName",
+    "slotSetting": false,
+    "value": ".epr_anti_forgery"
+  },
+  {
+    "name": "Cookie__AuthenticationCookieName",
+    "slotSetting": false,
+    "value": ".epr_auth"
+  },
+  {
+    "name": "Cookie__AuthenticationExpiryInMinutes",
+    "slotSetting": false,
+    "value": 20
+  },
+  {
+    "name": "Cookie__CookiePolicyCookieName",
+    "slotSetting": false,
+    "value": ".epr_regulator_cookies_policy"
+  },
+  {
+    "name": "Cookie__CookiePolicyDurationInMonths",
+    "slotSetting": false,
+    "value": 12
+  },
+  {
+    "name": "Cookie__SessionCookieName",
+    "slotSetting": false,
+    "value": ".epr_session"
+  },
+  {
+    "name": "Cookie__TempDataCookie",
+    "slotSetting": false,
+    "value": ".epr_temp"
+  },
+  {
+    "name": "Cookie__TsCookieName",
+    "slotSetting": false,
+    "value": "TSxxxxxxxx"
+  },
+  {
+    "name": "Cookie__OpenIdCookieName",
+    "slotSetting": false,
+    "value": ".epr_openid_nonce"
+  },
+  {
+    "name": "Cookie__CorrelationCookieName",
+    "slotSetting": false,
+    "value": ".epr_correlation"
+  },
+  {
+    "name": "BasePath",
+    "slotSetting": false,
+    "value": "/payment"
+  },
+  {
+    "name": "ASPNETCORE_ENVIRONMENT",
+    "value": "Development",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__MenuUrl__Url",
+    "value": "/report-data/home-self-managed",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__MenuUrl__Description",
+    "value": "This url is redirect to main menu.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__BackUrl__Url",
+    "value": "/report-data/home-self-managed",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__BackUrl__Description",
+    "value": "This is payment dashboard.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__FeedbackUrl__Url",
+    "value": "https://defragroup.eu.qualtrics.com/jfe/form/SV_a2Bm7vw3cht5B6C",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__FeedbackUrl__Description",
+    "value": "This url is redirect to feedback page.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__OfflinePaymentUrl__Url",
+    "value": "https://google.com/",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__OfflinePaymentUrl__Description",
+    "value": "This url is redirect to offline payment information page",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__ManageAccountUrl__Url",
+    "value": "/manage-account/",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__ManageAccountUrl__Description",
+    "value": "This url is Manage Account.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__SignOutUrl__Url",
+    "value": "/report-data/Account/SignOut",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__SignOutUrl__Description",
+    "value": "This is url is Sign Out.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__RPDRootUrl__Url",
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__RPDRootUrl__Description",
+    "value": "This url is to redirect to main menu.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__RegistrationTaskList__Url",
+    "value": "/report-data/registration-task-list",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__RegistrationTaskList__Description",
+    "value": "This is Registration Task List.",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__CookiesUrl__Url",
+    "value": "/report-data/cookies",
+    "slotSetting": true
+  },
+  {
+    "name": "Dashboard__CookiesUrl__Description",
+    "value": "This is Cookies.",
+    "slotSetting": true
+  },
+  {
+    "name": "PaymentFacade__FacadeService__Url",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}424.azurewebsites.net/",
+    "slotSetting": true
+  },
+  {
+    "name": "PaymentFacade__FacadeService__EndPointName",
+    "value": "api/v1",
+    "slotSetting": true
+  },
+  {
+    "name": "PaymentFacade__FacadeService__HttpClientName",
+    "value": "payment_service_client",
+    "slotSetting": true
+  },
+  {
+    "name": "PaymentFacade__FacadeService__DownstreamScope",
+    "value": "#{{ payment_facade.DownstreamScope }}",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__ShowLanguageSwitcher",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "FeatureManagement__EnableAuthenticationFeature",
+    "value": "true",
+    "slotSetting": true
+  },
+  {
+    "name": "ForwardedHeaders__AllowedHosts",
+    "slotSetting": false,
+    "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"
+  },
+  {
+    "name": "ForwardedHeaders__ForwardedHostHeaderName",
+    "slotSetting": false,
+    "value": "X-Original-Host"
+  },
+  {
+    "name": "ForwardedHeaders__OriginalHostHeaderName",
+    "slotSetting": false,
+    "value": "X-Initial-Host"
+  },
+  {
+    "name": "Redis__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+  },
+  {
+    "name": "Redis__InstanceName",
+    "slotSetting": false,
+    "value": "#{{ redis.producers.instance.name }}"
+  },
+  {
+    "name": "UseLocalSession",
+    "slotSetting": false,
+    "value": false
+  },
+  {
+    "name": "GoogleAnalytics__CookiePrefix",
+    "slotSetting": false,
+    "value": "_ga"
+  },
+  {
+    "name": "GoogleAnalytics__MeasurementId",
+    "slotSetting": false,
+    "value": "VMDE8PW9W7"
+  },
+  {
+    "name": "GoogleAnalytics__TagManagerContainerId",
+    "slotSetting": false,
+    "value": "GTM-TVVC7VFT"
+  },
+  {
+    "name": "Session__IdleTimeoutMinutes",
+    "slotSetting": false,
+    "value": "20"
+  }
+]

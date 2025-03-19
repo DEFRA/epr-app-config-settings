@@ -1,0 +1,342 @@
+[
+  {
+    "name": "AccountsServiceApiConfig__AccountServiceClientId",
+    "slotSetting": false,
+    "value": "#{{ apiConfig.accountServiceClientId }}"
+  },
+  {
+    "name": "AccountsServiceApiConfig__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net/api/"
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__CreateRegulator",
+    "slotSetting": false,
+    "value": "regulator-organisation"
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__GetOrganisationsApplications",
+    "slotSetting": false,
+    "value": "regulators/applications/enrolments?userId={0}&organisationId={1}"
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__GetRegulator",
+    "slotSetting": false,
+    "value": "regulator-organisation?nation="
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__ManageEnrolment",
+    "slotSetting": false,
+    "value": "regulators/accounts/manage-enrolment"
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__PendingApplications",
+    "slotSetting": false,
+    "value": "regulators/pending-applications?userId={0}&currentPage={1}&pageSize={2}&organisationName={3}&applicationType={4}"
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__RegulatorEnrollment",
+    "slotSetting": false,
+    "value": "accounts-management/enrol-invited-user"
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__RegulatorInvitation",
+    "slotSetting": false,
+    "value": "regulator-accounts/invite-user"
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__TransferOrganisationNation",
+    "slotSetting": false,
+    "value": "regulators/organisation/transfer"
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__GetRegulatorUsers",
+    "value": "regulators/organisations/users",
+    "slotSetting": false
+  },
+  {
+    "name": "AccountsServiceApiConfig__Endpoints__UserOrganisations",
+    "slotSetting": false,
+    "value": "users/user-organisations"
+  },
+  {
+    "name": "AccountsServiceApiConfig__ServicePooledConnectionLifetime",
+    "slotSetting": false,
+    "value": 15
+  },
+  {
+    "name": "AccountsServiceApiConfig__ServiceRetryCount",
+    "slotSetting": false,
+    "value": 6
+  },
+  {
+    "name": "AccountsServiceApiConfig__Timeout",
+    "slotSetting": false,
+    "value": 30
+  },
+  {
+    "name": "AntivirusApi__BaseUrl",
+    "slotSetting": false,
+    "value": "#{{ TradeAntivirusApi.url }}"
+  },
+  {
+    "name": "AntivirusApi__ClientId",
+    "slotSetting": false,
+    "value": "020511d9-8c13-4c89-910b-04aaa212e296"
+  },
+  {
+    "name": "AntivirusApi__ClientSecret",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/AntivirusApi-ClientSecret-DEV15/)"
+  },
+  {
+    "name": "AntivirusApi__CollectionSuffix",
+    "slotSetting": false,
+    "value": "dev#{{ environmentSpoke }}"
+  },
+  {
+    "name": "AntivirusApi__EnableDirectAccess",
+    "slotSetting": false,
+    "value": "#{{ TradeAntivirusApi.enableDirectAccess }}"
+  },
+  {
+    "name": "AntivirusApi__Scope",
+    "slotSetting": false,
+    "value": "#{{ TradeAntivirusApi.scope }}"
+  },
+  {
+    "name": "AntivirusApi__SubscriptionKey",
+    "slotSetting": false,
+    "value": "2bbc3ee9c7514c70b1628e766f90582d"
+  },
+  {
+    "name": "AntivirusApi__TenantId",
+    "slotSetting": false,
+    "value": "c9d74090-b4e6-4b04-981d-e6757a160812"
+  },
+  {
+    "name": "AntivirusApi__Timeout",
+    "slotSetting": false,
+    "value": "300"
+  },
+  {
+    "name": "AzureAdB2C__ClientId",
+    "slotSetting": false,
+    "value": "#{{ b2c.permissionsService.clientId }}"
+  },
+  {
+    "name": "AzureAdB2C__Domain",
+    "slotSetting": false,
+    "value": "#{{ b2c.domain }}"
+  },
+  {
+    "name": "AzureAdB2C__Instance",
+    "slotSetting": false,
+    "value": "#{{ b2c.instance }}"
+  },
+  {
+    "name": "AzureAdB2C__SignUpSignInPolicyId",
+    "slotSetting": false,
+    "value": "#{{ b2c.signUpSignInPolicyId }}"
+  },
+  {
+    "name": "BlobStorage__ConnectionString",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})"
+  },
+  {
+    "name": "BlobStorage__PomContainerName",
+    "slotSetting": false,
+    "value": "pom-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "BlobStorage__RegistrationContainerName",
+    "slotSetting": false,
+    "value": "registration-upload-container#{{ teamName.dash }}"
+  },
+  {
+    "name": "CommonDataApiConfig__ApiVersion",
+    "value": 1,
+    "slotSetting": false
+  },
+  {
+    "name": "CommonDataApiConfig__BaseUrl",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}415.azurewebsites.net/api/",
+    "slotSetting": false
+  },
+  {
+    "name": "CommonDataApiConfig__Endpoints__GetPoMSubmissions",
+    "value": "submissions/pom/summary",
+    "slotSetting": false
+  },
+  {
+    "name": "CommonDataApiConfig__Endpoints__GetSubmissionEventsLastSyncTime",
+    "value": "submission-events/get-last-sync-time",
+    "slotSetting": false
+  },
+  {
+    "name": "CommonDataApiConfig__ServiceRetryCount",
+    "value": 6,
+    "slotSetting": false
+  },
+  {
+    "name": "CommonDataApiConfig__Timeout",
+    "value": 30,
+    "slotSetting": false
+  },
+  {
+    "name": "GOOGLE_ANALYTICS__MeasurementId",
+    "slotSetting": false,
+    "value": "VMDE8PW9W7"
+  },
+  {
+    "name": "GOOGLE_ANALYTICS__TagManagerContainerId",
+    "slotSetting": false,
+    "value": "GTM-TVVC7VFT"
+  },
+  {
+    "name": "HealthCheckPath",
+    "slotSetting": false,
+    "value": "/admin/health"
+  },
+  {
+    "name": "MessagingConfig__AccountSignInUrl",
+    "slotSetting": false,
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/report-data"
+  },
+  {
+    "name": "MessagingConfig__AccountCreationUrl",
+    "slotSetting": false,
+    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/create-account/invitation/"
+  },
+  {
+    "name": "MessagingConfig__ApiKey",
+    "slotSetting": false,
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/MessagingConfigApiKeyDev/)"
+  },
+  {
+    "name": "MessagingConfig__ToApprovedPersonApprovedPersonAccepted",
+    "slotSetting": false,
+    "value": "3bc0370b-ae2d-4709-b620-a3cda4780fb3"
+  },
+  {
+    "name": "MessagingConfig__ToApprovedPersonApprovedPersonRejected",
+    "slotSetting": false,
+    "value": "fa902b46-3ef0-4336-86db-cf72863555ca"
+  },
+  {
+    "name": "MessagingConfig__ToApprovedPersonDelegatedPersonAccepted",
+    "slotSetting": false,
+    "value": "2bed2227-5430-4aae-852d-5206dba753b0"
+  },
+  {
+    "name": "MessagingConfig__ToApprovedPersonDelegatedPersonRejected",
+    "slotSetting": false,
+    "value": "8891c061-dc6f-469f-bcf4-07f4b18457b5"
+  },
+  {
+    "name": "MessagingConfig__ToDelegatedPersonApprovedPersonRejected",
+    "slotSetting": false,
+    "value": "2af3aba9-614c-4a5a-919c-f0661fa08885"
+  },
+  {
+    "name": "MessagingConfig__ToDelegatedPersonDelegatedPersonAccepted",
+    "slotSetting": false,
+    "value": "5b8f3e32-967d-475a-80c1-2e0f03642b01"
+  },
+  {
+    "name": "MessagingConfig__ToDelegatedPersonDelegatedPersonRejected",
+    "slotSetting": false,
+    "value": "aa534cfd-0480-4c2c-b1d8-6fd70d3db83e"
+  },
+  {
+    "name": "MessagingConfig__RegulatorSubmissionAccepted",
+    "value": "18b3e37c-6192-4cbe-8832-be5507935a9f",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorSubmissionRejectedResubmissionRequired",
+    "value": "1a3561ad-441c-417b-8575-027f5b499189",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__InviteNewApprovedPersonTemplateId",
+    "value": "6325cef3-c248-4979-843a-7a23a64d40e9",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorSubmissionRejectedResubmissionNotRequired",
+    "value": "acec21ad-c185-42d7-ab2c-1b80b71b796f",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorRegistrationAccepted",
+    "value": "f0bc680e-1175-401e-979b-484fb07f152f",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RegulatorRegistrationRejected",
+    "value": "2dde1e54-b3b9-45ea-baeb-437200008a36",
+    "slotSetting": false
+  },
+  {
+    "name": "RedisInstanceName",
+    "slotSetting": false,
+    "value": "#{{ redis.regulators.instance.name }}"
+  },
+  {
+    "name": "rolesConfig__roles",
+    "slotSetting": false,
+    "value": "[\r\n {\r\n \"serviceRoleId\": 4,\r\n \"personRoleId\": 1,\r\n \"key\": \"Regulator.Admin\" \r\n },\r\n {\r\n \"serviceRoleId\": 5,\r\n \"personRoleId\": 2,\r\n \"key\": \"Regulator.Basic\"\r\n }\r\n ]"
+  },
+  {
+    "name": "SubmissionsApiConfig__ApiVersion",
+    "slotSetting": false,
+    "value": "1"
+  },
+  {
+    "name": "SubmissionsApiConfig__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__CreateSubmissionEvent",
+    "slotSetting": false,
+    "value": "v{0}/submissions/{1}/events"
+  },
+  {
+    "name": "CommonDataApiConfig__Endpoints__GetRegistrationSubmissions",
+    "value": "submissions/registrations/summary",
+    "slotSetting": false
+  },
+  {
+    "name": "SubmissionsApiConfig__Endpoints__GetPoMSubmissions",
+    "slotSetting": false,
+    "value": "v{0}/submissions/events/get-regulator-pom-decision"
+  },
+  {
+    "name": "SubmissionsApiConfig__ServiceRetryCount",
+    "slotSetting": false,
+    "value": "6"
+  },
+  {
+    "name": "SubmissionsApiConfig__Timeout",
+    "slotSetting": false,
+    "value": "30"
+  },
+  {
+    "name": "MessagingConfig__DemotedDelegatedUserTemplateId",
+    "value": "e4f30919-9576-42c5-8a0c-b5a63a32c2e7",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__RemovedApprovedUserTemplateId",
+    "value": "6a79f991-c683-4f63-b7a1-4ba9bdc8e7ec",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__PromotedApprovedUserTemplateId",
+    "value": "ada6ef34-5344-41ec-9201-7fa8879d839c",
+    "slotSetting": false
+  }
+]

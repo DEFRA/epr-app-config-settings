@@ -8,6 +8,8 @@ variables:
    # Enterprise Applications
   apiConfig.accountServiceClientId: 92ede5ee-1d6e-44f7-a232-c039e666a3ca    # Application ID for DEVRWDWEBWA3407
   validationDataApi.appRegistration.clientId: 2be0df10-34b0-4936-8870-a0adec99764f   # Application ID for DEVRWDWEBFA3407_API
+  apiConfig.paymentFacadeClientId: 37beeb81-48a4-4ccb-9388-9bb56ccf53e4            # Application ID for DEVRWDWEBWA3425_API
+ 
 
   # Feature management
   featureManagement.pomDataPeriodAndTime: true
