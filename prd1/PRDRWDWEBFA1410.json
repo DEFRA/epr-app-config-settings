@@ -70,6 +70,11 @@
     "slotSetting": false
   },
   {
+    "name": "ApplicationConfig__FunctionIsEnabled",
+    "value": "false",
+    "slotSetting": false
+  },
+  {
     "name": "FUNCTIONS_WORKER_RUNTIME",
     "value": "dotnet-isolated",
     "slotSetting": false
