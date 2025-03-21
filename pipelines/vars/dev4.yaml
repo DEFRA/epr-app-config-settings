@@ -46,6 +46,7 @@ variables:
   featureManagement.obligationCheckerEnabled: true
   featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: true
   featureManagement.enableOrganisationSizeFieldValidation: true
+  featureManagement.ShowFinancialYear: true
 
   # EPR Authorization
   eprAuthorizationConfig.downStreamScope: https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-dev8-regulators-facade/regulator-service

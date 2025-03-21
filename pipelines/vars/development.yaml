@@ -130,6 +130,7 @@ variables:
   featureManagement.enableSubsidiaryUploadJoinerColumns: false
   featureManagement.ImplementPackagingDataResubmissionJourney: false
   featureManagement.showAllSubsidiaries: false
+  featureManagement.ShowFinancialYear: false
 
   # Databases
   accountsDatabase.name: dev$(environmentSpoke1)_accounts

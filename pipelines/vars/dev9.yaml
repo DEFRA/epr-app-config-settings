@@ -15,6 +15,7 @@ variables:
   # Feature management
   featureManagement.showPrn: true
   featureManagement.OverridePrnCurrentDateForTestingPurposes: false 
+  featureManagement.ShowFinancialYear: false
 
   #File upload
   CsvDataFile.IsLatest: true

@@ -128,5 +128,10 @@
     "name": "BlobStorage__ContainerName",
     "value": "paycal",
     "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__ShowFinancialYear",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.ShowFinancialYear }}"
   }
 ]

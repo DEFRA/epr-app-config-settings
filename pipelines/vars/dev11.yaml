@@ -24,3 +24,5 @@ variables:
   paycalFrontEnd.appRegistration.clientId: 17c1ab24-2914-4c94-98bf-b1b8023cc765      # Application ID for DEVRWDWEBWAB422_API
   
   featureManagement.ImplementPackagingDataResubmissionJourney: true
+
+  featureManagement.ShowFinancialYear: true
