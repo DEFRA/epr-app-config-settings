@@ -14,6 +14,7 @@ variables:
   # Feature management
   featureManagement.ShowPrn: true
   featureManagement.OverridePrnCurrentDateForTestingPurposes: false
+  featureManagement.ShowFinancialYear: true
 
   # Enterprise Application IDS
   apiConfig.accountServiceClientId: 5d84922e-aa29-43aa-b055-a0e36cd86c26        # Application ID for DEVRWDWEBWAD407_API

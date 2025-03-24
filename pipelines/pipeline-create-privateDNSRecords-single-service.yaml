@@ -1,3 +1,6 @@
+trigger: none
+pr: none
+
 name: $(BuildId)
 parameters:
   - name: recordName
@@ -20,9 +23,6 @@ parameters:
     displayName: If the DNS record already exists, check this box to confirm that you want to overwrite it.
     type: boolean
     default: 'true'
-
-trigger:
-  - none
 
 pool: DEFRA-COMMON-ubuntu2004-SSV3
 

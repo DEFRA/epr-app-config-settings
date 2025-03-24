@@ -19,6 +19,8 @@ variables:
   apiConfig.accountServiceClientId: 0b4a4acf-bb89-4d8d-ae0e-eb456149b5c5           # Application ID for DEVRWDWEBWAA407_API
   validationDataApi.appRegistration.clientId: e21c31af-3a39-4f59-bc9d-60f54ec34115 # Application ID for DEVRWDWEBFAA407_API
   prnServiceApi.appRegistration.clientId: 3bfb3dd0-7c2e-4daf-927f-8686e496d83a     # Application ID for DEVRWDWEBWAA418_API
+  apiConfig.paymentFacadeClientId: '61d33c64-b0f0-425c-a432-f0d7e19592d7'   # Application ID for DEVRWDWEBWAA425_API
+  
   
   #File upload
   CsvDataFile.IsLatest: true

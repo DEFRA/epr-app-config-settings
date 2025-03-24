@@ -32,6 +32,7 @@ parameters:
       default: true
 
 trigger: none
+pr: none
 
 pool: DEFRA-COMMON-ubuntu2004-SSV3
 
