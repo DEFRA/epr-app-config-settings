@@ -95,6 +95,11 @@
     "value": "/regulators/home"
   },
   {
+    "name": "EprAuthorizationConfig__TimeoutSeconds",
+    "slotSetting": false,
+    "value": "30"
+  },
+  {
     "name": "ExternalUrls__CompaniesHouseRegisterBaseUrl",
     "slotSetting": false,
     "value": "https://find-and-update.company-information.service.gov.uk/company"
@@ -158,6 +163,11 @@
     "name": "FacadeApi__UseMockData",
     "slotSetting": false,
     "value": false
+  },
+  {
+    "name": "FacadeApi__TimeoutSeconds",
+    "slotSetting": false,
+    "value": 60
   },
   {
     "name": "FeatureManagement__ManageApprovedUsers",

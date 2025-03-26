@@ -181,7 +181,7 @@
   },
   {
     "name": "CommonDataApiConfig__Timeout",
-    "value": 30,
+    "value": 60,
     "slotSetting": false
   },
   {

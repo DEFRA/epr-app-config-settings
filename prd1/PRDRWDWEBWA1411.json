@@ -60,6 +60,11 @@
     "value": "/regulators/home"
   },
   {
+	"name": "EprAuthorizationConfig__TimeoutSeconds",
+	"slotSetting": false,
+	"value": "60"
+  },
+  {
     "name": "ExternalUrls__CompaniesHouseRegisterBaseUrl",
     "slotSetting": false,
     "value": "https://find-and-update.company-information.service.gov.uk/company"
@@ -83,6 +88,11 @@
     "name": "FacadeApi__BaseUrl",
     "slotSetting": false,
     "value": "https://prdrwdwebwa1406.azurewebsites.net/api/"
+  },
+  {
+    "name": "FacadeApi__TimeoutSeconds",
+    "slotSetting": false,
+    "value": 60
   },
   {
     "name": "ForwardedHeaders__AllowedHosts",

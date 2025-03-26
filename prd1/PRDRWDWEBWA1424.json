@@ -201,7 +201,7 @@
   },
   {
     "name": "PaymentServiceOptions__ReturnUrl",
-    "value": "https://rwd-prd1.azure.defra.cloud/Payment/GovPayCallback",
+    "value": "https://report-packaging-data.defra.gov.uk/Payment/GovPayCallback",
     "slotSetting": true
   },
   {
