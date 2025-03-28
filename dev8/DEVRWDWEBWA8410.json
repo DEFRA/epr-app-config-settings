@@ -150,6 +150,11 @@
     "value": "268435456"
   },
   {
+    "name": "LateFeeDeadline",
+    "slotSetting": false,
+    "value": "2025/04/01"
+  },
+  {
     "name": "AccountsFacadeAPI__DownstreamScope",
     "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-producers-account-facade/account-creation",
     "slotSetting": false
@@ -232,7 +237,7 @@
   {
     "name": "FeatureManagement__ImplementPackagingDataResubmissionJourney",
     "slotSetting": false,
-    "value": false
+    "value": true
   },
   {
     "name": "FeatureManagement__ShowAllSubsidiaries",

@@ -128,7 +128,7 @@ variables:
   featureManagement.showSubsidiariesRemoveLink: true
   featureManagement.showSubsidiaryJoinerAndLeaverColumns: false
   featureManagement.enableSubsidiaryUploadJoinerColumns: false
-  featureManagement.ImplementPackagingDataResubmissionJourney: false
+  featureManagement.ImplementPackagingDataResubmissionJourney: true
   featureManagement.showAllSubsidiaries: false
   featureManagement.ShowFinancialYear: false
 

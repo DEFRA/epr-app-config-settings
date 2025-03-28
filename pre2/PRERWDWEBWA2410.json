@@ -207,7 +207,7 @@
   {
     "name": "FeatureManagement__ImplementPackagingDataResubmissionJourney",
     "slotSetting": false,
-    "value": false
+    "value": true
   },
   {
     "name": "FeatureManagement__ShowSubsidiaries",

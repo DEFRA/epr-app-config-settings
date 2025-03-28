@@ -150,6 +150,11 @@
     "value": "268435456"
   },
   {
+    "name": "LateFeeDeadline",
+    "slotSetting": false,
+    "value": "2025/04/01"
+  },
+  {
     "name": "AccountsFacadeAPI__DownstreamScope",
     "slotSetting": false,
     "value": "https://dcidmpreprod.onmicrosoft.com/epr-pre1-producers-account-facade/account-creation"
@@ -227,7 +232,7 @@
   {
     "name": "FeatureManagement__ImplementPackagingDataResubmissionJourney",
     "slotSetting": false,
-    "value": false
+    "value": true
   },
   {
     "name": "FeatureManagement__ShowAllSubsidiaries",
