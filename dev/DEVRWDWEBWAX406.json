@@ -338,5 +338,15 @@
     "name": "MessagingConfig__PromotedApprovedUserTemplateId",
     "value": "ada6ef34-5344-41ec-9201-7fa8879d839c",
     "slotSetting": false
+  },
+  {
+    "name": "PrnBackendServiceApiConfig__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}418.azurewebsites.net"
+  },
+  {
+    "name": "PrnBackendServiceApiConfig__ClientId",
+    "slotSetting": false,
+    "value": "#{{ prnServiceApi.appRegistration.clientId }}"
   }
 ]

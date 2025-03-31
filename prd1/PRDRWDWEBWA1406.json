@@ -348,5 +348,15 @@
     "name": "SubmissionsApiConfig__Endpoints__GetRegistrationSubmissions",
     "slotSetting": false,
     "value": "v{0}/submissions/events/get-regulator-registration-decision"
+  },
+  {
+    "name": "PrnBackendServiceApiConfig__BaseUrl",
+    "slotSetting": false,
+    "value": "https://prdrwdwebwa1418.azurewebsites.net"
+  },
+  {
+    "name": "PrnBackendServiceApiConfig__ClientId",
+    "slotSetting": false,
+    "value": "e710d617-b71d-49bf-8d17-4e15cf882c48"
   }
 ]

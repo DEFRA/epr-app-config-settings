@@ -225,6 +225,11 @@
     "value": "#{{ featureManagement.showSubsidiaryJoinerAndLeaverColumns }}"
   },
   {
+    "name": "FeatureManagement__ImplementPackagingDataResubmissionJourney",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.ImplementPackagingDataResubmissionJourney }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"
@@ -538,5 +543,15 @@
     "name": "PaymentFacadeApi__DownstreamScope",
     "slotSetting": false,
     "value": "#{{ payment_facade.DownstreamScope }}"
+  },
+  {
+    "name": "PaymentFacadeApi__Endpoints__ProducerResubmissionFeesEndpoint",
+    "slotSetting": false,
+    "value": "producer/resubmission-fees"
+  },
+  {
+    "name": "PaymentFacadeApi__Endpoints__ComplianceSchemeResubmissionFeesEndpoint",
+    "slotSetting": false,
+    "value": "compliance-scheme/resubmission-fees"
   }
 ]

@@ -528,5 +528,15 @@
     "name": "PaymentFacadeApi__DownstreamScope",
     "slotSetting": false,
     "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev-payments-facade/payment-service"
+  },
+  {
+    "name": "PaymentFacadeApi__Endpoints__ProducerResubmissionFeesEndpoint",
+    "slotSetting": false,
+    "value": "producer/resubmission-fees"
+  },
+  {
+    "name": "PaymentFacadeApi__Endpoints__ComplianceSchemeResubmissionFeesEndpoint",
+    "slotSetting": false,
+    "value": "compliance-scheme/resubmission-fees"
   }
 ]

@@ -349,5 +349,15 @@
     "name": "MessagingConfig__PromotedApprovedUserTemplateId",
     "value": "12154c47-b082-42bf-adef-e6fcba1e9173",
     "slotSetting": false
+  },
+  {
+    "name": "PrnBackendServiceApiConfig__BaseUrl",
+    "slotSetting": false,
+    "value": "https://prerwdwebwa1418.azurewebsites.net"
+  },
+  {
+    "name": "PrnBackendServiceApiConfig__ClientId",
+    "slotSetting": false,
+    "value": "cc0f2682-41f6-4658-9645-2c35f8e6f091"
   }
 ]

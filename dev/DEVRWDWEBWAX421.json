@@ -116,8 +116,8 @@
   },
   {
     "name": "SessionCookieName",
-    "slotSetting": false,
-    "value": "Paycal-#{{ environmentSpoke1 }}"
+    "value": "Paycal-#{{ environmentSpoke1 }}",
+    "slotSetting": false
   },
   {
     "name": "BlobStorage__ConnectionString",
@@ -131,7 +131,12 @@
   },
   {
     "name": "FeatureManagement__ShowFinancialYear",
-    "slotSetting": false,
-    "value": "#{{ featureManagement.ShowFinancialYear }}"
+    "value": "#{{ featureManagement.ShowFinancialYear }}",
+    "slotSetting": false
+  },
+  {
+    "name": "FinancialYearListApi",
+    "value": "https://devrwdwebwa#{{ environmentSpoke }}422.azurewebsites.net/v1/financialYears",
+    "slotSetting": false
   }
 ]

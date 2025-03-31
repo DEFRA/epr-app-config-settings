@@ -553,5 +553,15 @@
     "name": "PaymentFacadeApi__DownstreamScope",
     "slotSetting": false,
     "value": "#{{ payment_facade.DownstreamScope }}"
+  },
+  {
+    "name": "PaymentFacadeApi__Endpoints__ProducerResubmissionFeesEndpoint",
+    "slotSetting": false,
+    "value": "producer/resubmission-fees"
+  },
+  {
+    "name": "PaymentFacadeApi__Endpoints__ComplianceSchemeResubmissionFeesEndpoint",
+    "slotSetting": false,
+    "value": "compliance-scheme/resubmission-fees"
   }
 ]

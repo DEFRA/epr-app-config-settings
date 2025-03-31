@@ -353,5 +353,15 @@
     "name": "RedisInstanceName",
     "value": "epr-dev8-regulators-",
     "slotSetting": false
+  },
+  {
+    "name": "PrnBackendServiceApiConfig__BaseUrl",
+    "slotSetting": false,
+    "value": "https://devrwdwebwa8418.azurewebsites.net"
+  },
+  {
+    "name": "PrnBackendServiceApiConfig__ClientId",
+    "slotSetting": false,
+    "value": "#{{ prnServiceApi.appRegistration.clientId }}"
   }
 ]
