@@ -9,7 +9,6 @@ variables:
   apiConfig.accountServiceClientId: e3428065-aa0b-44f8-954b-b809e35985b7             # Application ID for DEVRWDWEBWA5407_API
   apiConfig.paymentFacadeClientId: 'e5bbeff2-fb22-4ff2-b821-9ad5f75a78ae'   # Application ID for DEVRWDWEBWA5425_API
 
-
   featureManagement.validationDataApi: true
   featureManagement.manageRegistrationSubmissions: true
   featureManagement.enableOrganisationSizeFieldValidation: true
@@ -18,6 +17,10 @@ variables:
   featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: true
   featureManagement.enableSubsidiaryValidationPom: true
   featureManagement.ImplementPackagingDataResubmissionJourney: true
+  featureManagement.enableSubsidiaryJoinerAndLeaverColumns: true
+  featureManagement.ShowSubsidiaries: true
+  featureManagement.enableCsvDownload: true
+  featureManagement.ShowSubsidiariesRemoveLink: false
 
   #File upload versioning
   CsvDataFile.IsLatest: true

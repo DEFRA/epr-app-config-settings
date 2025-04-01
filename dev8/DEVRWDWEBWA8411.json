@@ -289,5 +289,10 @@
     "name": "FeatureManagement__ReprocessorExporter",
     "slotSetting": false,
     "value": false
+  },
+  {
+    "name": "BehaviourManagement__PaymentDetails__ShowZeroFeeForTotalOutstanding",
+    "slotSetting": false,
+    "value": "true"
   }
 ]

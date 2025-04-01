@@ -298,5 +298,10 @@
     "name": "SubmissionApi__PostEvent",
     "slotSetting": false,
     "value": "events/"
+  },
+  {
+    "name": "BehaviourManagement__PaymentDetails__ShowZeroFeeForTotalOutstanding",
+    "slotSetting": false,
+    "value": "true"
   }
 ]
