@@ -22,7 +22,7 @@
   {
     "name": "SqlConnectionString",
     "slotSetting": false,
-    "value": "Server=tcp:devrwddbssqF401.database.windows.net,1433;Initial Catalog=#{{ feesPaymentDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;"
+    "value": "Server=tcp:devrwddbssqf401.database.windows.net,1433;Initial Catalog=#{{ feesPaymentDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;"
   },
   {
     "name": "TotalMinutesToUpdate",
@@ -47,6 +47,6 @@
   {
     "name": "Services__GovPayService__BearerToken",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/FeesPaymentGovPayBearerToken/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/FeesPaymentGovPayBearerToken/)"
   }
 ]

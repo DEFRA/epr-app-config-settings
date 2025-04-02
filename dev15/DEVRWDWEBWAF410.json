@@ -367,7 +367,7 @@
   {
     "name": "Redis__ConnectionString",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/RedisCacheConnectionString/)"
   },
   {
     "name": "Session__IdleTimeoutMinutes",

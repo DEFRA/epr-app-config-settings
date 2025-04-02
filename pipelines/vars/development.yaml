@@ -131,6 +131,7 @@ variables:
   featureManagement.ImplementPackagingDataResubmissionJourney: true
   featureManagement.showAllSubsidiaries: false
   featureManagement.ShowFinancialYear: false
+  featureManagement.publicRegisterEnabled: false
 
   # Databases
   accountsDatabase.name: dev$(environmentSpoke1)_accounts

@@ -101,7 +101,7 @@
   },
   {
     "name": "MessagingConfig__ApiKey",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/MessagingConfigApiKeyDev/)",
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/MessagingConfigApiKeyDev/)",
     "slotSetting": false
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "name": "NpwdIntegration__ClientSecret",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/NPWDIntegrationClientSecret/)",
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/NPWDIntegrationClientSecret/)",
     "slotSetting": false
   },
   {
@@ -211,7 +211,7 @@
   },
   {
     "name": "AppInsightsConfig__ResourceId",
-    "value": "/subscriptions/8f549c59-2438-4495-b571-705081e497e4/resourceGroups/DEVRWDINFRGF401/providers/Microsoft.Insights/components/DEVRWDINFAIF401",
+    "value": "/subscriptions/7e49c9b2-d394-4c48-a588-e090951af3bc/resourceGroups/DEVRWDINFRGF401/providers/Microsoft.Insights/components/DEVRWDINFAIF401",
     "slotSetting": false
   },
   {

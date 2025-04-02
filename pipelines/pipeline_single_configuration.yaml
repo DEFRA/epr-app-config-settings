@@ -49,7 +49,7 @@ jobs:
 - job: DeploySettings
   displayName: Deploying settings for ${{ variables.uppercaseServiceName }}
   steps:
-    - ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'preprod2'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
+    - ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'preprod2'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8'), ne(parameters.teamName, 'DEV15') ) }}:
       - task: qetza.replacetokens.replacetokens-task.replacetokens@6
         displayName: 'Replace tokens'
         inputs:
@@ -87,6 +87,7 @@ jobs:
             dev/DEVRWDWEBWAX412.json => config/DEVRWDWEBWA$(environmentSpoke)412.json
             dev/DEVRWDWEBWAX413.json => config/DEVRWDWEBWA$(environmentSpoke)413.json
             dev/DEVRWDWEBWAX415.json => config/DEVRWDWEBWA$(environmentSpoke)415.json
+            dev/DEVRWDWEBWAX416.json => config/DEVRWDWEBWA$(environmentSpoke)416.json
             dev/DEVRWDWEBWAX417.json => config/DEVRWDWEBWA$(environmentSpoke)417.json
             dev/DEVRWDWEBWAX418.json => config/DEVRWDWEBWA$(environmentSpoke)418.json
             dev/DEVRWDWEBWAX419.json => config/DEVRWDWEBWA$(environmentSpoke)419.json
@@ -136,7 +137,7 @@ jobs:
             echo "Nothing to remove for $service"
           fi
 
-        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'preprod2'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
+        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'preprod2'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8'), ne(parameters.teamName, 'DEV15')) }}:
           workingDirectory: $(Pipeline.Workspace)/s/dev/config
         ${{ else }}:
           workingDirectory: $(settingsDir)
@@ -154,7 +155,7 @@ jobs:
             -n ${{ variables.uppercaseServiceName }} \
             --settings @./${{ variables.uppercaseServiceName }}.json \
             --debug 
-        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'preprod2'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8')) }}:
+        ${{ if and( ne(parameters.teamName, 'tst'), ne(parameters.teamName, 'preprod'), ne(parameters.teamName, 'preprod2'), ne(parameters.teamName, 'prod'), ne(parameters.teamName, 'DEV8'), ne(parameters.teamName, 'DEV15')) }}:
           workingDirectory: $(Pipeline.Workspace)/s/dev/config
         ${{ else }}:
           workingDirectory: $(settingsDir)

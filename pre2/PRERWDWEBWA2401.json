@@ -175,6 +175,11 @@
     "slotSetting": false
   },
   {
+    "name": "FeatureManagement__PublicRegisterEnabled",
+    "value": false,
+    "slotSetting": false
+  },
+  {
     "name": "GOOGLE_ANALYTICS__CookiePrefix",
     "value": "_ga",
     "slotSetting": false

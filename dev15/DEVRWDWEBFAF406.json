@@ -12,7 +12,7 @@
   {
     "name": "SubmissionsDatabase__AccountKey",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/CosmoAccountKey/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/CosmoAccountKey/)"
   },
   {
     "name": "SubmissionsDatabase__ConnectionString",

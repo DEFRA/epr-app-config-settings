@@ -138,5 +138,12 @@
     "name": "FinancialYearListApi",
     "value": "https://devrwdwebwa#{{ environmentSpoke }}422.azurewebsites.net/v1/financialYears",
     "slotSetting": false
+    "slotSetting": false,
+    "value": "#{{ featureManagement.ShowFinancialYear }}"
+  },
+  {
+    "name": "ShowDetailedError",
+    "slotSetting": false,
+    "value": false
   }
 ]

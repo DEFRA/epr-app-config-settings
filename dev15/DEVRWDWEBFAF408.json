@@ -12,7 +12,7 @@
   {
     "name": "AntivirusApi__ClientSecret",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/AntivirusApi-ClientSecret-DEV15/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/AntivirusApi-ClientSecret-DEV15/)"
   },
   {
     "name": "AntivirusApi__CollectionSuffix",
@@ -91,7 +91,7 @@
   },
   {
     "name": "ApiConfig__ClientSecret",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/boomi-api-secret/)",
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/boomi-api-secret/)",
     "slotSetting": false
   },
   {
@@ -172,7 +172,7 @@
   {
     "name": "Redis__ConnectionString",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/RedisCacheConnectionString/)"
   },
   {
     "name": "Redis__TimeToLiveInMinutes",

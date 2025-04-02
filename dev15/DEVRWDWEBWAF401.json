@@ -175,6 +175,11 @@
     "slotSetting": false
   },
   {
+    "name": "FeatureManagement__PublicRegisterEnabled",
+    "value": "#{{ featureManagement.publicRegisterEnabled }}",
+    "slotSetting": false
+  },
+  {
     "name": "GoogleAnalytics__CookiePrefix",
     "slotSetting": false,
     "value": "_ga"
@@ -311,7 +316,7 @@
   },
   {
     "name": "StorageAccount__ConnectionString",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/LargeProducersRegisterStorageAccountConnectionString)",
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/LargeProducersRegisterStorageAccountConnectionString)",
     "slotSetting": false
   },
   {

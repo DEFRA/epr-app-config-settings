@@ -2,7 +2,7 @@
   {
     "name": "ServiceBus__ConnectionString",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/ServiceBusConnectionString/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/ServiceBusConnectionString/)"
   },
   {
     "name": "ServiceBus__SplitQueueName",
@@ -62,7 +62,7 @@
   {
     "name": "Redis__ConnectionString",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/RedisCacheConnectionString/)"
   },
   {
     "name": "CsvDataFile__IsLatest",

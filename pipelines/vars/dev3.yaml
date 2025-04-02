@@ -22,6 +22,7 @@ variables:
   featureManagement.enableSubsidiaryJoinerAndLeaverColumns: true
   featureManagement.obligationCheckerEnabled: true
   featureManagement.manageRegistrationSubmissions: true
+  featureManagement.publicRegisterEnabled: true
 
   # EprPackagingRegulatorEmailConfig
   regulatoremail.producer.northernireland: "murali.karlapudi.external@eviden.com"
