@@ -532,7 +532,7 @@
   {
     "name": "PaymentFacadeApi__Endpoints__ProducerResubmissionFeesEndpoint",
     "slotSetting": false,
-    "value": "producer/resubmission-fees"
+    "value": "producer/resubmission-fee"
   },
   {
     "name": "PaymentFacadeApi__Endpoints__ComplianceSchemeResubmissionFeesEndpoint",

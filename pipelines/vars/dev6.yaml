@@ -16,5 +16,6 @@ variables:
 
   #Enterprise Applications Details
   apiConfig.accountServiceClientId: c0500f7b-8b3f-46d5-85b0-f242fc13ff3e           # Application ID for DEVRWDWEBWA6407_API
+  validationDataApi.appRegistration.clientId: ababbabb-d284-4dae-a44b-9261818c2706 # Application ID for DEVRWDWEBFA6407_API
   #File upload versioning
   CsvDataFile.IsLatest: true
