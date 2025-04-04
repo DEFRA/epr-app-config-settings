@@ -11,7 +11,7 @@
   },
   {
     "name": "SubmissionsServiceApi__BaseUrl",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}415.azurewebsites.net/",
+    "value": "https://devrwdwebwaf415.azurewebsites.net/",
     "slotSetting": false
   },
   {
@@ -26,7 +26,7 @@
   },
   {
     "name": "PrnServiceApi__BaseUrl",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}418.azurewebsites.net/",
+    "value": "https://devrwdwebwaf418.azurewebsites.net/",
     "slotSetting": false
   },
   {
@@ -56,12 +56,12 @@
   },
   {
     "name": "ServiceBus__ObligationQueueName",
-    "value": "defra.epr.obligation#{{ teamName.dot }}",
+    "value": "defra.epr.obligation.dev15",
     "slotSetting": false
   },
   {
     "name": "ServiceBus__ObligationLastSuccessfulRunQueueName",
-    "value": "defra.epr.obligationlastsuccessfulrun#{{ teamName.dot }}",
+    "value": "defra.epr.obligationlastsuccessfulrun.dev15",
     "slotSetting": false
   },
   {

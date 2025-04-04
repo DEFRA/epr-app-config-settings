@@ -1,7 +1,7 @@
 [
   {
     "name": "Service__AccountBaseUrl",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net/",
+    "value": "https://devrwdwebwaf407.azurewebsites.net/",
     "slotSetting": false
   },
   {
@@ -31,12 +31,12 @@
   },
   {
     "name": "ServiceBus__FetchPrnQueueName",
-    "value": "defra.epr.npwd.integration.fetchprn.dev#{{ environmentSpoke1 }}",
+    "value": "defra.epr.npwd.integration.fetchprn.dev15",
     "slotSetting": false
   },
   {
     "name": "ServiceBus__ErrorPrnQueue",
-    "value": "defra.epr.npwd.integration.errorqueue.dev#{{ environmentSpoke1 }}",
+    "value": "defra.epr.npwd.integration.errorqueue.dev15",
     "slotSetting": false
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "name": "Service__PrnBaseUrl",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}418.azurewebsites.net/",
+    "value": "https://devrwdwebwaf418.azurewebsites.net/",
     "slotSetting": false
   },
   {
@@ -56,7 +56,7 @@
   },
   {
     "name": "Service__CommonDataServiceBaseUrl",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}415.azurewebsites.net/",
+    "value": "https://devrwdwebwaf415.azurewebsites.net/",
     "slotSetting": false
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "name": "FeatureManagement__RunIntegration",
-    "value": "#{{ featureManagement.RunIntegration }}",
+    "value": true,
     "slotSetting": false
   },
   {
@@ -76,12 +76,12 @@
   },
   {
     "name": "DefaultLastRunDate",
-    "value": "2024-10-01",
+    "value": "2025-04-02",
     "slotSetting": false
   },
   {
     "name": "MessagingConfig__NpwdEmailTemplateId",
-    "value": "#{{ messaging.prn.npwdemail.templateid }}",
+    "value": "4e67b91b-b010-4d39-a0ea-ecb7e5e77b25",
     "slotSetting": false
   },
   {
@@ -101,7 +101,7 @@
   },
   {
     "name": "MessagingConfig__ApiKey",
-    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/MessagingConfigApiKeyDev/)",
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/MessagingConfigApiKeyDev15/)",
     "slotSetting": false
   },
   {
@@ -156,32 +156,32 @@
   },
   {
     "name": "MessagingConfig__NpwdValidationErrorsTemplateId",
-    "value": "#{{ messaging.prn.npwdvalidationerrors.templateid }}",
+    "value": "66bf9f5e-82d3-4f43-8b25-50d6a138a7ef",
     "slotSetting": false
   },
   {
     "name": "ServiceBus__FetchPrnDeltaSyncQueueName",
-    "value": "defra.npwd.integration.lastsuccessfulrun.fetchprn.dev#{{ environmentSpoke1 }}",
+    "value": "defra.npwd.integration.lastsuccessfulrun.fetchprn.dev15",
     "slotSetting": false
   },
   {
     "name": "ServiceBus__UpdateProducerDeltaSyncQueueName",
-    "value": "defra.npwd.integration.lastsuccessfulrun.updateproducer.dev#{{ environmentSpoke1 }}",
+    "value": "defra.npwd.integration.lastsuccessfulrun.updateproducer.dev15",
     "slotSetting": false
   },
   {
     "name": "ServiceBus__UpdatePrnDeltaSyncQueueName",
-    "value": "defra.npwd.integration.lastsuccessfulrun.updateprn.dev#{{ environmentSpoke1 }}",
+    "value": "defra.npwd.integration.lastsuccessfulrun.updateprn.dev15",
     "slotSetting": false
   },
   {
     "name": "Service__AccountClientId",
-    "value": "#{{ apiConfig.accountServiceClientId }}",
+    "value": "00f441bb-2b73-4fb6-a014-641571d4da7d",
     "slotSetting": false
   },
   {
     "name": "Service__PrnClientId",
-    "value": "#{{ prnServiceApi.appRegistration.clientId }}",
+    "value": "edb35278-1055-41db-aa2d-56fbb33c7f88",
     "slotSetting": false
   },
   {

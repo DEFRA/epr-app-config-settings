@@ -2,12 +2,12 @@
   {
     "name": "ApiConfig__AccountServiceBaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net"
+    "value": "https://devrwdwebwaf407.azurewebsites.net"
   },
   {
     "name": "ApiConfig__AccountServiceClientId",
     "slotSetting": false,
-    "value": "#{{ apiConfig.accountServiceClientId }}"
+    "value": "6d65d29d-fbeb-41ed-b001-f98e37d05079"
   },
   {
     "name": "ApiConfig__Certificate",
@@ -17,31 +17,31 @@
   {
     "name": "ApiConfig__AddressLookupBaseUrl",
     "slotSetting": false,
-    "value": "#{{ apiConfig.addressLookupBaseUrl }}"
+    "value": "https://dev15-api-gateway.azure.defra.cloud/api/address-lookup/v1.0/"
   },
   {
     "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
     "slotSetting": false,
-    "value": "#{{ apiConfig.companiesHouseLookupBaseUrl }}"
+    "value": "https://dev15-api-gateway.azure.defra.cloud/api/companies-house/v2.2/"
   },
   {
     "name": "ApiConfig__TenantId",
-    "value": "#{{ apiConfig.boomi.tenantid }}",
+    "value": "6f504113-6b64-43f2-ade9-242e05780007",
     "slotSetting": false
   },
   {
     "name": "ApiConfig__AddressLookupScope",
-    "value": "#{{ apiConfig.boomi.addressLookupScope }}",
+    "value": "api://0815da39-8dcf-49d7-955b-4006cc16c75e/.default",
     "slotSetting": false
   },
   {
     "name": "ApiConfig__CompaniesHouseScope",
-    "value": "#{{ apiConfig.boomi.companiesHouseScope }}",
+    "value": "api://f674049a-1629-4381-8bf3-a5209c6e032b/.default",
     "slotSetting": false
   },
   {
     "name": "ApiConfig__ClientId",
-    "value": "#{{ apiConfig.boomi.clientid }}",
+    "value": "d7fc5db0-4aca-45da-a131-e1029679ef11",
     "slotSetting": false
   },
   {
@@ -52,56 +52,56 @@
   {
     "name": "AzureAdB2C__ClientId",
     "slotSetting": false,
-    "value": "#{{ b2c.permissionsService.clientId }}"
+    "value": "1dd24ade-b957-4897-9466-c49ea9191306"
   },
   {
     "name": "AzureAdB2C__Domain",
     "slotSetting": false,
-    "value": "#{{ b2c.domain }}"
+    "value": "AZDCUSPOC2.onmicrosoft.com"
   },
   {
     "name": "AzureAdB2C__Instance",
     "slotSetting": false,
-    "value": "#{{ b2c.instance }}"
+    "value": "https://AZDCUSPOC2.b2clogin.com"
   },
   {
     "name": "AzureAdB2C__SignUpSignInPolicyId",
     "slotSetting": false,
-    "value": "#{{ b2c.signUpSignInPolicyId }}"
+    "value": "B2C_1A_EPR_SignUpSignIn"
   },
   {
     "name": "FacadeAPI__Address",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}413.azurewebsites.net"
+    "value": "https://devrwdwebwaf413.azurewebsites.net"
   },
   {
     "name": "FeatureManagement__UseBoomiOAuth",
     "slotSetting": false,
-    "value": "#{{ featureManagement.useBoomiOAuth }}"
+    "value": true
   },
   {
     "name": "MessagingConfig__AccountCreationUrl",
     "slotSetting": false,
-    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/regulators/full-name?token="
+    "value": "https://rwd-dev15.azure.defra.cloud/regulators/full-name?token="
   },
   {
     "name": "MessagingConfig__ApiKey",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/MessagingConfigApiKeyDev/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/MessagingConfigApiKeyDev15/)"
   },
   {
     "name": "RedisInstanceName",
     "slotSetting": false,
-    "value": "#{{ redis.regulators.instance.name }}"
+    "value": "epr-dev15-regulators-"
   },
   {
     "name": "rolesConfig__roles__4__InvitationTemplateId",
     "slotSetting": false,
-    "value": "#{{ messaging.regulator.templateid }}"
+    "value": "ed99b2d7-638f-48de-969e-eec4745d067f"
   },
   {
     "name": "rolesConfig__roles__5__InvitationTemplateId",
     "slotSetting": false,
-    "value": "#{{ messaging.regulator.templateid }}"
+    "value": "ed99b2d7-638f-48de-969e-eec4745d067f"
   }
 ]

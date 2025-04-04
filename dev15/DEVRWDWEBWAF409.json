@@ -2,12 +2,12 @@
   {
     "name": "AccountApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net"
+    "value": "https://devrwdwebwaf407.azurewebsites.net"
   },
   {
     "name": "AccountApi__ClientId",
     "slotSetting": false,
-    "value": "#{{ apiConfig.accountServiceClientId }}"
+    "value": "00f441bb-2b73-4fb6-a014-641571d4da7d"
   },
   {
     "name": "AccountApi__Timeout",
@@ -17,12 +17,12 @@
   {
     "name": "AntivirusApi__BaseUrl",
     "slotSetting": false,
-    "value": "#{{ TradeAntivirusApi.url }}"
+    "value": "https://dev15-gateway.trade.azure.defra.cloud/trade-file-store"
   },
   {
     "name": "AntivirusApi__ClientId",
     "slotSetting": false,
-    "value": "020511d9-8c13-4c89-910b-04aaa212e296"
+    "value": "8c979e08-142a-4ef7-ba60-475470c8cf96"
   },
   {
     "name": "AntivirusApi__ClientSecret",
@@ -32,7 +32,7 @@
   {
     "name": "AntivirusApi__CollectionSuffix",
     "slotSetting": false,
-    "value": "dev#{{ environmentSpoke1 }}"
+    "value": "dev15"
   },
   {
     "name": "AntivirusApi__EnableDirectAccess",
@@ -42,7 +42,7 @@
   {
     "name": "AntivirusApi__Scope",
     "slotSetting": false,
-    "value": "#{{ TradeAntivirusApi.scope }}"
+    "value": "api://tst-futuretrade-ext.defra.gov.uk/.default"
   },
   {
     "name": "AntivirusApi__SubscriptionKey",
@@ -72,22 +72,21 @@
   {
     "name": "AzureAdB2C__Domain",
     "slotSetting": false,
-    "value": "#{{ b2c.domain }}"
+    "value": "AZDCUSPOC2.onmicrosoft.com"
   },
   {
     "name": "AzureAdB2C__Instance",
     "slotSetting": false,
-    "value": "#{{ b2c.instance }}"
-  },
+    "value": "https://AZDCUSPOC2.b2clogin.com"  },
   {
     "name": "AzureADB2C__SignUpSignInPolicyId",
     "slotSetting": false,
-    "value": "#{{ b2c.signUpSignInPolicyId }}"
+    "value":  "B2C_1A_EPR_SignUpSignIn"
   },
   {
     "name": "LoggingApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}403.azurewebsites.net"
+    "value": "https://devrwdwebwaf403.azurewebsites.net"
   },
   {
     "name": "Logging__LogLevel__WebApiGateway.Api",
@@ -102,46 +101,46 @@
   {
     "name": "Redis__TimeToLiveInMinutes",
     "slotSetting": false,
-    "value": "#{{ bulkUpload.redisnotificationsexpiryinminutes }}"
+    "value": "720"
   },
   {
     "name": "StorageAccount__ConnectionString",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})"
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWDf403/)"
   },
   {
     "name": "StorageAccount__PomContainer",
     "slotSetting": false,
-    "value": "pom-upload-container#{{ teamName.dash }}"
+    "value": "pom-upload-container-dev15"
   },
   {
     "name": "StorageAccount__RegistrationContainer",
     "slotSetting": false,
-    "value": "registration-upload-container#{{ teamName.dash }}"
+    "value": "registration-upload-container-dev15"
   },
   {
     "name": "StorageAccount__SubsidiaryContainer",
     "slotSetting": false,
-    "value": "subsidiary-upload-container#{{ teamName.dash }}"
+    "value": "subsidiary-upload-container-dev15"
   },
   {
     "name": "SubmissionStatusApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"
+    "value": "https://devrwdwebwaf408.azurewebsites.net"
   },
   {
     "name": "CommonDataApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}415.azurewebsites.net"
+    "value": "https://devrwdwebwaf415.azurewebsites.net"
   },
   {
     "name": "PrnServiceApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}418.azurewebsites.net"
+    "value": "https://devrwdwebwaf418.azurewebsites.net"
   },
   {
     "name": "PrnServiceApi__ClientId",
     "slotSetting": false,
-    "value": "#{{ prnServiceApi.appRegistration.clientId }}"   
+    "value": "edb35278-1055-41db-aa2d-56fbb33c7f88"   
   }
 ]

@@ -2,12 +2,12 @@
   {
     "name": "AntivirusApi__BaseUrl",
     "slotSetting": false,
-    "value": "#{{ TradeAntivirusApi.url }}"
+    "value": "https://tst-gateway.trade.azure.defra.cloud/trade-file-store"
   },
   {
     "name": "AntivirusApi__ClientId",
     "slotSetting": false,
-    "value": "020511d9-8c13-4c89-910b-04aaa212e296"
+    "value": "8c979e08-142a-4ef7-ba60-475470c8cf96"
   },
   {
     "name": "AntivirusApi__ClientSecret",
@@ -17,7 +17,7 @@
   {
     "name": "AntivirusApi__CollectionSuffix",
     "slotSetting": false,
-    "value": "dev#{{ environmentSpoke }}"
+    "value": "dev15"
   },
   {
     "name": "AntivirusApi__NotificationEmail",
@@ -37,12 +37,12 @@
   {
     "name": "AntivirusApi__Scope",
     "slotSetting": false,
-    "value": "#{{ TradeAntivirusApi.scope }}"
+    "value": "api://tst-futuretrade-ext.defra.gov.uk/.default"
   },
   {
     "name": "AntivirusApi__SubscriptionKey",
     "slotSetting": false,
-    "value": "2bbc3ee9c7514c70b1628e766f90582d"
+    "value": "e2b96e9ffdcf4a80a73dacbeb67e6234"
   },
   {
     "name": "AntivirusApi__TenantId",
@@ -62,26 +62,26 @@
   {
     "name": "ApiConfig__SubsidiaryServiceBaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net"
+    "value": "https://devrwdwebwaf407.azurewebsites.net"
   },
   {
     "name": "ApiConfig__AccountServiceClientId",
     "slotSetting": false,
-    "value": "#{{ apiConfig.accountServiceClientId }}"
+    "value": "00f441bb-2b73-4fb6-a014-641571d4da7d"
   },
   {
     "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
     "slotSetting": false,
-    "value": "#{{ apiConfig.companiesHouseLookupBaseUrl }}"
+    "value": "https://tst-api-gateway.azure.defra.cloud/api/companies-house/v2.2/"
   },
   {
     "name": "ApiConfig__TenantId",
-    "value": "#{{ apiConfig.boomi.tenantid }}",
+    "value": "6f504113-6b64-43f2-ade9-242e05780007",
     "slotSetting": false
   },
   {
     "name": "ApiConfig__CompaniesHouseScope",
-    "value": "#{{ apiConfig.boomi.companiesHouseScope }}",
+    "value": "api://f674049a-1629-4381-8bf3-a5209c6e032b/.default",
     "slotSetting": false
   },
   {
@@ -122,17 +122,17 @@
   {
     "name": "BlobStorage__ConnectionString",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})"
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWDf403/)"
   },
   {
     "name": "BlobStorage__SubsidiaryContainerName",
     "slotSetting": false,
-    "value": "subsidiary-upload-container#{{ teamName.dash }}"
+    "value": "subsidiary-upload-container-dev15"
   },
   {
     "name": "BlobStorage__CompaniesHouseContainerName",
     "slotSetting": false,
-    "value": "subsidiary-companies-house-upload-container#{{ teamName.dash }}"
+    "value": "subsidiary-companies-house-upload-container-dev15"
   },
   {
     "name": "CompaniesHouseDownload__DataDownloadUrl",
@@ -157,17 +157,17 @@
   {
     "name": "CompaniesHouseDownload__Schedule",
     "slotSetting": false,
-    "value": "#{{ bulkUpload.companiesHouseDownloadSchedule }}"
+    "value": "0 0 23 * * *"
   },
   {
     "name": "FeatureManagement__EnableSubsidiaryUploadJoinerColumns",
     "slotSetting": false,
-    "value": "#{{ featureManagement.enableSubsidiaryUploadJoinerColumns }}"
+    "value": "false"
   },
   {
     "name": "FeatureManagement__UseBoomiOAuth",
     "slotSetting": false,
-    "value": "#{{ featureManagement.useBoomiOAuth }}"
+    "value": true
   },
   {
     "name": "Redis__ConnectionString",
@@ -177,17 +177,17 @@
   {
     "name": "Redis__TimeToLiveInMinutes",
     "slotSetting": false,
-    "value": "#{{ bulkUpload.redisnotificationsexpiryinminutes }}"
+    "value": "720"
   },
   {
     "name": "SubmissionApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"
+    "value": "https://devrwdwebwaf408.azurewebsites.net"
   },
   {
     "name": "TableStorage__ConnectionString",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.CompaniesHouse.Table.secret.url }})"
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/SubsidiaryBulkUploadStorageAccountConnectionStringRWDf408/)"
   },
   {
     "name": "TableStorage__CompaniesHouseOfflineDataTableName",

@@ -7,22 +7,22 @@
   {
     "name": "AzureAdB2C__ClientId",
     "slotSetting": false,
-    "value": "#{{ b2c.frontend.clientId }}"
+    "value": "ab29ed47-ac03-4d99-b7c9-5ab99c2c4c7e"
   },
   {
     "name": "AzureAdB2C__ClientSecret",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.b2c.frontend.secret.url }} )"
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/AzureAdB2CClientSecretRWD1402/)"
   },
   {
     "name": "AzureAdB2C__Domain",
     "slotSetting": false,
-    "value": "#{{ b2c.domain }}"
+    "value": "AZDCUSPOC2.onmicrosoft.com"
   },
   {
     "name": "AzureAdB2C__Instance",
     "slotSetting": false,
-    "value": "#{{ b2c.instance }}"
+    "value": "https://AZDCUSPOC2.b2clogin.com"
   },
   {
     "name": "AzureAdB2C__SignUpSignInPolicyId",
@@ -52,22 +52,22 @@
   {
     "name": "FacadeAPI__Address",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}404.azurewebsites.net/api/"
+    "value": "https://devrwdwebwaf404.azurewebsites.net/api/"
   },
   {
     "name": "FacadeAPI__DownstreamScope",
     "slotSetting": false,
-    "value": "#{{ facadeAPI.DownstreamScope }}"
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev15-producers-account-facade/account-creation"
   },
   {
     "name": "FeatureManagement__ShowLanguageSwitcher",
     "slotSetting": false,
-    "value": "#{{ featureManagement.showLanguageSwitcher }}"
+    "value": true
   },
   {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
-    "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"
+    "value": "rwd-dev15.azure.defra.cloud"
   },
   {
     "name": "GoogleAnalytics__CookiePrefix",
@@ -97,7 +97,7 @@
   {
     "name": "RedisInstanceName",
     "slotSetting": false,
-    "value": "#{{ redis.producers.instance.name }}"
+    "value": "epr-dev15-producers-"
   },
   {
     "name": "SiteDates__AccessibilityStatementPrepared",

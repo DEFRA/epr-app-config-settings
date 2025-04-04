@@ -2,7 +2,7 @@
   {
     "name": "AccountsDatabase__ConnectionString",
     "slotSetting": false,
-    "value": "Server=tcp:devrwddbssqf401.database.windows.net,1433;Initial Catalog=#{{ accountsDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;"
+    "value": "Server=tcp:devrwddbssqf401.database.windows.net;Authentication=Active Directory Default;Database=dev15_accounts;"
   },
   {
     "name": "ScheduleExpression",
@@ -17,11 +17,11 @@
   {
     "name": "SubmissionsDatabase__ConnectionString",
     "slotSetting": false,
-    "value": "#{{ cosmos.database.connectionString }}"
+    "value": "https://devrwddbscof401.documents.azure.com:443/"
   },
   {
     "name": "SubmissionsDatabase__Name",
     "slotSetting": false,
-    "value": "#{{ cosmos.database.name }}"
+    "value": "SubmissionDB"
   }
 ]

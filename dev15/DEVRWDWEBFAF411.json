@@ -41,7 +41,7 @@
   },
   {
     "name": "PrepareCalcResultEndPoint",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}422.azurewebsites.net/v1/internal/prepareCalcResults",
+    "value": "https://devrwdwebwaf422.azurewebsites.net/v1/internal/prepareCalcResults",
     "slotSetting": false
   },
   {
@@ -56,12 +56,12 @@
   },
   {
     "name": "ServiceBusQueueName",
-    "value": "defra.epr.calculator.run#{{ teamName.dot }}",
+    "value": "defra.epr.calculator.run.dev15",
     "slotSetting": false
   },
   {
     "name": "StatusUpdateEndpoint",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}422.azurewebsites.net/v1/internal/rpdStatus",
+    "value": "https://devrwdwebwaf422.azurewebsites.net/v1/internal/rpdStatus",
     "slotSetting": false
   },
   {
@@ -91,12 +91,12 @@
   },
   {
     "name": "BlobContainerName",
-    "value": "paycal#{{ teamName.dash }}",
+    "value": "paycal.dev15",
     "slotSetting": false
   },
   {
     "name": "DbConnectionString",
-    "value": "Server=tcp:devrwddbssqf401.database.windows.net,1433;Initial Catalog=#{{ payCalDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=\"Active Directory Managed Identity\";",
+    "value": "Server=tcp:devrwddbssqf401.database.windows.net,1433;Initial Catalog=dev15_paycal;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=\"Active Directory Managed Identity\";",
     "slotSetting": false
   },
   {

@@ -12,22 +12,22 @@
   {
     "name": "ServiceBus__SplitQueueName",
     "slotSetting": false,
-    "value": "defra.epr.producer.data#{{ teamName.dot }}"
+    "value": "defra.epr.producer.data.dev15"
   },
   {
     "name": "StorageAccount__PomContainer",
     "slotSetting": false,
-    "value": "pom-upload-container#{{ teamName.dash }}"
+    "value": "pom-upload-container.dev15"
   },
   {
     "name": "SubmissionApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"
+    "value": "https://devrwdwebwaf408.azurewebsites.net"
   },
   {
     "name": "CompanyDetailsApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebfa#{{ environmentSpoke }}407.azurewebsites.net/"
+    "value": "https://devrwdwebfaf407.azurewebsites.net/"
   },
   {
     "name": "CompanyDetailsApi__Timeout",
@@ -37,12 +37,12 @@
   {
     "name": "CompanyDetailsApi__ClientId",
     "slotSetting": false,
-    "value": "#{{ validationDataApi.appRegistration.clientId }}"
+    "value": "37a41e68-b38a-4cd1-a63a-c0ff35233357"
   },
   {
     "name": "Validation__Disabled",
     "slotSetting": false,
-    "value": false
+    "value": "false"
   },
   {
     "name": "Validation__MaxIssuesToProcess",
@@ -52,7 +52,7 @@
   {
     "name": "Validation__IsLatest",
     "slotSetting": false,
-    "value": "#{{ Validation.Islatest }}"
+    "value": true
   },
   {
     "name": "SubmissionPeriods__0__SubmissionPeriod",
@@ -137,11 +137,11 @@
   {
     "name": "FeatureManagement__EnableSubsidiaryValidationPom",
     "slotSetting": false,
-    "value": "#{{ featureManagement.enableSubsidiaryValidationPom }}"
+    "value": true
   },
   {
     "name": "FeatureManagement__EnableSmallProducerPackagingTypeEnhancedValidation",
     "slotSetting": false,
-    "value": "#{{ featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation }}"
+    "value": true
   }
 ]

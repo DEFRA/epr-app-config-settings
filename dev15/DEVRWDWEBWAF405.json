@@ -12,27 +12,27 @@
   {
     "name": "AzureAdB2C__ClientSecret",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.b2c.frontend.secret.url }})"
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkv1f401.vault.azure.net/secrets/AzureAdB2CClientSecretRWDf402/)"
   },
   {
     "name": "AzureAdB2C__Domain",
     "slotSetting": false,
-    "value": "#{{ b2c.domain }}"
+    "value": "AZDCUSPOC2.onmicrosoft.com"
   },
   {
     "name": "AzureAdB2C__Instance",
     "slotSetting": false,
-    "value": "#{{ b2c.instance }}"
+    "value": "https://AZDCUSPOC2.b2clogin.com"
   },
   {
     "name": "AzureAdB2C__SignUpSignInPolicyId",
     "slotSetting": false,
-    "value": "#{{ b2c.signUpSignInPolicyId }}"
+    "value": "B2C_1A_EPR_SignUpSignIn"
   },
   {
     "name": "AzureAdB2C__SignedOutCallbackPath",
     "slotSetting": false,
-    "value": "#{{ b2c.signedOutCallbackPath }}"
+    "value": "/signout/B2C_1A_EPR_SignUpSignIn"
   },
   {
     "name": "CookieOptions__AntiForgeryCookieName",
@@ -57,12 +57,12 @@
   {
     "name": "EprAuthorizationConfig__FacadeBaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}404.azurewebsites.net/api/"
+    "value": "https://devrwdwebwaf404.azurewebsites.net/api/"
   },
   {
     "name": "EprAuthorizationConfig__FacadeDownStreamScope",
     "slotSetting": false,
-    "value": "#{{ facadeAPI.DownstreamScope }}"
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev15-producers-account-facade/account-creation"
   },
   {
     "name": "EprAuthorizationConfig__FacadeUserAccountEndpoint",
@@ -82,12 +82,12 @@
   {
     "name": "FacadeAPI__Address",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}404.azurewebsites.net/api/"
+    "value": "https://devrwdwebwaf404.azurewebsites.net/api/"
   },
   {
     "name": "FacadeAPI__DownstreamScope",
     "slotSetting": false,
-    "value": "#{{ facadeAPI.DownstreamScope }}"
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev15-producers-account-facade/account-creation"
   },
   {
     "name": "FacadeAPI__GetServiceRolesPath",
@@ -107,27 +107,27 @@
   {
     "name": "FeatureManagement__RemoveUsers",
     "slotSetting": false,
-    "value": "#{{ featureManagement.removeUsers }}"
+    "value": true
   },
   {
     "name": "FeatureManagement__ShowLanguageSwitcher",
     "slotSetting": false,
-    "value": "#{{ featureManagement.showLanguageSwitcher }}"
+    "value": true
   },
   {
     "name": "FeatureManagement__ManageUserDetailChanges",
     "slotSetting": false,
-    "value": "#{{ featureManagement.manageUserDetailChanges }}"
+    "value": true
   },
   {
     "name": "FeatureManagement__ManageCompanyDetailChanges",
     "slotSetting": false,
-    "value": "#{{ featureManagement.manageCompanyDetailChanges }}"
+    "value": "https://www.gov.uk/file-changes-to-a-company-with-companies-house"
   },
   {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
-    "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"
+    "value": "rwd-dev15.azure.defra.cloud"
   },
   {
     "name": "ForwardedHeaders__ForwardedHostHeaderName",
@@ -157,7 +157,7 @@
   {
     "name": "HTTPCLIENT__APPLICATION_SERVICE_URL",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}409.azurewebsites.net"
+    "value": "https://devrwdwebwaf409.azurewebsites.net"
   },
   {
     "name": "HTTPCLIENT__RETRY_COUNT",
@@ -177,12 +177,12 @@
   {
     "name": "HTTPCLIENT__WEB_API_GATEWAY_SERVICE_URL",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}409.azurewebsites.net"
+    "value": "https://devrwdwebwaf409.azurewebsites.net"
   },
   {
     "name": "LoggingApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}403.azurewebsites.net"
+    "value": "https://devrwdwebwaf403.azurewebsites.net"
   },
   {
     "name": "MsalOptions__L2SlidingExpiration",
@@ -212,7 +212,7 @@
   {
     "name": "RedisInstanceName",
     "slotSetting": false,
-    "value": "#{{ redis.producers.instance.name }}"
+    "value": "epr-dev15-producers-"
   },
   {
     "name": "SCHEME_YEAR",

@@ -7,7 +7,7 @@
   {
     "name": "ProtectiveMonitoring__Environment",
     "slotSetting": false,
-    "value": "DEV"
+    "value": "DEV15"
   },
   {
     "name": "ServiceBus__ConnectionString",
@@ -22,7 +22,7 @@
   {
     "name": "ServiceBus__QueueName",
     "slotSetting": false,
-    "value": "defra.epr.protectivemonitoring.events#{{ teamName.dot }}"
+    "value": "defra.epr.protectivemonitoring.events.dev15"
   },
   {
     "name": "ServiceBus__RetryDelaySeconds",

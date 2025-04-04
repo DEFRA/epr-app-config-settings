@@ -6,17 +6,17 @@
   },
   {
     "name": "BlobStorage__ConnectionString",
-    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWDf403/)",
     "slotSetting": false
   },
   {
     "name": "BlobStorage__ContainerName",
-    "value": "paycal#{{ teamName.dash }}",
+    "value": "paycal.dev15",
     "slotSetting": false
   },
   {
     "name": "ConnectionStrings__DefaultConnection",
-    "value": "Server=tcp:devrwddbssqf401.database.windows.net,1433;Initial Catalog=#{{ payCalDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=\"Active Directory Managed Identity\";",
+    "value": "Server=tcp:devrwddbssqf401.database.windows.net,1433;Initial Catalog=dev15_paycal;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=\"Active Directory Managed Identity\";",
     "slotSetting": false
   },
   {
@@ -26,7 +26,7 @@
   },
   {
     "name": "ServiceBus__QueueName",
-    "value": "defra.epr.calculator.run#{{ teamName.dot }}",
+    "value": "defra.epr.calculator.run.dev15",
     "slotSetting": false
   },
   {

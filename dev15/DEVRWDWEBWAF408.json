@@ -7,7 +7,7 @@
   {
     "name": "Database__ConnectionString",
     "slotSetting": false,
-    "value": "#{{ cosmos.database.connectionString }}"
+    "value": "https://devrwddbscof401.documents.azure.com:443/"
   },
   {
     "name": "Database__MaxRetryCount",
@@ -22,7 +22,7 @@
   {
     "name": "Database__Name",
     "slotSetting": false,
-    "value": "#{{ cosmos.database.name }}"
+    "value": "SubmissionDB"
   },
   {
     "name": "GoogleAnalytics__CookiePrefix",
@@ -32,7 +32,7 @@
   {
     "name": "LoggingApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}403.azurewebsites.net"
+    "value": "https://devrwdwebwaf403.azurewebsites.net"
   },
   {
     "name": "Validation__MaxIssuesToProcess",

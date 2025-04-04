@@ -6,7 +6,7 @@
   },
   {
     "name": "ConnectionStrings__EprConnectionString",
-    "value": "Server=tcp:devrwddbssqf401.database.windows.net,1433;Initial Catalog=#{{ prnDatabase.name }};Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;",
+    "value": "Server=tcp:devrwddbssqf401.database.windows.net,1433;Initial Catalog=dev15_prn;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;",
     "slotSetting": false
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "name": "CommonDataApiConfig__BaseUrl",    
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}415.azurewebsites.net/api/",
+    "value": "https://devrwdwebwaf415.azurewebsites.net/api/",
     "slotSetting": false
   },
   {

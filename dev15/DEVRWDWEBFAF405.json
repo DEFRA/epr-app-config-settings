@@ -2,32 +2,32 @@
   {
     "name": "BlobStorage__ConnectionString",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})"
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWDf403/)"
   },
   {
     "name": "BlobStorage__PomContainerName",
     "slotSetting": false,
-    "value": "pom-upload-container#{{ teamName.dash }}"
+    "value": "pom-upload-container-dev15"
   },
   {
     "name": "BlobStorage__RegistrationContainerName",
     "slotSetting": false,
-    "value": "registration-upload-container#{{ teamName.dash }}"
+    "value": "registration-upload-container-dev15"
   },
   {
     "name": "BlobStorage__SubsidiaryContainerName",
     "slotSetting": false,
-    "value": "subsidiary-upload-container#{{ teamName.dash }}"
+    "value": "subsidiary-upload-container-dev15"
   },
   {
     "name": "BlobStorage__SubsidiaryCompaniesHouseContainerName",
     "slotSetting": false,
-    "value": "subsidiary-companies-house-upload-container#{{ teamName.dash }}"
+    "value": "subsidiary-companies-house-upload-container-dev15"
   },
   {
     "name": "LoggingApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}403.azurewebsites.net"
+    "value": "https://devrwdwebwaf403.azurewebsites.net"
   },
   {
     "name": "ServiceBus__ConnectionString",
@@ -37,27 +37,27 @@
   {
     "name": "ServiceBus__PomUploadQueueName",
     "slotSetting": false,
-    "value": "defra.epr.pom.data.uploaded#{{ teamName.dot }}"
+    "value": "defra.epr.pom.data.uploaded.dev15"
   },
   {
     "name": "ServiceBus__RegistrationDataQueueName",
     "slotSetting": false,
-    "value": "defra.epr.registration.data#{{ teamName.dot }}"
+    "value": "defra.epr.registration.data.dev15"
   },
   {
     "name": "SubmissionApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"
+    "value": "https://devrwdwebwaf408.azurewebsites.net"
   },
   {
     "name": "TradeAntivirusApi__BaseUrl",
     "slotSetting": false,
-    "value": "#{{ TradeAntivirusApi.url }}"
+    "value": "https://tst-gateway.trade.azure.defra.cloud/trade-file-store"
   },
   {
     "name": "TradeAntivirusApi__ClientId",
     "slotSetting": false,
-    "value": "020511d9-8c13-4c89-910b-04aaa212e296"
+    "value": "8c979e08-142a-4ef7-ba60-475470c8cf96"
   },
   {
     "name": "TradeAntivirusApi__ClientSecret",
@@ -67,12 +67,12 @@
   {
     "name": "TradeAntivirusApi__EnableDirectAccess",
     "slotSetting": false,
-    "value": "#{{ TradeAntivirusApi.enableDirectAccess }}"
+    "value": false
   },
   {
     "name": "TradeAntivirusApi__Scope",
     "slotSetting": false,
-    "value": "#{{ TradeAntivirusApi.scope }}"
+    "value": "api://tst-futuretrade-ext.defra.gov.uk/.default"
   },
   {
     "name": "TradeAntivirusApi__SubscriptionKey",
@@ -92,21 +92,21 @@
   {
     "name": "TradeAntivirusServiceBus__AntivirusTopicName",
     "slotSetting": false,
-    "value": "defra.trade.filestore.pete"
+    "value": "defra.trade.filestore.notify"
   },
   {
     "name": "TradeAntivirusServiceBus__ConnectionString",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/ServiceBusConnectionString/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/TradeAntivirusServiceBus-ConnectionString-DEV15/)"
   },
   {
     "name": "TradeAntivirusServiceBus__SubscriptionName",
     "slotSetting": false,
-    "value": "#{{ TradeAntivirus.ServiceBus.subscriptionName }}"
+    "value": "filestore-notify-epr-dev15"
   },
   {
     "name": "FeatureManagement__EnableRegistrationRowValidation",
     "slotSetting": false,
-    "value": "#{{ featureManagement.enableRegistrationRowValidation }}"
+    "value": true
   } 
 ]

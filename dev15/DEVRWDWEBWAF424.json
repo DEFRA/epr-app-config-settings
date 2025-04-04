@@ -86,7 +86,7 @@
   },
   {
     "name": "Services__OfflinePaymentService__Url",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "value": "https://devrwdwebwaf425.azurewebsites.net/",
     "slotSetting": true
   },
   {
@@ -101,12 +101,12 @@
   },
   {
     "name": "Services__OfflinePaymentService__ServiceClientId",
-    "value": "#{{ apiConfig.paymentFacadeClientId }}",
+    "value": "7545797d-da2f-4d72-a206-d6f6e11b1fc1",
     "slotSetting": true
   },
   {
     "name": "Services__PaymentService__Url",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "value": "https://devrwdwebwaf425.azurewebsites.net/",
     "slotSetting": true
   },
   {
@@ -121,7 +121,7 @@
   },
   {
     "name": "Services__PaymentService__ServiceClientId",
-    "value": "#{{ apiConfig.paymentFacadeClientId }}",
+    "value": "7545797d-da2f-4d72-a206-d6f6e11b1fc1",
     "slotSetting": true
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "name": "Services__ProducerFeesService__Url",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "value": "https://devrwdwebwaf425.azurewebsites.net/",
     "slotSetting": true
   },
   {
@@ -161,12 +161,12 @@
   },
   {
     "name": "Services__ProducerFeesService__ServiceClientId",
-    "value": "#{{ apiConfig.paymentFacadeClientId }}",
+    "value": "7545797d-da2f-4d72-a206-d6f6e11b1fc1",
     "slotSetting": true
   },
   {
     "name": "Services__ComplianceSchemeFeesService__Url",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "value": "https://devrwdwebwaf425.azurewebsites.net/",
     "slotSetting": true
   },
   {
@@ -181,12 +181,12 @@
   },
   {
     "name": "Services__ComplianceSchemeFeesService__ServiceClientId",
-    "value": "#{{ apiConfig.paymentFacadeClientId }}",
+    "value": "7545797d-da2f-4d72-a206-d6f6e11b1fc1",
     "slotSetting": true
   },
   {
     "name": "Services__ProducerResubmissionFeesService__Url",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}425.azurewebsites.net/",
+    "value": "https://devrwdwebwaf425.azurewebsites.net/",
     "slotSetting": true
   },
   {
@@ -201,12 +201,12 @@
   },
   {
     "name": "Services__ProducerResubmissionFeesService__ServiceClientId",
-    "value": "#{{ apiConfig.paymentFacadeClientId }}",
+    "value": "7545797d-da2f-4d72-a206-d6f6e11b1fc1",
     "slotSetting": true
   },
   {
     "name": "PaymentServiceOptions__ReturnUrl",
-    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/Payment/GovPayCallback",
+    "value": "https://rwd-dev15.azure.defra.cloud/Payment/GovPayCallback",
     "slotSetting": true
   },
   {
@@ -216,37 +216,37 @@
   },
   {
     "name": "PaymentServiceOptions__ErrorUrl",
-    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/payment",
+    "value": "https://rwd-dev15.azure.defra.cloud/payment",
     "slotSetting": true
   },
   {
     "name": "AllowedOrigins",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}424.azurewebsites.net/, https://card.payments.service.gov.uk",
+    "value": "https://devrwdwebwaf424.azurewebsites.net/, https://card.payments.service.gov.uk",
     "slotSetting": true
   },
   {
     "name": "AzureAdB2C__ClientId",
     "slotSetting": false,
-    "value": "#{{ b2c.paymentfacade.clientId }}"
+    "value": "217d63fd-ab55-4cdb-ac27-50093f9aacef"
   },
   {
     "name": "AzureAdB2C__Domain",
     "slotSetting": false,
-    "value": "#{{ b2c.domain }}"
+    "value": "AZDCUSPOC2.onmicrosoft.com"
   },
   {
     "name": "AzureAdB2C__Instance",
     "slotSetting": false,
-    "value": "#{{ b2c.instance }}"
+    "value": "https://AZDCUSPOC2.b2clogin.com"
   },
   {
     "name": "AzureAdB2C__SignUpSignInPolicyId",
     "slotSetting": false,
-    "value": "#{{ b2c.signUpSignInPolicyId }}"
+    "value": "B2C_1A_EPR_SignUpSignIn"
   },
   {
     "name": "AzureAdB2C__Scopes",
     "slotSetting": false,
-    "value": "#{{ payment_facade.downStreamScope }}"
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev15-payments-facade/payment-service"
   }
 ]

@@ -2,22 +2,22 @@
   {
     "name": "ApiConfig__AccountServiceBaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net"
+    "value": "https://devrwdwebwaf407.azurewebsites.net"
   },
   {
     "name": "ApiConfig__AccountServiceClientId",
     "slotSetting": false,
-    "value": "#{{ apiConfig.accountServiceClientId }}"
+    "value": "00f441bb-2b73-4fb6-a014-641571d4da7d"
   },
   {
     "name": "ApiConfig__AddressLookupBaseUrl",
     "slotSetting": false,
-    "value": "#{{ apiConfig.addressLookupBaseUrl }}"
+    "value": "https://dev15-api-gateway.azure.defra.cloud/api/address-lookup/v1.0/"
   },
   {
     "name": "ApiConfig__PayCalBaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}424.azurewebsites.net"
+    "value": "https://devrwdwebwaf424.azurewebsites.net"
   },
   {
     "name": "ApiConfig__Certificate",
@@ -27,7 +27,7 @@
   {
     "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
     "slotSetting": false,
-    "value": "#{{ apiConfig.companiesHouseLookupBaseUrl }}"
+    "value": "https://dev15-api-gateway.azure.defra.cloud/api/companies-house/v2.2/"
   },
   {
     "name": "ApiConfig__TenantId",
@@ -67,17 +67,17 @@
   {
     "name": "AzureAdB2C__Domain",
     "slotSetting": false,
-    "value": "#{{ b2c.domain }}"
+    "value": "AZDCUSPOC2.onmicrosoft.com"
   },
   {
     "name": "AzureAdB2C__Instance",
     "slotSetting": false,
-    "value": "#{{ b2c.instance }}"
+    "value": "https://AZDCUSPOC2.b2clogin.com"
   },
   {
     "name": "AzureAdB2C__SignUpSignInPolicyId",
     "slotSetting": false,
-    "value": "#{{ b2c.signUpSignInPolicyId }}"
+    "value": "B2C_1A_EPR_SignUpSignIn"
   },
   {
     "name": "AzureAdB2C__SignedOutCallbackPath",
@@ -87,7 +87,7 @@
   {
     "name": "FacadeAPI__Address",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}404.azurewebsites.net"
+    "value": "https://devrwdwebwaf404.azurewebsites.net"
   },
   {
     "name": "MessagingConfig__AccountCreationUrl",
@@ -97,7 +97,7 @@
   {
     "name": "MessagingConfig__AccountLoginUrl",
     "slotSetting": false,
-    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/report-data"
+    "value": "https://rwd-dev15.azure.defra.cloud/report-data"
   },
   {
     "name": "MessagingConfig__ApiKey",
@@ -197,7 +197,7 @@
   {
     "name": "LoggingApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}403.azurewebsites.net"
+    "value": "https://devrwdwebwaf403.azurewebsites.net"
   },
   {
     "name": "FeatureManagement__SendDissociationNotificationEmail",
@@ -231,7 +231,7 @@
   },
   {
     "name": "FeatureManagement__UseBoomiOAuth",
-    "value": "#{{ featureManagement.useBoomiOAuth }}",
+    "value": true,
     "slotSetting": false
   }
 ]

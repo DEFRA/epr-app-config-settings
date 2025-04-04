@@ -156,7 +156,7 @@
   },
   {
     "name": "ExternalUrls__StartPage",
-    "value": "#{{ externalUrls.startPage }}",
+    "value": "https://www.gov.uk/guidance/report-packaging-data",
     "slotSetting": false
   },
   {
@@ -166,12 +166,12 @@
   },
   {
     "name": "FeatureManagement__ObligationCheckerEnabled",
-    "value": "#{{ featureManagement.obligationCheckerEnabled }}",
+    "value": false,
     "slotSetting": false
   },
   {
     "name": "FeatureManagement__LargeProducerRegisterEnabled",
-    "value": "#{{ featureManagement.largeProducerRegisterEnabled }}",
+    "value": true,
     "slotSetting": false
   },
   {

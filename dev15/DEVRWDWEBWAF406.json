@@ -7,7 +7,7 @@
   {
     "name": "AccountsServiceApiConfig__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}407.azurewebsites.net/api/"
+    "value": "https://devrwdwebwaf407.azurewebsites.net/api/"
   },
   {
     "name": "AccountsServiceApiConfig__Endpoints__CreateRegulator",
@@ -142,17 +142,17 @@
   {
     "name": "BlobStorage__ConnectionString",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})"
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWDf403/)"
   },
   {
     "name": "BlobStorage__PomContainerName",
     "slotSetting": false,
-    "value": "pom-upload-container#{{ teamName.dash }}"
+    "value": "pom-upload-container-dev15"
   },
   {
     "name": "BlobStorage__RegistrationContainerName",
     "slotSetting": false,
-    "value": "registration-upload-container#{{ teamName.dash }}"
+    "value": "registration-upload-container-dev15"
   },
   {
     "name": "CommonDataApiConfig__ApiVersion",
@@ -161,7 +161,7 @@
   },
   {
     "name": "CommonDataApiConfig__BaseUrl",
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}415.azurewebsites.net/api/",
+    "value": "https://devrwdwebwaf415.azurewebsites.net/api/",
     "slotSetting": false
   },
   {
@@ -202,12 +202,12 @@
   {
     "name": "MessagingConfig__AccountSignInUrl",
     "slotSetting": false,
-    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/report-data"
+    "value": "https://rwd-dev15.azure.defra.cloud/report-data"
   },
   {
     "name": "MessagingConfig__AccountCreationUrl",
     "slotSetting": false,
-    "value": "https://rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud/create-account/invitation/"
+    "value": "https://rwd-dev15.azure.defra.cloud/create-account/invitation/"
   },
   {
     "name": "MessagingConfig__ApiKey",
@@ -297,7 +297,7 @@
   {
     "name": "SubmissionsApiConfig__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}408.azurewebsites.net"
+    "value": "https://devrwdwebwaf408.azurewebsites.net"
   },
   {
     "name": "SubmissionsApiConfig__Endpoints__CreateSubmissionEvent",

@@ -17,6 +17,6 @@
   {
     "name": "ServiceBus__QueueName",
     "slotSetting": false,
-    "value": "defra.epr.protectivemonitoring.events#{{ teamName.dot }}"
+    "value": "defra.epr.protectivemonitoring.events.dev15"
   }
 ]

@@ -7,32 +7,32 @@
   {
     "name": "AzureAdB2C__ClientId",
     "slotSetting": false,
-    "value": "#{{ b2c.frontend.clientId }}"
+    "value": "ab29ed47-ac03-4d99-b7c9-5ab99c2c4c7e"
   },
   {
     "name": "AzureAdB2C__ClientSecret",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.b2c.frontend.secret.url }})"
+    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/AzureAdB2CClientSecretRWDf402/)"
   },
   {
     "name": "AzureAdB2C__Domain",
     "slotSetting": false,
-    "value": "#{{ b2c.domain }}"
+    "value": "AZDCUSPOC2.onmicrosoft.com"
   },
   {
     "name": "AzureAdB2C__Instance",
     "slotSetting": false,
-    "value": "#{{ b2c.instance }}"
+    "value": "https://AZDCUSPOC2.b2clogin.com"
   },
   {
     "name": "AzureAdB2C__SignUpSignInPolicyId",
     "slotSetting": false,
-    "value": "#{{ b2c.signUpSignInPolicyId }}"
+    "value": "B2C_1A_EPR_SignUpSignIn"
   },
   {
     "name": "AzureAdB2C__SignedOutCallbackPath",
     "slotSetting": false,
-    "value": "#{{ b2c.signedOutCallbackPath }}"
+    "value": "/signout/B2C_1A_EPR_SignUpSignIn"
   },
   {
     "name": "Cookie__AntiForgeryCookieName",
@@ -57,12 +57,12 @@
   {
     "name": "EprAuthorizationConfig__FacadeBaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}404.azurewebsites.net/api/"
+    "value": "https://devrwdwebwaf404.azurewebsites.net/api/"
   },
   {
     "name": "EprAuthorizationConfig__FacadeDownStreamScope",
     "slotSetting": false,
-    "value": "#{{ facadeAPI.DownstreamScope }}"
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev15-producers-account-facade/account-creation"
   },
   {
     "name": "EprAuthorizationConfig__FacadeUserAccountEndpoint",
@@ -152,27 +152,27 @@
   {
     "name": "AccountsFacadeAPI__DownstreamScope",
     "slotSetting": false,
-    "value": "#{{ facadeAPI.DownstreamScope }}"
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev15-producers-account-facade/account-creation"
   },
   {
     "name": "AccountsFacadeAPI__BaseEndpoint",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}404.azurewebsites.net/api/"
+    "value": "https://devrwdwebwaf404.azurewebsites.net/api/"
   },
   {
     "name": "IntegrationFacadeAPI__DownstreamScope",
     "slotSetting": false,
-    "value": "#{{ facadeAPI.DownstreamScope }}"
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev15-producers-account-facade/account-creation"
   },
   {
     "name": "IntegrationFacadeAPI__BaseEndpoint",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}404.azurewebsites.net/api/"
+    "value": "https://devrwdwebwaf404.azurewebsites.net/api/"
   },
   {
     "name": "FeatureManagement__ShowLanguageSwitcher",
     "slotSetting": false,
-    "value": "#{{ featureManagement.showLanguageSwitcher }}"
+    "value": true
   },
   {
     "name": "FeatureManagement__ShowComplianceSchemeMemberManagement",
@@ -187,27 +187,27 @@
   {
     "name": "FeatureManagement__ShowRegistrationResubmission",
     "slotSetting": false,
-    "value": "#{{ featureManagement.showRegistrationResubmission }}"
+    "value": true
   },
   {
     "name": "FeatureManagement__ShowSubsidiariesSingleUploadJourney",
     "slotSetting": false,
-    "value": "#{{ featureManagement.ShowSubsidiariesSingleUploadJourney }}"
+    "value": false
   },
   {
     "name": "FeatureManagement__ShowSubsidiaries",
     "slotSetting": false,
-    "value": "#{{ featureManagement.ShowSubsidiaries }}"
+    "value": true
   },
   {
     "name": "FeatureManagement__ShowRegistration",
     "slotSetting": false,
-    "value": "#{{ featureManagement.ShowRegistration }}"
+    "value": true
   },
   {
     "name": "FeatureManagement__ShowPrn",
     "slotSetting": false,
-    "value": "#{{ featureManagement.showPrn }}"
+    "value": true
   },
   {
     "name": "FeatureManagement__EnableCsvDownload",
@@ -222,17 +222,12 @@
   {
     "name": "FeatureManagement__ShowSubsidiaryJoinerAndLeaverColumns",
     "slotSetting": false,
-    "value": "#{{ featureManagement.showSubsidiaryJoinerAndLeaverColumns }}"
-  },
-  {
-    "name": "FeatureManagement__ImplementPackagingDataResubmissionJourney",
-    "slotSetting": false,
-    "value": "#{{ featureManagement.ImplementPackagingDataResubmissionJourney }}"
+    "value": false
   },
   {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
-    "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"
+    "value": "rwd-dev15.azure.defra.cloud"
   },
   {
     "name": "ForwardedHeaders__ForwardedHostHeaderName",
@@ -272,7 +267,7 @@
   {
     "name": "HttpClient__AppServiceUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}409.azurewebsites.net"
+    "value": "https://devrwdwebwaf409.azurewebsites.net"
   },
   {
     "name": "HttpClient__RetryCount",
@@ -362,12 +357,12 @@
   {
     "name": "Redis__InstanceName",
     "slotSetting": false,
-    "value": "#{{ redis.producers.instance.name }}"
+    "value": "epr-dev15-producers-"
   },
   {
     "name": "Redis__ConnectionString",
     "slotSetting": false,
-    "value": "@Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/RedisCacheConnectionString/)"
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/RedisCacheConnectionString/)"
   },
   {
     "name": "Session__IdleTimeoutMinutes",
@@ -522,7 +517,7 @@
   {
     "name": "WebAPI__BaseEndpoint",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}409.azurewebsites.net/"
+    "value": "https://devrwdwebwaf409.azurewebsites.net/"
   },
   {
     "name": "Validation__MaxIssuesToProcess",
@@ -537,21 +532,11 @@
   {
     "name": "PaymentFacadeApi__BaseUrl",
     "slotSetting": false,
-    "value": "https://devrwdwebwa#{{ environmentSpoke }}424.azurewebsites.net/api/v1/"
+    "value": "https://devrwdwebwaf424.azurewebsites.net/api/v1/"
   },
   {
     "name": "PaymentFacadeApi__DownstreamScope",
     "slotSetting": false,
-    "value": "#{{ payment_facade.DownstreamScope }}"
-  },
-  {
-    "name": "PaymentFacadeApi__Endpoints__ProducerResubmissionFeesEndpoint",
-    "slotSetting": false,
-    "value": "producer/resubmission-fee"
-  },
-  {
-    "name": "PaymentFacadeApi__Endpoints__ComplianceSchemeResubmissionFeesEndpoint",
-    "slotSetting": false,
-    "value": "compliance-scheme/resubmission-fees"
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev15-payments-facade/payment-service"
   }
 ]
