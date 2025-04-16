@@ -41,7 +41,7 @@
   },
   {
     "name": "AzureAd__ClientId",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/AzureAd-ClientId-dev#{{ environmentSpoke1 }}/)",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/AzureAd-ClientId-dev15/)",
     "slotSetting": false
   },
   {

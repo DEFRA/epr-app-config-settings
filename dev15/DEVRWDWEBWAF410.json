@@ -97,7 +97,7 @@
   {
     "name": "ExternalUrls__LandingPage",
     "slotSetting": false,
-    "value": "/report-data"
+    "value": "https://rwd-dev15.azure.defra.cloud/report-data"
   },
   {
     "name": "ExternalUrls__GovUkHome",

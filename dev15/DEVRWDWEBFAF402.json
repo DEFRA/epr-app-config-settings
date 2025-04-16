@@ -17,7 +17,7 @@
   {
     "name": "StorageAccount__PomContainer",
     "slotSetting": false,
-    "value": "pom-upload-container.dev15"
+    "value": "pom-upload-container-dev15"
   },
   {
     "name": "SubmissionApi__BaseUrl",

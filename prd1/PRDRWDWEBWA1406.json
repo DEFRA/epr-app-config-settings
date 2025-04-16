@@ -290,6 +290,16 @@
     "value": "79a6b4ef-adbb-4b0d-b23a-76be05665356"
   },
   {
+    "name": "MessagingConfig__OrganisationRegistrationResubmissionDecisionId",
+    "value": "a87b5a69-86ad-4057-8ea1-2972e4b35aa1",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__WelshOrganisationRegistrationResubmissionDecisionId",
+    "value": "a2102847-3e67-4a37-b73f-596bc077eb31",
+    "slotSetting": false
+  },
+  {
     "name": "rolesConfig__roles",
     "value": "[\r\n {\r\n \"serviceRoleId\": 4,\r\n \"personRoleId\": 1,\r\n \"key\": \"Regulator.Admin\" \r\n },\r\n {\r\n \"serviceRoleId\": 5,\r\n \"personRoleId\": 2,\r\n \"key\": \"Regulator.Basic\"\r\n }\r\n ]",
     "slotSetting": false

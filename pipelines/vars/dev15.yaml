@@ -17,7 +17,6 @@ variables:
   featureManagement.OverridePrnCurrentDateForTestingPurposes: false
 
   #File upload
-  CsvDataFile.IsLatest: true
 
  #Enterprise Applications Details
 

@@ -33,18 +33,23 @@ variables:
     - template: ../vars/dev9.yaml
   - ${{ elseif eq(parameters.teamName, 'DEV10') }}:
     - template: ../vars/development.yaml
+    - template: ../vars/development-2.yaml
     - template: ../vars/dev10.yaml
   - ${{ elseif eq(parameters.teamName, 'DEV11') }}:
     - template: ../vars/development.yaml
+    - template: ../vars/development-2.yaml
     - template: ../vars/dev11.yaml
   - ${{ elseif eq(parameters.teamName, 'DEV12') }}:
     - template: ../vars/development.yaml
+    - template: ../vars/development-2.yaml
     - template: ../vars/dev12.yaml
   - ${{ elseif eq(parameters.teamName, 'DEV13') }}:
     - template: ../vars/development.yaml
+    - template: ../vars/development-2.yaml
     - template: ../vars/dev13.yaml
   - ${{ elseif eq(parameters.teamName, 'DEV14') }}:
     - template: ../vars/development.yaml
+    - template: ../vars/development-2.yaml
     - template: ../vars/dev14.yaml
   - ${{ elseif eq(parameters.teamName, 'DEV15') }}:
     - template: ../vars/dev15.yaml    

@@ -42,7 +42,6 @@ variables:
   featureManagement.validationDataApi: true
   featureManagement.manageApprovedUsers: true
   featureManagement.showPrn: true
-  featureManagement.ShowSubsidiaries: true
   featureManagement.obligationCheckerEnabled: true
   featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: true
   featureManagement.enableOrganisationSizeFieldValidation: true
@@ -63,7 +62,8 @@ variables:
 
 
   #File upload versioning
-  CsvDataFile.IsLatest: true
+  csvDataFile.enableTransitionalPackagingUnitsColumn: true
+  csvDataFile.enableRecyclabilityRatingColumn: false
 
   # Validation
   Validation.Islatest: true

@@ -23,5 +23,10 @@
     "name": "PrnObligationCalculation__EndYear",
     "value": "2029",
     "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__ReprocessorExporter",
+    "slotSetting": false,
+    "value": false
   }
 ]

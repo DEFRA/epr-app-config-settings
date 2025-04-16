@@ -13,7 +13,8 @@ variables:
   infrastructureResourceGroupName: ${{ variables.environmentGroup }}RWDWEBWA${{ variables.environmentSpoke}}419
 
   #File upload
-  CsvDataFile.IsLatest: true
+  csvDataFile.enableTransitionalPackagingUnitsColumn: true
+  csvDataFile.enableRecyclabilityRatingColumn: false
 
  #Enterprise Applications Details
 

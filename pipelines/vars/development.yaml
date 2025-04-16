@@ -106,11 +106,12 @@ variables:
   featureManagement.pomDataPeriodAndTime: false
   featureManagement.ShowSubsidiariesSingleUploadJourney: false
   featureManagement.showRegistrationResubmission: true
-  featureManagement.ShowSubsidiaries: false
+  featureManagement.ShowSubsidiaries: true
   featureManagement.obligationCheckerEnabled: true
   featureManagement.largeProducerRegisterEnabled: true
   featureManagement.manageUserDetailChanges: true
   featureManagement.manageCompanyDetailChanges: true
+  featureManagement.showSessionTimeoutWarning: false
   featureManagement.showPrn: false
   featureManagement.OverridePrnCurrentDateForTestingPurposes: false
   featureManagement.manageRegistrationSubmissions: false
@@ -120,10 +121,10 @@ variables:
   featureManagement.enableOrganisationSizeFieldValidation: true
   featureManagement.ShowRegistration: false
   featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: false
+  featureManagement.EnableLargeProducerRecyclabilityRatingValidation: false
   featureManagement.enableCsvDownload: true
   featureManagement.RunIntegration: false
   featureManagement.RunUpdateProducers: false
-  featureManagement.useBoomiOAuth: true
   featureManagement.RunReconciliation: false
   featureManagement.showSubsidiariesRemoveLink: true
   featureManagement.showSubsidiaryJoinerAndLeaverColumns: false
@@ -131,7 +132,11 @@ variables:
   featureManagement.ImplementPackagingDataResubmissionJourney: true
   featureManagement.showAllSubsidiaries: false
   featureManagement.ShowFinancialYear: false
+  featureManagement.enableTransitionalPackagingUnitsColumn: false
+  featureManagement.enableRecyclabilityRatingColumn: false
   featureManagement.publicRegisterEnabled: false
+  featureManagement.reprocessorExporter: false
+  featureManagement.ShowPoMSubmission2025: true
 
   # Databases
   accountsDatabase.name: dev$(environmentSpoke1)_accounts
@@ -182,7 +187,17 @@ variables:
   messaging.prn.npwdreconcileissuedprns.templateid: 3f28cb69-4703-46c6-902f-9350aaeebc87
   messaging.prn.reconcileupdatedprns.templateid: a1b81df4-560e-4034-a3cc-282d00ee2959
   messaging.prn.reconcileupdatedorganisationemail.templateid: 07e89bba-7f0e-47f3-a96d-9fbcd923f9ee
+  messaging.regulator.organisationregistrationsubmissionqueriedid.templateid: cda3cad1-fa77-4282-b39b-7524b232615d
+  messaging.regulator.organisationregistrationsubmissiondecisionid.templateid: 8990a351-a715-41ec-ac9e-2685d76388a3
+  messaging.regulator.welshorganisationregistrationsubmissionqueriedid.templateid: 117fd918-bdb2-43ea-a6be-3e4c9de3d25d
+  messaging.regulator.welshorganisationregistrationsubmissiondecisionid.templateid: ff5f53fd-19f7-4f77-a698-ee1f3166f74a
+  messaging.regulator.organisationregistrationresubmissiondecisionid.templateid: 2efee63c-a3d2-4769-af5b-9bd48c40818d
+  messaging.regulator.welshorganisationregistrationresubmissiondecisionid.templateid: ca80e05c-a06d-4198-8052-4372182a3eef
   
+  # Submission periods
+  submissionPeriod.2025.1.activeFrom: "1 Jul 2025 12:00:00 AM"
+  submissionPeriod.2025.2.activeFrom: "1 Jan 2026 12:00:00 AM"
+
   # EprPackagingRegulatorEmailConfig
   regulatoremail.producer.northernireland: "dev_packaging@daera-ni.gov.uk"
   regulatoremail.producer.england: "dev_packagingproducers@environment-agency.gov.uk"
@@ -198,4 +213,5 @@ variables:
   externalUrls.startPage: "https://www.gov.uk/guidance/report-packaging-data"
 
   #File upload versioning
-  CsvDataFile.IsLatest: false
+  csvDataFile.enableTransitionalPackagingUnitsColumn: true
+  csvDataFile.enableRecyclabilityRatingColumn: false

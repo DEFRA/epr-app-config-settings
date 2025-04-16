@@ -240,6 +240,26 @@
     "value": "#{{ featureManagement.showAllSubsidiaries }}"
   },
   {
+    "name": "FeatureManagement__EnableTransitionalPackagingUnitsColumn",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableTransitionalPackagingUnitsColumn }}"
+  },
+  {
+    "name": "FeatureManagement__EnableRecyclabilityRatingColumn",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.enableRecyclabilityRatingColumn }}"
+  },
+  {
+    "name": "FeatureManagement__ShowPoMSubmission2025",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.ShowPoMSubmission2025 }}"
+  },
+  {
+    "name": "FeatureManagement__ShowSessionTimeoutWarning",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.showSessionTimeoutWarning }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev#{{ environmentSpoke1 }}.azure.defra.cloud"
@@ -523,6 +543,66 @@
     "name": "SubmissionPeriods__3__ActiveFrom",
     "slotSetting": false,
     "value": "1 Jan 2025 12:00:00 AM"
+  },
+  {
+    "name": "SubmissionPeriods__4__DataPeriod",
+    "slotSetting": false,
+    "value": "January to June 2025"
+  },
+  {
+    "name": "SubmissionPeriods__4__StartMonth",
+    "slotSetting": false,
+    "value": "January"
+  },
+  {
+    "name": "SubmissionPeriods__4__EndMonth",
+    "slotSetting": false,
+    "value": "June"
+  },
+  {
+    "name": "SubmissionPeriods__4__Year",
+    "slotSetting": false,
+    "value": "2025"
+  },
+  {
+    "name": "SubmissionPeriods__4__Deadline",
+    "slotSetting": false,
+    "value": "1 Apr 2026 11:59:00 PM"
+  },
+  {
+    "name": "SubmissionPeriods__4__ActiveFrom",
+    "slotSetting": false,
+    "value": "#{{ submissionPeriod.2025.1.activeFrom }}"
+  },
+  {
+    "name": "SubmissionPeriods__5__DataPeriod",
+    "slotSetting": false,
+    "value": "July to December 2025"
+  },
+  {
+    "name": "SubmissionPeriods__5__StartMonth",
+    "slotSetting": false,
+    "value": "July"
+  },
+  {
+    "name": "SubmissionPeriods__5__EndMonth",
+    "slotSetting": false,
+    "value": "December"
+  },
+  {
+    "name": "SubmissionPeriods__5__Year",
+    "slotSetting": false,
+    "value": "2025"
+  },
+  {
+    "name": "SubmissionPeriods__5__Deadline",
+    "slotSetting": false,
+    "value": "1 Apr 2025 11:59:00 PM"
+  },
+  {
+    "name": "SubmissionPeriods__5__ActiveFrom",
+    "slotSetting": false,
+    "value": "#{{ submissionPeriod.2025.2.activeFrom }}"
   },
   {
     "name": "WebAPI__DownstreamScope",

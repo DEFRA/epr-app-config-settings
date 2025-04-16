@@ -195,6 +195,11 @@
     "value": "#{{ featureManagement.enableCsvDownload }}"
   },
   {
+    "name": "FeatureManagement__ReprocessorExporter",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.reprocessorExporter }}"
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-dev15.azure.defra.cloud"

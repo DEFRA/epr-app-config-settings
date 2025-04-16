@@ -16,7 +16,6 @@ variables:
   featureManagement.sendDissociationNotificationEmail: true
   featureManagement.validationDataApi: true
   featureManagement.manageApprovedUsers: true
-  featureManagement.ShowSubsidiaries: true
   featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: true
   featureManagement.enableCsvDownload: true
   featureManagement.enableSubsidiaryJoinerAndLeaverColumns: true
@@ -34,7 +33,8 @@ variables:
   bulkUpload.companiesHouseDownloadSchedule: "0 30 10 * * *"
 
   #File upload versioning
-  CsvDataFile.IsLatest: true
+  csvDataFile.enableTransitionalPackagingUnitsColumn: true
+  csvDataFile.enableRecyclabilityRatingColumn: false
 
   # Validation
   Validation.Islatest: true

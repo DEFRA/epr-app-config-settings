@@ -240,6 +240,16 @@
     "value": false
   },
   {
+    "name": "FeatureManagement__ShowPoMSubmission2025",
+    "slotSetting": false,
+    "value": false
+  },
+  {
+    "name": "FeatureManagement__ShowSessionTimeoutWarning",
+    "slotSetting": false,
+    "value": true
+  },
+  {
     "name": "ForwardedHeaders__AllowedHosts",
     "slotSetting": false,
     "value": "rwd-pre1.azure.defra.cloud"

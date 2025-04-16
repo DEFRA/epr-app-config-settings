@@ -77,7 +77,8 @@
   {
     "name": "AzureAdB2C__Instance",
     "slotSetting": false,
-    "value": "https://AZDCUSPOC2.b2clogin.com"  },
+    "value": "https://AZDCUSPOC2.b2clogin.com" 
+  },
   {
     "name": "AzureADB2C__SignUpSignInPolicyId",
     "slotSetting": false,

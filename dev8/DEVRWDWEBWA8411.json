@@ -193,7 +193,7 @@
   {
     "name": "PaymentFacadeApi__DownstreamScope",
     "slotSetting": false,
-    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev-payments-facade/payment-service"
+    "value": "https://AZDCUSPOC2.onmicrosoft.com/epr-dev4-dev8-payment-facade/payment-service"
   },
   {
     "name": "Regulators__Organisations",

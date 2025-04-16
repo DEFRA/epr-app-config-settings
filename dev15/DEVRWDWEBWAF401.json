@@ -175,11 +175,6 @@
     "slotSetting": false
   },
   {
-    "name": "FeatureManagement__PublicRegisterEnabled",
-    "value": "#{{ featureManagement.publicRegisterEnabled }}",
-    "slotSetting": false
-  },
-  {
     "name": "GoogleAnalytics__CookiePrefix",
     "slotSetting": false,
     "value": "_ga"

@@ -243,5 +243,10 @@
     "name": "SiteDates__DateFormat",
     "slotSetting": false,
     "value": "d MMMM yyyy"
+  },
+  {
+    "name": "FeatureManagement__ShowSessionTimeoutWarning",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.showSessionTimeoutWarning }}"
   }
 ]

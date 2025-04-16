@@ -15,7 +15,7 @@
     "slotSetting": false
   },
   {
-    "name": "CommonDataApiConfig__BaseUrl",    
+    "name": "CommonDataApiConfig__BaseUrl",
     "value": "https://devrwdwebwa#{{ environmentSpoke }}415.azurewebsites.net/api/",
     "slotSetting": false
   },
@@ -28,5 +28,10 @@
     "name": "PrnObligationCalculation__EndYear",
     "value": "2029",
     "slotSetting": false
+  },
+  {
+    "name": "FeatureManagement__ReprocessorExporter",
+    "slotSetting": false,
+    "value": true
   }
 ]

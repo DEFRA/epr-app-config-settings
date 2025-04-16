@@ -135,6 +135,41 @@
     "value": "66"
   },
   {
+    "name": "SubmissionPeriods__4__SubmissionPeriod",
+    "slotSetting": false,
+    "value": "January to June 2025"
+  },
+  {
+    "name": "SubmissionPeriods__4__PeriodCodes__0",
+    "slotSetting": false,
+    "value": "2025-H1"
+  },
+  {
+    "name": "SubmissionPeriods__4__ErrorCode",
+    "slotSetting": false,
+    "value": "67"
+  },
+  {
+    "name": "SubmissionPeriods__5__SubmissionPeriod",
+    "slotSetting": false,
+    "value": "July to December 2025"
+  },
+  {
+    "name": "SubmissionPeriods__5__PeriodCodes__0",
+    "slotSetting": false,
+    "value": "2025-H2"
+  },
+  {
+    "name": "SubmissionPeriods__5__PeriodCodes__1",
+    "slotSetting": false,
+    "value": "2025-P0"
+  },
+  {
+    "name": "SubmissionPeriods__5__ErrorCode",
+    "slotSetting": false,
+    "value": "68"
+  },
+  {
     "name": "FeatureManagement__EnableSubsidiaryValidationPom",
     "slotSetting": false,
     "value": "#{{ featureManagement.enableSubsidiaryValidationPom }}"
@@ -143,5 +178,10 @@
     "name": "FeatureManagement__EnableSmallProducerPackagingTypeEnhancedValidation",
     "slotSetting": false,
     "value": "#{{ featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation }}"
+  },
+  {
+    "name": "FeatureManagement__EnableLargeProducerRecyclabilityRatingValidation",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.EnableLargeProducerRecyclabilityRatingValidation }}"
   }
 ]

@@ -5,8 +5,31 @@ variables:
   teamName.lower: stig
   externalUrls.manageAccountRedirectUrl: /regulators/manage-account
 
-  # Feature management
+  # Validation
+  Validation.Islatest: true
 
+  # Feature management
+  featureManagement.pomDataPeriodAndTime: true
+  featureManagement.enableBrandPartnerDataRowValidation: true
+  featureManagement.enableBrandPartnerCrossFileValidation: true
+  featureManagement.enableCompanyDetailsValidation: true
+  featureManagement.enableOrganisationDataRowValidation: true
+  featureManagement.enableRegistrationRowValidation: true
+  featureManagement.enableRowValidation: true
+  featureManagement.sendDissociationNotificationEmail: true
+  featureManagement.validationDataApi: true
+  featureManagement.manageApprovedUsers: true
+  featureManagement.ShowSubsidiaries: true
+  featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: true
+  featureManagement.enableCsvDownload: true
+  featureManagement.obligationCheckerEnabled: true
+  featureManagement.enableSubsidiaryValidationPom: true
+  featureManagement.enableOrganisationSizeFieldValidation: true
+  featureManagement.manageRegistrationSubmissions: true
+  featureManagement.EnableLargeProducerRecyclabilityRatingValidation: true
+  featureManagement.enableTransitionalPackagingUnitsColumn: true
+  featureManagement.enableRecyclabilityRatingColumn: true
+  featureManagement.showSessionTimeoutWarning: true
 
   # EprPackagingRegulatorEmailConfig
   regulatoremail.producer.northernireland: "murali.karlapudi.external@eviden.com"
@@ -16,6 +39,12 @@ variables:
 
   #Enterprise Applications Details
   apiConfig.accountServiceClientId: c0500f7b-8b3f-46d5-85b0-f242fc13ff3e           # Application ID for DEVRWDWEBWA6407_API
-  validationDataApi.appRegistration.clientId: ababbabb-d284-4dae-a44b-9261818c2706 # Application ID for DEVRWDWEBFA6407_API
+  validationDataApi.appRegistration.clientId:  'ababbabb-d284-4dae-a44b-9261818c2706'   # This should be replaced in var files by the client/application id for devrwdwebfa6407_api
+
   #File upload versioning
-  CsvDataFile.IsLatest: true
+  csvDataFile.enableTransitionalPackagingUnitsColumn: true
+  csvDataFile.enableRecyclabilityRatingColumn: true
+
+  # Submission periods
+  submissionPeriod.2025.1.activeFrom: "1 Jan 2025 12:00:00 AM"
+  submissionPeriod.2025.2.activeFrom: "1 Jan 2025 12:00:00 AM"

@@ -18,9 +18,9 @@ variables:
   featureManagement.enableSubsidiaryValidationPom: true
   featureManagement.ImplementPackagingDataResubmissionJourney: true
   featureManagement.enableSubsidiaryJoinerAndLeaverColumns: true
-  featureManagement.ShowSubsidiaries: true
   featureManagement.enableCsvDownload: true
   featureManagement.ShowSubsidiariesRemoveLink: false
 
   #File upload versioning
-  CsvDataFile.IsLatest: true
+  csvDataFile.enableTransitionalPackagingUnitsColumn: true
+  csvDataFile.enableRecyclabilityRatingColumn: false

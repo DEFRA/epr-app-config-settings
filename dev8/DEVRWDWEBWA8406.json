@@ -345,6 +345,36 @@
     "value": "https://rwd-dev8.azure.defra.cloud/report-data"
   },
   {
+    "name": "MessagingConfig__OrganisationRegistrationSubmissionQueriedId",
+    "value": "#{{ messaging.regulator.organisationregistrationsubmissionqueriedid.templateid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__OrganisationRegistrationSubmissionDecisionId",
+    "value": "#{{ messaging.regulator.organisationregistrationsubmissiondecisionid.templateid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__WelshOrganisationRegistrationSubmissionQueriedId",
+    "value": "#{{ messaging.regulator.welshorganisationregistrationsubmissionqueriedid.templateid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__WelshOrganisationRegistrationSubmissionDecisionId",
+    "value": "#{{ messaging.regulator.welshorganisationregistrationsubmissiondecisionid.templateid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__OrganisationRegistrationResubmissionDecisionId",
+    "value": "#{{ messaging.regulator.organisationregistrationresubmissiondecisionid.templateid }}",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__WelshOrganisationRegistrationResubmissionDecisionId",
+    "value": "#{{ messaging.regulator.welshorganisationregistrationresubmissiondecisionid.templateid }}",
+    "slotSetting": false
+  },
+  {
     "name": "rolesConfig__roles",
     "value": "[\r\n {\r\n \"serviceRoleId\": 4,\r\n \"personRoleId\": 1,\r\n \"key\": \"Regulator.Admin\" \r\n },\r\n {\r\n \"serviceRoleId\": 5,\r\n \"personRoleId\": 2,\r\n \"key\": \"Regulator.Basic\"\r\n }\r\n ]",
     "slotSetting": false

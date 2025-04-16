@@ -19,7 +19,6 @@ variables:
   featureManagement.enableSubsidiaryValidationPom: true
 
   #File upload versioning
-  CsvDataFile.IsLatest: true
 
   # Validation
   Validation.Islatest: true

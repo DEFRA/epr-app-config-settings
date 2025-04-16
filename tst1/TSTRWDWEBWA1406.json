@@ -305,6 +305,36 @@
     "value": "https://rwd-tst1.azure.defra.cloud/report-data"
   },
   {
+    "name": "MessagingConfig__OrganisationRegistrationSubmissionQueriedId",
+    "value": "cda3cad1-fa77-4282-b39b-7524b232615d",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__OrganisationRegistrationSubmissionDecisionId",
+    "value": "8990a351-a715-41ec-ac9e-2685d76388a3",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__WelshOrganisationRegistrationSubmissionQueriedId",
+    "value": "117fd918-bdb2-43ea-a6be-3e4c9de3d25d",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__WelshOrganisationRegistrationSubmissionDecisionId",
+    "value": "ff5f53fd-19f7-4f77-a698-ee1f3166f74a",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__OrganisationRegistrationResubmissionDecisionId",
+    "value": "2efee63c-a3d2-4769-af5b-9bd48c40818d",
+    "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__WelshOrganisationRegistrationResubmissionDecisionId",
+    "value": "ca80e05c-a06d-4198-8052-4372182a3eef",
+    "slotSetting": false
+  },
+  {
     "name": "rolesConfig__roles__0__InvitationTemplateId",
     "value": "ed99b2d7-638f-48de-969e-eec4745d067f",
     "slotSetting": false

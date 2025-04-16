@@ -86,7 +86,7 @@
   },
   {
     "name": "BlobConnectionString",
-    "value": "@Microsoft.KeyVault(SecretUri=#{{ sharedKeyVault.SCSstorageAccount.secret.url }})",
+    @Microsoft.KeyVault(SecretUri=https://devrwdinfkvf401.vault.azure.net/secrets/SubmissionCheckSplitterStorageAccountConnectionStringRWDf403),
     "slotSetting": false
   },
   {

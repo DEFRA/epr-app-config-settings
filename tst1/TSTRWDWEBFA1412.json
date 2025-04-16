@@ -176,7 +176,7 @@
 	},
 	{
 		"name": "FeatureManagement__RunUpdateProducers",
-		"value": false,
+		"value": true,
 		"slotSetting": false
 	},
 	{
@@ -238,5 +238,10 @@
 		"name": "Service__TimeoutSeconds",
 		"value": "100",
 		"slotSetting": false
+	},
+	{
+	  "name": "UpdateProducersBatchSize",
+	  "value": "100",
+	  "slotSetting": false
 	}
 ]

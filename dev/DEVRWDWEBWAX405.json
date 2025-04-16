@@ -120,6 +120,11 @@
     "value": "#{{ featureManagement.manageUserDetailChanges }}"
   },
   {
+    "name": "FeatureManagement__ShowSessionTimeoutWarning",
+    "slotSetting": false,
+    "value": "#{{ featureManagement.showSessionTimeoutWarning }}"
+  },
+  {
     "name": "FeatureManagement__ManageCompanyDetailChanges",
     "slotSetting": false,
     "value": "#{{ featureManagement.manageCompanyDetailChanges }}"

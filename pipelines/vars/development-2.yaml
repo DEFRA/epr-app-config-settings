@@ -1,0 +1,23 @@
+variables:
+
+  # Shared Key Vault
+  sharedKeyVault.name: DEVRWDINFKV1401
+  sharedKeyVault.secretsUrl: https://$(sharedKeyVault.name).vault.azure.net/secrets
+
+  sharedKeyVault.b2c.frontend.secret.name: AzureAdB2CClientSecretRWDProducersDev10-14
+  sharedKeyVault.b2c.frontend.secret.url: $(sharedKeyVault.secretsUrl)/$(sharedKeyVault.b2c.frontend.secret.name)
+
+  sharedKeyVault.b2c.regulators.secret.name: AzureAdB2CClientSecretRWDRegulatorsDev10-14
+  sharedKeyVault.b2c.regulators.secret.url: $(sharedKeyVault.secretsUrl)/$(sharedKeyVault.b2c.regulators.secret.name)
+
+  # B2C
+
+  b2c.frontend.clientId: ec31cdd9-bce9-4cfe-99ba-9fb723e0536d
+  b2c.regulators.clientId: e0d268b9-94be-49e5-b576-1a3eb60f174f
+  # b2c.frontend.clientId: 4725c14f-3a73-4891-981e-bc908060004c
+  # b2c.regulators.clientId: da9bc5eb-daf0-43cd-9b03-aee97825a85c
+ 
+
+
+
+

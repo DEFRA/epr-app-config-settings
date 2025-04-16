@@ -65,8 +65,13 @@
     "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKV1401.vault.azure.net/secrets/RedisCacheConnectionString/)"
   },
   {
-    "name": "CsvDataFile__IsLatest",
+    "name": "CsvDataFile__EnableTransitionalPackagingUnitsColumn",
     "slotSetting": false,
-    "value": "true"
+    "value": "#{{ csvDataFile.enableTransitionalPackagingUnitsColumn }}"
+  },
+  {
+    "name": "CsvDataFile__EnableRecyclabilityRatingColumn",
+    "slotSetting": false,
+    "value": "#{{ csvDataFile.enableRecyclabilityRatingColumn }}"
   }
 ]

@@ -166,7 +166,7 @@
   },
   {
     "name": "FeatureManagement__ObligationCheckerEnabled",
-    "value": true,
+    "value": false,
     "slotSetting": false
   },
   {

@@ -13,26 +13,27 @@ variables:
   bulkUpload.companiesHouseDownloadSchedule: "0 40 9 * * *"
 
   # Feature management
-  featureManagement.enableBrandPartnerDataRowValidation: true
-  featureManagement.enableBrandPartnerCrossFileValidation: true
-  featureManagement.enableCompanyDetailsValidation: true
-  featureManagement.enableOrganisationDataRowValidation: true
-  featureManagement.enableRegistrationRowValidation: true
-  featureManagement.enableRowValidation: true
+  featureManagement.EnableSmallProducerPackagingTypeEnhancedValidation: true  
+  featureManagement.EnableLargeProducerRecyclabilityRatingValidation: true
+  featureManagement.enableTransitionalPackagingUnitsColumn: true
+  featureManagement.enableRecyclabilityRatingColumn: true
   featureManagement.enableSubsidiaryJoinerAndLeaverColumns: true
-  featureManagement.enableSubsidiaryValidation: true
-  featureManagement.enableSubsidiaryValidationPom: true
+  featureManagement.manageApprovedUsers: true      
+  featureManagement.manageRegistrationSubmissions: true
+  featureManagement.pomDataPeriodAndTime: true
   featureManagement.sendDissociationNotificationEmail: true
   featureManagement.ShowSubsidiariesSingleUploadJourney: true
-  featureManagement.ShowSubsidiaries: true
-  featureManagement.validationDataApi: true
-  featureManagement.enableCsvDownload: true
-  featureManagement.enableOrganisationSizeFieldValidation: true
   featureManagement.ShowSubsidiariesRemoveLink: false
   featureManagement.showAllSubsidiaries: true
+  featureManagement.validationDataApi: true
 
   #File upload versioning
-  CsvDataFile.IsLatest: true
+  csvDataFile.enableTransitionalPackagingUnitsColumn: true
+  csvDataFile.enableRecyclabilityRatingColumn: true
 
   # Validation
   Validation.Islatest: true
+
+  # Submission periods
+  submissionPeriod.2025.1.activeFrom: "1 Jan 2025 12:00:00 AM"
+  submissionPeriod.2025.2.activeFrom: "1 Jan 2025 12:00:00 AM"

@@ -11,12 +11,12 @@
   },
   {
     "name": "AzureAd__ClientId",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/AzureAd-ClientId-dev#{{ environmentSpoke1 }}-Frontend/)",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/AzureAd-ClientId-dev15-Frontend/)",
     "slotSetting": false
   },
   {
     "name": "AzureAd__ClientSecret",
-    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/AzureAd-ClientSecret-dev#{{ environmentSpoke1 }}/)",
+    "value": "@Microsoft.KeyVault(SecretUri=https://DEVRWDINFKVF401.vault.azure.net/secrets/AzureAd-ClientSecret-dev15/)",
     "slotSetting": false
   },
   {

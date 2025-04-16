@@ -30,6 +30,11 @@
     "value": "https://devrwdwebwaf408.azurewebsites.net/"
   },
   {
+    "name": "ValidationDataApi__ClientId",
+    "slotSetting": false,
+    "value": "37a41e68-b38a-4cd1-a63a-c0ff35233357"
+  },
+  {
     "name": "ValidationDataApi__BaseUrl",
     "slotSetting": false,
     "value": "https://devrwdwebfaf407.azurewebsites.net/"
@@ -43,11 +48,6 @@
     "name": "ValidationDataApi__Timeout",
     "slotSetting": false,
     "value": 10
-  },
-  {
-    "name": "ValidationDataApi__ClientId",
-    "slotSetting": false,
-    "value": "37a41e68-b38a-4cd1-a63a-c0ff35233357"
   },
   {
     "name": "Validation__MaxIssuesToProcess",

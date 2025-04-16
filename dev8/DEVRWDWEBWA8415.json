@@ -2,7 +2,7 @@
   {
     "name": "ConnectionStrings__SynapseDatabase",
     "slotSetting": false,
-    "value": "Server=tcp:devepdinfas1401.sql.azuresynapse.net;Initial Catalog=devepdsp1401;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication=Active Directory Default;"
+    "value": "Server=tcp:devepdinfas1401.sql.azuresynapse.net;Initial Catalog=devepdsp1401;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Command Timeout=100;Authentication=Active Directory Default;"
   },
   {
     "name": "ApiConfig__PomDataSubmissionPeriods",
