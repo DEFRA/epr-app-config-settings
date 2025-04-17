@@ -238,5 +238,10 @@
     "name": "UpdateProducersBatchSize",
     "value": "100",
     "slotSetting": false
+  },
+  {
+    "name": "MessagingConfig__NpwdCancelledPrnsNotificationTemplateId",
+    "value": "#{{ messaging.prn.npwdcancelledprnsnotification.templateid }}",
+    "slotSetting": false
   }
 ]

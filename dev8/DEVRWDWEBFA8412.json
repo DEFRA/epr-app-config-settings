@@ -240,8 +240,13 @@
 		"slotSetting": false
 	},
 	{
-	  "name": "UpdateProducersBatchSize",
-	  "value": "100",
-	  "slotSetting": false
+		"name": "UpdateProducersBatchSize",
+		"value": "100",
+		"slotSetting": false
+	},
+	{
+		"name": "MessagingConfig__NpwdCancelledPrnsNotificationTemplateId",
+		"value": "52ec5cdb-ab29-475e-82d5-f5841f016066",
+		"slotSetting": false
 	}
 ]

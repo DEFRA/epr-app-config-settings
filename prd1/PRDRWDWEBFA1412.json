@@ -16,7 +16,7 @@
 	},
 	{
 		"name": "UpdateProducersTrigger",
-		"value": "0 1,31 0-7 * * 1-5",
+		"value": "0 15,45 0-7 * * 1-5",
 		"slotSetting": false
 	},
 	{
@@ -240,8 +240,13 @@
 		"slotSetting": false
 	},
 	{
-	  "name": "UpdateProducersBatchSize",
-	  "value": "100",
-	  "slotSetting": false
+		"name": "UpdateProducersBatchSize",
+		"value": "100",
+		"slotSetting": false
+	},
+	{
+		"name": "MessagingConfig__NpwdCancelledPrnsNotificationTemplateId",
+		"value": "e15bae32-e6f5-435e-b342-90cb86d9bcef",
+		"slotSetting": false
 	}
 ]
