@@ -17,12 +17,12 @@
   {
     "name": "ApiConfig__AddressLookupBaseUrl",
     "slotSetting": false,
-    "value": "https://dev15-api-gateway.azure.defra.cloud/api/address-lookup/v1.0/"
+    "value": "https://tst-api-gateway.azure.defra.cloud/api/address-lookup/v1.0/"
   },
   {
     "name": "ApiConfig__CompaniesHouseLookupBaseUrl",
     "slotSetting": false,
-    "value": "https://dev15-api-gateway.azure.defra.cloud/api/companies-house/v2.2/"
+    "value": "https://tst-api-gateway.azure.defra.cloud/api/companies-house/v2.2/"
   },
   {
     "name": "ApiConfig__TenantId",

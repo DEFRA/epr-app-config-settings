@@ -214,5 +214,5 @@ variables:
   externalUrls.startPage: "https://www.gov.uk/guidance/report-packaging-data"
 
   #File upload versioning
-  csvDataFile.enableTransitionalPackagingUnitsColumn: true
+  csvDataFile.enableTransitionalPackagingUnitsColumn: false
   csvDataFile.enableRecyclabilityRatingColumn: false

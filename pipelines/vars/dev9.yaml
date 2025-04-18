@@ -21,9 +21,9 @@ variables:
 
  #Enterprise Applications Details
 
-  apiConfig.accountServiceClientId: 9eb49cf7-c183-4b38-b10e-f08a404bb26b           # Application ID for DEVRWDWEBWA9407_API
-  validationDataApi.appRegistration.clientId: eb459bfd-dd66-4d83-92e3-06d4c26cef95 # Application ID for DEVRWDWEBFA9407_API
-  prnServiceApi.appRegistration.clientId: 3e491f6e-c685-41f4-b9f3-cd6f2615c169     # Application ID for DEVRWDWEBWA9418_API
-  apiConfig.paymentFacadeClientId: 4e86892b-0496-476f-8538-5ceeb8c50082          # Application ID for DEVRWDWEBWA9425_API
-  paycalFrontEnd.appRegistration.clientId: 28defe0f-7e2b-41f1-b4f8-6862914677fa    # Application ID for DEVRWDWEBWA9422_API
+  apiConfig.accountServiceClientId: 5300ba70-de1f-4f2e-a612-255fb00592f4           # Application ID for DEVRWDWEBWA9407_API
+  validationDataApi.appRegistration.clientId: 9e9e0818-0637-4f8c-8209-91c8b8b88a9f # Application ID for DEVRWDWEBFA9407_API
+  prnServiceApi.appRegistration.clientId: 9b6e2b4c-4459-4621-9368-c70ece835f4d     # Application ID for DEVRWDWEBWA9418_API
+  apiConfig.paymentFacadeClientId: 2d65c8a2-66f0-4a7e-9edc-f31004a74b47          # Application ID for DEVRWDWEBWA9425_API
+  paycalFrontEnd.appRegistration.clientId: 28b6c996-1817-4e2b-b04d-8578064d5283    # Application ID for DEVRWDWEBWA9422_API
 

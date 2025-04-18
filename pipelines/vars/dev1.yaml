@@ -44,6 +44,7 @@ variables:
 
   # Enterprise Application Details
   apiConfig.accountServiceClientId: 476e8e0b-f6f6-4ca0-ba1f-b05e60a51afb             # Application ID for DEVRWDWEBWA1407_API
+  prnServiceApi.appRegistration.clientId: b3bf8946-9321-4159-8c77-ba8e6f15adac     # Application ID for DEVRWDWEBWA1418_API
 
    # Submission periods
   submissionPeriod.2025.1.activeFrom: "1 Jan 2025 12:00:00 AM"
